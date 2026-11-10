@@ -1,0 +1,552 @@
+{
+  "t01-govuk-db-admin-role": {
+    "number": 1,
+    "doc_set": "govuk",
+    "old": {
+      "documents_stating_it": 10,
+      "of_which_in_small_set": 1,
+      "documents": [
+        {
+          "path": "source/kubernetes/creating-a-new-database/create-readonly-credentials-for-your-rds-database.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 2,
+            "tells the reader to run or sign in as fulladmin": 2
+          },
+          "in_small_set": true
+        },
+        {
+          "path": "source/kubernetes/job-requests/user-guide/index.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 2,
+            "tells the reader to run or sign in as fulladmin": 2
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/kubernetes/manage-app/manage-secrets/index.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 2,
+            "tells the reader to run or sign in as fulladmin": 2
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/convert-postgres-to-use-owner-roles.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 1,
+            "tells the reader to run or sign in as fulladmin": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/create-bastion-pod.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/documentdb-mongo.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 4,
+            "tells the reader to run or sign in as fulladmin": 3
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/fall-back-to-aws-cloudfront.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 3,
+            "tells the reader to run or sign in as fulladmin": 3
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/github-unavailable.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 1,
+            "tells the reader to run or sign in as fulladmin": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/howto-backup-and-restore-in-aws-rds.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 10,
+            "tells the reader to run or sign in as fulladmin": 10
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/rotating-rds.credentials.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 13,
+            "tells the reader to run or sign in as fulladmin": 11
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [
+        {
+          "path": "source/kubernetes/cheatsheet.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 1
+          },
+          "in_small_set": false,
+          "reason": "describes what the role can do and says you should not normally need it"
+        },
+        {
+          "path": "source/kubernetes/get-started/access-eks-cluster/index.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 3,
+            "tells the reader to run or sign in as fulladmin": 1
+          },
+          "in_small_set": false,
+          "reason": "lists the roles and says to use this one only if the others are insufficient"
+        },
+        {
+          "path": "source/manual/rules-for-getting-production-access.html.md",
+          "matches": {
+            "names the fulladmin role anywhere": 5,
+            "tells the reader to run or sign in as fulladmin": 2
+          },
+          "in_small_set": false,
+          "reason": "describes the roles and says this access no longer grants fulladmin in production"
+        }
+      ],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 3,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "source/manual/convert-postgres-to-use-owner-roles.html.md",
+          "matches": {
+            "names the tempadmin role": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/create-bastion-pod.html.md",
+          "matches": {
+            "names the tempadmin role": 4
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "source/manual/rules-for-getting-production-access.html.md",
+          "matches": {
+            "names the tempadmin role": 2
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t02-gitlab-api-new-field": {
+    "number": 2,
+    "doc_set": "gitlab",
+    "old": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t06-govuk-check-env-var": {
+    "number": 6,
+    "doc_set": "govuk",
+    "old": {
+      "documents_stating_it": 1,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "source/manual/rotating-rds.credentials.html.md",
+          "matches": {
+            "prints an app's environment through kubectl exec": 2
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t08-django-deprecation-warning": {
+    "number": 8,
+    "doc_set": "django",
+    "old": {
+      "documents_stating_it": 1,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "docs/internals/release-process.txt",
+          "matches": {
+            "names a warning class with a two-digit version": 1
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [
+        {
+          "path": "docs/releases/1.8.3.txt",
+          "matches": {
+            "names a warning class with a two-digit version": 2
+          },
+          "in_small_set": false,
+          "reason": "a historical release note"
+        },
+        {
+          "path": "docs/releases/6.2.txt",
+          "matches": {
+            "names a warning class with a two-digit version": 2
+          },
+          "in_small_set": false,
+          "reason": "names the old class only to say that it was renamed; it states the new rule"
+        }
+      ],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 8,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "docs/faq/install.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/howto/mailers-migration.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/internals/release-process.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 2
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/intro/tutorial02.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/ref/settings.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/releases/6.2.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 2
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/topics/db/queries.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 2
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/topics/email.txt",
+          "matches": {
+            "names a warning class with a four-digit version": 1
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t09-django-browser-tests": {
+    "number": 9,
+    "doc_set": "django",
+    "old": {
+      "documents_stating_it": 2,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "docs/intro/tutorial05.txt",
+          "matches": {
+            "mentions Selenium": 4
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/topics/testing/tools.txt",
+          "matches": {
+            "mentions Selenium": 34,
+            "shows a Selenium test": 5
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [
+        {
+          "path": "docs/ref/contrib/staticfiles.txt",
+          "matches": {
+            "mentions Selenium": 1
+          },
+          "in_small_set": false,
+          "reason": "names Selenium in passing as one example of a browser tool"
+        },
+        {
+          "path": "docs/releases/1.4.txt",
+          "matches": {
+            "mentions Selenium": 4
+          },
+          "in_small_set": false,
+          "reason": "a historical release note"
+        },
+        {
+          "path": "docs/releases/1.5.txt",
+          "matches": {
+            "mentions Selenium": 1
+          },
+          "in_small_set": false,
+          "reason": "a historical release note"
+        },
+        {
+          "path": "docs/releases/5.0.txt",
+          "matches": {
+            "mentions Selenium": 1
+          },
+          "in_small_set": false,
+          "reason": "a historical release note"
+        },
+        {
+          "path": "docs/releases/6.0.txt",
+          "matches": {
+            "mentions Selenium": 1
+          },
+          "in_small_set": false,
+          "reason": "a historical release note"
+        },
+        {
+          "path": "docs/releases/6.2.txt",
+          "matches": {
+            "mentions Selenium": 1
+          },
+          "in_small_set": false,
+          "reason": "says django.test.selenium was removed; it is counted under the new rule"
+        }
+      ],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 3,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "docs/internals/contributing/committing-code.txt",
+          "matches": {
+            "mentions Playwright": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/intro/contributing.txt",
+          "matches": {
+            "mentions Playwright": 2
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/releases/6.2.txt",
+          "matches": {
+            "says django.test.selenium was removed": 1
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t10-grpc-principal-name": {
+    "number": 10,
+    "doc_set": "grpc",
+    "old": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 1,
+      "of_which_in_small_set": 0,
+      "documents": [
+        {
+          "path": "A43-grpc-authorization-api.md",
+          "matches": {
+            "states that any URI SAN, DNS SAN or Subject match counts": 1
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t12-grpc-max-ejection": {
+    "number": 12,
+    "doc_set": "grpc",
+    "old": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t16-rustforge-rollup-approval": {
+    "number": 16,
+    "doc_set": "rustforge",
+    "old": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  },
+  "t18-otel-peer-service": {
+    "number": 18,
+    "doc_set": "otel",
+    "old": {
+      "documents_stating_it": 0,
+      "of_which_in_small_set": 0,
+      "documents": [],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "new": {
+      "documents_stating_it": 4,
+      "of_which_in_small_set": 1,
+      "documents": [
+        {
+          "path": "docs/general/attributes.md",
+          "matches": {
+            "names server.service.name or .namespace": 1
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/network/choosing-network-attributes.md",
+          "matches": {
+            "names server.service.name or .namespace": 5
+          },
+          "in_small_set": false
+        },
+        {
+          "path": "docs/registry/attributes/peer.md",
+          "matches": {
+            "names server.service.name or .namespace": 1
+          },
+          "in_small_set": true
+        },
+        {
+          "path": "docs/registry/attributes/server.md",
+          "matches": {
+            "names server.service.name or .namespace": 5
+          },
+          "in_small_set": false
+        }
+      ],
+      "candidates_read_and_not_counted": [],
+      "reviews_with_no_match": [],
+      "matches_in_documents_left_out_of_the_set": []
+    },
+    "matches_in_a_sibling_pair": {},
+    "old_patterns_find_the_old_revision": true,
+    "new_patterns_find_the_new_revision": true
+  }
+}

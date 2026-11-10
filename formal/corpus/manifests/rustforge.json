@@ -1,0 +1,764 @@
+{
+ "set": "rustforge",
+ "repo": "rust-lang/rust-forge",
+ "host": "github",
+ "commit": "4486d498cc6b0621b65918dbb56e79076c74c6f4",
+ "glob": "src/**/*.md",
+ "exclude": [],
+ "licence": "Apache-2.0 OR MIT",
+ "archive_url": "https://codeload.github.com/rust-lang/rust-forge/tar.gz/4486d498cc6b0621b65918dbb56e79076c74c6f4",
+ "file_count": 150,
+ "total_bytes": 729960,
+ "files": [
+  {
+   "path": "src/SUMMARY.md",
+   "bytes": 7839,
+   "sha256": "a3b1670a8ff3e2594b725ebf1d385bde242d2fffacf3f3bc868e84dcc3808faa"
+  },
+  {
+   "path": "src/archive/community.md",
+   "bytes": 914,
+   "sha256": "6cb90e417653745646cc199d78f5fecc2ed64b261abb37afa8f6756a97455730"
+  },
+  {
+   "path": "src/archive/fott.md",
+   "bytes": 18267,
+   "sha256": "6973ce3a47b5fc4c22a07797a974a0218c618b6f10cafc4547c58fc75965bb80"
+  },
+  {
+   "path": "src/archive/index.md",
+   "bytes": 143,
+   "sha256": "e89251cf46b646e1ce31b7c41fba10a0bbc23d9c00cb4b883742c47725102877"
+  },
+  {
+   "path": "src/archive/release-history.md",
+   "bytes": 30559,
+   "sha256": "9b0597f326567e66c589f766bb09f42256ab8d5cc86aa573dfe12045673d4535"
+  },
+  {
+   "path": "src/community/index.md",
+   "bytes": 12,
+   "sha256": "54d63e8cdcb00806ee8766044f99b946bf0e0f8fd3a4554e399d1b5ae9127058"
+  },
+  {
+   "path": "src/compiler/backports.md",
+   "bytes": 5139,
+   "sha256": "99533b8d18d681312cae46b2e46e8f2566de8755171ef1846ce12a92401feb9f"
+  },
+  {
+   "path": "src/compiler/calendar.md",
+   "bytes": 1840,
+   "sha256": "68c436131ea5d177af405404fa7595605e2c69dcf314b502053c12634162ae5a"
+  },
+  {
+   "path": "src/compiler/cross-team-collaboration.md",
+   "bytes": 4005,
+   "sha256": "85222d2fd911af850e3bba313886c526ac690ef4fea143331ab807572e4b2e7d"
+  },
+  {
+   "path": "src/compiler/index.md",
+   "bytes": 2207,
+   "sha256": "f7f99139cc2bb29972b07f01a66a48d46c440fd0b13cb7ef7bb6aa4c0ae7e1b9"
+  },
+  {
+   "path": "src/compiler/meetings.md",
+   "bytes": 3330,
+   "sha256": "66b7201111b97da573e0a7a21eba0af909ebad0244abb17a18026e81a612c07b"
+  },
+  {
+   "path": "src/compiler/membership.md",
+   "bytes": 10428,
+   "sha256": "51dfd57d72840dde672d343475a57087157daa8a11d001ab4db99cea680c98f1"
+  },
+  {
+   "path": "src/compiler/notification-groups.md",
+   "bytes": 1740,
+   "sha256": "54745afb5f0b9248512078aa9fb224629ac6c77dbc54d8ed686f15885e80edc3"
+  },
+  {
+   "path": "src/compiler/operations.md",
+   "bytes": 19789,
+   "sha256": "254825ec1212df1f208057fd0389bfeeb5f04c244279b4ee39348fee9e439dec"
+  },
+  {
+   "path": "src/compiler/prioritization.md",
+   "bytes": 7657,
+   "sha256": "fe7479f15846eea2a90e9668541fa0c71930c418e536595f5382d9d96ef7966e"
+  },
+  {
+   "path": "src/compiler/proposals-and-stabilization.md",
+   "bytes": 22821,
+   "sha256": "6fd54b8348c160f9522cf8b798d2863e887bb542c8fe801bb6b3e108c85b81cd"
+  },
+  {
+   "path": "src/compiler/proposals-and-stabilization/ecosystem-integration-tests.md",
+   "bytes": 11535,
+   "sha256": "d28dbc21114577b4efde26a1e357710bcc581a4ffb38b14a3099ab3b90f6b678"
+  },
+  {
+   "path": "src/compiler/repositories.md",
+   "bytes": 6735,
+   "sha256": "1910c6675204adcf5c7dd6751fca7d3d352cf9b427040672eaf4699ec4b013e2"
+  },
+  {
+   "path": "src/compiler/resources.md",
+   "bytes": 702,
+   "sha256": "b902ae503d477f3f035cf4f90c9f67c7dfc13e1f7aa2b7c9f9082d72f13404da"
+  },
+  {
+   "path": "src/compiler/reviews.md",
+   "bytes": 28853,
+   "sha256": "a7f097ea7516bd8ea4babba6c514aba4af3c0bcd317affb31647a187e8f5bab3"
+  },
+  {
+   "path": "src/compiler/supplemental-tools.md",
+   "bytes": 6477,
+   "sha256": "f7f73748c11cf71634c9dd5e353cb425afd1f1aa460b16a73f49daed0083fa29"
+  },
+  {
+   "path": "src/compiler/third-party-out-of-tree.md",
+   "bytes": 10480,
+   "sha256": "5ae4f7dc9eb36826b28b166e5d8753fc1233607bbbc76110c8a77e3fe06339e5"
+  },
+  {
+   "path": "src/compiler/working-areas.md",
+   "bytes": 8523,
+   "sha256": "25e2e8a2fd7916b8da2d16c04c2a6eed9f54eef5aa8752749f082e2baed096d2"
+  },
+  {
+   "path": "src/crates-io/index.md",
+   "bytes": 418,
+   "sha256": "3beaebf446d2c7fe448f5b4075079f1fda864ef49cdc74f21ee75069e7872387"
+  },
+  {
+   "path": "src/docs-rs/index.md",
+   "bytes": 655,
+   "sha256": "edfd2427080ad18192ee832ba9989fa4eaa319be5fdb1ad3632432c759745ffe"
+  },
+  {
+   "path": "src/editions/edition-releases.md",
+   "bytes": 14221,
+   "sha256": "1fdbfc93750a597af6586689eba466b03e0918ba73be80c18d1182c5b74894fe"
+  },
+  {
+   "path": "src/governance/council.md",
+   "bytes": 63492,
+   "sha256": "8dce6b80ab4a03819af048950a3cbeb4ef41515ca28e819704ef49de319db4f6"
+  },
+  {
+   "path": "src/governance/index.md",
+   "bytes": 605,
+   "sha256": "4e3ef6029cf206a537c15a6fdbe2b5e83c6af09571258abd4f965955b2daa0e7"
+  },
+  {
+   "path": "src/governance/moderation.md",
+   "bytes": 17272,
+   "sha256": "f445cd14cc787d23eb346061cde311a64c74038711b274196dac9f285e0ebc06"
+  },
+  {
+   "path": "src/governance/project-goals.md",
+   "bytes": 1516,
+   "sha256": "76ea8226ae8b3c8f0760350e9a8ed37a143d1491c1ae19d247fb5e54293e6733"
+  },
+  {
+   "path": "src/governance/project-groups.md",
+   "bytes": 12202,
+   "sha256": "dde0522429c94b9286301f40884efb60b6d8e0ba8ec12d486fa48cd63b4c5ff5"
+  },
+  {
+   "path": "src/how-to-ask-for-funding.md",
+   "bytes": 3382,
+   "sha256": "ab12eac42810fd0a58273cfb662cc76ab19b72fe832454270176761f1ac74927"
+  },
+  {
+   "path": "src/how-to-start-contributing.md",
+   "bytes": 15534,
+   "sha256": "e8ba46d37ccc158c2ee9e2d0be98fc8bd1d97aabbeb2bb446bf0495ecd93c4b8"
+  },
+  {
+   "path": "src/index.md",
+   "bytes": 2335,
+   "sha256": "031bb9d6cb9106cec74c00526aba7ec21c7b4a4500c0cb87f795de8dae18a7ff"
+  },
+  {
+   "path": "src/infra/archive-stable-version-installers.md",
+   "bytes": 343,
+   "sha256": "c3aca02a9f23ed4b6102c7ed7bfb0c518bcf8913407a3bcceea7998d1525a955"
+  },
+  {
+   "path": "src/infra/channel-layout.md",
+   "bytes": 6665,
+   "sha256": "ec9a00b062410f652ba880a2d7dc7844ecfdf65decf7d0217f1d3db9166203e7"
+  },
+  {
+   "path": "src/infra/docs/aws-access-management.md",
+   "bytes": 1837,
+   "sha256": "9722b277a01862b49aa8c2d6805f18a96abb117c4f40b75e0df2492dc36d2b8f"
+  },
+  {
+   "path": "src/infra/docs/aws-access.md",
+   "bytes": 4345,
+   "sha256": "4e5415d5abca401b208a852d6de97cd74906c079854502c3a61441b4aae10cd3"
+  },
+  {
+   "path": "src/infra/docs/aws-regions.md",
+   "bytes": 2246,
+   "sha256": "65cf9faed75229b14fc68bf4f3b73c8f80f8ecb4a00a1904cc2fa5f1c32ad779"
+  },
+  {
+   "path": "src/infra/docs/bastion.md",
+   "bytes": 2359,
+   "sha256": "cd652e1e142e3297faf8223f0e3e223488bb3a257512e87fbf007a6289202dc3"
+  },
+  {
+   "path": "src/infra/docs/bors.md",
+   "bytes": 634,
+   "sha256": "ef72b1df27d1e2cf7fc0651f481ceaa0566f9cfc90d03e800dd07404a7edafbb"
+  },
+  {
+   "path": "src/infra/docs/cdn.md",
+   "bytes": 3938,
+   "sha256": "6fad9a3f769a26bdb1ae95514adfc11495e8e62c032a5efb3d365f3ce960c980"
+  },
+  {
+   "path": "src/infra/docs/ci-runners-aws.md",
+   "bytes": 8121,
+   "sha256": "2c95ff40058e17dd0f9457a5b228f019262f8251c8a723ec7a8378f22755a08f"
+  },
+  {
+   "path": "src/infra/docs/crater-agents.md",
+   "bytes": 2402,
+   "sha256": "d593fa5cd68cb240df40c8ecda78ca4ee6cb9cc465e4fc2be5e1981e72b4a101"
+  },
+  {
+   "path": "src/infra/docs/dev-desktop-github-app.md",
+   "bytes": 2354,
+   "sha256": "e666ca22bf16d43a4c6716aa3d7e68d8cd3c484e761235dd248b258a41532e3e"
+  },
+  {
+   "path": "src/infra/docs/dev-desktop.md",
+   "bytes": 11921,
+   "sha256": "c9c7cff99282fabe4da8122c2301dc83191ec8ffe2143c376e43dba29f25e232"
+  },
+  {
+   "path": "src/infra/docs/dns.md",
+   "bytes": 9141,
+   "sha256": "e0e729fd03bc01dec29e631eb0b319959b4a674ce0e0437faaf1d3143c2c21c9"
+  },
+  {
+   "path": "src/infra/docs/ecs-services.md",
+   "bytes": 4325,
+   "sha256": "653db0df33424b4e94d91567dc42c37af7e05e9990740012e65c0d3edaa42195"
+  },
+  {
+   "path": "src/infra/docs/external-ci-runners.md",
+   "bytes": 5177,
+   "sha256": "b1ac868ab7d9d3cab18aab2be5580517563b15bab7ae44c0dfb4496a63b38d17"
+  },
+  {
+   "path": "src/infra/docs/hardware-security-keys.md",
+   "bytes": 12220,
+   "sha256": "b1e0bf96d42aa92498663e8d660706fe79458a483fa7feb13420f63ce611ad54"
+  },
+  {
+   "path": "src/infra/docs/index.md",
+   "bytes": 243,
+   "sha256": "a88ed4039c3e65c93e66df7530d74588a2e34ab0721db434a623e1d105c48d2a"
+  },
+  {
+   "path": "src/infra/docs/internal-announcements.md",
+   "bytes": 1818,
+   "sha256": "b0c6dfe1caf0ae2ec9da5bc9cb7f9547e4f6c631e126848a30d0d16ff7161dd5"
+  },
+  {
+   "path": "src/infra/docs/monitoring.md",
+   "bytes": 4571,
+   "sha256": "41e2c3bcffef72dbe720e77a1efea26997e0107276af2fc639a43e9cc9657498"
+  },
+  {
+   "path": "src/infra/docs/renovate.md",
+   "bytes": 3975,
+   "sha256": "b7626498798d778bda4185b9a667ea75f41d758fb2b7381d8e33ea37fd7933a3"
+  },
+  {
+   "path": "src/infra/docs/rust-bots.md",
+   "bytes": 1016,
+   "sha256": "abbd0fdd37e5d5aad8240461090fb269be95d77112b7db945648235fee7febb7"
+  },
+  {
+   "path": "src/infra/docs/rustc-ci.md",
+   "bytes": 1322,
+   "sha256": "733d0102a8887efba6a265c8f34bf54355c9b778368fce0aa4e597302c68a6a8"
+  },
+  {
+   "path": "src/infra/docs/sentry.md",
+   "bytes": 2187,
+   "sha256": "17132a24238a9bd98e4d83cd4a73dbc082e4d82b3f77d3ffdb8c044080368b9e"
+  },
+  {
+   "path": "src/infra/docs/trusted-contributors.md",
+   "bytes": 3223,
+   "sha256": "0d01880a3a379bcf4bc893505eaee99c97927f1d956fac5eb79019bc10019742"
+  },
+  {
+   "path": "src/infra/docs/trusted-publishing.md",
+   "bytes": 3991,
+   "sha256": "225ce441aacaf3fd93d1c6a4d825de7e20303a8ac1441ff89dade6ea9a412ec5"
+  },
+  {
+   "path": "src/infra/guidelines/index.md",
+   "bytes": 163,
+   "sha256": "184663457f4dca782c43d04bd4a9adf0722986b710ab63046c4bd2b384ba1c20"
+  },
+  {
+   "path": "src/infra/guidelines/static-websites.md",
+   "bytes": 7572,
+   "sha256": "c769ab9066ad125af09597d0e41767dabce82bb6da16d99494d2286268c3f9af"
+  },
+  {
+   "path": "src/infra/index.md",
+   "bytes": 284,
+   "sha256": "5dc6b3b974fc91c828410baba895b3ea92bee19f5a7881aae6b11dc96292d1a0"
+  },
+  {
+   "path": "src/infra/other-installation-methods.md",
+   "bytes": 4832,
+   "sha256": "06c02c8b852cb3fb68b2e7cbe816a9d4161438d10d6b1853aa0702f9191dd44b"
+  },
+  {
+   "path": "src/infra/policies/broken-nightlies.md",
+   "bytes": 1426,
+   "sha256": "8274d81ec06bd584f5d80705ebf7bcd6a11ba015b0ac6bd010d202e635358508"
+  },
+  {
+   "path": "src/infra/policies/index.md",
+   "bytes": 111,
+   "sha256": "16571c74a6da9963b255bfc6e5ac5cfc5c22ccae0e761569de4d447bae49f897"
+  },
+  {
+   "path": "src/infra/policies/mfa-critical-systems.md",
+   "bytes": 3441,
+   "sha256": "71691ce7e88c1e466b04b5c01faf6df82ee0f8fdcc6c0075aefb407ae969c28c"
+  },
+  {
+   "path": "src/infra/service-infrastructure.md",
+   "bytes": 854,
+   "sha256": "1552d2ed9ba2fb14215ad3a98dacd5012167e66b355818f93429f3ff5035bfcb"
+  },
+  {
+   "path": "src/infra/shared-standalone-installers.md",
+   "bytes": 945,
+   "sha256": "7e9d275e887f63a61e66a664f3c017a361c2bffce8b46918111a380b450a5a54"
+  },
+  {
+   "path": "src/infra/team-maintenance.md",
+   "bytes": 4813,
+   "sha256": "08c0d1ec046174320e0394501a0e4569031f3f4277a85964064feda7c9bc4883"
+  },
+  {
+   "path": "src/infra/toolstate.md",
+   "bytes": 5461,
+   "sha256": "35c72d4f77bd651d5694a1b5dfea56717ede08762671d83995e547fe15c53215"
+  },
+  {
+   "path": "src/lang/index.md",
+   "bytes": 195,
+   "sha256": "79dac98d346f3dc6eee9ab37c110f5e8cdcc1d011999259d0069192c86ddbdae"
+  },
+  {
+   "path": "src/lang/rfc-merge-procedure.md",
+   "bytes": 2573,
+   "sha256": "096b89f5743c19d0a81235f7feccc1918536ce70a1e74622b20b4eebfc104293"
+  },
+  {
+   "path": "src/lang/stabilization-procedure.md",
+   "bytes": 232,
+   "sha256": "b2f82adbb8fa8f47abba798e473089cc5dc98601d288db375c4e4be943608f91"
+  },
+  {
+   "path": "src/libs/index.md",
+   "bytes": 537,
+   "sha256": "4ddc60f764d49ab9e776a2e54570aee14530240914cca816ab1c5465aa500008"
+  },
+  {
+   "path": "src/libs/maintaining-std.md",
+   "bytes": 18072,
+   "sha256": "c6b92c8c1175bd87ddc687ac1d689b7f363d13883855833e944e6fc92a33c04c"
+  },
+  {
+   "path": "src/libs/rfc-merge-procedure.md",
+   "bytes": 127,
+   "sha256": "13522d267dfbeb6c8b3827612cd255be91a916c37085233a80b38ec766732873"
+  },
+  {
+   "path": "src/mdbook/index.md",
+   "bytes": 653,
+   "sha256": "d5b88c39cea761676e3e07b7a47ca44b71f64577abac0380e9bb5b9ab0498630"
+  },
+  {
+   "path": "src/mdbook/membership.md",
+   "bytes": 4294,
+   "sha256": "bd45e939f3d6d17c4e91c8c9d4671a1087d8d9012d28cbb2574ae558ee25c70b"
+  },
+  {
+   "path": "src/mdbook/proposals-and-stabilization.md",
+   "bytes": 3342,
+   "sha256": "bd97b4be2732ffa10a8bd6f47a9247ab211ee6cf7a7fae5e77a52938db96a05e"
+  },
+  {
+   "path": "src/mdbook/reviews.md",
+   "bytes": 468,
+   "sha256": "1d342ee22e16b12f8454cb5ac91093ab43318138995c07f7351f40cded6026c8"
+  },
+  {
+   "path": "src/onboarding.md",
+   "bytes": 4715,
+   "sha256": "bb33c1599083a7be9e7a060d2ca134df984837acbbeb0aceded969325eadcb20"
+  },
+  {
+   "path": "src/platforms/blogs.md",
+   "bytes": 6517,
+   "sha256": "568ad9ddb1445dcdc5e05eab92ec85e6167378e56f53251d3ff3f33386e1be13"
+  },
+  {
+   "path": "src/platforms/calendars.md",
+   "bytes": 564,
+   "sha256": "94e219b92ab8c178b8360a0946bb0875e6395794a4dcd1a410b9a2b3072d3320"
+  },
+  {
+   "path": "src/platforms/discord.md",
+   "bytes": 225,
+   "sha256": "30b46378fc61e4af2f6365dddb9d4c229394094c223f4c870ab2baa6ca871d15"
+  },
+  {
+   "path": "src/platforms/email.md",
+   "bytes": 1060,
+   "sha256": "69f16ed4d6f250a20ba4d4b4a4028d6ae11d55dc069ac9b799250a4dcf27cca0"
+  },
+  {
+   "path": "src/platforms/github.md",
+   "bytes": 2056,
+   "sha256": "7caa9c1ab5c877faa5f4ab4b395293470eee98cdb58a56aa700ede2fd5cea81c"
+  },
+  {
+   "path": "src/platforms/index.md",
+   "bytes": 252,
+   "sha256": "7b9aba5927bca6ab124b597bc503b964b3ad8c73bb44e7c97abf9aa9025972ec"
+  },
+  {
+   "path": "src/platforms/twitter.md",
+   "bytes": 3080,
+   "sha256": "4900e6b5fa7d145e15202f8f81b7c5c12a40bea3babc3fa7338416677c37e1c2"
+  },
+  {
+   "path": "src/platforms/zulip.md",
+   "bytes": 9239,
+   "sha256": "931d1ed86ac800d5031dd6e4cc7367fc19296941c63d8906e04443834717ec1f"
+  },
+  {
+   "path": "src/platforms/zulip/moderation.md",
+   "bytes": 1371,
+   "sha256": "f9d5cb77fbf2640db8c8d7fc25a7eccd590f9de7ff119fe4b990998bd94c29ad"
+  },
+  {
+   "path": "src/policies/crate-ownership.md",
+   "bytes": 10766,
+   "sha256": "cbc898f7acc653e5b5e8396e0cd46e6860d8e4d4ec7964dc02cc6540a77eacb7"
+  },
+  {
+   "path": "src/policies/index.md",
+   "bytes": 87,
+   "sha256": "fc2512183be0b629dfad8bc57e6416512bd157581902621e5eb1e81ffa9d3377"
+  },
+  {
+   "path": "src/policies/llm-usage.md",
+   "bytes": 21954,
+   "sha256": "99b9c6ba8731c7a7b638111c15542178c0f807f2f9543baef14878af2cde1c06"
+  },
+  {
+   "path": "src/release/backporting.md",
+   "bytes": 5536,
+   "sha256": "b6701717eafd00a2c182b797ad37705cf14ead9f6d801c8386f1c9ee4d9bf67e"
+  },
+  {
+   "path": "src/release/crater.md",
+   "bytes": 5353,
+   "sha256": "b25c05fd1fac0e43e53183ba17ed4a9a4b16220078a27e51415611805f9f2123"
+  },
+  {
+   "path": "src/release/index.md",
+   "bytes": 1043,
+   "sha256": "4e516a09edf1fdf43637ada488592726332beb8adcb5d2fdecb9d73287fb1e02"
+  },
+  {
+   "path": "src/release/issue-triaging.md",
+   "bytes": 21575,
+   "sha256": "4604a449377353a42c5391141d9471534375ceff3f0574ea5365fa4b5147e48f"
+  },
+  {
+   "path": "src/release/process.md",
+   "bytes": 9032,
+   "sha256": "c458a914fae492cb808be21dfcc557295553d281143bf028be011d3bcaa933b0"
+  },
+  {
+   "path": "src/release/release-notes.md",
+   "bytes": 9425,
+   "sha256": "235f2bcbdeec0d2913db3b90e85d68c705833f3d26df49b2af06ced77bcdb578"
+  },
+  {
+   "path": "src/release/rollups.md",
+   "bytes": 7813,
+   "sha256": "e3dec0010d01754d696077abd677046dd49503358f195cfa94cb84db0973fbf7"
+  },
+  {
+   "path": "src/release/triage-procedure.md",
+   "bytes": 7229,
+   "sha256": "6fda802f54c93dde1344f7035e709e4056c6676a402a4e95173f84ebb6a2a32f"
+  },
+  {
+   "path": "src/rustc-dev-guide/index.md",
+   "bytes": 5393,
+   "sha256": "a451e06a391e4c9fa0e68359bd1eb70d30c5e64291ebb52de1c7eb9f5a7a694b"
+  },
+  {
+   "path": "src/rustdoc/calendar.md",
+   "bytes": 177,
+   "sha256": "ad43d446f39935cabf521e74dd1b50b83ac02a8384cab703ad7dcdb2731a5ba9"
+  },
+  {
+   "path": "src/rustdoc/index.md",
+   "bytes": 1161,
+   "sha256": "8229b91a94261075ec79b05c85e1e210fade7066bf2c427b071c69bec3dd90ee"
+  },
+  {
+   "path": "src/rustdoc/meetings.md",
+   "bytes": 721,
+   "sha256": "d9e05b64c560b02f148c18bad76a42ce385cfde9b0659eb71ce97b2dc061ee22"
+  },
+  {
+   "path": "src/rustdoc/membership.md",
+   "bytes": 6638,
+   "sha256": "09f89022ad43077770de78e9d878f0d525fa29559c638c7bab3123149e5965a8"
+  },
+  {
+   "path": "src/rustdoc/proposals-and-stabilization.md",
+   "bytes": 4358,
+   "sha256": "1a65d269fba920226c98a4b8f6e048fb352056ea915dd98ae3dc7b29ae9937e4"
+  },
+  {
+   "path": "src/rustdoc/resources.md",
+   "bytes": 787,
+   "sha256": "b6c577ed8178478e78e5d2c1dc2672fe5d4cd66cd57b10817e6427df8f560b24"
+  },
+  {
+   "path": "src/rustdoc/reviews.md",
+   "bytes": 482,
+   "sha256": "ff8cdaa20b88a122ac70f9c402fa6f669ce64e0b1eab0e9333f13bb6c6c7a485"
+  },
+  {
+   "path": "src/triagebot/agenda.md",
+   "bytes": 435,
+   "sha256": "2bb39e7921fe620a45fbeb148830fd821931df5784ee2e65bd81395f3d935070"
+  },
+  {
+   "path": "src/triagebot/autolabels.md",
+   "bytes": 2668,
+   "sha256": "5ff01054d2664568b817f8fcf885b8e84a2df0c3c95635fcfeef81e88a18406d"
+  },
+  {
+   "path": "src/triagebot/backport.md",
+   "bytes": 2872,
+   "sha256": "8d23f3923bcb7b4a9cdf6bc79b07839c1ea4bf08ec734234a2a24bca05798a6b"
+  },
+  {
+   "path": "src/triagebot/behind-upstream.md",
+   "bytes": 907,
+   "sha256": "c974dddb8c2eb8d643c82312c124f2c66cd965296eae57f4dcb1e7da2d1f7743"
+  },
+  {
+   "path": "src/triagebot/bot-pull-requests.md",
+   "bytes": 554,
+   "sha256": "f151cdfab74b9abea9fee3fc9c55f4edb9f3156a1a225f995d6f1cf0a568257d"
+  },
+  {
+   "path": "src/triagebot/canonicalize-issue-links.md",
+   "bytes": 107,
+   "sha256": "7a97672189e81e6f186b69084afca98cc8342c99a28aa53530e44147d2ec20cc"
+  },
+  {
+   "path": "src/triagebot/close.md",
+   "bytes": 615,
+   "sha256": "9a535394b1e76b69caac4e29ff93c2ec2cf4c531789eb4a9bd3bdc061e8d7dcd"
+  },
+  {
+   "path": "src/triagebot/concern.md",
+   "bytes": 1389,
+   "sha256": "ed63ba4981ac7aaa02e0db280c80ff2b4ca886e58b05f247efd099ff92084eba"
+  },
+  {
+   "path": "src/triagebot/crate-yanking.md",
+   "bytes": 1408,
+   "sha256": "3d486463d3a49c960ba92b83290f13a798d30719d6f084eb847e2e1591c40df4"
+  },
+  {
+   "path": "src/triagebot/doc-updates.md",
+   "bytes": 496,
+   "sha256": "22440aa7ed72a133216560152896b92d591fdd6ef1210b2c37a5d6eab55bee31"
+  },
+  {
+   "path": "src/triagebot/github-releases.md",
+   "bytes": 1752,
+   "sha256": "bc6175d4a3973fa80b2fc8d66c00bcfa88b14fd5162bd28af4a93570cbfacf8f"
+  },
+  {
+   "path": "src/triagebot/index.md",
+   "bytes": 5190,
+   "sha256": "e6f086bd8116b5f0595a93b93ebf675401e3dbfb4de45c9be4bc3e2d6375bc7b"
+  },
+  {
+   "path": "src/triagebot/issue-assignment.md",
+   "bytes": 1409,
+   "sha256": "b6c97c9952a133ea24ec2e25a3e40671e5acc5247abd800c398fc340c1e1c82b"
+  },
+  {
+   "path": "src/triagebot/issue-links.md",
+   "bytes": 1770,
+   "sha256": "aa01ec409762db720f41dc063e90f3e30718db728a62d18592a6c4bbd2bd358d"
+  },
+  {
+   "path": "src/triagebot/labeling.md",
+   "bytes": 4316,
+   "sha256": "6f1a8f5b385091eefb3ff5f832a67d426445dc57376f8bb38caa2292585e6116"
+  },
+  {
+   "path": "src/triagebot/large-pull-requests.md",
+   "bytes": 1083,
+   "sha256": "3814594d720ed338acf2e1066dc427b0ccb2ffe70e8de60e099d7d1ab63167a7"
+  },
+  {
+   "path": "src/triagebot/lock.md",
+   "bytes": 1050,
+   "sha256": "83ffc6f33d457af7f2699e20b25bb25809582e0fd805cc907c1c9a8f546eb262"
+  },
+  {
+   "path": "src/triagebot/major-changes.md",
+   "bytes": 3519,
+   "sha256": "c5ca1436ab69bc94dd35d3b9bd4f2f4a1e6a3af208910135b90a343f61c8ae28"
+  },
+  {
+   "path": "src/triagebot/mentions.md",
+   "bytes": 2865,
+   "sha256": "30010e5e1c8049df24d975e355efd3280e0775fb4e95542715d491f0c45cc491"
+  },
+  {
+   "path": "src/triagebot/merge-conflicts.md",
+   "bytes": 1788,
+   "sha256": "36c4fd0d0e91ef3ec5d0c5ebdaee4ff174d28c7f1e722c88f9bf4f96f17288f5"
+  },
+  {
+   "path": "src/triagebot/merge.md",
+   "bytes": 1639,
+   "sha256": "7eaa473c07b1ed4c222266865dcd91b6751bfa0b508627c3d708c97133d77c0e"
+  },
+  {
+   "path": "src/triagebot/no-merge.md",
+   "bytes": 2233,
+   "sha256": "067bb0adca2c9384abe509960d8afe44ecddbc5b4fba052f027fcdd4e2bc970a"
+  },
+  {
+   "path": "src/triagebot/nominate.md",
+   "bytes": 1741,
+   "sha256": "67c22b73dba0a8c125e7a7c8a2a8fba0156c62629edb342293b7bace548df6c9"
+  },
+  {
+   "path": "src/triagebot/note.md",
+   "bytes": 1894,
+   "sha256": "d06720981d43bdde2dab31a899fd946a7d5eff5e44a92799aead6086cbf1c4fa"
+  },
+  {
+   "path": "src/triagebot/pinging.md",
+   "bytes": 2737,
+   "sha256": "f47b89978507822033871bf882c42e6a809a6ba6768ccc242ad03da02cd39f49"
+  },
+  {
+   "path": "src/triagebot/pr-assignment.md",
+   "bytes": 7742,
+   "sha256": "e33053ac5512cbba3b28064118165c543d01af8f4279966b5ce2ee94370f8fcf"
+  },
+  {
+   "path": "src/triagebot/range-diff.md",
+   "bytes": 873,
+   "sha256": "8230a29c645f8521e7e0606845643e33f0de72cdd6078cf419bd5e2e4fbbde72"
+  },
+  {
+   "path": "src/triagebot/rendered-link.md",
+   "bytes": 707,
+   "sha256": "9b2b3e439c5a25530a015786d29cfa83e508bc06f0c74b3afc20912a034262ea"
+  },
+  {
+   "path": "src/triagebot/requesting-prioritization.md",
+   "bytes": 1667,
+   "sha256": "9cf1e94542e317eeeb7159b5d4430d4876da68c2e9046716cf56d315a56f3a1a"
+  },
+  {
+   "path": "src/triagebot/review-changes-since.md",
+   "bytes": 802,
+   "sha256": "2920efbcf761792400e9934bdda2c650be75d01885e3945f0a1eacd8c2322ec8"
+  },
+  {
+   "path": "src/triagebot/review-queue-tracking.md",
+   "bytes": 4201,
+   "sha256": "89b71311c647d3c82c92d3bf1d35246d9573a449b1965e695016007f1fdbd338"
+  },
+  {
+   "path": "src/triagebot/review-requested.md",
+   "bytes": 905,
+   "sha256": "9fbe44ff7be753b30205fc2055891e0b4b187c2744d3d547f5e8252ad6625af8"
+  },
+  {
+   "path": "src/triagebot/review-submitted.md",
+   "bytes": 1009,
+   "sha256": "b40eb0a75556827967cc4ccceaf932cbc5e2cf8ba9ef620bbbdcd51e369c7cf0"
+  },
+  {
+   "path": "src/triagebot/rustc-commit-list.md",
+   "bytes": 746,
+   "sha256": "d73aa5506405dbe3053a1ca6d30bb748c9bd78946da87d204d00d1a24992134d"
+  },
+  {
+   "path": "src/triagebot/shortcuts.md",
+   "bytes": 1253,
+   "sha256": "eaf1319cc7f5aef86db80dcc38b68ba751b216097711a9c3534f6666fcc74d0f"
+  },
+  {
+   "path": "src/triagebot/transfer.md",
+   "bytes": 1823,
+   "sha256": "4723a09d5b5b47f7fca484022395c45551adbfb5516135a87ab7842a3e85f3c4"
+  },
+  {
+   "path": "src/triagebot/triage-dashboard.md",
+   "bytes": 469,
+   "sha256": "73444900d78406b26a198a0a1672530b248bf61ca542db6cda78f1530531add3"
+  },
+  {
+   "path": "src/triagebot/view-all-comments-link.md",
+   "bytes": 1028,
+   "sha256": "ba2ec8df33288bdbdf7c683177a0fb09ce0142db810e40b2ed26b240be4efdf6"
+  },
+  {
+   "path": "src/triagebot/zulip-commands.md",
+   "bytes": 3898,
+   "sha256": "42b0aff6c225ff2ff657f9001eba676c7bfb3fcc0f7662ad3ab266c979b94581"
+  },
+  {
+   "path": "src/triagebot/zulip-meeting.md",
+   "bytes": 1958,
+   "sha256": "c130e3650cbfc0b6b4b8aaa00fea7d26c20a28294ed4649691c78de24ca1f207"
+  },
+  {
+   "path": "src/triagebot/zulip-notifications.md",
+   "bytes": 3437,
+   "sha256": "58eb1adefe4bc47e9a021d79f307dcdc4f3a26946c2df202401a7dc107ab0980"
+  }
+ ]
+}

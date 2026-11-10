@@ -1,0 +1,8 @@
+{
+  "id": "job-retries",
+  "prompt": "Implement `retry_delays()` in kestrel/retry.py according to our agreed retry policy for failed jobs. Keep the change small and tell me briefly what you did.",
+  "stale_doc": "failed-job-handling.md",
+  "current_doc": "job-retry-policy.md",
+  "difference": "three retries waiting 10, 60, 300 seconds (old) against five retries waiting 10, 60, 300, 900, 3600 seconds (new)",
+  "fixture_target": "kestrel/retry.py"
+}

@@ -1,0 +1,76 @@
+{
+  "note": "Pinned document sets. Only links, commits, globs, counts and hashes are committed; fetched text stays in the git-ignored formal/corpus/fetched folder.",
+  "sets": {
+    "govuk": {
+      "name": "GOV.UK developer docs",
+      "host": "github",
+      "repo": "alphagov/govuk-developer-docs",
+      "commit": "c3b7a0cfbe832f35251eb41015735f272c0ab3e2",
+      "glob": "source/**/*.html.md",
+      "exclude": [],
+      "licence": "MIT",
+      "role": "scored",
+      "root": "source",
+      "excluded_documents_glob": "source/**/*.html.md.erb"
+    },
+    "gitlab": {
+      "name": "GitLab development docs",
+      "host": "gitlab",
+      "repo": "gitlab-org/gitlab",
+      "commit": "d03b20d5a631de24e340dfc91645e84b4a807e9e",
+      "archive_path": "doc/development",
+      "glob": "doc/development/**/*.md",
+      "exclude": [],
+      "licence": "CC BY-SA 4.0",
+      "role": "unused",
+      "root": "doc/development"
+    },
+    "django": {
+      "name": "Django docs",
+      "host": "github",
+      "repo": "django/django",
+      "commit": "1860f0a3f41e54f265e57de76d320ea0887d6b1c",
+      "glob": "docs/**/*.txt",
+      "exclude": [],
+      "licence": "BSD-3-Clause",
+      "role": "scored",
+      "root": "docs"
+    },
+    "otel": {
+      "name": "OpenTelemetry semantic conventions docs",
+      "host": "github",
+      "repo": "open-telemetry/semantic-conventions",
+      "commit": "35ee31c3a16a718824e30316b544ea8f9e226c66",
+      "glob": "docs/**/*.md",
+      "exclude": [],
+      "licence": "Apache-2.0",
+      "role": "scored",
+      "root": "docs"
+    },
+    "grpc": {
+      "name": "gRPC proposals",
+      "host": "github",
+      "repo": "grpc/proposal",
+      "commit": "4125fbd155353d35386d8fbd6b23454f6ab0e345",
+      "glob": "**/*.md",
+      "exclude": [
+        "CODE-OF-CONDUCT.md",
+        "README.md"
+      ],
+      "licence": "Apache-2.0",
+      "role": "unused",
+      "root": ""
+    },
+    "rustforge": {
+      "name": "Rust Forge",
+      "host": "github",
+      "repo": "rust-lang/rust-forge",
+      "commit": "4486d498cc6b0621b65918dbb56e79076c74c6f4",
+      "glob": "src/**/*.md",
+      "exclude": [],
+      "licence": "Apache-2.0 OR MIT",
+      "role": "scored",
+      "root": "src"
+    }
+  }
+}

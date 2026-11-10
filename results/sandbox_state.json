@@ -1,0 +1,1551 @@
+{
+  "memforge_commit": "ab35f5066a752893ea0b2f66fc5e69d1ba09a9a9",
+  "models": {
+    "generation": {
+      "provider": "openai_compatible",
+      "model_id": "gpt-6-luna",
+      "state": "ready"
+    },
+    "embedding": {
+      "provider": "openrouter",
+      "model_id": "openai/text-embedding-3-small",
+      "state": "ready"
+    }
+  },
+  "sources": [
+    {
+      "id": "src-f9623428",
+      "name": "Team docs",
+      "type": "local_markdown",
+      "doc_count": 6,
+      "memory_count": 10,
+      "sync": {
+        "status": "success",
+        "started_at": "2026-11-04T10:13:45.267678+00:00",
+        "finished_at": "2026-11-04T10:14:21.655716+00:00",
+        "error_message": null,
+        "progress": {
+          "schema_version": 1,
+          "phase": "processing",
+          "progress": {
+            "completed": 6,
+            "unit": "file"
+          },
+          "counts": {
+            "changed": 6,
+            "failed": 0,
+            "memories_created": 10
+          }
+        },
+        "run_id": "ssr-0a3e631667ee40e389bd6814aa4da31e",
+        "docs_processed": 6,
+        "docs_updated": 6,
+        "docs_failed": 0,
+        "memories_extracted": 10,
+        "failed_docs": [],
+        "absence_check_skipped_reason": null,
+        "unlisted_present_count": null,
+        "skipped_reading_group_count": 0
+      }
+    }
+  ],
+  "relation_work": {
+    "completed": 10
+  },
+  "model_usage": {
+    "gpt-6-luna": {
+      "calls": 27,
+      "prompt_tokens": 49754,
+      "completion_tokens": 3928,
+      "unreported_calls": 0,
+      "operations": {
+        "capability_check": 1,
+        "image_reading": 1,
+        "projection_fragment_memory_extraction": 6,
+        "candidate_admission": 6,
+        "entity_batch_validation": 3,
+        "cross_document_relation": 10
+      }
+    }
+  },
+  "memories": [
+    {
+      "id": "mem-fb999b040c831555",
+      "memory_type": "procedure",
+      "content": "The queue database’s fsync was restored, and a startup check was added that refuses to run with fsync off. The on-call engineer is paged when no job has started for five minutes.",
+      "content_hash": "def83d4a3cf8674a7ccab56cb14e5cadb56a1dd3658c66d30dcaebe3fcab7186",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:20.112434+00:00",
+      "updated_at": "2026-11-04T10:14:20.112434+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel queue"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-27748c7f092c88f32ee3c413802232b0",
+          "support_ids": [
+            "support-v2-cd30df55afc25854018d"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-11b9ac17bbc0811a8f16a660",
+          "source_unit_revision_id": "unitrev-c858d58901f09ad569b5de7f",
+          "doc_id": "local-md-src-f9623428-queue-stall-review-md-e833810a20d2",
+          "document": {
+            "doc_id": "local-md-src-f9623428-queue-stall-review-md-e833810a20d2",
+            "title": "Incident review: the Kestrel queue stalled on 2026-09-12",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/queue-stall-review.md",
+            "content_url": "/api/v1/source-units/unit-11b9ac17bbc0811a8f16a660/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-09-20T16:20:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-db5dedf77cb8c3f4f033",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-6fcc6c28cab71c00f35ef133",
+              "observation_revision_id": "obsrev-434be8683d817f6328e073dd",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 276,
+              "range_end": 431,
+              "excerpt": "We restored fsync and added a startup check that refuses to run with fsync off.\nWe also page the on-call engineer when no job has started for five minutes.",
+              "raw_content_sha256": "85fb63027b19a896a5809e2ff9f0f30bb45631bd250fd44db8e4f65a8004048b",
+              "text": "We restored fsync and added a startup check that refuses to run with fsync off. We also page the on-call engineer when no job has started for five minutes.",
+              "presentation_sha256": "85fb63027b19a896a5809e2ff9f0f30bb45631bd250fd44db8e4f65a8004048b",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-fb999b040c831555/evidence/eu-v2-27748c7f092c88f32ee3c413802232b0/references/eref-db5dedf77cb8c3f4f033/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-fb999b040c831555/evidence/eu-v2-27748c7f092c88f32ee3c413802232b0/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-def971511defef85",
+      "memory_type": "fact",
+      "content": "In the Kestrel queue incident, a configuration change turned fsync off on the queue database. A crash then left the WAL file corrupt, and every worker waited on a lock that was never released.",
+      "content_hash": "d9fb3fb22c026a6b27cd731bfaab6a317cd13d9ebec15c7de85872c7d7bb98ef",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:20.110758+00:00",
+      "updated_at": "2026-11-04T10:14:20.110758+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "equivalent",
+          "role": "peer",
+          "counterpart": {
+            "memory_id": "mem-ec425bba3816f1bf",
+            "summary": "A configuration change that turned fsync off on the queue database caused a crash to leave the WAL file corrupt, after which every worker waited on a lock that was never released.",
+            "content_hash": "a22c8bcc827864b73e2e0cebfd75a2c2afeaa1447b249deda32d4f512e8dae36",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-10-14T10:00:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel queue"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-66e2a1ea0feaa5f2178a44b51721d36f",
+          "support_ids": [
+            "support-v2-7aa2eb2e1db27e2b7f6b"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-11b9ac17bbc0811a8f16a660",
+          "source_unit_revision_id": "unitrev-c858d58901f09ad569b5de7f",
+          "doc_id": "local-md-src-f9623428-queue-stall-review-md-e833810a20d2",
+          "document": {
+            "doc_id": "local-md-src-f9623428-queue-stall-review-md-e833810a20d2",
+            "title": "Incident review: the Kestrel queue stalled on 2026-09-12",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/queue-stall-review.md",
+            "content_url": "/api/v1/source-units/unit-11b9ac17bbc0811a8f16a660/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-09-20T16:20:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-cbf3dcacb30684aad30e",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-6fcc6c28cab71c00f35ef133",
+              "observation_revision_id": "obsrev-434be8683d817f6328e073dd",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 60,
+              "range_end": 274,
+              "excerpt": "For 40 minutes no job was picked up. The cause was a configuration change that\nturned fsync off on the queue database, so a crash left the WAL file corrupt\nand every worker waited on a lock that was never released.",
+              "raw_content_sha256": "9376af40b7b20acbc5191bccffca4764d1918c7deac227f918c19f4f00f50410",
+              "text": "For 40 minutes no job was picked up. The cause was a configuration change that turned fsync off on the queue database, so a crash left the WAL file corrupt and every worker waited on a lock that was never released.",
+              "presentation_sha256": "9376af40b7b20acbc5191bccffca4764d1918c7deac227f918c19f4f00f50410",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-def971511defef85/evidence/eu-v2-66e2a1ea0feaa5f2178a44b51721d36f/references/eref-cbf3dcacb30684aad30e/resource"
+            },
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-30bb007b53b219f402af",
+              "role": "required",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-6fcc6c28cab71c00f35ef133",
+              "observation_revision_id": "obsrev-434be8683d817f6328e073dd",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 0,
+              "range_end": 58,
+              "excerpt": "# Incident review: the Kestrel queue stalled on 2026-09-12",
+              "raw_content_sha256": "9be3de1bba69d20189626932137e40df08e4f033d6f2903db43a89952ce89f1c",
+              "text": "Incident review: the Kestrel queue stalled on 2026-09-12",
+              "presentation_sha256": "9be3de1bba69d20189626932137e40df08e4f033d6f2903db43a89952ce89f1c",
+              "text_view": {
+                "kind": "markdown-heading",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-def971511defef85/evidence/eu-v2-66e2a1ea0feaa5f2178a44b51721d36f/references/eref-30bb007b53b219f402af/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-def971511defef85/evidence/eu-v2-66e2a1ea0feaa5f2178a44b51721d36f/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-14c82a23b103bca7",
+      "memory_type": "decision",
+      "content": "The fix was to restore fsync and add a startup check that refuses to run with fsync off.",
+      "content_hash": "c463a41d46794d20e335c7a6b120cade6cf32fd79bb604693902af9e015e6359",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:14.363381+00:00",
+      "updated_at": "2026-11-04T10:14:14.363381+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [],
+      "open_review_id": null,
+      "entity_refs": [],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-8ea30f3cc5191d9f79bac2ac9dd7958e",
+          "support_ids": [
+            "support-v2-354b0bf56e9e204ff2fc"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-8c99b75dd4b6ef0d63da7097",
+          "source_unit_revision_id": "unitrev-b34a1f0dbcc3d5fabba259ed",
+          "doc_id": "local-md-src-f9623428-stall-postmortem-md-002777e71571",
+          "document": {
+            "doc_id": "local-md-src-f9623428-stall-postmortem-md-002777e71571",
+            "title": "Incident review: the Kestrel queue stalled on 2026-09-12",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/stall-postmortem.md",
+            "content_url": "/api/v1/source-units/unit-8c99b75dd4b6ef0d63da7097/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-10-14T10:00:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-8b904c036c113f397df2",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-c5857968d7932f83566764c0",
+              "observation_revision_id": "obsrev-2fae40130752d3da82c58bf0",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 277,
+              "range_end": 356,
+              "excerpt": "We restored fsync and added a startup check that refuses to run with fsync off.",
+              "raw_content_sha256": "525f891b30550531a82430b82702e0844113900bcb5a108bcb53cf842cf1efce",
+              "text": "We restored fsync and added a startup check that refuses to run with fsync off.",
+              "presentation_sha256": "525f891b30550531a82430b82702e0844113900bcb5a108bcb53cf842cf1efce",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-14c82a23b103bca7/evidence/eu-v2-8ea30f3cc5191d9f79bac2ac9dd7958e/references/eref-8b904c036c113f397df2/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-14c82a23b103bca7/evidence/eu-v2-8ea30f3cc5191d9f79bac2ac9dd7958e/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-ec425bba3816f1bf",
+      "memory_type": "fact",
+      "content": "A configuration change that turned fsync off on the queue database caused a crash to leave the WAL file corrupt, after which every worker waited on a lock that was never released.",
+      "content_hash": "a22c8bcc827864b73e2e0cebfd75a2c2afeaa1447b249deda32d4f512e8dae36",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:14.360682+00:00",
+      "updated_at": "2026-11-04T10:14:14.360682+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "equivalent",
+          "role": "peer",
+          "counterpart": {
+            "memory_id": "mem-def971511defef85",
+            "summary": "In the Kestrel queue incident, a configuration change turned fsync off on the queue database. A crash then left the WAL file corrupt, and every worker waited on a lock that was never released.",
+            "content_hash": "d9fb3fb22c026a6b27cd731bfaab6a317cd13d9ebec15c7de85872c7d7bb98ef",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-09-20T16:20:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-46e2287d46ff8dfa80965bdf948531dc",
+          "support_ids": [
+            "support-v2-42b16e966f98dc1fe279"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-8c99b75dd4b6ef0d63da7097",
+          "source_unit_revision_id": "unitrev-b34a1f0dbcc3d5fabba259ed",
+          "doc_id": "local-md-src-f9623428-stall-postmortem-md-002777e71571",
+          "document": {
+            "doc_id": "local-md-src-f9623428-stall-postmortem-md-002777e71571",
+            "title": "Incident review: the Kestrel queue stalled on 2026-09-12",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/stall-postmortem.md",
+            "content_url": "/api/v1/source-units/unit-8c99b75dd4b6ef0d63da7097/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-10-14T10:00:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-a00a187a6ee8f1680203",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-c5857968d7932f83566764c0",
+              "observation_revision_id": "obsrev-2fae40130752d3da82c58bf0",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 98,
+              "range_end": 275,
+              "excerpt": "The cause was a configuration change that turned fsync off on the queue\ndatabase, so a crash left the WAL file corrupt and every worker waited on a\nlock that was never released.",
+              "raw_content_sha256": "a6cde974bcfb8f66c7370014afa0846ddf5c644d12dac7c4a149468084a3dd85",
+              "text": "The cause was a configuration change that turned fsync off on the queue database, so a crash left the WAL file corrupt and every worker waited on a lock that was never released.",
+              "presentation_sha256": "a6cde974bcfb8f66c7370014afa0846ddf5c644d12dac7c4a149468084a3dd85",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-ec425bba3816f1bf/evidence/eu-v2-46e2287d46ff8dfa80965bdf948531dc/references/eref-a00a187a6ee8f1680203/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-ec425bba3816f1bf/evidence/eu-v2-46e2287d46ff8dfa80965bdf948531dc/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-3de3674ef8eeaeda",
+      "memory_type": "procedure",
+      "content": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+      "content_hash": "f0c49c051ed4a25a21c39ea8104075bc8b90cc67388545c9ef42b79b93da3cd6",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:11.375660+00:00",
+      "updated_at": "2026-11-04T10:14:11.375660+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "updates",
+          "role": "newer",
+          "counterpart": {
+            "memory_id": "mem-34ba6e6ce720ce28",
+            "summary": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues or deletes it.",
+            "content_hash": "6910101ea0ef9b089534010908a17825d8ab39553b73ea99574185bc14f14d38",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-07-08T09:30:00+00:00"
+          },
+          "decided_by": "classifier"
+        },
+        {
+          "label": "updates",
+          "role": "newer",
+          "counterpart": {
+            "memory_id": "mem-3f28f39ee0d17ef0",
+            "summary": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and 300 seconds between attempts.",
+            "content_hash": "ce6cba7a714708c92e0e457ebb3ba3c24938fc641986920f0f9e1d06acf7b7ae",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-07-08T09:30:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel",
+        "kestrel dlq"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-8978cafb7c35f1ee4ba06fc81ee6f63e",
+          "support_ids": [
+            "support-v2-445fe401f70fc9fed199"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-a10f906a9edd02f5131340ec",
+          "source_unit_revision_id": "unitrev-ee62150b62fdf9db50207cf2",
+          "doc_id": "local-md-src-f9623428-job-retry-policy-md-2fdb1d1a205b",
+          "document": {
+            "doc_id": "local-md-src-f9623428-job-retry-policy-md-2fdb1d1a205b",
+            "title": "Decision: Kestrel retries a failed job five times",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/job-retry-policy.md",
+            "content_url": "/api/v1/source-units/unit-a10f906a9edd02f5131340ec/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-10-02T14:10:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-fa0d6bf995869121fcd2",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-868087e263ff33749ef713d9",
+              "observation_revision_id": "obsrev-78805798d85c354d8b517adf",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 53,
+              "range_end": 170,
+              "excerpt": "A Kestrel job that raises an error is retried five times, waiting 10, 60, 300,\n900 and 3600 seconds between attempts.",
+              "raw_content_sha256": "253b620ff512dbcd43020c40c1a8dc6d30a200418e09db3f8b072a7233978285",
+              "text": "A Kestrel job that raises an error is retried five times, waiting 10, 60, 300, 900 and 3600 seconds between attempts.",
+              "presentation_sha256": "253b620ff512dbcd43020c40c1a8dc6d30a200418e09db3f8b072a7233978285",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-3de3674ef8eeaeda/evidence/eu-v2-8978cafb7c35f1ee4ba06fc81ee6f63e/references/eref-fa0d6bf995869121fcd2/resource"
+            },
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-7e06bffefb7ccb643edf",
+              "role": "required",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-868087e263ff33749ef713d9",
+              "observation_revision_id": "obsrev-78805798d85c354d8b517adf",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 172,
+              "range_end": 328,
+              "excerpt": "After its last retry fails, the job moves to the kestrel-dlq queue, where it\nstays until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+              "raw_content_sha256": "f8e27dd4c55eefdd5f048fce944ae2b2dc7a6e7d3952d60b528c6082f20d3ef2",
+              "text": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+              "presentation_sha256": "f8e27dd4c55eefdd5f048fce944ae2b2dc7a6e7d3952d60b528c6082f20d3ef2",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-3de3674ef8eeaeda/evidence/eu-v2-8978cafb7c35f1ee4ba06fc81ee6f63e/references/eref-7e06bffefb7ccb643edf/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-3de3674ef8eeaeda/evidence/eu-v2-8978cafb7c35f1ee4ba06fc81ee6f63e/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-4deefaf23625ad4e",
+      "memory_type": "decision",
+      "content": "Kestrel uses a short, fixed retry schedule instead of exponential backoff so that an operator can tell from the clock alone when a job will run again.",
+      "content_hash": "36c863e480257bc885a36b50a0832fdda73e28fd2c0d8f45fb54c03f6f87d14f",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:04.421130+00:00",
+      "updated_at": "2026-11-04T10:14:04.421130+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-4a6ef069276b144d7991c2d416a4a3f8",
+          "support_ids": [
+            "support-v2-321faa1dfc808a37a273"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-3475fb5bb581ba58da682a5e",
+          "source_unit_revision_id": "unitrev-79f095c6c39c6d55da23baf6",
+          "doc_id": "local-md-src-f9623428-failed-job-handling-md-73841ab2b54d",
+          "document": {
+            "doc_id": "local-md-src-f9623428-failed-job-handling-md-73841ab2b54d",
+            "title": "Decision: Kestrel retries a failed job three times",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/failed-job-handling.md",
+            "content_url": "/api/v1/source-units/unit-3475fb5bb581ba58da682a5e/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-07-08T09:30:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-7a8fd9257305bca57298",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-04eac17b7862459d7100f2f0",
+              "observation_revision_id": "obsrev-91deffcf45548c654873a81b",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 289,
+              "range_end": 423,
+              "excerpt": "We chose a short, fixed schedule over exponential backoff so that an operator\ncan tell from the clock alone when a job will run again.",
+              "raw_content_sha256": "c42b100fa14280cdd6f1990cddfe0369ae2fadb489fee0ebe63b6e213395feff",
+              "text": "We chose a short, fixed schedule over exponential backoff so that an operator can tell from the clock alone when a job will run again.",
+              "presentation_sha256": "c42b100fa14280cdd6f1990cddfe0369ae2fadb489fee0ebe63b6e213395feff",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-4deefaf23625ad4e/evidence/eu-v2-4a6ef069276b144d7991c2d416a4a3f8/references/eref-7a8fd9257305bca57298/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-4deefaf23625ad4e/evidence/eu-v2-4a6ef069276b144d7991c2d416a4a3f8/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-34ba6e6ce720ce28",
+      "memory_type": "fact",
+      "content": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues or deletes it.",
+      "content_hash": "6910101ea0ef9b089534010908a17825d8ab39553b73ea99574185bc14f14d38",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:04.419961+00:00",
+      "updated_at": "2026-11-04T10:14:04.419961+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "updates",
+          "role": "older",
+          "counterpart": {
+            "memory_id": "mem-3de3674ef8eeaeda",
+            "summary": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+            "content_hash": "f0c49c051ed4a25a21c39ea8104075bc8b90cc67388545c9ef42b79b93da3cd6",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-10-02T14:10:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel",
+        "kestrel dlq"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-1fe7e9a510ee252a82c5b04d5f3f2c96",
+          "support_ids": [
+            "support-v2-52240c7cec6a1c874928"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-3475fb5bb581ba58da682a5e",
+          "source_unit_revision_id": "unitrev-79f095c6c39c6d55da23baf6",
+          "doc_id": "local-md-src-f9623428-failed-job-handling-md-73841ab2b54d",
+          "document": {
+            "doc_id": "local-md-src-f9623428-failed-job-handling-md-73841ab2b54d",
+            "title": "Decision: Kestrel retries a failed job three times",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/failed-job-handling.md",
+            "content_url": "/api/v1/source-units/unit-3475fb5bb581ba58da682a5e/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-07-08T09:30:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-4efd2273966737b83147",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-04eac17b7862459d7100f2f0",
+              "observation_revision_id": "obsrev-91deffcf45548c654873a81b",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 163,
+              "range_end": 287,
+              "excerpt": "After its last retry fails, the job moves to the kestrel-dlq queue, where it\nstays until an operator requeues or deletes it.",
+              "raw_content_sha256": "3ce5568d79df13c7a67a1513a991d377a73bf2bf05a557451065f27751b63f2f",
+              "text": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues or deletes it.",
+              "presentation_sha256": "3ce5568d79df13c7a67a1513a991d377a73bf2bf05a557451065f27751b63f2f",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-34ba6e6ce720ce28/evidence/eu-v2-1fe7e9a510ee252a82c5b04d5f3f2c96/references/eref-4efd2273966737b83147/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-34ba6e6ce720ce28/evidence/eu-v2-1fe7e9a510ee252a82c5b04d5f3f2c96/resource"
+        }
+      ],
+      "relation_notice": "Updated by the newer Memory mem-3de3674ef8eeaeda from Team docs (recorded 2026-10-02T14:10:00+00:00).",
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-3f28f39ee0d17ef0",
+      "memory_type": "procedure",
+      "content": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and 300 seconds between attempts.",
+      "content_hash": "ce6cba7a714708c92e0e457ebb3ba3c24938fc641986920f0f9e1d06acf7b7ae",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:14:04.418660+00:00",
+      "updated_at": "2026-11-04T10:14:04.418660+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "updates",
+          "role": "older",
+          "counterpart": {
+            "memory_id": "mem-3de3674ef8eeaeda",
+            "summary": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+            "content_hash": "f0c49c051ed4a25a21c39ea8104075bc8b90cc67388545c9ef42b79b93da3cd6",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-10-02T14:10:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-4124af95c8dfc3138c485e1ef3eb5931",
+          "support_ids": [
+            "support-v2-23400b7699bf2a4eca3c"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-3475fb5bb581ba58da682a5e",
+          "source_unit_revision_id": "unitrev-79f095c6c39c6d55da23baf6",
+          "doc_id": "local-md-src-f9623428-failed-job-handling-md-73841ab2b54d",
+          "document": {
+            "doc_id": "local-md-src-f9623428-failed-job-handling-md-73841ab2b54d",
+            "title": "Decision: Kestrel retries a failed job three times",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/failed-job-handling.md",
+            "content_url": "/api/v1/source-units/unit-3475fb5bb581ba58da682a5e/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-07-08T09:30:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-50de00d668983154fc5a",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-04eac17b7862459d7100f2f0",
+              "observation_revision_id": "obsrev-91deffcf45548c654873a81b",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 54,
+              "range_end": 161,
+              "excerpt": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and\n300 seconds between attempts.",
+              "raw_content_sha256": "8223e0c88097f17097177b5ed5d03615cbf117a377892ee7921189630d52399d",
+              "text": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and 300 seconds between attempts.",
+              "presentation_sha256": "8223e0c88097f17097177b5ed5d03615cbf117a377892ee7921189630d52399d",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-3f28f39ee0d17ef0/evidence/eu-v2-4124af95c8dfc3138c485e1ef3eb5931/references/eref-50de00d668983154fc5a/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-3f28f39ee0d17ef0/evidence/eu-v2-4124af95c8dfc3138c485e1ef3eb5931/resource"
+        }
+      ],
+      "relation_notice": "Updated by the newer Memory mem-3de3674ef8eeaeda from Team docs (recorded 2026-10-02T14:10:00+00:00).",
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-58efb2d8d1771ed1",
+      "memory_type": "decision",
+      "content": "Kestrel 任务连续失败三次后，失败告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件；值班同学需要在 15 分钟内确认告警。放弃邮件告警是因为邮件容易被其他通知淹没，也无法统计确认时间。",
+      "content_hash": "a4e9c4b57fc6495af45de0a97a22220d43981a4d57213469e62ac6e9dcd73189",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:13:59.357594+00:00",
+      "updated_at": "2026-11-04T10:13:59.357594+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "updates",
+          "role": "older",
+          "counterpart": {
+            "memory_id": "mem-fa68d6cb1d59f9bf",
+            "summary": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道；值班同学收到告警后必须在 10 分钟内确认。不再发送邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。",
+            "content_hash": "9231abea8eee7b6deb8799e51e39b425e13754648ff9ec442d9a56546be64e42",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-10-09T11:45:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel",
+        "slack",
+        "#kestrel oncall"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-da9fa47bee75bc2ec757cdaabb999c71",
+          "support_ids": [
+            "support-v2-a3bd0abcf69759a9a4a8"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-d03175ccb966b47b44d14cad",
+          "source_unit_revision_id": "unitrev-3a0c7204ea0b41daa1258240",
+          "doc_id": "local-md-src-f9623428-failure-alerts-md-c6364e96f01d",
+          "document": {
+            "doc_id": "local-md-src-f9623428-failure-alerts-md-c6364e96f01d",
+            "title": "决定：Kestrel 的失败告警只发到 #kestrel-oncall",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/failure-alerts.md",
+            "content_url": "/api/v1/source-units/unit-d03175ccb966b47b44d14cad/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-08-11T08:05:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-5fa87d53df3a4a610e6a",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-74035091505828b3aabc7d1f",
+              "observation_revision_id": "obsrev-6d1d5aab16945c20b1834643",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 39,
+              "range_end": 97,
+              "excerpt": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件。",
+              "raw_content_sha256": "1524eee9897f7c54cb7dbbb87cde55ddf96f9a319954a32683078b22ab7adbb3",
+              "text": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件。",
+              "presentation_sha256": "1524eee9897f7c54cb7dbbb87cde55ddf96f9a319954a32683078b22ab7adbb3",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-58efb2d8d1771ed1/evidence/eu-v2-da9fa47bee75bc2ec757cdaabb999c71/references/eref-5fa87d53df3a4a610e6a/resource"
+            },
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-d13a187fe8524ae50682",
+              "role": "required",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-74035091505828b3aabc7d1f",
+              "observation_revision_id": "obsrev-6d1d5aab16945c20b1834643",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 99,
+              "range_end": 118,
+              "excerpt": "值班同学需要在 15 分钟内确认告警。",
+              "raw_content_sha256": "595eeb239dd1d7b9605f8df423c2e7832bc08b24e54bee0f7b3c1f6035d741f8",
+              "text": "值班同学需要在 15 分钟内确认告警。",
+              "presentation_sha256": "595eeb239dd1d7b9605f8df423c2e7832bc08b24e54bee0f7b3c1f6035d741f8",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-58efb2d8d1771ed1/evidence/eu-v2-da9fa47bee75bc2ec757cdaabb999c71/references/eref-d13a187fe8524ae50682/resource"
+            },
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-bc3c23cf68511c0349e6",
+              "role": "required",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-74035091505828b3aabc7d1f",
+              "observation_revision_id": "obsrev-6d1d5aab16945c20b1834643",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 120,
+              "range_end": 154,
+              "excerpt": "我们放弃了邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。",
+              "raw_content_sha256": "99b46bede52d3d017d281a0bae5d0a3c354541e44ce9e78ce2bb2be4ec499472",
+              "text": "我们放弃了邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。",
+              "presentation_sha256": "99b46bede52d3d017d281a0bae5d0a3c354541e44ce9e78ce2bb2be4ec499472",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-58efb2d8d1771ed1/evidence/eu-v2-da9fa47bee75bc2ec757cdaabb999c71/references/eref-bc3c23cf68511c0349e6/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-58efb2d8d1771ed1/evidence/eu-v2-da9fa47bee75bc2ec757cdaabb999c71/resource"
+        }
+      ],
+      "relation_notice": "Updated by the newer Memory mem-fa68d6cb1d59f9bf from Team docs (recorded 2026-10-09T11:45:00+00:00).",
+      "dismissed_relations": [],
+      "source_backed": true
+    },
+    {
+      "id": "mem-fa68d6cb1d59f9bf",
+      "memory_type": "decision",
+      "content": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道；值班同学收到告警后必须在 10 分钟内确认。不再发送邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。",
+      "content_hash": "9231abea8eee7b6deb8799e51e39b425e13754648ff9ec442d9a56546be64e42",
+      "visibility": "private",
+      "owner_user_id": "dev",
+      "project_key": "UNSORTED",
+      "corroboration_count": 1,
+      "valid_from": null,
+      "valid_until": null,
+      "superseded_by": null,
+      "status": "active",
+      "retirement_reason": null,
+      "retired_at": null,
+      "superseded_at": null,
+      "replacement_reason": null,
+      "replacement_kind": null,
+      "created_at": "2026-11-04T10:13:58.183206+00:00",
+      "updated_at": "2026-11-04T10:13:58.183206+00:00",
+      "origin_source_type": "local_markdown",
+      "origin_client": null,
+      "sources": [
+        {
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "name": "Team docs"
+        }
+      ],
+      "relations": [
+        {
+          "label": "updates",
+          "role": "newer",
+          "counterpart": {
+            "memory_id": "mem-58efb2d8d1771ed1",
+            "summary": "Kestrel 任务连续失败三次后，失败告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件；值班同学需要在 15 分钟内确认告警。放弃邮件告警是因为邮件容易被其他通知淹没，也无法统计确认时间。",
+            "content_hash": "a4e9c4b57fc6495af45de0a97a22220d43981a4d57213469e62ac6e9dcd73189",
+            "sources": [
+              {
+                "source_id": "src-f9623428",
+                "source_type": "local_markdown",
+                "name": "Team docs"
+              }
+            ],
+            "evidence_time": "2026-08-11T08:05:00+00:00"
+          },
+          "decided_by": "classifier"
+        }
+      ],
+      "open_review_id": null,
+      "entity_refs": [
+        "kestrel",
+        "slack",
+        "#kestrel oncall"
+      ],
+      "evidence": [
+        {
+          "kind": "evidence_unit",
+          "evidence_unit_id": "eu-v2-102a4ee41006a13900b90bb4c3adf41d",
+          "support_ids": [
+            "support-v2-565aff3b6d8a2e8363da"
+          ],
+          "source_id": "src-f9623428",
+          "source_type": "local_markdown",
+          "source_unit_id": "unit-a7d61f6fffbc1cf2349f67b9",
+          "source_unit_revision_id": "unitrev-e343c3e190f008127c85ad72",
+          "doc_id": "local-md-src-f9623428-alert-routing-md-37ed2a83e409",
+          "document": {
+            "doc_id": "local-md-src-f9623428-alert-routing-md-37ed2a83e409",
+            "title": "决定：Kestrel 的失败告警只发到 #kestrel-oncall",
+            "source_url": "local-adapter://src-f9623428/local-src-f9623428/alert-routing.md",
+            "content_url": "/api/v1/source-units/unit-a7d61f6fffbc1cf2349f67b9/content",
+            "pdf_url": null,
+            "source_updated_at": "2026-10-09T11:45:00+00:00"
+          },
+          "current": true,
+          "items": [
+            {
+              "authority": "revision_pinned",
+              "evidence_reference_id": "eref-7190d7ba159a72486b4a",
+              "role": "primary",
+              "kind": "text",
+              "support_contribution": true,
+              "observation_id": "obs-aeaf1329d0b8351034089630",
+              "observation_revision_id": "obsrev-b64c2644304c1b15f87534c8",
+              "anchor_kind": "revision_range",
+              "fragment_id": null,
+              "range_start": 39,
+              "range_end": 149,
+              "excerpt": "邮件告警容易被其他通知淹没，也没法统计确认时间，所以我们不再发邮件。现在，Kestrel\n任务连续失败三次后，告警只会出现在 Slack 的 #kestrel-oncall 频道里；值班同学收到后要在\n10 分钟内确认。",
+              "raw_content_sha256": "88360b21cbb5a4c53909803c7bf9e6607f617077b0f7405b8fe970d0d3e3a8cd",
+              "text": "邮件告警容易被其他通知淹没，也没法统计确认时间，所以我们不再发邮件。现在，Kestrel 任务连续失败三次后，告警只会出现在 Slack 的 #kestrel-oncall 频道里；值班同学收到后要在 10 分钟内确认。",
+              "presentation_sha256": "88360b21cbb5a4c53909803c7bf9e6607f617077b0f7405b8fe970d0d3e3a8cd",
+              "text_view": {
+                "kind": "markdown-paragraph",
+                "version": 1,
+                "origins": []
+              },
+              "interpretation_available": true,
+              "current": true,
+              "artifact": null,
+              "resource_url": "/api/v1/memories/mem-fa68d6cb1d59f9bf/evidence/eu-v2-102a4ee41006a13900b90bb4c3adf41d/references/eref-7190d7ba159a72486b4a/resource"
+            }
+          ],
+          "resource_url": "/api/v1/memories/mem-fa68d6cb1d59f9bf/evidence/eu-v2-102a4ee41006a13900b90bb4c3adf41d/resource"
+        }
+      ],
+      "relation_notice": null,
+      "dismissed_relations": [],
+      "source_backed": true
+    }
+  ],
+  "relations": [
+    {
+      "label": "equivalent",
+      "newer_memory_id": null,
+      "decided_by": "classifier",
+      "decided_at": "2026-11-04T10:15:04.717214+00:00",
+      "memories": [
+        {
+          "memory_id": "mem-def971511defef85",
+          "summary": "In the Kestrel queue incident, a configuration change turned fsync off on the queue database. A crash then left the WAL file corrupt, and every worker waited on a lock that was never released.",
+          "content_hash": "d9fb3fb22c026a6b27cd731bfaab6a317cd13d9ebec15c7de85872c7d7bb98ef",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-09-20T16:20:00+00:00"
+        },
+        {
+          "memory_id": "mem-ec425bba3816f1bf",
+          "summary": "A configuration change that turned fsync off on the queue database caused a crash to leave the WAL file corrupt, after which every worker waited on a lock that was never released.",
+          "content_hash": "a22c8bcc827864b73e2e0cebfd75a2c2afeaa1447b249deda32d4f512e8dae36",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-10-14T10:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "label": "updates",
+      "newer_memory_id": "mem-3de3674ef8eeaeda",
+      "decided_by": "classifier",
+      "decided_at": "2026-11-04T10:14:47.379874+00:00",
+      "memories": [
+        {
+          "memory_id": "mem-34ba6e6ce720ce28",
+          "summary": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues or deletes it.",
+          "content_hash": "6910101ea0ef9b089534010908a17825d8ab39553b73ea99574185bc14f14d38",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-07-08T09:30:00+00:00"
+        },
+        {
+          "memory_id": "mem-3de3674ef8eeaeda",
+          "summary": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+          "content_hash": "f0c49c051ed4a25a21c39ea8104075bc8b90cc67388545c9ef42b79b93da3cd6",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-10-02T14:10:00+00:00"
+        }
+      ]
+    },
+    {
+      "label": "updates",
+      "newer_memory_id": "mem-3de3674ef8eeaeda",
+      "decided_by": "classifier",
+      "decided_at": "2026-11-04T10:14:47.379874+00:00",
+      "memories": [
+        {
+          "memory_id": "mem-3de3674ef8eeaeda",
+          "summary": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it.",
+          "content_hash": "f0c49c051ed4a25a21c39ea8104075bc8b90cc67388545c9ef42b79b93da3cd6",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-10-02T14:10:00+00:00"
+        },
+        {
+          "memory_id": "mem-3f28f39ee0d17ef0",
+          "summary": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and 300 seconds between attempts.",
+          "content_hash": "ce6cba7a714708c92e0e457ebb3ba3c24938fc641986920f0f9e1d06acf7b7ae",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-07-08T09:30:00+00:00"
+        }
+      ]
+    },
+    {
+      "label": "updates",
+      "newer_memory_id": "mem-fa68d6cb1d59f9bf",
+      "decided_by": "classifier",
+      "decided_at": "2026-11-04T10:14:29.870828+00:00",
+      "memories": [
+        {
+          "memory_id": "mem-58efb2d8d1771ed1",
+          "summary": "Kestrel 任务连续失败三次后，失败告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件；值班同学需要在 15 分钟内确认告警。放弃邮件告警是因为邮件容易被其他通知淹没，也无法统计确认时间。",
+          "content_hash": "a4e9c4b57fc6495af45de0a97a22220d43981a4d57213469e62ac6e9dcd73189",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-08-11T08:05:00+00:00"
+        },
+        {
+          "memory_id": "mem-fa68d6cb1d59f9bf",
+          "summary": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道；值班同学收到告警后必须在 10 分钟内确认。不再发送邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。",
+          "content_hash": "9231abea8eee7b6deb8799e51e39b425e13754648ff9ec442d9a56546be64e42",
+          "sources": [
+            {
+              "source_id": "src-f9623428",
+              "source_type": "local_markdown",
+              "name": "Team docs"
+            }
+          ],
+          "evidence_time": "2026-10-09T11:45:00+00:00"
+        }
+      ]
+    }
+  ],
+  "by_task": {
+    "job-retries": {
+      "links": [
+        {
+          "label": "updates",
+          "newer_memory_id": "mem-3de3674ef8eeaeda",
+          "memory_ids": [
+            "mem-34ba6e6ce720ce28",
+            "mem-3de3674ef8eeaeda"
+          ],
+          "evidence_times": [
+            "2026-07-08T09:30:00+00:00",
+            "2026-10-02T14:10:00+00:00"
+          ],
+          "links_stale_and_current": true
+        },
+        {
+          "label": "updates",
+          "newer_memory_id": "mem-3de3674ef8eeaeda",
+          "memory_ids": [
+            "mem-3de3674ef8eeaeda",
+            "mem-3f28f39ee0d17ef0"
+          ],
+          "evidence_times": [
+            "2026-10-02T14:10:00+00:00",
+            "2026-07-08T09:30:00+00:00"
+          ],
+          "links_stale_and_current": true
+        }
+      ],
+      "stale": {
+        "file": "failed-job-handling.md",
+        "file_time_set_by_harness": "2026-07-08T09:30:00+00:00",
+        "document_time_memforge_saw": "2026-07-08T09:30:00+00:00",
+        "memories": [
+          {
+            "id": "mem-4deefaf23625ad4e",
+            "type": "decision",
+            "status": "active",
+            "content": "Kestrel uses a short, fixed retry schedule instead of exponential backoff so that an operator can tell from the clock alone when a job will run again."
+          },
+          {
+            "id": "mem-34ba6e6ce720ce28",
+            "type": "fact",
+            "status": "active",
+            "content": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues or deletes it."
+          },
+          {
+            "id": "mem-3f28f39ee0d17ef0",
+            "type": "procedure",
+            "status": "active",
+            "content": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and 300 seconds between attempts."
+          }
+        ]
+      },
+      "current": {
+        "file": "job-retry-policy.md",
+        "file_time_set_by_harness": "2026-10-02T14:10:00+00:00",
+        "document_time_memforge_saw": "2026-10-02T14:10:00+00:00",
+        "memories": [
+          {
+            "id": "mem-3de3674ef8eeaeda",
+            "type": "procedure",
+            "status": "active",
+            "content": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it."
+          }
+        ]
+      },
+      "both_documents_gave_memories": true,
+      "stale_and_current_linked": true,
+      "labels_between_stale_and_current": [
+        "updates"
+      ]
+    },
+    "failure-alerts": {
+      "links": [
+        {
+          "label": "updates",
+          "newer_memory_id": "mem-fa68d6cb1d59f9bf",
+          "memory_ids": [
+            "mem-58efb2d8d1771ed1",
+            "mem-fa68d6cb1d59f9bf"
+          ],
+          "evidence_times": [
+            "2026-08-11T08:05:00+00:00",
+            "2026-10-09T11:45:00+00:00"
+          ],
+          "links_stale_and_current": true
+        }
+      ],
+      "stale": {
+        "file": "failure-alerts.md",
+        "file_time_set_by_harness": "2026-08-11T08:05:00+00:00",
+        "document_time_memforge_saw": "2026-08-11T08:05:00+00:00",
+        "memories": [
+          {
+            "id": "mem-58efb2d8d1771ed1",
+            "type": "decision",
+            "status": "active",
+            "content": "Kestrel 任务连续失败三次后，失败告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件；值班同学需要在 15 分钟内确认告警。放弃邮件告警是因为邮件容易被其他通知淹没，也无法统计确认时间。"
+          }
+        ]
+      },
+      "current": {
+        "file": "alert-routing.md",
+        "file_time_set_by_harness": "2026-10-09T11:45:00+00:00",
+        "document_time_memforge_saw": "2026-10-09T11:45:00+00:00",
+        "memories": [
+          {
+            "id": "mem-fa68d6cb1d59f9bf",
+            "type": "decision",
+            "status": "active",
+            "content": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道；值班同学收到告警后必须在 10 分钟内确认。不再发送邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。"
+          }
+        ]
+      },
+      "both_documents_gave_memories": true,
+      "stale_and_current_linked": true,
+      "labels_between_stale_and_current": [
+        "updates"
+      ]
+    },
+    "queue-stall": {
+      "links": [
+        {
+          "label": "equivalent",
+          "newer_memory_id": null,
+          "memory_ids": [
+            "mem-def971511defef85",
+            "mem-ec425bba3816f1bf"
+          ],
+          "evidence_times": [
+            "2026-09-20T16:20:00+00:00",
+            "2026-10-14T10:00:00+00:00"
+          ],
+          "links_stale_and_current": true
+        }
+      ],
+      "stale": {
+        "file": "queue-stall-review.md",
+        "file_time_set_by_harness": "2026-09-20T16:20:00+00:00",
+        "document_time_memforge_saw": "2026-09-20T16:20:00+00:00",
+        "memories": [
+          {
+            "id": "mem-fb999b040c831555",
+            "type": "procedure",
+            "status": "active",
+            "content": "The queue database’s fsync was restored, and a startup check was added that refuses to run with fsync off. The on-call engineer is paged when no job has started for five minutes."
+          },
+          {
+            "id": "mem-def971511defef85",
+            "type": "fact",
+            "status": "active",
+            "content": "In the Kestrel queue incident, a configuration change turned fsync off on the queue database. A crash then left the WAL file corrupt, and every worker waited on a lock that was never released."
+          }
+        ]
+      },
+      "current": {
+        "file": "stall-postmortem.md",
+        "file_time_set_by_harness": "2026-10-14T10:00:00+00:00",
+        "document_time_memforge_saw": "2026-10-14T10:00:00+00:00",
+        "memories": [
+          {
+            "id": "mem-14c82a23b103bca7",
+            "type": "decision",
+            "status": "active",
+            "content": "The fix was to restore fsync and add a startup check that refuses to run with fsync off."
+          },
+          {
+            "id": "mem-ec425bba3816f1bf",
+            "type": "fact",
+            "status": "active",
+            "content": "A configuration change that turned fsync off on the queue database caused a crash to leave the WAL file corrupt, after which every worker waited on a lock that was never released."
+          }
+        ]
+      },
+      "both_documents_gave_memories": true,
+      "stale_and_current_linked": true,
+      "labels_between_stale_and_current": [
+        "equivalent"
+      ]
+    }
+  }
+}

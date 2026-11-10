@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+formal/corpus/fetched/
+
+# Raw run transcripts quote the documents, so they wait for a licence check.
+**/transcripts/

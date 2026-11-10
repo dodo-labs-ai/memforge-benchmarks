@@ -1,0 +1,1017 @@
+{
+ "set": "grpc",
+ "repo": "grpc/proposal",
+ "host": "github",
+ "commit": "4125fbd155353d35386d8fbd6b23454f6ab0e345",
+ "glob": "**/*.md",
+ "exclude": [
+  "CODE-OF-CONDUCT.md",
+  "README.md"
+ ],
+ "licence": "Apache-2.0",
+ "archive_url": "https://codeload.github.com/grpc/proposal/tar.gz/4125fbd155353d35386d8fbd6b23454f6ab0e345",
+ "file_count": 200,
+ "total_bytes": 2056198,
+ "files": [
+  {
+   "path": "A1-http-connect-proxy-support.md",
+   "bytes": 10805,
+   "sha256": "3b3382b15413969d4864e12b03664e251b39cdbeaa56a7bc876af9a8b035968b"
+  },
+  {
+   "path": "A10-avoid-grpclb-and-service-config-for-localhost-and-ip-literals.md",
+   "bytes": 3986,
+   "sha256": "33eb174f7703d52a204b26ad5d46f17eaebf88b1be157084c436728b7cff70e3"
+  },
+  {
+   "path": "A101-SNI-setting-and-SNI-SAN-validation.md",
+   "bytes": 10234,
+   "sha256": "e1f46b5909859efce51b5e08bce46488f51a843e1d7f1624031ffa2d41355b7f"
+  },
+  {
+   "path": "A102-xds-grpc-service.md",
+   "bytes": 23977,
+   "sha256": "d07d7fdde981ca1b58e1f40760136f2af1b7e7fe1973c0997f53c37ca98750a3"
+  },
+  {
+   "path": "A103-xds-composite-filter.md",
+   "bytes": 12200,
+   "sha256": "f25d477dbcb3e5df3d249f7f6aae227808cf4e1bed9dd8ef2017321ad0491b36"
+  },
+  {
+   "path": "A105-max_concurrent_streams-connection-scaling.md",
+   "bytes": 38508,
+   "sha256": "0a6c3c1aaeb9ac55f26ddff4fa3b966b5d64c596ffcad2089278a6d8ab3e4df9"
+  },
+  {
+   "path": "A107-tls-private-key-offloading.md",
+   "bytes": 21959,
+   "sha256": "2cd08f56e6e32dfc1efc06077413a1bcfe80b8f12e130c6b8bcf12a6951b5aa5"
+  },
+  {
+   "path": "A108-otel-custom-per-call-label.md",
+   "bytes": 5863,
+   "sha256": "fadc9e047f68394cb4e27b41da79f12f42beaacdeb9f5be9751bd5f14a006356"
+  },
+  {
+   "path": "A110-child-channel-plugins.md",
+   "bytes": 19391,
+   "sha256": "5c13e61ee53049c51909a08492c3afdb8630039e64b6799ba8542bf85318058c"
+  },
+  {
+   "path": "A113-pick-first-weighted-shuffling.md",
+   "bytes": 5095,
+   "sha256": "3bf83b5035baede7117db2eb1a7a4abe0797791b6867b7acc90800bca17cc966"
+  },
+  {
+   "path": "A114-wrr-metric-names-for-computing-utilization.md",
+   "bytes": 11181,
+   "sha256": "8b12397ec95d73cee28496c5cea005ee9c9484d9f3e2d28d68baad821ad097aa"
+  },
+  {
+   "path": "A115-remove-priority-lb-child-policy-cache.md",
+   "bytes": 3408,
+   "sha256": "cf75311000b2455c54136e1fdbca2e91b2448bd9fb640653114cb5c17d607d77"
+  },
+  {
+   "path": "A118-tls-telemetry.md",
+   "bytes": 13874,
+   "sha256": "273cd538a7763565b20f5cf5f9b9b136ce6edb31b0d73e767432a92269fa0ef2"
+  },
+  {
+   "path": "A120-postquantum-cryptography.md",
+   "bytes": 12054,
+   "sha256": "6d655b6d397d8c8502c5d780b290aaa7cdcb2e4a5a202e469874a9036b3ffb1b"
+  },
+  {
+   "path": "A14-channelz.md",
+   "bytes": 33358,
+   "sha256": "96ee47fb4b136500759291c54359b1fff5c854fe0b3f475276c60a230b07d83b"
+  },
+  {
+   "path": "A15-promote-reflection.md",
+   "bytes": 2674,
+   "sha256": "22378301aa538afdd5593000e714744124c6cce3bf98ea59ffd695ec17882fd1"
+  },
+  {
+   "path": "A16-binary-logging.md",
+   "bytes": 15216,
+   "sha256": "48631361683c3c86874d1e5bb4a42c55fa427730b2d2dc45fa53b71e33188d26"
+  },
+  {
+   "path": "A17-client-side-health-checking.md",
+   "bytes": 14499,
+   "sha256": "c030db5b0e7021836c6237513b9c51183a7133dd80dfc1b99a71fb0400be83cc"
+  },
+  {
+   "path": "A18-tcp-user-timeout.md",
+   "bytes": 5135,
+   "sha256": "2e7f8d008cec028405394bfca7d90bd7675b82d6946e7d0898a8e9a58204be70"
+  },
+  {
+   "path": "A2-service-configs-in-dns.md",
+   "bytes": 5961,
+   "sha256": "534351b154cde79e12e6240c55c2b8c606afa8e27b669cc1e8bd82f7d1d8da4d"
+  },
+  {
+   "path": "A21-service-config-error-handling.md",
+   "bytes": 7991,
+   "sha256": "36b5ec33a944837a77475d512533b312ff0128fabfb9662b6dfac990c45a8014"
+  },
+  {
+   "path": "A24-lb-policy-config.md",
+   "bytes": 9760,
+   "sha256": "71cf418f24147fdc2254ea28b979178ef0f8587cfb2919b1de2c69749342cca2"
+  },
+  {
+   "path": "A26-grpclb-selection.md",
+   "bytes": 6321,
+   "sha256": "6c1aac2d88970088c5db145b76f24c5c952860f5fac75258c7c183b671a65524"
+  },
+  {
+   "path": "A27-xds-global-load-balancing.md",
+   "bytes": 22656,
+   "sha256": "821b70d917dc4211ab61a07333d3c819433c6395de7e3111144b340de0c79671"
+  },
+  {
+   "path": "A28-xds-traffic-splitting-and-routing.md",
+   "bytes": 29799,
+   "sha256": "c2d94563497d87528aca45c17d04e18bc84c998b61a1252c0961cdbe7b3552c8"
+  },
+  {
+   "path": "A29-xds-tls-security.md",
+   "bytes": 36052,
+   "sha256": "158a7a3bd7fd770ebd4d12612ccfc57e5102bb01e6b63dc320cf2619db7e2313"
+  },
+  {
+   "path": "A3-channel-tracing.md",
+   "bytes": 5787,
+   "sha256": "36089c0b4ba939b7af13b59ccb875eb946a88b21ad9347ff52c4aa12f2cbf48f"
+  },
+  {
+   "path": "A30-xds-v3.md",
+   "bytes": 7577,
+   "sha256": "69e1f65879b1861da8177eb6cd50c32cf781c5f54072308cfdb1d3caea448417"
+  },
+  {
+   "path": "A31-xds-timeout-support-and-config-selector.md",
+   "bytes": 13362,
+   "sha256": "ad1a9c604c26c144978ac6504f5f4eadbaf488236e4ff69ddcaac05d1b68c22c"
+  },
+  {
+   "path": "A32-xds-circuit-breaking.md",
+   "bytes": 9335,
+   "sha256": "437227d0e6e039664d6c8aeb8b2875dcecfed2cd71d0addc6567493036f0a3f9"
+  },
+  {
+   "path": "A33-Fault-Injection.md",
+   "bytes": 13820,
+   "sha256": "5075d202a001498c6720c6cd2eec756e603d3fc75a76c242e6fb4fd003ac8527"
+  },
+  {
+   "path": "A36-xds-for-servers.md",
+   "bytes": 31838,
+   "sha256": "bf956091bf4d3f1e553b0b03752111c25c453d2ac2f5317c793ffa58c4f3c543"
+  },
+  {
+   "path": "A37-xds-aggregate-and-logical-dns-clusters.md",
+   "bytes": 18169,
+   "sha256": "32563036cbdbd7f80468a7485d53f5cd4cbb3effe05eb212b7fccaae02ba69a1"
+  },
+  {
+   "path": "A38-admin-interface-api.md",
+   "bytes": 8103,
+   "sha256": "ca8412afe4833295e06f7896b85e01daeb3e78a4b09510a4687a5dce681a7c2a"
+  },
+  {
+   "path": "A39-xds-http-filters.md",
+   "bytes": 16767,
+   "sha256": "b6d8fb740862f1f52d7578f634941f0c56b4f3c73a0584f517dfae689ed3c84d"
+  },
+  {
+   "path": "A40-csds-support.md",
+   "bytes": 13136,
+   "sha256": "fd8421e33fc1b964afa35be701ed30cd1632474dca17abbec29223a3f3d98317"
+  },
+  {
+   "path": "A41-xds-rbac.md",
+   "bytes": 12914,
+   "sha256": "c5406523ea747acfb11e16ac137122d9c764461b79d25f16aa5ae5d146de5b95"
+  },
+  {
+   "path": "A42-xds-ring-hash-lb-policy.md",
+   "bytes": 35302,
+   "sha256": "cc0d96175ac068c11ae5cdaa3e20c1f96941d3bb14e2fff2f0ae6af3e2c5ed7b"
+  },
+  {
+   "path": "A43-grpc-authorization-api.md",
+   "bytes": 26074,
+   "sha256": "1b9a479770dcd5c0151a620b457dd76d1917903eed427bc168484f734da218ba"
+  },
+  {
+   "path": "A44-xds-retry.md",
+   "bytes": 14263,
+   "sha256": "7647b76af26ba72340a21af9a6d2f90c805f13a9bdee1fd1fb9a946cfdb56728"
+  },
+  {
+   "path": "A45-retry-stats.md",
+   "bytes": 7961,
+   "sha256": "3c31b922c0e894644efa8a180b31a3945a3fa537d78d410ec0a4b451e4096b03"
+  },
+  {
+   "path": "A46-xds-nack-semantics-improvement.md",
+   "bytes": 5761,
+   "sha256": "6a3ffa852f66e1fa8c58c46cb6ddc7a741c49fcbe5c0d01cb58a60d4c5625d5e"
+  },
+  {
+   "path": "A47-xds-federation.md",
+   "bytes": 34399,
+   "sha256": "369fb3c8c5e193b1a4554e83838848f0484337e90b7cef9f0ca38060a02abcbe"
+  },
+  {
+   "path": "A48-xds-least-request-lb-policy.md",
+   "bytes": 14394,
+   "sha256": "33b6951ba3b7557bcd8fdb6b66f67474a089e51fcdc76fdf6e1d348ce26f665d"
+  },
+  {
+   "path": "A5-grpclb-in-dns.md",
+   "bytes": 6707,
+   "sha256": "f01704122e747c8b2676f8d0d230bb409cc98df95fd95e4dab26ec985c63522d"
+  },
+  {
+   "path": "A50-xds-outlier-detection.md",
+   "bytes": 25443,
+   "sha256": "92444c919ac94bc79ad17496934029610adeae98ef8befcd863715132dd8ddc3"
+  },
+  {
+   "path": "A51-custom-backend-metrics.md",
+   "bytes": 34192,
+   "sha256": "5582d62d239d3ea6419f4563420695fa376437a78252c5ad9294ca4f1d5f0ef4"
+  },
+  {
+   "path": "A52-xds-custom-lb-policies.md",
+   "bytes": 18886,
+   "sha256": "8625dad601b42ec8c513280aa6c80885989620d9e36eee4d4474699f1420b8c1"
+  },
+  {
+   "path": "A53-xds-ignore-resource-deletion.md",
+   "bytes": 5725,
+   "sha256": "2addc5873e55496e7183631705f2e7528f68ea1ea8b6dda6dac60d9114761219"
+  },
+  {
+   "path": "A54-restrict-control-plane-status-codes.md",
+   "bytes": 7806,
+   "sha256": "5e071edd5ce4be33a4f56a0b6ae7061cdad73d444497a8c0163b908b1a945b21"
+  },
+  {
+   "path": "A55-xds-stateful-session-affinity.md",
+   "bytes": 26092,
+   "sha256": "b766f5e8813e8adbdd1085a1d194b3c88b0fccf544041b486162a6259407cdf0"
+  },
+  {
+   "path": "A56-priority-lb-policy.md",
+   "bytes": 14778,
+   "sha256": "e434bc5785f2182a08573d613ba98410e46f392b02abbbaab2eb9b7e1e5faa82"
+  },
+  {
+   "path": "A57-xds-client-failure-mode-behavior.md",
+   "bytes": 9959,
+   "sha256": "f7a347f86e4314c6ff93c5ab336b00570545b7d1720ab5734c3e3adebbc33ea1"
+  },
+  {
+   "path": "A58-client-side-weighted-round-robin-lb-policy.md",
+   "bytes": 18569,
+   "sha256": "b23c5e1307d205b13c7aeb4252ab450c71746d66ef8321ba7ce5272c590f5269"
+  },
+  {
+   "path": "A59-audit-logging.md",
+   "bytes": 25756,
+   "sha256": "3eed91013ad1559d0d5a3998d76028e3c3c0e1887340570f2c372b3f6941b21d"
+  },
+  {
+   "path": "A6-client-retries.md",
+   "bytes": 33277,
+   "sha256": "1e91cf4afc1e900d4cbe88f6cd0e3642db9c0b06fd1599ff360459dcc97de657"
+  },
+  {
+   "path": "A60-xds-stateful-session-affinity-weighted-clusters.md",
+   "bytes": 10397,
+   "sha256": "a0354a15c3ce2a508efe6d07d4af2d875f50b013de5d3c03b4ea868f3027ab38"
+  },
+  {
+   "path": "A61-IPv4-IPv6-dualstack-backends.md",
+   "bytes": 50214,
+   "sha256": "c07bef79376113ade69abdf75cc54cd2272899b548ebfc5fff6a50dcb21a5bec"
+  },
+  {
+   "path": "A62-pick-first.md",
+   "bytes": 8258,
+   "sha256": "957969e442213016913776ac9aa77d97d3bf56889fed5fd5817bd5cce3845dfd"
+  },
+  {
+   "path": "A63-xds-string-matcher-in-header-matching.md",
+   "bytes": 2693,
+   "sha256": "05fbb4deed6e4d7695294d4ef9acfb11c66efa240485d734277b2d988bad5dc3"
+  },
+  {
+   "path": "A64-lrs-custom-metrics.md",
+   "bytes": 4292,
+   "sha256": "c126c84980e1ffb837069d41e016830e52f4f2546fa73930405e96b551a855a7"
+  },
+  {
+   "path": "A65-xds-mtls-creds-in-bootstrap.md",
+   "bytes": 3675,
+   "sha256": "6fdbcf2bc32051578f626b6f1f679e5b6c380eb6b9dffe70071c3641c99b5224"
+  },
+  {
+   "path": "A66-otel-stats.md",
+   "bytes": 29601,
+   "sha256": "54bb0c67c2121c6282592f68fd937eed05ab2526cab61313157a49f4462cbfb2"
+  },
+  {
+   "path": "A68-random-subsetting.md",
+   "bytes": 8936,
+   "sha256": "dedd096b45c184efe2a7491cfdf462ecf7036c97c853573db19a11665b6f9975"
+  },
+  {
+   "path": "A69-crl-enhancements.md",
+   "bytes": 19010,
+   "sha256": "6ec9d36ba82dc642d10edf4044900140bda93560baf0b9ef2cd9f5db073c624a"
+  },
+  {
+   "path": "A69_graphics/README.md",
+   "bytes": 126,
+   "sha256": "c78e4fb60e9cfcf5d2a21c99530a4e2c839d84f97359d545969eaabddc892e7b"
+  },
+  {
+   "path": "A71-xds-fallback.md",
+   "bytes": 11045,
+   "sha256": "f637d8538ef8a5985a99821a93eb401c68fc44b01bef864c355ee07b56694a01"
+  },
+  {
+   "path": "A72-open-telemetry-tracing.md",
+   "bytes": 33518,
+   "sha256": "87e62007a5eae71e6f9e148c6e88ec909ecd031df696d097c08878bd1838ca73"
+  },
+  {
+   "path": "A74-xds-config-tears.md",
+   "bytes": 18292,
+   "sha256": "523ab9f93a505a02d8ccbf68f57b628fc609692bcb7cd649a6e6cd1e5b1bdef5"
+  },
+  {
+   "path": "A75-xds-aggregate-cluster-behavior-fixes.md",
+   "bytes": 16310,
+   "sha256": "31db99c0ff54e6560b819c016e010c2b14d9800764d578c2386717f62a84bfdf"
+  },
+  {
+   "path": "A76-ring-hash-improvements.md",
+   "bytes": 12118,
+   "sha256": "5e7fa93605ada313aa658d31c04d40dc5eb4ab7d3704bb00e8dde793e384623d"
+  },
+  {
+   "path": "A78-grpc-metrics-wrr-pf-xds.md",
+   "bytes": 11125,
+   "sha256": "cdfb464d5bf2adecfc15a106e80afde967a6780f53206edf37d36a833b7bd48c"
+  },
+  {
+   "path": "A79-non-per-call-metrics-architecture.md",
+   "bytes": 30215,
+   "sha256": "51c5211e102b5f70268fa1aed5f7cd83a50271d6c8902562c01c7608a884acf5"
+  },
+  {
+   "path": "A8-client-side-keepalive.md",
+   "bytes": 13386,
+   "sha256": "11727a7d431b5120d6d4cfe376344f953f98ce4ef4bac4711c85b934876cf187"
+  },
+  {
+   "path": "A80-tcp-telemetry.md",
+   "bytes": 10568,
+   "sha256": "44305b531ed66e219c08a9348dca8cf0bb4b56e96ab9b3f7d706405d3878b40f"
+  },
+  {
+   "path": "A81-xds-authority-rewriting.md",
+   "bytes": 8575,
+   "sha256": "23d83ff1b05f95bbd516ecc24e6d0798257beb66d34c2f1289052a3ba2c237f0"
+  },
+  {
+   "path": "A82-xds-system-root-certs.md",
+   "bytes": 3265,
+   "sha256": "fbffe38fecdce52ac488c59b5031e1a596d5753dc528a30ce3407fa6ad93b628"
+  },
+  {
+   "path": "A83-xds-gcp-authn-filter.md",
+   "bytes": 27849,
+   "sha256": "7ad1b371044e4a5b8daf7711cd4bb72234af48e6bdc66247c4bcde19697cda2e"
+  },
+  {
+   "path": "A85-lrs-custom-metrics-changes.md",
+   "bytes": 6232,
+   "sha256": "d09a1dfc99d867934d4431079de63e143167f86ee60ac694339e9c8ff5112acf"
+  },
+  {
+   "path": "A86-xds-http-connect.md",
+   "bytes": 6305,
+   "sha256": "8ef89897bf5b4c2cf29995a47e3a302dfb20ad1b8eea4c9b4bb742a859adec57"
+  },
+  {
+   "path": "A87-mtls-spiffe-support.md",
+   "bytes": 12022,
+   "sha256": "4f4a540b0cfa857df09ee52226adb989d1b5375a6fb064335e46343f6c53abb8"
+  },
+  {
+   "path": "A88-xds-data-error-handling.md",
+   "bytes": 30729,
+   "sha256": "086723483d39af5b9751e61b458f96d77d16a5006b2e6a9ed8ba7f927b38a7f2"
+  },
+  {
+   "path": "A89-backend-service-metric-label.md",
+   "bytes": 6283,
+   "sha256": "194d69683dd910cd43381d7d937294602b7e562dfccf08b0f8a38ce76f5b645a"
+  },
+  {
+   "path": "A9-server-side-conn-mgt.md",
+   "bytes": 6547,
+   "sha256": "2ec368e5345a56e16b9bbfe139508da33003a4581e4889a2954a3a0b48afb0fe"
+  },
+  {
+   "path": "A90-health-service-list-method.md",
+   "bytes": 3681,
+   "sha256": "48327edb7df24477c4a022652e50be77be7106ee37c26624d39e99f8ae8f0ac5"
+  },
+  {
+   "path": "A91-outlier-detection-metrics.md",
+   "bytes": 4814,
+   "sha256": "5cffdf84db6a23f52cd77d8a5bb7f61e8685fc4d83ea3a591d890319399ce8ed"
+  },
+  {
+   "path": "A94-subchannel-otel-metrics.md",
+   "bytes": 10527,
+   "sha256": "32265ec33f08d9400203737347d56cf4464946e88304464a97510cc1ccdf9e54"
+  },
+  {
+   "path": "A95-xds-endpoint-fallback.md",
+   "bytes": 9736,
+   "sha256": "fc4430731ce9ec360c036522fc4b7545bc22d5c7cd4f73258d3c0a10db33d844"
+  },
+  {
+   "path": "A96-retry-otel-stats.md",
+   "bytes": 5182,
+   "sha256": "54fe028b2d07fc98af1d6d4b4c691a336dd02247429654234cb4b2781cb89774"
+  },
+  {
+   "path": "A97-xds-jwt-call-creds.md",
+   "bytes": 9317,
+   "sha256": "ae597ca74620e5a4afcbebea69290755db0782047610b8e80819c8bb811720a8"
+  },
+  {
+   "path": "G1-true-binary-metadata.md",
+   "bytes": 3156,
+   "sha256": "883cdf55ce7b8b9ddcc83f260d9a1ffde90829ddde456dd34f7fcf38f92c41b8"
+  },
+  {
+   "path": "G2-http3-protocol.md",
+   "bytes": 7330,
+   "sha256": "59895854f601bd441290a1e729ca0e234bb762bb0cf29148ca8393af4734d007"
+  },
+  {
+   "path": "GOVERNANCE.md",
+   "bytes": 141,
+   "sha256": "ce4685b7bfbbd256299aeb74c7396f963aa4885094bdaf62f025c0948659314b"
+  },
+  {
+   "path": "GRFC-TEMPLATE.md",
+   "bytes": 1423,
+   "sha256": "00319bfe9002baf0a44b54ca35b94f43a7b7b0561635c0704dc16cdc77ffac31"
+  },
+  {
+   "path": "L1-cpp-stream-coalescing.md",
+   "bytes": 3992,
+   "sha256": "7159f8500c220cc717668cf00b200f5a413153445a03e49f8d4f0d20833c361e"
+  },
+  {
+   "path": "L100-core-narrow-call-details.md",
+   "bytes": 710,
+   "sha256": "a4c69abd1744f50467c044a17ccf3c95a202de28fb0be321cf1fe499df5ab922"
+  },
+  {
+   "path": "L101-core-remove-grpc_register_plugin.md",
+   "bytes": 783,
+   "sha256": "78aeca0e989b329080c07c34f1755e56e980899dda2a0d808ba18efc0c6fbf10"
+  },
+  {
+   "path": "L102-cpp-version-macros.md",
+   "bytes": 2008,
+   "sha256": "5eefa2f478cf095794edc0ba249d6395262cab02273df1e3c7e6c8927098f65c"
+  },
+  {
+   "path": "L103-core-move-insecure-creds-declaration.md",
+   "bytes": 2203,
+   "sha256": "0f818c20212d233491ebccad50f3fa81adc7977efe628a66700299ae6de123d4"
+  },
+  {
+   "path": "L104-core-ban-recv-with-send-status.md",
+   "bytes": 2040,
+   "sha256": "9e6fd441bf867de83ff1562628f7e7e94853e643608864a22b17056eaff80a20"
+  },
+  {
+   "path": "L105-python-expose-new-error-types.md",
+   "bytes": 1345,
+   "sha256": "da49cb71bec77bafd6eb4015a5402ba74529e0624864cfb6dbd287652ce21e40"
+  },
+  {
+   "path": "L106-node-heath-check-library.md",
+   "bytes": 3744,
+   "sha256": "2efd32fc65a8e87757dc3236ff48e1c93847e6be67ab3714e4d53a0fd0a6a77b"
+  },
+  {
+   "path": "L107-node-noop-start.md",
+   "bytes": 3350,
+   "sha256": "03ba68684cc7fd38e7fb9e286d4d47368525ed303b25585f7ab748b7e1443c5b"
+  },
+  {
+   "path": "L108-node-grpc-reflection-library.md",
+   "bytes": 7254,
+   "sha256": "c5abe99e832d1d1de1543f869755ad8ce95e277ea3128ae3356f2d705343cdca"
+  },
+  {
+   "path": "L109-node-server-unbind.md",
+   "bytes": 3419,
+   "sha256": "adefd996f933b037a74b82bd262617af9147f5849c91ae34bcbf0ded8ec63d23"
+  },
+  {
+   "path": "L11-ruby-interceptors.md",
+   "bytes": 9147,
+   "sha256": "49f2d3f083eb05aad23966866e3bd0df0d75a3cab66a5839747261d9dd516bc1"
+  },
+  {
+   "path": "L110-csharp-nullable-reference-types.md",
+   "bytes": 7019,
+   "sha256": "472d3d805315bd767203686384afe85ef259678527459f71fa4417edf07b11a2"
+  },
+  {
+   "path": "L111-node-server-drain.md",
+   "bytes": 2684,
+   "sha256": "d4d754b57bce95bd2d6f70e91d382aa48bd04582468c1dc0cdb8743f875bd43e"
+  },
+  {
+   "path": "L112-node-server-interceptors.md",
+   "bytes": 14038,
+   "sha256": "a8b34fa71b7bbf4ef788c70300676cb53065965ca025e904f00b344e9d9a4b04"
+  },
+  {
+   "path": "L113-core-remove-num-external-connectivity-watchers.md",
+   "bytes": 869,
+   "sha256": "7f694d1406798e5b2328dfa30a1e565a14439f1c06ff0d31a3c94c7642b2fe47"
+  },
+  {
+   "path": "L114-node-server-connection-injection.md",
+   "bytes": 3873,
+   "sha256": "4a011aa56e2f8a4649bf843456310dfae75b7957420d714347f196dc9701f236"
+  },
+  {
+   "path": "L115-core-refactor-generic-service-stub.md",
+   "bytes": 1306,
+   "sha256": "bac2dc94912cd9963c668099683689bb38c3d34cf418090b35b068962b3495d9"
+  },
+  {
+   "path": "L116-core-loosen-max-pings-without-data.md",
+   "bytes": 4033,
+   "sha256": "d08affa0f5cc2b3667854c4b0acaef5ab065a6cd4c158b340747bbed7620adf8"
+  },
+  {
+   "path": "L117-core-replace-gpr-logging-with-abseil-logging.md",
+   "bytes": 5867,
+   "sha256": "9cdef7be5a9c7797ec13086611cff93fd5e5a1c8d1ccd716f7f99dcae9f187a4"
+  },
+  {
+   "path": "L118-core-remove-cronet.md",
+   "bytes": 1408,
+   "sha256": "ca552c8205cd9d0f31183462c3cff546b2f63e728daef433e49c0b086133f56b"
+  },
+  {
+   "path": "L119-python-add-typing-to-sync-api.md",
+   "bytes": 5259,
+   "sha256": "ae976569fa37a71b4277329a828f97c7c31b7658d0d3b21b273ec9ead8d6ec96"
+  },
+  {
+   "path": "L12-csharp-interceptors.md",
+   "bytes": 18827,
+   "sha256": "9a8531fff80bf4ee05a8d8d6171e6afdad618265f02ddcb567cfc56e5f8ddb3d"
+  },
+  {
+   "path": "L120-requiring-cpp17.md",
+   "bytes": 1401,
+   "sha256": "7507bfba19b75d8ce9d62fb78d02b7cdc8774dcf577ef86a4055fa997f551608"
+  },
+  {
+   "path": "L122-core-remove-gpr_atm_no_barrier_clamped_add.md",
+   "bytes": 548,
+   "sha256": "eec4d97268e1ba09df6edfe845d75e2938e11d05a0203917ecdcb8ed477c9d8c"
+  },
+  {
+   "path": "L125-python-absl-logging-support.md",
+   "bytes": 5262,
+   "sha256": "d3940823ebf4be1600b28defc1c5a1777af81092103bf641fe0bd7c799579f08"
+  },
+  {
+   "path": "L126-core-add-alts-google-call-credentials.md",
+   "bytes": 5621,
+   "sha256": "194bb21333a38263bd17d90f7e6425556c5383aea8ab5d727d65112d9c9ab4b0"
+  },
+  {
+   "path": "L127-cpp-spiffe-root-provider.md",
+   "bytes": 2541,
+   "sha256": "075ad4d16024ef000dfa447f71ba044475d6b34510bdf78e170c835ab0e5345d"
+  },
+  {
+   "path": "L13-python-interceptors.md",
+   "bytes": 16475,
+   "sha256": "0842a048c758057bdb54ec8c82a0078c1d029ac4741454dd8febf78923c3c29a"
+  },
+  {
+   "path": "L15-php-interceptors.md",
+   "bytes": 9967,
+   "sha256": "6ff59c4586e7f7bf2f012f0355748e6feba58ede4469cada634225f0043e4bbc"
+  },
+  {
+   "path": "L17-cpp-sync-server-exceptions.md",
+   "bytes": 3640,
+   "sha256": "c21d13e3283c21abd818031d67f3c99de25e570757a4a324db8ddfa577ff8bc3"
+  },
+  {
+   "path": "L18-core-remove-grpc-alarm.md",
+   "bytes": 1539,
+   "sha256": "ac35b6583027599b03e71e194cd4b7ff94a86f5c64bf917d9cbaa96d18c3c186"
+  },
+  {
+   "path": "L2-cpp-completion-queue-creation-api.md",
+   "bytes": 11460,
+   "sha256": "3ad1bf6b790e18c2a64564dac238bcf5164ee90820f38e027e176b9485396fcf"
+  },
+  {
+   "path": "L21-core-gpr-review.md",
+   "bytes": 2198,
+   "sha256": "36ecdb4fb552a2f0d2097bfd2ee1b1f9b4ae26e3422f4467e29629141dc1f0c9"
+  },
+  {
+   "path": "L22-cpp-change-grpcpp-dir-name.md",
+   "bytes": 2989,
+   "sha256": "3ea5903b9ce9978183e4e7a9ffa33707778936dcbb3fdd7940aa93178e0c5a8c"
+  },
+  {
+   "path": "L23-node-protobufjs-library.md",
+   "bytes": 6617,
+   "sha256": "5c35e08fa744d7f1e8ca27bbb1835f872be19dcf8daebe42f7995f35fb8cea94"
+  },
+  {
+   "path": "L24-cpp-extensible-api.md",
+   "bytes": 2864,
+   "sha256": "0e4a109cd1b35c6465114c6f1cfaca56d07460ad1e9ed9ba6a562b0439bdad05"
+  },
+  {
+   "path": "L25-cpp-expose-buffer-reader-writer.md",
+   "bytes": 1525,
+   "sha256": "c123e42426e200ee5bbf42eb79c31f3b44d0a1b879939c6c755fd900f29da2a6"
+  },
+  {
+   "path": "L26-cpp-raw-codegen-api.md",
+   "bytes": 3104,
+   "sha256": "c97bf9230b41760a2efac7d0d015630ff4e87c3a15888d7b1f150793fc98dcf0"
+  },
+  {
+   "path": "L29-cpp-opencensus-filter.md",
+   "bytes": 3838,
+   "sha256": "6d541246b6505a59ba3d98cd4b6f2a05705d9861b26ccc9d166a1e13886ff0ad"
+  },
+  {
+   "path": "L30-cpp-control-max-threads-in-SyncServer.md",
+   "bytes": 4731,
+   "sha256": "4cd2e40aaa9b77adf1a5e3e04fb8606a529359648aed7f967672af16114e3616"
+  },
+  {
+   "path": "L31-php-intercetor-api-change.md",
+   "bytes": 2426,
+   "sha256": "f38140d9a881b84164d61721a73ffe155b024c8054706976de9640206fed5184"
+  },
+  {
+   "path": "L32-node-channel-API.md",
+   "bytes": 4729,
+   "sha256": "e398660f6d529dd018f3fc9f4422080dad58fae9ca394423689222733cf5eaf6"
+  },
+  {
+   "path": "L33-node-checkServerIdentity-callback.md",
+   "bytes": 2973,
+   "sha256": "d9e3a794b631f129d837cc5f371530dc4759752049e0ef8a919a88c146206b4f"
+  },
+  {
+   "path": "L34-cpp-opencensus-span-api.md",
+   "bytes": 1425,
+   "sha256": "112d99bb24f052feb7303e175d57666f9d6280b9dd74e45cd092aec82f835761"
+  },
+  {
+   "path": "L35-node-getAuthContext.md",
+   "bytes": 4197,
+   "sha256": "896b754430a9fdaeccbdf3b0790dc11a1ce70e01502bc5dd8c4044ea1307f8a5"
+  },
+  {
+   "path": "L38-objc-api-upgrade.md",
+   "bytes": 20676,
+   "sha256": "67651127723c9a95d4cfa55e9a7f0a242947301b6f92917b7ffe5a14ca996007"
+  },
+  {
+   "path": "L39-core-remove-grpc-use-signal.md",
+   "bytes": 1097,
+   "sha256": "4525055fd9782908b8be9bfbfad2fa9d98f38278799a0646d32cd8ec2357dc26"
+  },
+  {
+   "path": "L40-node-call-invocation-transformer.md",
+   "bytes": 2764,
+   "sha256": "be80cff8d3f551fdf36dfe904d032261c387081330bde7b827609d52ee77919c"
+  },
+  {
+   "path": "L41-node-server-async-bind.md",
+   "bytes": 2805,
+   "sha256": "8def283a8466f63edcd4fb535550ef86fadc010e6ad52c2c4ebc177fadb5d4ee"
+  },
+  {
+   "path": "L42-python-metadata-flags.md",
+   "bytes": 8225,
+   "sha256": "35d06e6594f8384689ef5fb7c99b034bc85578f5662549c24ae0392dff0feb27"
+  },
+  {
+   "path": "L43-node-type-info.md",
+   "bytes": 5285,
+   "sha256": "a8f0792a02fada822b843f6fef9fdfc724aca5b10c787405e86fafd4a4cdb619"
+  },
+  {
+   "path": "L44-python-rich-status.md",
+   "bytes": 17657,
+   "sha256": "0be46268b041a2fdcbd40b5d54d8297628c21b185f232b12e8946014d2a3be09"
+  },
+  {
+   "path": "L45-cpp-server-load-reporting.md",
+   "bytes": 3117,
+   "sha256": "d8efeb5173b48a668e86809ba27f5aa25fb64043ebcd0b4579cfcc7b3ec82e4d"
+  },
+  {
+   "path": "L46-python-compression-api.md",
+   "bytes": 6682,
+   "sha256": "50dcefb09533e03a01a536648480f3147a6684674bae40f0d602cd50ea64a3aa"
+  },
+  {
+   "path": "L48-node-metadata-options.md",
+   "bytes": 2103,
+   "sha256": "e9c4d2b34713983785fb4d2a9eed73bd3241a2f33dbb6b76082038a2b7c2f1e8"
+  },
+  {
+   "path": "L49-objc-flow-control.md",
+   "bytes": 5533,
+   "sha256": "0775d5aed313ae7037f212a06085770b166cd3af1c5b99a4676abf56738659e6"
+  },
+  {
+   "path": "L5-node-client-interceptors.md",
+   "bytes": 23764,
+   "sha256": "bcbaa21fd53f78876de3a8305c4f61ca98d952ec4275a812b76d7847c20fe257"
+  },
+  {
+   "path": "L50-objc-interceptor.md",
+   "bytes": 12914,
+   "sha256": "75b8753264d69f3d3ec4fa601e843cf857774a4125d24ee0d12d242be6d873a3"
+  },
+  {
+   "path": "L51-java-rm-nano-proto.md",
+   "bytes": 3034,
+   "sha256": "127468a253f053d8ee1580db875cade9211badfec99119a42f8b32c2a6bf6703"
+  },
+  {
+   "path": "L52-core-static-method-host.md",
+   "bytes": 1706,
+   "sha256": "e95419c4c1072c5d53f6c09373ed8c56b93ebcb1639dc145f86e5b00db7174d0"
+  },
+  {
+   "path": "L54-python-server-wait.md",
+   "bytes": 5344,
+   "sha256": "64a340dd6f9c10b7b38af7253bb0e5b97e5f9392551b3926b3d8d80e89d18564"
+  },
+  {
+   "path": "L55-objc-global-interceptor.md",
+   "bytes": 2363,
+   "sha256": "9846e387ecfa8ecee80007d07cdc8911a7252183d6e77a42300d5906cb7e33d8"
+  },
+  {
+   "path": "L56-objc-bazel-support.md",
+   "bytes": 13659,
+   "sha256": "220aafd4894b392e9a7ec3acee5cb4aaae5f38d7ebe00ab99e037d7d1cee251b"
+  },
+  {
+   "path": "L57-csharp-new-major-version.md",
+   "bytes": 6960,
+   "sha256": "655f64d5da8c9ca390e3d47988a1b58af9cd19ada0d5f78d44cc5b8f46022675"
+  },
+  {
+   "path": "L58-python-async-api.md",
+   "bytes": 67165,
+   "sha256": "f6b8167bf214533b2b7d2ae3a444112b62cd4d31e6813d62e2fe4b0a89ec892a"
+  },
+  {
+   "path": "L59-core-allow-cppstdlib.md",
+   "bytes": 5634,
+   "sha256": "6f0ae564cd574ea236ab7e048f0f1be05f64e8e4b0d9a02a4e8437fe66a89dc5"
+  },
+  {
+   "path": "L6-core-allow-cpp.md",
+   "bytes": 3327,
+   "sha256": "8740ac8d506f25baa350e0093d3d90afca6d1b1c20101ff5005b344fa6c26c0a"
+  },
+  {
+   "path": "L60-core-remove-custom-allocator.md",
+   "bytes": 2863,
+   "sha256": "0b2223065e1e1fbb17ed2d290c63609142d83a74e13b1e527edee69d974db1a4"
+  },
+  {
+   "path": "L62-core-call-credential-security-level.md",
+   "bytes": 5997,
+   "sha256": "25fb981234bb80391a12f5cc886692a7de8ebd8fa496f5aafe76d736989ce8a7"
+  },
+  {
+   "path": "L63-core-call-credentials-debug-string.md",
+   "bytes": 5767,
+   "sha256": "8553a31df85244e5f8d44f8203404552571f2bcff34617ac8b987006c20d819b"
+  },
+  {
+   "path": "L64-python-runtime-proto-parsing.md",
+   "bytes": 11235,
+   "sha256": "f6560d984c0db74a89baa8c6a2ada330a1e0c77b6e4bacee28bab8072605042c"
+  },
+  {
+   "path": "L65-python-package-name.md",
+   "bytes": 5076,
+   "sha256": "cb625d3ef5da78fa6169e050459198d592733c0f793234e1c86cb0afc79c33ed"
+  },
+  {
+   "path": "L66-core-cancellation-status.md",
+   "bytes": 5319,
+   "sha256": "8c6088f8f6bd3795c77357abaae054b7e62a31b9705894bd2c6801dc6ee170e7"
+  },
+  {
+   "path": "L67-cpp-callback-api.md",
+   "bytes": 21423,
+   "sha256": "1e692bbdd699e7a6bac202fe531de8633859bebcdf2bd0d3aebb9ca16c3946ab"
+  },
+  {
+   "path": "L68-core-callback-api.md",
+   "bytes": 7460,
+   "sha256": "376d68b0c891c567d655e156cee0395f1965e73b1cb54a498c41fc18ad7ddd4e"
+  },
+  {
+   "path": "L7-go-metadata-api.md",
+   "bytes": 2561,
+   "sha256": "0ed82518aca867876eaa348e4ef267951e210f858cbf3ef8e9199ad3003f0287"
+  },
+  {
+   "path": "L70-node-proto-loader-type-generator.md",
+   "bytes": 13881,
+   "sha256": "35fdf9fc9fecc7b4352bed2eee50f74fe9421bbe449600cdf4dcc8f8f9bdcf16"
+  },
+  {
+   "path": "L72-core-google_default_credentials-extension.md",
+   "bytes": 3667,
+   "sha256": "c3667443b2ce3b5d561fcc76581c5c53d16e05db48bfa91b6277e01ab6a25fe3"
+  },
+  {
+   "path": "L73-java-binderchannel.md",
+   "bytes": 11116,
+   "sha256": "6e172822d033c072650e9e77a70a2afb885b18382574bf4398a2842bfeb84adc"
+  },
+  {
+   "path": "L73-java-binderchannel/wireformat.md",
+   "bytes": 16751,
+   "sha256": "5e266b87559aa8a384cfb85725d241e601650511df24578d482f93c0c16f3a8a"
+  },
+  {
+   "path": "L74-java-channel-creds.md",
+   "bytes": 23099,
+   "sha256": "9948f69abf47557cb42d40edf52d201acb144764dcda36e50ff09e7fd3324adf"
+  },
+  {
+   "path": "L75-core-remove-grpc-channel-ping.md",
+   "bytes": 770,
+   "sha256": "9343328353a625c00bf69131686b438d794057f353050a9590ff72c0eb766caa"
+  },
+  {
+   "path": "L77-core-cpp-third-party-identity-support-for-call-credentials.md",
+   "bytes": 5442,
+   "sha256": "d21a822869fbcce54a76c676ed926ee8acf6534ccf6d87a1910605203074bbb8"
+  },
+  {
+   "path": "L78-python-rich-server-context.md",
+   "bytes": 2743,
+   "sha256": "780271bd2902d8ed6d3f9d95d97a9693004b70d085bd6135962d7671a1477d25"
+  },
+  {
+   "path": "L79-cpp-byte-buffer-slice-methods.md",
+   "bytes": 3948,
+   "sha256": "b9cd53c10c59163df049a38b8303dcdbbcd451a5f29305e418a7afd21b24f1d3"
+  },
+  {
+   "path": "L8-cpp-internalization.md",
+   "bytes": 6439,
+   "sha256": "29a0e865f754eacf4d7b90cf1bfff7e28c074ccac1d40a3f1b785f61fdcaa4e5"
+  },
+  {
+   "path": "L80-cpp-async-response-reader-destruction.md",
+   "bytes": 5829,
+   "sha256": "b2734fc304dd2632917fd56a95b0dc7af544ad964ce18c9b0d8f0e759b3d47f8"
+  },
+  {
+   "path": "L84-cpp-call-failed-before-recv-message.md",
+   "bytes": 2475,
+   "sha256": "d229543a45b1945352c5e211d95e4a40914b2515f6b47cbffb90b95b2b108cad"
+  },
+  {
+   "path": "L86-aspect-based-python-bazel-rules.md",
+   "bytes": 5025,
+   "sha256": "97d70997d2565a3d5c22764ad6e17bd86f5dcae283be44b9872a271b2bb3d36a"
+  },
+  {
+   "path": "L88-cpp-absl-status-conversions.md",
+   "bytes": 1297,
+   "sha256": "390960fbdfee61b3503774a014b9286160f80512abd899697d1b361ff2468da3"
+  },
+  {
+   "path": "L89-core-remove-grpc-insecure-channel-creation-api.md",
+   "bytes": 9705,
+   "sha256": "da0ffd4e2c5fba0a17a4fdfc3963094d515e0c0756f8f306fe0719cbb82d549e"
+  },
+  {
+   "path": "L9-go-resolver-balancer-API.md",
+   "bytes": 28224,
+   "sha256": "9b19c93cf33a511bc3f582a8006b0a43ea23ab32ff3dff172f9a38fdd5657577"
+  },
+  {
+   "path": "L91-improved-directory-support-for-python-bazel-rules.md",
+   "bytes": 3192,
+   "sha256": "380a7dc5501c2acf66b945dfd9210ee9dc99eac5a4e77734b841ef90aa2925b6"
+  },
+  {
+   "path": "L92-dotnet-grpc-web.md",
+   "bytes": 5322,
+   "sha256": "1dac4a896bf0f5644d55f56577f9826bf9c5339f38de74375faa81e295508450"
+  },
+  {
+   "path": "L93-node-securecontext-creds.md",
+   "bytes": 2739,
+   "sha256": "cffcbb1e70cb3afce083981bd689ddbd33397afc66664b34cc2ca4f0e3eb132d"
+  },
+  {
+   "path": "L94-core-eliminate-slice-interning.md",
+   "bytes": 1259,
+   "sha256": "51b1d6d225df10cb3d61297021335b3bdd5530a26a62d309755f829e3b02bbd7"
+  },
+  {
+   "path": "L95-python-reflection-client.md",
+   "bytes": 2601,
+   "sha256": "8d684409e9be4c11af7224ddcc1bba54d383e50aae2f66bf20850e975f5687d3"
+  },
+  {
+   "path": "L96-csharp-load-balancing.md",
+   "bytes": 18851,
+   "sha256": "4371382b6e7256a2e6b88105d07655b29b8f992be2a0dc5176385673666534c0"
+  },
+  {
+   "path": "L98-requiring-cpp14.md",
+   "bytes": 1335,
+   "sha256": "1ac79f76e0fb439ac6c7ecce22f9ab94cbb67bbf7e8640d29564e38910c86514"
+  },
+  {
+   "path": "L99-core-eliminate-corking.md",
+   "bytes": 661,
+   "sha256": "d95215ccea8c7bfc7ca631b955d28beffb2de8fde394c5c64c962c663d36f24e"
+  },
+  {
+   "path": "P1-cloud-native.md",
+   "bytes": 3912,
+   "sha256": "317ae9e8ae682348ad568e8b3e238273618b1a748e5a34c918b88ff72227c524"
+  },
+  {
+   "path": "P3-grfcs-for-core-api-changes.md",
+   "bytes": 2601,
+   "sha256": "b657d5b1852dee008412c88a45990b473d49980ffb3fea2168dd1613fdb5e54d"
+  },
+  {
+   "path": "P4-grpc-cve-process.md",
+   "bytes": 7036,
+   "sha256": "63353624d91384367fd278c5a6e895f82a9577de42d66ec8bfb08eff58ff786b"
+  },
+  {
+   "path": "P5-jdk-version-support.md",
+   "bytes": 6954,
+   "sha256": "aa6faf67a536269cdeaf8441044cca0551800d9031d958569e656187caaf0eae"
+  },
+  {
+   "path": "P6-grpc-io-announce.md",
+   "bytes": 7559,
+   "sha256": "9f44be02ee206874e0087847d95ff22bd2194564509cc16d1f7f3ee4636fcf8c"
+  }
+ ]
+}

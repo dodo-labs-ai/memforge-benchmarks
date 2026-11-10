@@ -1,0 +1,89 @@
+{
+ "id": "t08-django-deprecation-warning",
+ "number": 8,
+ "role": "dropped",
+ "doc_set": "django",
+ "prompt": "In `django/utils/text.py`, passing `truncate` or `html` to `Truncator.chars()` positionally is being deprecated in this release; they will become keyword-only. Add the deprecation as our patch guidelines describe. This is a trimmed extract of Django that cannot run on its own, so do not try to run it. Keep the change small and tell me briefly what you did.",
+ "decision": "DEP 20 adopted calendar versions, so deprecation warning classes went from `RemovedInDjangoXXWarning` (for example `RemovedInDjango71Warning`) to `RemovedInDjangoXXXXWarning` (for example `RemovedInDjango2029Warning`).",
+ "difference": "a warning class with a two-digit version (old) against one with a four-digit calendar version (new)",
+ "revisions": {
+  "old": {
+   "commit": "52abe52bec23df6523aff492364f4f1b049c9572",
+   "path": "docs/internals/contributing/writing-code/submitting-patches.txt"
+  },
+  "new": {
+   "commit": "026b005f3dc43a98557ce5a546b5e4938d06fed1",
+   "path": "docs/internals/contributing/writing-code/submitting-patches.txt"
+  }
+ },
+ "neutral_names": [
+  "internals/contributing/writing-code/contribution-norms.txt",
+  "internals/contributing/writing-code/contribution-process.txt"
+ ],
+ "markers": {
+  "old": "should raise a ``RemovedInDjangoXXWarning``",
+  "new": "should raise a ``RemovedInDjangoXXXXWarning``"
+ },
+ "reversal_check": {
+  "old_has": [
+   "should raise a ``RemovedInDjangoXXWarning``",
+   "where XX is the Django version"
+  ],
+  "old_lacks": [
+   "RemovedInDjangoXXXXWarning"
+  ],
+  "new_has": [
+   "should raise a ``RemovedInDjangoXXXXWarning``",
+   "where XXXX is the Django version"
+  ],
+  "new_lacks": [
+   "RemovedInDjangoXXWarning"
+  ]
+ },
+ "leak_tokens": [
+  "RemovedIn",
+  "deprecate_posargs",
+  "selenium",
+  "Selenium",
+  "playwright",
+  "Playwright",
+  "calendar"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "names a warning class with a two-digit version",
+    "regex": "RemovedInDjango[0-9]{2}Warning"
+   },
+   {
+    "label": "names the two-digit placeholder",
+    "regex": "RemovedInDjangoXXWarning"
+   }
+  ],
+  "new": [
+   {
+    "label": "names a warning class with a four-digit version",
+    "regex": "RemovedInDjango20[0-9]{2}Warning"
+   },
+   {
+    "label": "names the four-digit placeholder",
+    "regex": "RemovedInDjangoXXXXWarning"
+   }
+  ],
+  "reviewed_not_stating": {
+   "old": {
+    "docs/releases/6.2.txt": "names the old class only to say that it was renamed; it states the new rule",
+    "docs/releases/1.8.3.txt": "a historical release note"
+   }
+  }
+ },
+ "weak_points": [
+  "The new revision gives only the pattern `RemovedInDjangoXXXXWarning`. Any four-digit name, or the placeholder itself, counts as `new`, whether or not its year is right; a two-digit name or `RemovedInDjangoXXWarning` counts as `old`. The research notes' sketch required a name starting with 20, which a reader who has only the new revision cannot be sure of.",
+  "The real module `django/utils/deprecation.py` is left out as the research notes require, so imports in the deliverable point at a file that is not there."
+ ],
+ "separation": {
+  "rating": "one way",
+  "why": "`new` is clean: a four-digit name appears only in the new revision. `old` is not: at small size the new revision gives only the placeholder and no year, so a reader of it who cannot resolve the placeholder can name a two-digit class from memory and score `old`."
+ },
+ "dropped_because": "With only the new revision, three of three runs stayed old: it gives only a name pattern."
+}

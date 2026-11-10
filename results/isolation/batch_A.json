@@ -1,0 +1,31 @@
+{
+  "group": "A",
+  "window_start": "2026-11-04T14:08:05.653972+00:00",
+  "window_end": "2026-11-04T14:12:30.108147+00:00",
+  "requests_reaching_sandbox": [],
+  "memories_and_links_unchanged": true,
+  "memforge_usage_in_window": {},
+  "developer_project": {
+    "containers": {
+      "memforge-admin-ui-1": {
+        "id": "ebf5ba3791f1b22b80fb4339398d81345ddf7bd4187a64ebbb43628bb9436fd5",
+        "image": "sha256:8c085fc3317b14288eeeb1f6797849e4790d05b583808a60bed008c1caf1b97f",
+        "status": "exited",
+        "started_at": "2026-06-12T10:20:01.426389544Z",
+        "finished_at": "2026-06-13T01:17:24.30202392Z"
+      },
+      "memforge-api-1": {
+        "id": "cc8a451f94b34327ba9722995c4d15e21806548e2d69fa44fdb56a1b81944770",
+        "image": "sha256:0471e6bb7b268d44dec9d46cba9efc594624661ea9909383d8bbf0a74226fa45",
+        "status": "exited",
+        "started_at": "2026-06-12T10:19:36.304304338Z",
+        "finished_at": "2026-06-13T01:17:24.302081087Z"
+      }
+    },
+    "volume": {
+      "name": "memforge_memforge-data",
+      "created_at": "2026-06-03T07:26:28Z"
+    },
+    "listeners_on_default_plugin_port": 0
+  }
+}

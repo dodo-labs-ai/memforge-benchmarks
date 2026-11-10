@@ -1,0 +1,60 @@
+{
+  "project": "mfd",
+  "memforge_commit": "33a69927545f4ae37735e947a72821ac80618a21",
+  "started_at": "2026-11-09T12:21:27.320557+00:00",
+  "models": {
+    "generation": {
+      "provider": "openai_compatible",
+      "model": "gpt-6-luna"
+    },
+    "embedding": {
+      "provider": "openrouter",
+      "model": "openai/text-embedding-3-small"
+    }
+  },
+  "source_id": "src-f1524ad8",
+  "set": "govuk",
+  "size": "small",
+  "documents": 30,
+  "sync_started_at": "2026-11-09T12:21:44.966141+00:00",
+  "sync_finished_at": "2026-11-09T13:06:55.378047+00:00",
+  "sync_status": "success",
+  "doc_count": 30,
+  "memory_count": 297,
+  "relation_work": {
+    "completed": 297
+  },
+  "relation_slices": {
+    "attempted": 297,
+    "completed": 297,
+    "failed": 0,
+    "obsolete": 0,
+    "pairs": 2747,
+    "llm_calls": 296
+  },
+  "generation": {
+    "capability_check": {
+      "calls": 1
+    },
+    "image_reading": {
+      "calls": 1
+    },
+    "projection_fragment_memory_extraction": {
+      "calls": 33
+    },
+    "candidate_admission": {
+      "calls": 30
+    },
+    "entity_batch_validation": {
+      "calls": 17
+    },
+    "cross_document_relation": {
+      "calls": 296
+    },
+    "_total": {
+      "prompt_tokens": 1235834,
+      "completion_tokens": 110417,
+      "unreported_calls": 1
+    }
+  }
+}

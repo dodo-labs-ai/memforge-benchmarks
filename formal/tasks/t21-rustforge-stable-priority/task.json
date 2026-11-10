@@ -1,0 +1,67 @@
+{
+ "id": "t21-rustforge-stable-priority",
+ "number": 21,
+ "role": "scored",
+ "doc_set": "rustforge",
+ "prompt": "Implement `give_way_comment()` in `tools/release_helper.py`: it returns the exact comment the release engineer posts on a pull request that is running on the merge queue so that it gives way to the stable release, following our release process. Keep the change small and tell me briefly what you did.",
+ "decision": "The release process told the engineer to post `@bors retry` to give way to the stable release. With the new merge queue bot the command is `@bors yield`.",
+ "difference": "`@bors retry` (old) against `@bors yield` (new)",
+ "revisions": {
+  "old": {
+   "commit": "c78057351dcfa27af64da7658653c4e0b7db70d3",
+   "path": "src/release/process.md"
+  },
+  "new": {
+   "commit": "a7df922f3a8aae32765234c1291a9b636a1c7c2f",
+   "path": "src/release/process.md"
+  }
+ },
+ "neutral_names": [
+  "release/cycle-steps.md",
+  "release/cycle-guide.md"
+ ],
+ "markers": {
+  "old": "> @bors retry",
+  "new": "> @bors yield"
+ },
+ "reversal_check": {
+  "old_has": [
+   "> @bors retry"
+  ],
+  "old_lacks": [
+   "> @bors yield"
+  ],
+  "new_has": [
+   "> @bors yield"
+  ],
+  "new_lacks": [
+   "> @bors retry"
+  ]
+ },
+ "leak_tokens": [
+  "yield",
+  "retry",
+  "Yield"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "retries to give way to the stable release",
+    "regex": "@bors retry\\s*\\n>\\s*Yield priority"
+   }
+  ],
+  "new": [
+   {
+    "label": "yields the queue",
+    "regex": "@bors yield"
+   }
+  ]
+ },
+ "weak_points": [
+  "The two revisions differ by one word, so a run that reads either has the whole answer."
+ ],
+ "separation": {
+  "rating": "clean",
+  "why": "Each revision gives one command, the two are the same length, and neither says which is newer."
+ }
+}

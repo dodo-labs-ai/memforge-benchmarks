@@ -1,0 +1,520 @@
+{
+  "cells": {
+    "t01-govuk-db-admin-role/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        111167,
+        94920,
+        130802
+      ],
+      "duration_seconds": [
+        62.9,
+        52.0,
+        62.3
+      ]
+    },
+    "t01-govuk-db-admin-role/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        109301,
+        103478,
+        84362
+      ],
+      "duration_seconds": [
+        53.1,
+        61.1,
+        48.1
+      ]
+    },
+    "t02-gitlab-api-new-field/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        93609,
+        94723,
+        108397
+      ],
+      "duration_seconds": [
+        27.9,
+        39.6,
+        58.8
+      ]
+    },
+    "t02-gitlab-api-new-field/N/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        false,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        130691,
+        138161,
+        84919
+      ],
+      "duration_seconds": [
+        62.5,
+        55.1,
+        41.6
+      ]
+    },
+    "t06-govuk-check-env-var/A/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        76691,
+        93003,
+        93153
+      ],
+      "duration_seconds": [
+        64.3,
+        50.4,
+        61.5
+      ]
+    },
+    "t06-govuk-check-env-var/N/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        102461,
+        87501,
+        114490
+      ],
+      "duration_seconds": [
+        51.1,
+        30.4,
+        71.1
+      ]
+    },
+    "t08-django-deprecation-warning/A/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        151123,
+        115498,
+        117048
+      ],
+      "duration_seconds": [
+        88.7,
+        79.6,
+        78.9
+      ]
+    },
+    "t08-django-deprecation-warning/N/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        154001,
+        157454,
+        122312
+      ],
+      "duration_seconds": [
+        80.6,
+        84.0,
+        55.4
+      ]
+    },
+    "t09-django-browser-tests/A/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        131436,
+        147650,
+        131140
+      ],
+      "duration_seconds": [
+        102.3,
+        81.1,
+        69.5
+      ]
+    },
+    "t09-django-browser-tests/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        158429,
+        155974,
+        178246
+      ],
+      "duration_seconds": [
+        122.2,
+        76.3,
+        87.3
+      ]
+    },
+    "t10-grpc-principal-name/A/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        77913,
+        95137,
+        78420
+      ],
+      "duration_seconds": [
+        39.3,
+        57.6,
+        45.3
+      ]
+    },
+    "t10-grpc-principal-name/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        108326,
+        82075,
+        104791
+      ],
+      "duration_seconds": [
+        38.5,
+        43.3,
+        45.8
+      ]
+    },
+    "t16-rustforge-rollup-approval/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        77726,
+        78795,
+        93555
+      ],
+      "duration_seconds": [
+        38.4,
+        56.9,
+        39.1
+      ]
+    },
+    "t16-rustforge-rollup-approval/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        91046,
+        90453,
+        93864
+      ],
+      "duration_seconds": [
+        25.8,
+        33.6,
+        38.7
+      ]
+    },
+    "t18-otel-peer-service/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        61375,
+        78069,
+        77699
+      ],
+      "duration_seconds": [
+        27.0,
+        41.0,
+        31.3
+      ]
+    },
+    "t18-otel-peer-service/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        63544,
+        97478,
+        66145
+      ],
+      "duration_seconds": [
+        20.6,
+        23.6,
+        22.4
+      ]
+    }
+  },
+  "attempts": 58,
+  "tokens_of_all_attempts": 5359994,
+  "isolation_violations": [],
+  "other_hosts_flagged": []
+}

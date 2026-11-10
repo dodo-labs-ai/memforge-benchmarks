@@ -1,0 +1,304 @@
+{
+ "revisions": [
+  {
+   "task": "t01-govuk-db-admin-role",
+   "role": "new",
+   "doc_set": "govuk",
+   "commit": "f1ad617820fd5593217694a277f342ea6a47768f",
+   "path": "source/kubernetes/creating-a-new-database/index.html.md",
+   "url": "https://github.com/alphagov/govuk-developer-docs/blob/f1ad617820fd5593217694a277f342ea6a47768f/source/kubernetes/creating-a-new-database/index.html.md",
+   "bytes": 7030,
+   "sha256": "9886a86eef727ad8df63e60553b6505ee01788d8fa21487e8aef5dfbe97264fb"
+  },
+  {
+   "task": "t01-govuk-db-admin-role",
+   "role": "old",
+   "doc_set": "govuk",
+   "commit": "82cd9620f99d431fd82ffece79a564aead89e4cd",
+   "path": "source/kubernetes/creating-a-new-database/index.html.md",
+   "url": "https://github.com/alphagov/govuk-developer-docs/blob/82cd9620f99d431fd82ffece79a564aead89e4cd/source/kubernetes/creating-a-new-database/index.html.md",
+   "bytes": 6648,
+   "sha256": "29845664175a9f848bc4e96a680a55c1a9c2abfdcf6ddc7988d50da79be423ac"
+  },
+  {
+   "task": "t02-gitlab-api-new-field",
+   "role": "new",
+   "doc_set": "gitlab",
+   "commit": "e0fda37846de15da962232133e6306eb925554cd",
+   "path": "doc/development/api_styleguide.md",
+   "url": "https://gitlab.com/gitlab-org/gitlab/-/blob/e0fda37846de15da962232133e6306eb925554cd/doc/development/api_styleguide.md",
+   "bytes": 39695,
+   "sha256": "5e674892eec2f9040fd91b8602b60f02521378e8949a0af1433984f2ae2b025a"
+  },
+  {
+   "task": "t02-gitlab-api-new-field",
+   "role": "old",
+   "doc_set": "gitlab",
+   "commit": "e4ee9685240531320e01b0a38549550cbd0c6749",
+   "path": "doc/development/api_styleguide.md",
+   "url": "https://gitlab.com/gitlab-org/gitlab/-/blob/e4ee9685240531320e01b0a38549550cbd0c6749/doc/development/api_styleguide.md",
+   "bytes": 38581,
+   "sha256": "9061f6a76c72759093907d9dc96dcbc35335b92c883f0c4ea987377c3f315b67"
+  },
+  {
+   "task": "t05-gitlab-vue-i18n",
+   "role": "new",
+   "doc_set": "gitlab",
+   "commit": "72014a31166b4acc88b3364f532b54c479ec19dd",
+   "path": "doc/development/i18n/externalization.md",
+   "url": "https://gitlab.com/gitlab-org/gitlab/-/blob/72014a31166b4acc88b3364f532b54c479ec19dd/doc/development/i18n/externalization.md",
+   "bytes": 37914,
+   "sha256": "160d97dd014ae46ecdf875f8fb177feec17dc18e76c7315b40834655ff9b886a"
+  },
+  {
+   "task": "t05-gitlab-vue-i18n",
+   "role": "old",
+   "doc_set": "gitlab",
+   "commit": "fb1119825ee1a88681e4b28472199a191e25f24c",
+   "path": "doc/development/i18n/externalization.md",
+   "url": "https://gitlab.com/gitlab-org/gitlab/-/blob/fb1119825ee1a88681e4b28472199a191e25f24c/doc/development/i18n/externalization.md",
+   "bytes": 34956,
+   "sha256": "6d2fc8e8c4f5b7b0203f97aa0cb4d7dd73fe76f21b6a87b4aa9b1afdaf612676"
+  },
+  {
+   "task": "t06-govuk-check-env-var",
+   "role": "new",
+   "doc_set": "govuk",
+   "commit": "f1ad617820fd5593217694a277f342ea6a47768f",
+   "path": "source/kubernetes/fix-app/index.html.md",
+   "url": "https://github.com/alphagov/govuk-developer-docs/blob/f1ad617820fd5593217694a277f342ea6a47768f/source/kubernetes/fix-app/index.html.md",
+   "bytes": 6263,
+   "sha256": "a6df832aa30a0d7dc1f44d5276faf71350317e1120aea8364fe1ff6eb539928a"
+  },
+  {
+   "task": "t06-govuk-check-env-var",
+   "role": "old",
+   "doc_set": "govuk",
+   "commit": "82cd9620f99d431fd82ffece79a564aead89e4cd",
+   "path": "source/kubernetes/fix-app/index.html.md",
+   "url": "https://github.com/alphagov/govuk-developer-docs/blob/82cd9620f99d431fd82ffece79a564aead89e4cd/source/kubernetes/fix-app/index.html.md",
+   "bytes": 5755,
+   "sha256": "83fb4046b9f33301a7afacc39732353a4c521f1827d9f591dc730653c6c16d89"
+  },
+  {
+   "task": "t08-django-deprecation-warning",
+   "role": "new",
+   "doc_set": "django",
+   "commit": "026b005f3dc43a98557ce5a546b5e4938d06fed1",
+   "path": "docs/internals/contributing/writing-code/submitting-patches.txt",
+   "url": "https://github.com/django/django/blob/026b005f3dc43a98557ce5a546b5e4938d06fed1/docs/internals/contributing/writing-code/submitting-patches.txt",
+   "bytes": 22229,
+   "sha256": "c3636d848fb32ccfeb1af1b41467d69c62bb4e9442f569f0056d53c39c52a4ab"
+  },
+  {
+   "task": "t08-django-deprecation-warning",
+   "role": "old",
+   "doc_set": "django",
+   "commit": "52abe52bec23df6523aff492364f4f1b049c9572",
+   "path": "docs/internals/contributing/writing-code/submitting-patches.txt",
+   "url": "https://github.com/django/django/blob/52abe52bec23df6523aff492364f4f1b049c9572/docs/internals/contributing/writing-code/submitting-patches.txt",
+   "bytes": 22201,
+   "sha256": "e6894c43cb09d8fc92dd4bc76277b80066ca400b76053e1dbb031dfdd287ca51"
+  },
+  {
+   "task": "t09-django-browser-tests",
+   "role": "new",
+   "doc_set": "django",
+   "commit": "464a5e184443af937977ebe0ec5150fbfd6ee854",
+   "path": "docs/internals/contributing/writing-code/unit-tests.txt",
+   "url": "https://github.com/django/django/blob/464a5e184443af937977ebe0ec5150fbfd6ee854/docs/internals/contributing/writing-code/unit-tests.txt",
+   "bytes": 23091,
+   "sha256": "86715fe728786a8bb05a72f6f861f8bd355492c4a784f92385ee9573bf62c078"
+  },
+  {
+   "task": "t09-django-browser-tests",
+   "role": "old",
+   "doc_set": "django",
+   "commit": "d92b0209014021350af0383983315bf0a05ffac0",
+   "path": "docs/internals/contributing/writing-code/unit-tests.txt",
+   "url": "https://github.com/django/django/blob/d92b0209014021350af0383983315bf0a05ffac0/docs/internals/contributing/writing-code/unit-tests.txt",
+   "bytes": 22600,
+   "sha256": "b951fb6e14af2d5efa438c39d4c5e776278b877775797f18fb544befcc5810ee"
+  },
+  {
+   "task": "t10-grpc-principal-name",
+   "role": "new",
+   "doc_set": "grpc",
+   "commit": "8637bfce27d27d5d9502460bea6956553bed1ee3",
+   "path": "A41-xds-rbac.md",
+   "url": "https://github.com/grpc/proposal/blob/8637bfce27d27d5d9502460bea6956553bed1ee3/A41-xds-rbac.md",
+   "bytes": 12914,
+   "sha256": "c5406523ea747acfb11e16ac137122d9c764461b79d25f16aa5ae5d146de5b95"
+  },
+  {
+   "task": "t10-grpc-principal-name",
+   "role": "old",
+   "doc_set": "grpc",
+   "commit": "65528ac5139adec4f0f4342fb82d492c3dc79b7e",
+   "path": "A41-xds-rbac.md",
+   "url": "https://github.com/grpc/proposal/blob/65528ac5139adec4f0f4342fb82d492c3dc79b7e/A41-xds-rbac.md",
+   "bytes": 13111,
+   "sha256": "a1231ed188e50999de23eb39391d56832d4beee43286680d53196908771eeb64"
+  },
+  {
+   "task": "t12-grpc-max-ejection",
+   "role": "new",
+   "doc_set": "grpc",
+   "commit": "4125fbd155353d35386d8fbd6b23454f6ab0e345",
+   "path": "A50-xds-outlier-detection.md",
+   "url": "https://github.com/grpc/proposal/blob/4125fbd155353d35386d8fbd6b23454f6ab0e345/A50-xds-outlier-detection.md",
+   "bytes": 25443,
+   "sha256": "92444c919ac94bc79ad17496934029610adeae98ef8befcd863715132dd8ddc3"
+  },
+  {
+   "task": "t12-grpc-max-ejection",
+   "role": "old",
+   "doc_set": "grpc",
+   "commit": "89f34f2632b991776e206c97830ec3ac6f391988",
+   "path": "A50-xds-outlier-detection.md",
+   "url": "https://github.com/grpc/proposal/blob/89f34f2632b991776e206c97830ec3ac6f391988/A50-xds-outlier-detection.md",
+   "bytes": 25369,
+   "sha256": "41104c0fc84cf53f3f0732ae6d03c3b2fad2c8b74d548a89dcf3db04625fe5c0"
+  },
+  {
+   "task": "t16-rustforge-rollup-approval",
+   "role": "new",
+   "doc_set": "rustforge",
+   "commit": "6f42b3c1aebcab9d9583f16d5d22591449c71aef",
+   "path": "src/release/rollups.md",
+   "url": "https://github.com/rust-lang/rust-forge/blob/6f42b3c1aebcab9d9583f16d5d22591449c71aef/src/release/rollups.md",
+   "bytes": 6770,
+   "sha256": "5f94e8b4248f252d1d1b14b46233422542aaa33e8f0dd7f343a8315cbc26f7c9"
+  },
+  {
+   "task": "t16-rustforge-rollup-approval",
+   "role": "old",
+   "doc_set": "rustforge",
+   "commit": "b4637bb359b4c974c9cd0525f70147fcc4ad2e57",
+   "path": "src/release/rollups.md",
+   "url": "https://github.com/rust-lang/rust-forge/blob/b4637bb359b4c974c9cd0525f70147fcc4ad2e57/src/release/rollups.md",
+   "bytes": 6764,
+   "sha256": "58fb437c8563c7e5b84f65ea126640a79ec7b7b5cecb541aae8acd42970b0a4e"
+  },
+  {
+   "task": "t18-otel-peer-service",
+   "role": "new",
+   "doc_set": "otel",
+   "commit": "debfc1c62dcaf49eece43e3ee1d56a92b837a7e2",
+   "path": "docs/registry/attributes/service.md",
+   "url": "https://github.com/open-telemetry/semantic-conventions/blob/debfc1c62dcaf49eece43e3ee1d56a92b837a7e2/docs/registry/attributes/service.md",
+   "bytes": 8471,
+   "sha256": "b19edf818299b3412f48e02f75d69d2242a0aecb060700a4387bd9b5528ce786"
+  },
+  {
+   "task": "t18-otel-peer-service",
+   "role": "old",
+   "doc_set": "otel",
+   "commit": "53177914087f0a06811023a41a959dd50c04caf2",
+   "path": "docs/registry/attributes/service.md",
+   "url": "https://github.com/open-telemetry/semantic-conventions/blob/53177914087f0a06811023a41a959dd50c04caf2/docs/registry/attributes/service.md",
+   "bytes": 8281,
+   "sha256": "641e3767f32dbd1b18760278ed96ba1aa6dc766131501f778844b2128b210f18"
+  },
+  {
+   "task": "t20-rustforge-dev-desktop-access",
+   "role": "new",
+   "doc_set": "rustforge",
+   "commit": "08635029bbdefa7fa30051c1dcb7223457411ffb",
+   "path": "src/infra/docs/dev-desktop.md",
+   "url": "https://github.com/rust-lang/rust-forge/blob/08635029bbdefa7fa30051c1dcb7223457411ffb/src/infra/docs/dev-desktop.md",
+   "bytes": 10190,
+   "sha256": "c6162b9044b9cf7a5ee0a88a4fa2d8fa0b0bfce871fda0fee336eb9d975014e5"
+  },
+  {
+   "task": "t20-rustforge-dev-desktop-access",
+   "role": "old",
+   "doc_set": "rustforge",
+   "commit": "a2cbd85c9a109bea82b17a4f56eb1f90abebffaa",
+   "path": "src/infra/docs/dev-desktop.md",
+   "url": "https://github.com/rust-lang/rust-forge/blob/a2cbd85c9a109bea82b17a4f56eb1f90abebffaa/src/infra/docs/dev-desktop.md",
+   "bytes": 10004,
+   "sha256": "7b2f065bdae1a03b4278cc15bd3d24d8393375e937e1a1b59435b5bf5fbcaf82"
+  },
+  {
+   "task": "t21-rustforge-stable-priority",
+   "role": "new",
+   "doc_set": "rustforge",
+   "commit": "a7df922f3a8aae32765234c1291a9b636a1c7c2f",
+   "path": "src/release/process.md",
+   "url": "https://github.com/rust-lang/rust-forge/blob/a7df922f3a8aae32765234c1291a9b636a1c7c2f/src/release/process.md",
+   "bytes": 8307,
+   "sha256": "72591ab2d3f1a3df4310e90782aa90641849048ced797c61933a4f6b7b7e1dc3"
+  },
+  {
+   "task": "t21-rustforge-stable-priority",
+   "role": "old",
+   "doc_set": "rustforge",
+   "commit": "c78057351dcfa27af64da7658653c4e0b7db70d3",
+   "path": "src/release/process.md",
+   "url": "https://github.com/rust-lang/rust-forge/blob/c78057351dcfa27af64da7658653c4e0b7db70d3/src/release/process.md",
+   "bytes": 8307,
+   "sha256": "13ffcee177968621548728e0a22c6fdd3856619e3294e17d7abde9ac434ad5cb"
+  },
+  {
+   "task": "t22-otel-rpc-status-code",
+   "role": "new",
+   "doc_set": "otel",
+   "commit": "705afdd4f746de6c1e0c92b8d9ead587805d82b9",
+   "path": "docs/registry/attributes/rpc.md",
+   "url": "https://github.com/open-telemetry/semantic-conventions/blob/705afdd4f746de6c1e0c92b8d9ead587805d82b9/docs/registry/attributes/rpc.md",
+   "bytes": 17237,
+   "sha256": "75c7ae94e67f661214a8b042e42d56d5ca63db8999daf886590cec21036594ba"
+  },
+  {
+   "task": "t22-otel-rpc-status-code",
+   "role": "old",
+   "doc_set": "otel",
+   "commit": "b69f9c0f607656c3d17589f7ecdc0be1daefefd6",
+   "path": "docs/registry/attributes/rpc.md",
+   "url": "https://github.com/open-telemetry/semantic-conventions/blob/b69f9c0f607656c3d17589f7ecdc0be1daefefd6/docs/registry/attributes/rpc.md",
+   "bytes": 17047,
+   "sha256": "6e668a76b2c7b96fa5dd920d705086657a4ae3eed394c2818535b0eca73a1d36"
+  },
+  {
+   "task": "t23-otel-exception-record",
+   "role": "new",
+   "doc_set": "otel",
+   "commit": "75cc19fd7e2c1e3cbf4118c9193d60ce861403c3",
+   "path": "docs/general/recording-errors.md",
+   "url": "https://github.com/open-telemetry/semantic-conventions/blob/75cc19fd7e2c1e3cbf4118c9193d60ce861403c3/docs/general/recording-errors.md",
+   "bytes": 5985,
+   "sha256": "de4a9f5e58d1a37312b1c4c3664792f421e1ee63de942da68cf8df369bc0255d"
+  },
+  {
+   "task": "t23-otel-exception-record",
+   "role": "old",
+   "doc_set": "otel",
+   "commit": "2e8f54721219ecb8d6409aa05d28dea37c59d2d4",
+   "path": "docs/general/recording-errors.md",
+   "url": "https://github.com/open-telemetry/semantic-conventions/blob/2e8f54721219ecb8d6409aa05d28dea37c59d2d4/docs/general/recording-errors.md",
+   "bytes": 5451,
+   "sha256": "aac0abd42dc7afa4931c96846fab6d22d233f3699e40187860561e42dce266ea"
+  },
+  {
+   "task": "t24-django-release-key",
+   "role": "new",
+   "doc_set": "django",
+   "commit": "01c3cceca1ac80796e5448295e294cbc01948185",
+   "path": "docs/internals/howto-release-django.txt",
+   "url": "https://github.com/django/django/blob/01c3cceca1ac80796e5448295e294cbc01948185/docs/internals/howto-release-django.txt",
+   "bytes": 31323,
+   "sha256": "b711b43949d3e43ba20dd74e7369a340ae6c8fec438bab5098598fcf5d4a3e6a"
+  },
+  {
+   "task": "t24-django-release-key",
+   "role": "old",
+   "doc_set": "django",
+   "commit": "8013cf61c6a1aff9839af2953c5bdda804efdff4",
+   "path": "docs/internals/howto-release-django.txt",
+   "url": "https://github.com/django/django/blob/8013cf61c6a1aff9839af2953c5bdda804efdff4/docs/internals/howto-release-django.txt",
+   "bytes": 31431,
+   "sha256": "eb7ad904600de82751076ab1f27e2ff60b708ba8dda1cc2d710757adacc9e665"
+  }
+ ]
+}

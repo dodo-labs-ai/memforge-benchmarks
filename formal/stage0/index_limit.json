@@ -1,0 +1,75 @@
+{
+  "codex_version": "codex-cli 0.166.0",
+  "configured_value": "left at its default: no project_doc_max_bytes in the run's configuration",
+  "bytes_written": 40000,
+  "expected_limit_bytes": 32768,
+  "truncated": true,
+  "found_in": "response_item/message",
+  "bytes_of_the_file_that_reached_the_model": 32768,
+  "last_line_number_reached": "00839",
+  "text_right_after_the_cut": "\n</INSTRUCTIONS>",
+  "says_it_was_truncated": false,
+  "lines_written": 1026,
+  "probe_run": {
+    "probe": "index_limit",
+    "at": "2026-11-04T17:06:47.885766+00:00",
+    "model": "gpt-6-luna",
+    "exit_code": 0,
+    "failures": [],
+    "tokens": {
+      "input": 21514,
+      "cached_input": 12800,
+      "output": 5,
+      "reasoning_output": 0,
+      "uncached_input": 8714,
+      "total": 21519,
+      "cap_count": 34319,
+      "source": "events",
+      "counted_against_the_cap": "total"
+    },
+    "egress": {
+      "polls": 11,
+      "failed_polls": 0,
+      "endpoint_seen": false,
+      "polls_seeing_the_endpoint": 0,
+      "loopback": [
+        "loopback:7890"
+      ],
+      "other": [],
+      "endpoint_resolved": true
+    },
+    "final_message": "OK"
+  },
+  "bare_path_index_by_large_set": {
+    "govuk": {
+      "files": 247,
+      "bytes_of_bare_paths": 11721,
+      "fits_in_the_limit": true
+    },
+    "gitlab": {
+      "files": 669,
+      "bytes_of_bare_paths": 26285,
+      "fits_in_the_limit": true
+    },
+    "django": {
+      "files": 682,
+      "bytes_of_bare_paths": 20177,
+      "fits_in_the_limit": true
+    },
+    "otel": {
+      "files": 306,
+      "bytes_of_bare_paths": 10120,
+      "fits_in_the_limit": true
+    },
+    "grpc": {
+      "files": 202,
+      "bytes_of_bare_paths": 7802,
+      "fits_in_the_limit": true
+    },
+    "rustforge": {
+      "files": 151,
+      "bytes_of_bare_paths": 4915,
+      "fits_in_the_limit": true
+    }
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "codex_version": "codex-cli 0.166.0",
+  "template": {
+    "plugin_id": "memory@memforge",
+    "version": "0.2.0-beta.3",
+    "installed": true,
+    "marketplace_source": {
+      "sourceType": "git",
+      "source": "https://github.com/dodo-labs-ai/mem-forge.git"
+    },
+    "marketplace_commit": "ab35f5066a752893ea0b2f66fc5e69d1ba09a9a9",
+    "cache_matches_marketplace_checkout": true,
+    "plugin_tree_sha256": "fa524a73b5ea5f50fe45c67551548f872033ab0841f61eb84bf19d6679874c0b",
+    "mcp_command": "python3",
+    "mcp_args": [
+      "scripts/memforge_mcp.py"
+    ],
+    "mcp_env_names": [
+      "MEMFORGE_MCP_CLIENT"
+    ]
+  },
+  "sandbox": {
+    "commit": "ab35f5066a752893ea0b2f66fc5e69d1ba09a9a9",
+    "models": {
+      "generation": {
+        "provider": "openai_compatible",
+        "model_id": "gpt-6-luna",
+        "state": "ready"
+      },
+      "embedding": {
+        "provider": "openrouter",
+        "model_id": "openai/text-embedding-3-small",
+        "state": "ready"
+      }
+    },
+    "relation_work": {
+      "completed": 10
+    },
+    "by_task": {
+      "job-retries": {
+        "links": [
+          {
+            "label": "updates",
+            "newer_memory_id": "mem-3de3674ef8eeaeda",
+            "memory_ids": [
+              "mem-34ba6e6ce720ce28",
+              "mem-3de3674ef8eeaeda"
+            ],
+            "evidence_times": [
+              "2026-07-08T09:30:00+00:00",
+              "2026-10-02T14:10:00+00:00"
+            ],
+            "links_stale_and_current": true
+          },
+          {
+            "label": "updates",
+            "newer_memory_id": "mem-3de3674ef8eeaeda",
+            "memory_ids": [
+              "mem-3de3674ef8eeaeda",
+              "mem-3f28f39ee0d17ef0"
+            ],
+            "evidence_times": [
+              "2026-10-02T14:10:00+00:00",
+              "2026-07-08T09:30:00+00:00"
+            ],
+            "links_stale_and_current": true
+          }
+        ],
+        "stale": {
+          "file": "failed-job-handling.md",
+          "file_time_set_by_harness": "2026-07-08T09:30:00+00:00",
+          "document_time_memforge_saw": "2026-07-08T09:30:00+00:00",
+          "memories": [
+            {
+              "id": "mem-4deefaf23625ad4e",
+              "type": "decision",
+              "status": "active",
+              "content": "Kestrel uses a short, fixed retry schedule instead of exponential backoff so that an operator can tell from the clock alone when a job will run again."
+            },
+            {
+              "id": "mem-34ba6e6ce720ce28",
+              "type": "fact",
+              "status": "active",
+              "content": "After its last retry fails, the job moves to the kestrel-dlq queue, where it stays until an operator requeues or deletes it."
+            },
+            {
+              "id": "mem-3f28f39ee0d17ef0",
+              "type": "procedure",
+              "status": "active",
+              "content": "A Kestrel job that raises an error is retried three times, waiting 10, 60 and 300 seconds between attempts."
+            }
+          ]
+        },
+        "current": {
+          "file": "job-retry-policy.md",
+          "file_time_set_by_harness": "2026-10-02T14:10:00+00:00",
+          "document_time_memforge_saw": "2026-10-02T14:10:00+00:00",
+          "memories": [
+            {
+              "id": "mem-3de3674ef8eeaeda",
+              "type": "procedure",
+              "status": "active",
+              "content": "A Kestrel job that raises an error is retried five times, with waits of 10, 60, 300, 900 and 3600 seconds between attempts. After the last retry fails, the job moves to the kestrel-dlq queue and remains there until an operator requeues it with `kestrel-admin requeue` or deletes it."
+            }
+          ]
+        },
+        "both_documents_gave_memories": true,
+        "stale_and_current_linked": true,
+        "labels_between_stale_and_current": [
+          "updates"
+        ]
+      },
+      "failure-alerts": {
+        "links": [
+          {
+            "label": "updates",
+            "newer_memory_id": "mem-fa68d6cb1d59f9bf",
+            "memory_ids": [
+              "mem-58efb2d8d1771ed1",
+              "mem-fa68d6cb1d59f9bf"
+            ],
+            "evidence_times": [
+              "2026-08-11T08:05:00+00:00",
+              "2026-10-09T11:45:00+00:00"
+            ],
+            "links_stale_and_current": true
+          }
+        ],
+        "stale": {
+          "file": "failure-alerts.md",
+          "file_time_set_by_harness": "2026-08-11T08:05:00+00:00",
+          "document_time_memforge_saw": "2026-08-11T08:05:00+00:00",
+          "memories": [
+            {
+              "id": "mem-58efb2d8d1771ed1",
+              "type": "decision",
+              "status": "active",
+              "content": "Kestrel 任务连续失败三次后，失败告警只发送到 Slack 的 #kestrel-oncall 频道，不再发邮件；值班同学需要在 15 分钟内确认告警。放弃邮件告警是因为邮件容易被其他通知淹没，也无法统计确认时间。"
+            }
+          ]
+        },
+        "current": {
+          "file": "alert-routing.md",
+          "file_time_set_by_harness": "2026-10-09T11:45:00+00:00",
+          "document_time_memforge_saw": "2026-10-09T11:45:00+00:00",
+          "memories": [
+            {
+              "id": "mem-fa68d6cb1d59f9bf",
+              "type": "decision",
+              "status": "active",
+              "content": "Kestrel 任务连续失败三次后，告警只发送到 Slack 的 #kestrel-oncall 频道；值班同学收到告警后必须在 10 分钟内确认。不再发送邮件告警，因为邮件容易被其他通知淹没，也无法统计确认时间。"
+            }
+          ]
+        },
+        "both_documents_gave_memories": true,
+        "stale_and_current_linked": true,
+        "labels_between_stale_and_current": [
+          "updates"
+        ]
+      },
+      "queue-stall": {
+        "links": [
+          {
+            "label": "equivalent",
+            "newer_memory_id": null,
+            "memory_ids": [
+              "mem-def971511defef85",
+              "mem-ec425bba3816f1bf"
+            ],
+            "evidence_times": [
+              "2026-09-20T16:20:00+00:00",
+              "2026-10-14T10:00:00+00:00"
+            ],
+            "links_stale_and_current": true
+          }
+        ],
+        "stale": {
+          "file": "queue-stall-review.md",
+          "file_time_set_by_harness": "2026-09-20T16:20:00+00:00",
+          "document_time_memforge_saw": "2026-09-20T16:20:00+00:00",
+          "memories": [
+            {
+              "id": "mem-fb999b040c831555",
+              "type": "procedure",
+              "status": "active",
+              "content": "The queue database’s fsync was restored, and a startup check was added that refuses to run with fsync off. The on-call engineer is paged when no job has started for five minutes."
+            },
+            {
+              "id": "mem-def971511defef85",
+              "type": "fact",
+              "status": "active",
+              "content": "In the Kestrel queue incident, a configuration change turned fsync off on the queue database. A crash then left the WAL file corrupt, and every worker waited on a lock that was never released."
+            }
+          ]
+        },
+        "current": {
+          "file": "stall-postmortem.md",
+          "file_time_set_by_harness": "2026-10-14T10:00:00+00:00",
+          "document_time_memforge_saw": "2026-10-14T10:00:00+00:00",
+          "memories": [
+            {
+              "id": "mem-14c82a23b103bca7",
+              "type": "decision",
+              "status": "active",
+              "content": "The fix was to restore fsync and add a startup check that refuses to run with fsync off."
+            },
+            {
+              "id": "mem-ec425bba3816f1bf",
+              "type": "fact",
+              "status": "active",
+              "content": "A configuration change that turned fsync off on the queue database caused a crash to leave the WAL file corrupt, after which every worker waited on a lock that was never released."
+            }
+          ]
+        },
+        "both_documents_gave_memories": true,
+        "stale_and_current_linked": true,
+        "labels_between_stale_and_current": [
+          "equivalent"
+        ]
+      }
+    }
+  },
+  "memforge_usage": {
+    "gpt-6-luna": {
+      "calls": 27,
+      "prompt_tokens": 49754,
+      "completion_tokens": 3928,
+      "unreported_calls": 0,
+      "operations": {
+        "capability_check": 1,
+        "image_reading": 1,
+        "projection_fragment_memory_extraction": 6,
+        "candidate_admission": 6,
+        "entity_batch_validation": 3,
+        "cross_document_relation": 10
+      }
+    }
+  },
+  "groups": {
+    "A": {
+      "sandbox_policy": {
+        "refused": {
+          "developer_codex_config": true,
+          "developer_home": true,
+          "this_repository": true,
+          "sandbox_docs_folder": true,
+          "work_root": true,
+          "shared_tmp": true,
+          "var_tmp": true,
+          "marketplace_area": true,
+          "outside_write": true,
+          "home_write": true
+        },
+        "allowed": {
+          "repo_write": true,
+          "tmp_write": true,
+          "python": true,
+          "grep_docs_or_repo": true
+        },
+        "network_blocked": {
+          "sandbox_api": true,
+          "public_internet": true
+        }
+      },
+      "context": {
+        "config_toml": "default_permissions = \"iso\"\n\n[permissions.iso.filesystem]\n\":minimal\" = \"read\"\n\"/opt/homebrew\" = \"read\"\n\"/Users/Shared/wk/<run>/home\" = \"read\"\n\"/Users/Shared/wk/<run>/home/.codex/.tmp\" = \"none\"\n\"/Users/Shared/wk/<run>/tmp\" = \"write\"\n\"/private/tmp\" = \"none\"\n\"/private/var/tmp\" = \"none\"\n\":project_roots\" = { \".\" = \"write\" }\n\n[permissions.iso.network]\nenabled = false\n",
+        "mcp_servers": [],
+        "prompt_input_ok": true,
+        "prompt_has_docs_index": false,
+        "prompt_mentions_developer_home": false,
+        "prompt_mentions_memforge": false,
+        "skill_roots": [
+          "/Users/Shared/wk/<run>/home/.codex/skills/.system"
+        ]
+      }
+    },
+    "B": {
+      "sandbox_policy": {
+        "refused": {
+          "developer_codex_config": true,
+          "developer_home": true,
+          "this_repository": true,
+          "sandbox_docs_folder": true,
+          "work_root": true,
+          "shared_tmp": true,
+          "var_tmp": true,
+          "marketplace_area": true,
+          "outside_write": true,
+          "home_write": true
+        },
+        "allowed": {
+          "repo_write": true,
+          "tmp_write": true,
+          "python": true,
+          "grep_docs_or_repo": true
+        },
+        "network_blocked": {
+          "sandbox_api": true,
+          "public_internet": true
+        }
+      },
+      "context": {
+        "config_toml": "default_permissions = \"iso\"\n\n[permissions.iso.filesystem]\n\":minimal\" = \"read\"\n\"/opt/homebrew\" = \"read\"\n\"/Users/Shared/wk/<run>/home\" = \"read\"\n\"/Users/Shared/wk/<run>/home/.codex/.tmp\" = \"none\"\n\"/Users/Shared/wk/<run>/tmp\" = \"write\"\n\"/private/tmp\" = \"none\"\n\"/private/var/tmp\" = \"none\"\n\":project_roots\" = { \".\" = \"write\" }\n\n[permissions.iso.network]\nenabled = false\n",
+        "mcp_servers": [],
+        "prompt_input_ok": true,
+        "prompt_has_docs_index": false,
+        "prompt_mentions_developer_home": false,
+        "prompt_mentions_memforge": false,
+        "skill_roots": [
+          "/Users/Shared/wk/<run>/home/.codex/skills/.system"
+        ]
+      }
+    },
+    "C": {
+      "sandbox_policy": {
+        "refused": {
+          "developer_codex_config": true,
+          "developer_home": true,
+          "this_repository": true,
+          "sandbox_docs_folder": true,
+          "work_root": true,
+          "shared_tmp": true,
+          "var_tmp": true,
+          "marketplace_area": true,
+          "outside_write": true,
+          "home_write": true
+        },
+        "allowed": {
+          "repo_write": true,
+          "tmp_write": true,
+          "python": true,
+          "grep_docs_or_repo": true
+        },
+        "network_blocked": {
+          "sandbox_api": true,
+          "public_internet": true
+        }
+      },
+      "context": {
+        "config_toml": "default_permissions = \"iso\"\n\n[permissions.iso.filesystem]\n\":minimal\" = \"read\"\n\"/opt/homebrew\" = \"read\"\n\"/Users/Shared/wk/<run>/home\" = \"read\"\n\"/Users/Shared/wk/<run>/home/.codex/.tmp\" = \"none\"\n\"/Users/Shared/wk/<run>/tmp\" = \"write\"\n\"/private/tmp\" = \"none\"\n\"/private/var/tmp\" = \"none\"\n\":project_roots\" = { \".\" = \"write\" }\n\n[permissions.iso.network]\nenabled = false\n",
+        "mcp_servers": [],
+        "prompt_input_ok": true,
+        "prompt_has_docs_index": true,
+        "prompt_mentions_developer_home": false,
+        "prompt_mentions_memforge": false,
+        "skill_roots": [
+          "/Users/Shared/wk/<run>/home/.codex/skills/.system"
+        ]
+      }
+    },
+    "D": {
+      "sandbox_policy": {
+        "refused": {
+          "developer_codex_config": true,
+          "developer_home": true,
+          "this_repository": true,
+          "sandbox_docs_folder": true,
+          "work_root": true,
+          "shared_tmp": true,
+          "var_tmp": true,
+          "marketplace_area": true,
+          "outside_write": true,
+          "home_write": true
+        },
+        "allowed": {
+          "repo_write": true,
+          "tmp_write": true,
+          "python": true,
+          "grep_docs_or_repo": true
+        },
+        "network_blocked": {
+          "sandbox_api": true,
+          "public_internet": true
+        }
+      },
+      "context": {
+        "config_toml": "default_permissions = \"iso\"\n\n[memforge]\nMEMFORGE_API_URL = \"http://127.0.0.1:28765\"\n\n[plugins.\"memory@memforge\"]\nenabled = true\n\n[plugins.\"memory@memforge\".mcp_servers.memforge.tools.search]\napproval_mode = \"approve\"\n\n[plugins.\"memory@memforge\".mcp_servers.memforge.tools.get_memory]\napproval_mode = \"approve\"\n\n[plugins.\"memory@memforge\".mcp_servers.memforge.tools.get_resource]\napproval_mode = \"approve\"\n\n[plugins.\"memory@memforge\".mcp_servers.memforge.tools.list_sources]\napproval_mode = \"approve\"\n\n[plugins.\"memory@memforge\".mcp_servers.memforge.tools.list_recent_memories]\napproval_mode = \"approve\"\n\n[plugins.\"memory@memforge\".mcp_servers.memforge.tools.list_workspaces]\napproval_mode = \"approve\"\n\n[permissions.iso.filesystem]\n\":minimal\" = \"read\"\n\"/opt/homebrew\" = \"read\"\n\"/Users/Shared/wk/<run>/home\" = \"read\"\n\"/Users/Shared/wk/<run>/home/.codex/.tmp\" = \"none\"\n\"/Users/Shared/wk/<run>/tmp\" = \"write\"\n\"/private/tmp\" = \"none\"\n\"/private/var/tmp\" = \"none\"\n\":project_roots\" = { \".\" = \"write\" }\n\n[permissions.iso.network]\nenabled = false\n",
+        "mcp_servers": [
+          "memforge"
+        ],
+        "prompt_input_ok": true,
+        "prompt_has_docs_index": false,
+        "prompt_mentions_developer_home": false,
+        "prompt_mentions_memforge": true,
+        "skill_roots": [
+          "/Users/Shared/wk/<run>/home/.codex/skills/.system",
+          "/Users/Shared/wk/<run>/home/.codex/plugins/cache/memforge/memory/0.2.0-beta.3/skills"
+        ]
+      }
+    }
+  },
+  "developer_project": {
+    "containers": {
+      "memforge-admin-ui-1": {
+        "id": "ebf5ba3791f1b22b80fb4339398d81345ddf7bd4187a64ebbb43628bb9436fd5",
+        "image": "sha256:8c085fc3317b14288eeeb1f6797849e4790d05b583808a60bed008c1caf1b97f",
+        "status": "exited",
+        "started_at": "2026-06-12T10:20:01.426389544Z",
+        "finished_at": "2026-06-13T01:17:24.30202392Z"
+      },
+      "memforge-api-1": {
+        "id": "cc8a451f94b34327ba9722995c4d15e21806548e2d69fa44fdb56a1b81944770",
+        "image": "sha256:0471e6bb7b268d44dec9d46cba9efc594624661ea9909383d8bbf0a74226fa45",
+        "status": "exited",
+        "started_at": "2026-06-12T10:19:36.304304338Z",
+        "finished_at": "2026-06-13T01:17:24.302081087Z"
+      }
+    },
+    "volume": {
+      "name": "memforge_memforge-data",
+      "created_at": "2026-06-03T07:26:28Z"
+    },
+    "listeners_on_default_plugin_port": 0
+  },
+  "problems": []
+}

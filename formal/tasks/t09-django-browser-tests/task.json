@@ -1,0 +1,95 @@
+{
+  "id": "t09-django-browser-tests",
+  "number": 9,
+  "role": "scored",
+  "doc_set": "django",
+  "prompt": "Add a browser integration test in `tests/admin_views/test_collapsible_fieldset.py`: on the change form of `Article` in the admin, clicking the summary of the collapsed `Advanced options` fieldset opens it. Write it the way our contributing docs describe for tests that need a browser. This is a trimmed extract of Django that cannot run on its own, so do not try to run it. Keep the change small and tell me briefly what you did.",
+  "decision": "Django's integration tests moved from Selenium to Playwright, and `django.test.selenium` was removed.",
+  "difference": "imports Selenium or a Selenium test base class (old) against imports Playwright or a Playwright test base class (new)",
+  "revisions": {
+    "old": {
+      "commit": "d92b0209014021350af0383983315bf0a05ffac0",
+      "path": "docs/internals/contributing/writing-code/unit-tests.txt"
+    },
+    "new": {
+      "commit": "464a5e184443af937977ebe0ec5150fbfd6ee854",
+      "path": "docs/internals/contributing/writing-code/unit-tests.txt"
+    }
+  },
+  "neutral_names": [
+    "internals/contributing/writing-code/running-the-test-suite.txt",
+    "internals/contributing/writing-code/test-suite-guide.txt"
+  ],
+  "markers": {
+    "old": "Running the Selenium tests",
+    "new": "Running the Playwright tests"
+  },
+  "reversal_check": {
+    "old_has": [
+      "Running the Selenium tests",
+      "--selenium=firefox,chrome",
+      "from django.test.selenium import SeleniumTestCase"
+    ],
+    "old_lacks": [
+      "Playwright",
+      "playwright"
+    ],
+    "new_has": [
+      "Running the Playwright tests",
+      "--playwright=chromium,firefox",
+      "from playwright_tests import PlaywrightTestCase"
+    ],
+    "new_lacks": [
+      "Selenium",
+      "selenium"
+    ]
+  },
+  "leak_tokens": [
+    "selenium",
+    "Selenium",
+    "playwright",
+    "Playwright",
+    "LiveServer",
+    "RemovedIn",
+    "calendar"
+  ],
+  "contamination": {
+    "old": [
+      {
+        "label": "mentions Selenium",
+        "regex": "[Ss]elenium"
+      },
+      {
+        "label": "shows a Selenium test",
+        "regex": "from selenium|SeleniumTestCase|MySeleniumTests"
+      }
+    ],
+    "new": [
+      {
+        "label": "mentions Playwright",
+        "regex": "[Pp]laywright"
+      },
+      {
+        "label": "says django.test.selenium was removed",
+        "regex": "django\\.test\\.selenium``? module was removed"
+      }
+    ],
+    "reviewed_not_stating": {
+      "old": {
+        "docs/releases/1.4.txt": "a historical release note",
+        "docs/releases/1.5.txt": "a historical release note",
+        "docs/releases/5.0.txt": "a historical release note",
+        "docs/releases/6.0.txt": "a historical release note",
+        "docs/releases/6.2.txt": "says django.test.selenium was removed; it is counted under the new rule",
+        "docs/ref/contrib/staticfiles.txt": "names Selenium in passing as one example of a browser tool"
+      }
+    }
+  },
+  "weak_points": [
+    "The user-facing testing guide at the pinned commit still teaches `LiveServerTestCase` with a full Selenium example, and it is meant for Django users, not for Django's own suite. It is left in place and counted as contamination. A run that follows it lands on `old` for a reason other than the staged old revision."
+  ],
+  "separation": {
+    "rating": "clean",
+    "why": "Each revision names one tool and never the other. A user-facing guide outside the pair still teaches Selenium; see the contamination count."
+  }
+}

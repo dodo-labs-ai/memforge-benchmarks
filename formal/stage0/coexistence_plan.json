@@ -1,0 +1,2422 @@
+{
+  "rule": "See the docstring of formal/corpus/coexist.py.",
+  "seed": "stale-doc-formal-2026-11-05",
+  "uniform_file_time": "2026-10-20T09:00:00+00:00",
+  "task_positions": {
+    "t01-govuk-db-admin-role": 0,
+    "t02-gitlab-api-new-field": 1,
+    "t05-gitlab-vue-i18n": 2,
+    "t06-govuk-check-env-var": 3,
+    "t08-django-deprecation-warning": 4,
+    "t09-django-browser-tests": 5,
+    "t10-grpc-principal-name": 6,
+    "t12-grpc-max-ejection": 7,
+    "t16-rustforge-rollup-approval": 8,
+    "t18-otel-peer-service": 9,
+    "t20-rustforge-dev-desktop-access": 10,
+    "t21-rustforge-stable-priority": 11,
+    "t22-otel-rpc-status-code": 12,
+    "t23-otel-exception-record": 13,
+    "t24-django-release-key": 14
+  },
+  "sets": {
+    "govuk": {
+      "pairs": {
+        "t01-govuk-db-admin-role": {
+          "replaces": [
+            "source/kubernetes/creating-a-new-database/index.html.md"
+          ],
+          "names": [
+            "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+            "kubernetes/creating-a-new-database/instance-setup.html.md"
+          ],
+          "D_arrangement": 0,
+          "D_names": {
+            "old": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+            "new": "kubernetes/creating-a-new-database/instance-setup.html.md"
+          }
+        }
+      },
+      "small_set_size": 30,
+      "large_set_size": 246,
+      "small_set_drawn_documents": [
+        "source/manual/prevent-a-page-being-returned-in-search-results.html.md",
+        "source/manual/merge-pr.html.md",
+        "source/manual/alerts/email-alerts-travel-medical.html.md",
+        "source/manual/setup-a-yubikey.html.md",
+        "source/kubernetes/index.html.md",
+        "source/manual/frontend-performance.html.md",
+        "source/manual/raising-issues-with-reliability-engineering.html.md",
+        "source/manual/security-alerts.html.md",
+        "source/partials/_intro.html.md",
+        "source/manual/taxonomy.html.md",
+        "source/manual/find-a-rails-template-based-on-a-govuk-url.html.md",
+        "source/manual/remove-site-from-transition-tool.html.md",
+        "source/manual/alerts/content-publisher-government-data-check-not-ok.html.md",
+        "source/kubernetes/creating-a-new-database/password.html.md",
+        "source/manual/where-to-find-what.html.md",
+        "source/manual/ownership-meaning.html.md",
+        "source/manual/query-cdn-logs.html.md",
+        "source/manual/schemas.html.md",
+        "source/manual/opensearch-cluster-health.html.md",
+        "source/manual/sidekiq.html.md",
+        "source/manual/publishing-a-ruby-gem.html.md",
+        "source/manual/fall-back-to-mirror.html.md",
+        "source/manual/howto-modify-change-note.html.md",
+        "source/manual/clear-the-redis-cache.html.md",
+        "source/manual/cdn.html.md",
+        "source/manual/codeql.html.md",
+        "source/manual/howto-redirect-html-attachment-urls-from-whitehall.html.md",
+        "source/manual/boost-or-demote-a-document-in-search.html.md"
+      ]
+    },
+    "django": {
+      "pairs": {
+        "t09-django-browser-tests": {
+          "replaces": [
+            "docs/internals/contributing/writing-code/unit-tests.txt"
+          ],
+          "names": [
+            "internals/contributing/writing-code/running-the-test-suite.txt",
+            "internals/contributing/writing-code/test-suite-guide.txt"
+          ],
+          "D_arrangement": 1,
+          "D_names": {
+            "old": "internals/contributing/writing-code/test-suite-guide.txt",
+            "new": "internals/contributing/writing-code/running-the-test-suite.txt"
+          }
+        },
+        "t24-django-release-key": {
+          "replaces": [
+            "docs/internals/howto-release-django.txt"
+          ],
+          "names": [
+            "internals/shipping-guide.txt",
+            "internals/shipping-steps.txt"
+          ],
+          "D_arrangement": 1,
+          "D_names": {
+            "old": "internals/shipping-steps.txt",
+            "new": "internals/shipping-guide.txt"
+          }
+        }
+      },
+      "small_set_size": 30,
+      "large_set_size": 682,
+      "small_set_drawn_documents": [
+        "docs/releases/6.1.1.txt",
+        "docs/misc/api-stability.txt",
+        "docs/releases/3.1.7.txt",
+        "docs/releases/1.0.1.txt",
+        "docs/releases/2.0.4.txt",
+        "docs/internals/contributing/localizing.txt",
+        "docs/releases/4.0.1.txt",
+        "docs/releases/5.0.5.txt",
+        "docs/intro/whatsnext.txt",
+        "docs/internals/git.txt",
+        "docs/releases/1.10.8.txt",
+        "docs/releases/5.2.13.txt",
+        "docs/releases/3.2.2.txt",
+        "docs/releases/1.4.11.txt",
+        "docs/releases/2.2.24.txt",
+        "docs/internals/contributing/writing-code/submitting-patches.txt",
+        "docs/ref/contrib/gis/install/postgis.txt",
+        "docs/howto/custom-template-tags.txt",
+        "docs/releases/1.8.2.txt",
+        "docs/releases/3.0.5.txt",
+        "docs/releases/3.2.11.txt",
+        "docs/releases/4.2.11.txt",
+        "docs/releases/6.0.5.txt",
+        "docs/releases/1.0.2.txt",
+        "docs/releases/5.2.1.txt",
+        "docs/topics/db/tablespaces.txt"
+      ]
+    },
+    "otel": {
+      "pairs": {
+        "t18-otel-peer-service": {
+          "replaces": [
+            "docs/registry/attributes/service.md"
+          ],
+          "names": [
+            "registry/attributes/service-identity.md",
+            "registry/attributes/service-metadata.md"
+          ],
+          "D_arrangement": 1,
+          "D_names": {
+            "old": "registry/attributes/service-metadata.md",
+            "new": "registry/attributes/service-identity.md"
+          }
+        },
+        "t22-otel-rpc-status-code": {
+          "replaces": [
+            "docs/registry/attributes/rpc.md"
+          ],
+          "names": [
+            "registry/attributes/remote-call.md",
+            "registry/attributes/remote-procedure.md"
+          ],
+          "D_arrangement": 0,
+          "D_names": {
+            "old": "registry/attributes/remote-call.md",
+            "new": "registry/attributes/remote-procedure.md"
+          }
+        }
+      },
+      "small_set_size": 30,
+      "large_set_size": 307,
+      "small_set_drawn_documents": [
+        "docs/registry/entities/aws.md",
+        "docs/resource/container.md",
+        "docs/registry/entities/README.md",
+        "docs/gen-ai/README.md",
+        "docs/README.md",
+        "docs/registry/attributes/app.md",
+        "docs/messaging/README.md",
+        "docs/hardware/tape-drive.md",
+        "docs/hardware/disk-controller.md",
+        "docs/registry/entities/webengine.md",
+        "docs/db/database-spans.md",
+        "docs/registry/attributes/event.md",
+        "docs/registry/attributes/openshift.md",
+        "docs/resource/cloud-provider/gcp/apphub.md",
+        "docs/how-to-write-conventions/t-shaped-signals.md",
+        "docs/general/recording-errors.md",
+        "docs/dotnet/dotnet-kestrel-metrics.md",
+        "docs/hardware/voltage.md",
+        "docs/messaging/messaging-spans.md",
+        "docs/registry/attributes/heroku.md",
+        "docs/hardware/gpu.md",
+        "docs/db/README.md",
+        "docs/non-normative/compatibility/aws.md",
+        "docs/runtime/jvm-metrics.md",
+        "docs/general/metrics.md",
+        "docs/registry/attributes/thread.md"
+      ]
+    },
+    "rustforge": {
+      "pairs": {
+        "t16-rustforge-rollup-approval": {
+          "replaces": [
+            "src/release/rollups.md"
+          ],
+          "names": [
+            "release/rollup-process.md",
+            "release/rollup-workflow.md"
+          ],
+          "D_arrangement": 0,
+          "D_names": {
+            "old": "release/rollup-process.md",
+            "new": "release/rollup-workflow.md"
+          }
+        },
+        "t20-rustforge-dev-desktop-access": {
+          "replaces": [
+            "src/infra/docs/dev-desktop.md"
+          ],
+          "names": [
+            "infra/docs/remote-builders.md",
+            "infra/docs/remote-build-hosts.md"
+          ],
+          "D_arrangement": 0,
+          "D_names": {
+            "old": "infra/docs/remote-builders.md",
+            "new": "infra/docs/remote-build-hosts.md"
+          }
+        },
+        "t21-rustforge-stable-priority": {
+          "replaces": [
+            "src/release/process.md"
+          ],
+          "names": [
+            "release/cycle-steps.md",
+            "release/cycle-guide.md"
+          ],
+          "D_arrangement": 1,
+          "D_names": {
+            "old": "release/cycle-guide.md",
+            "new": "release/cycle-steps.md"
+          }
+        }
+      },
+      "small_set_size": 30,
+      "large_set_size": 153,
+      "small_set_drawn_documents": [
+        "src/triagebot/crate-yanking.md",
+        "src/policies/crate-ownership.md",
+        "src/libs/index.md",
+        "src/triagebot/major-changes.md",
+        "src/mdbook/proposals-and-stabilization.md",
+        "src/triagebot/zulip-notifications.md",
+        "src/infra/docs/index.md",
+        "src/platforms/discord.md",
+        "src/infra/other-installation-methods.md",
+        "src/triagebot/labeling.md",
+        "src/compiler/index.md",
+        "src/infra/docs/cdn.md",
+        "src/infra/archive-stable-version-installers.md",
+        "src/platforms/twitter.md",
+        "src/triagebot/view-all-comments-link.md",
+        "src/rustdoc/membership.md",
+        "src/infra/docs/bastion.md",
+        "src/triagebot/concern.md",
+        "src/how-to-ask-for-funding.md",
+        "src/triagebot/rendered-link.md",
+        "src/triagebot/zulip-meeting.md",
+        "src/SUMMARY.md",
+        "src/infra/docs/aws-regions.md",
+        "src/compiler/notification-groups.md"
+      ]
+    }
+  },
+  "balance": {
+    "scored_runs_holding_documents": 216,
+    "scored_overall": [
+      108,
+      108
+    ],
+    "scored_by_group": {
+      "B": [
+        24,
+        24
+      ],
+      "B-t": [
+        12,
+        12
+      ],
+      "C1": [
+        24,
+        24
+      ],
+      "C2": [
+        24,
+        24
+      ],
+      "D": [
+        24,
+        24
+      ]
+    },
+    "scored_by_task": {
+      "t01-govuk-db-admin-role": [
+        27,
+        0
+      ],
+      "t09-django-browser-tests": [
+        0,
+        27
+      ],
+      "t16-rustforge-rollup-approval": [
+        27,
+        0
+      ],
+      "t18-otel-peer-service": [
+        0,
+        27
+      ],
+      "t20-rustforge-dev-desktop-access": [
+        27,
+        0
+      ],
+      "t21-rustforge-stable-priority": [
+        0,
+        27
+      ],
+      "t22-otel-rpc-status-code": [
+        27,
+        0
+      ],
+      "t24-django-release-key": [
+        0,
+        27
+      ]
+    },
+    "scored_by_task_without_D": {
+      "t01-govuk-db-admin-role": [
+        21,
+        0
+      ],
+      "t09-django-browser-tests": [
+        0,
+        21
+      ],
+      "t16-rustforge-rollup-approval": [
+        21,
+        0
+      ],
+      "t18-otel-peer-service": [
+        0,
+        21
+      ],
+      "t20-rustforge-dev-desktop-access": [
+        21,
+        0
+      ],
+      "t21-rustforge-stable-priority": [
+        0,
+        21
+      ],
+      "t22-otel-rpc-status-code": [
+        21,
+        0
+      ],
+      "t24-django-release-key": [
+        0,
+        21
+      ]
+    },
+    "note": "Each task keeps one arrangement, so a task is all one way and the split is even only across tasks."
+  },
+  "rotation": [
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t01-govuk-db-admin-role",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+      "new_name": "kubernetes/creating-a-new-database/instance-setup.html.md"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t09-django-browser-tests",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/contributing/writing-code/test-suite-guide.txt",
+      "new_name": "internals/contributing/writing-code/running-the-test-suite.txt"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t16-rustforge-rollup-approval",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "release/rollup-process.md",
+      "new_name": "release/rollup-workflow.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t18-otel-peer-service",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "registry/attributes/service-metadata.md",
+      "new_name": "registry/attributes/service-identity.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t20-rustforge-dev-desktop-access",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "infra/docs/remote-builders.md",
+      "new_name": "infra/docs/remote-build-hosts.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t21-rustforge-stable-priority",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "release/cycle-guide.md",
+      "new_name": "release/cycle-steps.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t22-otel-rpc-status-code",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 0,
+      "old_name": "registry/attributes/remote-call.md",
+      "new_name": "registry/attributes/remote-procedure.md"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B-t",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B-t",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "B-t",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C1",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C1",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C1",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C1",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C1",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C1",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C2",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C2",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C2",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C2",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C2",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "C2",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "D",
+      "size": "small",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "D",
+      "size": "small",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "D",
+      "size": "small",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "D",
+      "size": "large",
+      "rep": 1,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "D",
+      "size": "large",
+      "rep": 2,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    },
+    {
+      "task": "t24-django-release-key",
+      "group": "D",
+      "size": "large",
+      "rep": 3,
+      "arrangement": 1,
+      "old_name": "internals/shipping-steps.txt",
+      "new_name": "internals/shipping-guide.txt"
+    }
+  ],
+  "folders_checked": {
+    "govuk/small": {
+      "files": 30,
+      "on_disk": 30,
+      "bytes": 163003,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 30,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "govuk/large": {
+      "files": 246,
+      "on_disk": 246,
+      "bytes": 1287727,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 246,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "django/small": {
+      "files": 30,
+      "on_disk": 30,
+      "bytes": 251068,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 30,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "django/large": {
+      "files": 682,
+      "on_disk": 682,
+      "bytes": 6593667,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 682,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "otel/small": {
+      "files": 30,
+      "on_disk": 30,
+      "bytes": 417552,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 30,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "otel/large": {
+      "files": 307,
+      "on_disk": 307,
+      "bytes": 4087910,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 307,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "rustforge/small": {
+      "files": 30,
+      "on_disk": 30,
+      "bytes": 121821,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 30,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    },
+    "rustforge/large": {
+      "files": 153,
+      "on_disk": 153,
+      "bytes": 751536,
+      "one_file_time": true,
+      "memforge_counts": {
+        "included": 153,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      }
+    }
+  }
+}

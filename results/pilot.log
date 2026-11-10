@@ -1,0 +1,41 @@
+batch A: 8 runs, tokens so far 1246228
+queue-stall/A/2 attempt 1: completed outcome=neither tokens=102982 79.9s memory={}
+queue-stall/A/1 attempt 1: completed outcome=old tokens=130409 81.9s memory={}
+queue-stall/A/3 attempt 1: completed outcome=old tokens=119281 100.0s memory={}
+job-retries/A/3 attempt 1: completed outcome=neither tokens=97456 62.6s memory={}
+failure-alerts/A/3 attempt 1: completed outcome=neither tokens=113821 87.7s memory={}
+failure-alerts/A/2 attempt 1: completed outcome=neither tokens=115134 58.1s memory={}
+job-retries/A/2 attempt 1: completed outcome=neither tokens=118099 81.0s memory={}
+failure-alerts/A/1 attempt 1: completed outcome=neither tokens=164374 162.1s memory={}
+batch A recorded
+batch B: 8 runs, tokens so far 3047976
+job-retries/B/2 attempt 1: completed outcome=old tokens=61710 23.7s memory={}
+queue-stall/B/1 attempt 1: completed outcome=old tokens=101511 69.5s memory={}
+failure-alerts/B/1 attempt 1: completed outcome=old tokens=136989 80.2s memory={}
+failure-alerts/B/2 attempt 1: completed outcome=old tokens=99723 63.1s memory={}
+failure-alerts/B/3 attempt 1: completed outcome=new tokens=118309 65.8s memory={}
+queue-stall/B/2 attempt 1: completed outcome=old tokens=99607 66.6s memory={}
+queue-stall/B/3 attempt 1: completed outcome=old tokens=102033 77.0s memory={}
+job-retries/B/3 attempt 1: completed outcome=new tokens=80774 57.3s memory={}
+batch B recorded
+batch C: 8 runs, tokens so far 4545208
+failure-alerts/C/1 attempt 1: completed outcome=new tokens=46456 21.7s memory={}
+failure-alerts/C/3 attempt 1: completed outcome=new tokens=62338 25.7s memory={}
+job-retries/C/2 attempt 1: completed outcome=new tokens=46655 35.1s memory={}
+queue-stall/C/3 attempt 1: completed outcome=new tokens=99805 64.1s memory={}
+queue-stall/C/1 attempt 1: completed outcome=new tokens=100369 62.7s memory={}
+failure-alerts/C/2 attempt 1: completed outcome=new tokens=63361 44.7s memory={}
+job-retries/C/3 attempt 1: completed outcome=new tokens=62337 24.1s memory={}
+queue-stall/C/2 attempt 1: completed outcome=old tokens=84125 53.5s memory={}
+batch C recorded
+batch D: 8 runs, tokens so far 5582462
+queue-stall/D/1 attempt 1: completed outcome=old tokens=194716 80.8s memory={'search': 1, 'get_memory': 1}
+failure-alerts/D/1 attempt 1: completed outcome=new tokens=134762 46.2s memory={'search': 1, 'get_memory': 1}
+failure-alerts/D/2 attempt 1: completed outcome=new tokens=108742 51.2s memory={'search': 1}
+failure-alerts/D/3 attempt 1: completed outcome=new tokens=162665 52.7s memory={'search': 1, 'get_memory': 1}
+queue-stall/D/3 attempt 1: completed outcome=old tokens=162150 57.0s memory={'search': 1, 'get_memory': 1}
+job-retries/D/2 attempt 1: completed outcome=new tokens=119424 43.9s memory={'search': 1, 'get_memory': 1}
+queue-stall/D/2 attempt 1: completed outcome=old tokens=164612 73.8s memory={'search': 1, 'get_memory': 1}
+job-retries/D/3 attempt 1: completed outcome=new tokens=132295 50.1s memory={'search': 1, 'get_memory': 1}
+batch D recorded
+finished

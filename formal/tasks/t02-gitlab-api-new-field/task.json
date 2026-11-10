@@ -1,0 +1,78 @@
+{
+ "id": "t02-gitlab-api-new-field",
+ "number": 2,
+ "role": "dropped",
+ "doc_set": "gitlab",
+ "prompt": "Consumers of `GET /projects/:id/contributors` need each user's `job_title`. Add it to the API, following our API style guide. This is a trimmed extract that cannot be run here. Keep the change small and tell me briefly what you did.",
+ "decision": "The API style guide recommended a new feature-bounded entity class for a new field on a high-impact entity. It now says to try a new endpoint first, then an opt-in field, and only then a feature-bounded entity.",
+ "difference": "a new entity subclass served by the existing endpoint (old) against an `expose ..., if:` field with an optional parameter, or a new route with a new entity (new)",
+ "revisions": {
+  "old": {
+   "commit": "e4ee9685240531320e01b0a38549550cbd0c6749",
+   "path": "doc/development/api_styleguide.md"
+  },
+  "new": {
+   "commit": "e0fda37846de15da962232133e6306eb925554cd",
+   "path": "doc/development/api_styleguide.md"
+  }
+ },
+ "neutral_names": [
+  "api_conventions.md",
+  "api_practices.md"
+ ],
+ "markers": {
+  "old": "#### Recommended pattern",
+  "new": "##### Opt-in field example"
+ },
+ "reversal_check": {
+  "old_has": [
+   "#### Recommended pattern",
+   "Instead of adding fields to a high-impact entity, create a"
+  ],
+  "old_lacks": [
+   "##### Opt-in field example",
+   "Make the field opt-in"
+  ],
+  "new_has": [
+   "Try these solutions, in order:",
+   "Make the field opt-in",
+   "If neither solution fits, create a **feature-bounded entity**"
+  ],
+  "new_lacks": [
+   "#### Recommended pattern",
+   "Instead of adding fields to a high-impact entity, create a"
+  ]
+ },
+ "leak_tokens": [
+  "if:",
+  "optional :",
+  "feature-bounded",
+  "feature_bounded",
+  "s__(",
+  "$options",
+  "i18n"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "recommends a feature-bounded entity",
+    "regex": "[Ff]eature-bounded entit"
+   }
+  ],
+  "new": [
+   {
+    "label": "recommends an opt-in field",
+    "regex": "(field opt-in|[Oo]pt-in field)"
+   }
+  ]
+ },
+ "weak_points": [
+  "The new revision keeps the feature-bounded entity as its third choice, so `old` is the guide's former first choice, not a forbidden answer.",
+  "A plain `expose` on UserBasic is what both revisions advise against and counts as `neither`."
+ ],
+ "separation": {
+  "rating": "one way",
+  "why": "`new` is clean: opt-in is absent from the old revision. `old` is not: the new revision still allows a feature-bounded entity as its third choice, so a reader of the new revision can land on `old`."
+ },
+ "dropped_because": "With only the new revision, three of three runs stayed old: the new revision keeps the old answer as its third choice."
+}

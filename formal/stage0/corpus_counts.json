@@ -1,0 +1,93 @@
+{
+  "sets": {
+    "govuk": {
+      "repo": "alphagov/govuk-developer-docs",
+      "commit": "c3b7a0cfbe832f35251eb41015735f272c0ab3e2",
+      "glob": "source/**/*.html.md",
+      "exclude": [],
+      "licence": "MIT",
+      "role": "scored",
+      "files": 245,
+      "bytes": 1281079,
+      "largest_file_bytes": 32217,
+      "research_notes_count": 339,
+      "quick_check_count": 309,
+      "explanation": "309 is every .md and .erb file under source/ (245 + 64), and the .erb files include layouts, partials and templates. 339 could not be reproduced at this pin: no combination of file types under source/ adds up to it. The set is the 245 .html.md files, the ones MemForge's local file source reads. The 29 .html.md.erb documents are left out for every group, because the source ignores them and renaming them is not needed for the set to sync; none of them states a task's old or new rule."
+    },
+    "gitlab": {
+      "repo": "gitlab-org/gitlab",
+      "commit": "d03b20d5a631de24e340dfc91645e84b4a807e9e",
+      "glob": "doc/development/**/*.md",
+      "exclude": [],
+      "licence": "CC BY-SA 4.0",
+      "role": "scored",
+      "files": 668,
+      "bytes": 8368421,
+      "largest_file_bytes": 128948,
+      "research_notes_count": 916,
+      "quick_check_count": 668,
+      "explanation": "916 is the number of entries the tree listing returns for doc/development, 792 files and 124 directories. 668 is the .md files, and this is that count on gitlab-org/gitlab itself. The other 124 files are images."
+    },
+    "django": {
+      "repo": "django/django",
+      "commit": "1860f0a3f41e54f265e57de76d320ea0887d6b1c",
+      "glob": "docs/**/*.txt",
+      "exclude": [],
+      "licence": "BSD-3-Clause",
+      "role": "scored",
+      "files": 680,
+      "bytes": 6541190,
+      "largest_file_bytes": 161979,
+      "research_notes_count": 680,
+      "explanation": "The same: every .txt under docs/."
+    },
+    "otel": {
+      "repo": "open-telemetry/semantic-conventions",
+      "commit": "35ee31c3a16a718824e30316b544ea8f9e226c66",
+      "glob": "docs/**/*.md",
+      "exclude": [],
+      "licence": "Apache-2.0",
+      "role": "scored",
+      "files": 305,
+      "bytes": 4066026,
+      "largest_file_bytes": 217094,
+      "research_notes_count": 305,
+      "explanation": "The same: every .md under docs/."
+    },
+    "grpc": {
+      "repo": "grpc/proposal",
+      "commit": "4125fbd155353d35386d8fbd6b23454f6ab0e345",
+      "glob": "**/*.md",
+      "exclude": [
+        "CODE-OF-CONDUCT.md",
+        "README.md"
+      ],
+      "licence": "Apache-2.0",
+      "role": "scored",
+      "files": 200,
+      "bytes": 2056198,
+      "largest_file_bytes": 67165,
+      "research_notes_count": 200,
+      "explanation": "The repository has 202 .md files. The set leaves out README.md and CODE-OF-CONDUCT.md, which are not proposals, giving the same 200."
+    },
+    "rustforge": {
+      "repo": "rust-lang/rust-forge",
+      "commit": "4486d498cc6b0621b65918dbb56e79076c74c6f4",
+      "glob": "src/**/*.md",
+      "exclude": [],
+      "licence": "Apache-2.0 OR MIT",
+      "role": "reserve, needed only for task 16",
+      "files": 150,
+      "bytes": 729960,
+      "largest_file_bytes": 63492,
+      "research_notes_count": 150,
+      "explanation": "The same: every .md under src/. Only needed if reserve task 16 is promoted."
+    }
+  },
+  "five_scored_sets": {
+    "files": 2098,
+    "bytes": 22312914,
+    "plan_assumed_files": 2440,
+    "note": "The plan's sync projection assumed about 2,440 documents. The pinned sets hold 2,098, and each staged pair adds one more file on top of the set."
+  }
+}

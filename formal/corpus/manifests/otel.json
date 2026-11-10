@@ -1,0 +1,1539 @@
+{
+ "set": "otel",
+ "repo": "open-telemetry/semantic-conventions",
+ "host": "github",
+ "commit": "35ee31c3a16a718824e30316b544ea8f9e226c66",
+ "glob": "docs/**/*.md",
+ "exclude": [],
+ "licence": "Apache-2.0",
+ "archive_url": "https://codeload.github.com/open-telemetry/semantic-conventions/tar.gz/35ee31c3a16a718824e30316b544ea8f9e226c66",
+ "file_count": 305,
+ "total_bytes": 4066026,
+ "files": [
+  {
+   "path": "docs/README.md",
+   "bytes": 3567,
+   "sha256": "2c90cfbd35d7e3d4a71611961e2144cffab4add73a1fc0d227eb456725dd35bd"
+  },
+  {
+   "path": "docs/app/README.md",
+   "bytes": 349,
+   "sha256": "d37e4d008241d8c79a0569824ceb334fb2e1c854ae4512cb4d94f762921c2722"
+  },
+  {
+   "path": "docs/app/app-events.md",
+   "bytes": 14655,
+   "sha256": "0b0fbc83ea9ca5a2a1a6b6e7b3f36be5aaae2c40515fa67394e2eb098faa213e"
+  },
+  {
+   "path": "docs/azure/README.md",
+   "bytes": 592,
+   "sha256": "a0b7cda78eac366ebc07efd85c14f1ef1520dd3642c74db76dc9227bfc3ee1c4"
+  },
+  {
+   "path": "docs/azure/azure-events.md",
+   "bytes": 5075,
+   "sha256": "3fe2d7fcdc1127349c050ec967c79db7e23c66e30d2ddb875b17f2c59bc026a3"
+  },
+  {
+   "path": "docs/browser/README.md",
+   "bytes": 404,
+   "sha256": "16368851d9fd859cbf833ec98fba0873843ab2b06240e2015287deace461a734"
+  },
+  {
+   "path": "docs/browser/browser-events.md",
+   "bytes": 5834,
+   "sha256": "323acfe9c3f97c4cd749e4b7b60f4c11e14ba720ffc05e395481feb563037e1c"
+  },
+  {
+   "path": "docs/cicd/README.md",
+   "bytes": 672,
+   "sha256": "4e8a2abeb17199e843bbd9e60ec0b064064574fd34d7807050a81238ccbe199d"
+  },
+  {
+   "path": "docs/cicd/cicd-logs.md",
+   "bytes": 1026,
+   "sha256": "5073b98a1b777f62320d5743fedff035e85d19fa592462f4704c455ed7af2b78"
+  },
+  {
+   "path": "docs/cicd/cicd-metrics.md",
+   "bytes": 75563,
+   "sha256": "2fee232e465fd048a241810ae6a8b92356bf92e45a13cfab9ada183205bc40dd"
+  },
+  {
+   "path": "docs/cicd/cicd-spans.md",
+   "bytes": 12142,
+   "sha256": "ce7e11c85d0cbad38bc61056026c1db486f67dcc259827dfe2f213e087d4641c"
+  },
+  {
+   "path": "docs/cli/README.md",
+   "bytes": 372,
+   "sha256": "0d7a0985b721435a5c561dd8085ac65869f8a887c413f6240971e60ed69a8919"
+  },
+  {
+   "path": "docs/cli/cli-spans.md",
+   "bytes": 9613,
+   "sha256": "7eb66fafa93f232cedd8c4e31ab1929e8904c43d640f23a1b60b6480dce2e195"
+  },
+  {
+   "path": "docs/cloud-providers/README.md",
+   "bytes": 496,
+   "sha256": "e9850cf5f35d6cf0f54295e5c4c5342c2441739dfdd672dc9ad1d9b3ece5166f"
+  },
+  {
+   "path": "docs/cloud-providers/aws-sdk.md",
+   "bytes": 5346,
+   "sha256": "f69beb672089145799289f1364ea5ed3754cb83da545c419ede339d901e0dbce"
+  },
+  {
+   "path": "docs/cloudevents/README.md",
+   "bytes": 603,
+   "sha256": "315600192c71ef7f0f8b7f518d559a439e845766f26cfbb330084f9cef2dde3b"
+  },
+  {
+   "path": "docs/cloudevents/cloudevents-spans.md",
+   "bytes": 3983,
+   "sha256": "1d05902405ade838ed473d358dcbd52b073a80941808af03fc172dc6a3143a3d"
+  },
+  {
+   "path": "docs/configuration/README.md",
+   "bytes": 731,
+   "sha256": "9dde473c260cda4fd36e034a684d818a720fd361d47c0db73b84d035a89c3c3d"
+  },
+  {
+   "path": "docs/configuration/version-selection.md",
+   "bytes": 4515,
+   "sha256": "f16677e40e1ce1e1aa572e513d6897186c017934925361ae6180092a23d170f0"
+  },
+  {
+   "path": "docs/db/README.md",
+   "bytes": 3166,
+   "sha256": "17a0bc08f40336f976342efd931f07ec01d403f2a3e8f1a32ea66295a2f21c88"
+  },
+  {
+   "path": "docs/db/cassandra.md",
+   "bytes": 17653,
+   "sha256": "32d8d2d864ed941f093882506bcf3bbdad4a631ea4c74d906544a853589d3b80"
+  },
+  {
+   "path": "docs/db/cosmosdb.md",
+   "bytes": 35691,
+   "sha256": "e86ca5993545719d02c75971c31dd9d3371427586303a0268c0816a4f681c5c1"
+  },
+  {
+   "path": "docs/db/couchdb.md",
+   "bytes": 7553,
+   "sha256": "870c76ae01364f171ab5ad04647697039153cf9253d67ffac0db904e1367cd38"
+  },
+  {
+   "path": "docs/db/database-exceptions.md",
+   "bytes": 3566,
+   "sha256": "689db9ed91d65499b61729b82328e423eb577178a1c7afe8aaa710b303a50817"
+  },
+  {
+   "path": "docs/db/database-metrics.md",
+   "bytes": 127121,
+   "sha256": "eb35c1dc42dd0caa8e8d1efb399cd04518c387b13482cd0f622cf42d29b40961"
+  },
+  {
+   "path": "docs/db/database-spans.md",
+   "bytes": 42187,
+   "sha256": "067dc3610c5e616ad356b1b9305ade307901ad53205748b4e625d224528db67e"
+  },
+  {
+   "path": "docs/db/dynamodb.md",
+   "bytes": 73448,
+   "sha256": "abd7c83b50bef13bab89e2c77afe28c54cb884ec324f81eb271f5893558613a6"
+  },
+  {
+   "path": "docs/db/elasticsearch.md",
+   "bytes": 19189,
+   "sha256": "c94e7708b01636024f2c3eceb656e25f328e826e599c8babf39fafa82b0fcdfc"
+  },
+  {
+   "path": "docs/db/hbase.md",
+   "bytes": 8624,
+   "sha256": "ac699117c127a0e87c0807f93c17ac5d93bc7822373540d6b9f8b51f20ff6b9e"
+  },
+  {
+   "path": "docs/db/mariadb.md",
+   "bytes": 14046,
+   "sha256": "ccababd609f6d87ac685ac7b38de44d7a5cb6f68e43967efad1f0100bdc34fc9"
+  },
+  {
+   "path": "docs/db/mongodb.md",
+   "bytes": 11439,
+   "sha256": "cf9cd20ae60edfb83a46fd37443a8422a85e54c978d0e2285e8e6710d906b758"
+  },
+  {
+   "path": "docs/db/mysql.md",
+   "bytes": 13897,
+   "sha256": "b9032b918e7308431663b93da991b14b8b54b111c7eefbfddaad3e184725b651"
+  },
+  {
+   "path": "docs/db/oracledb.md",
+   "bytes": 31238,
+   "sha256": "288eb4f5a30f79a550e6fcf6c333f995b5d3638e0cbe1657d015e673a44325c2"
+  },
+  {
+   "path": "docs/db/postgresql.md",
+   "bytes": 14522,
+   "sha256": "02e8e4c67dab8ef01193fa89454c6fdba00fd20e7435acf5bfb026b12355cb6b"
+  },
+  {
+   "path": "docs/db/redis.md",
+   "bytes": 10758,
+   "sha256": "fec7981a2e8fd9778fa9fce061cba55786589bdb0ca6e72c31b98fd74f2dd745"
+  },
+  {
+   "path": "docs/db/sql-server.md",
+   "bytes": 16310,
+   "sha256": "56fb5665cbcd42d93c661d30853516ce3444206ca658b23d87ae096d17c4707c"
+  },
+  {
+   "path": "docs/db/sql.md",
+   "bytes": 17104,
+   "sha256": "828a08cc0ddf38f11ee76e0f14c8c092877aa7ced13d0e76269f564b42c741bb"
+  },
+  {
+   "path": "docs/dns/README.md",
+   "bytes": 390,
+   "sha256": "bfaa14034134747db83d9626aed6ef467bcf44f7fb48e3674e797346c3baf27c"
+  },
+  {
+   "path": "docs/dns/dns-metrics.md",
+   "bytes": 2800,
+   "sha256": "7cc0af0d3604c4961cf5a6b16786cb726513c94289ad23d3e8936ec910b4d067"
+  },
+  {
+   "path": "docs/dotnet/README.md",
+   "bytes": 1113,
+   "sha256": "42438e4dc7f15339b164f28d3c3a163dda04ffdb8a2f855a4909901e8ffbb9de"
+  },
+  {
+   "path": "docs/dotnet/dotnet-aspnetcore-metrics.md",
+   "bytes": 76108,
+   "sha256": "d5d37f86af54660178d6eb8d8d0e7ac82c0de5e833ae314aad2a2cd70ea96f6c"
+  },
+  {
+   "path": "docs/dotnet/dotnet-dns-metrics.md",
+   "bytes": 2647,
+   "sha256": "cf4b05a2cb754e3f7a3bb86d2b57a44cb7446ebfaaab86cd57ec090b5c2390c2"
+  },
+  {
+   "path": "docs/dotnet/dotnet-http-metrics.md",
+   "bytes": 15374,
+   "sha256": "550b0f53c2d399313a44371f34c2d7a3a201eb869059f04fb2f5cb2f3cb40051"
+  },
+  {
+   "path": "docs/dotnet/dotnet-kestrel-metrics.md",
+   "bytes": 46030,
+   "sha256": "66f936bdf6de0c4cd112daaba321fbfd4e28074d555d27a2799488dc2b7ef025"
+  },
+  {
+   "path": "docs/dotnet/dotnet-network-traces.md",
+   "bytes": 25218,
+   "sha256": "666b32e8cf8aff44bb74f0cdef6498937b59724470ce192739e1a0e950d4ed01"
+  },
+  {
+   "path": "docs/dotnet/dotnet-signalr-metrics.md",
+   "bytes": 6617,
+   "sha256": "5daa7677ace3c22fa99b1da124045d64056abafe1493dd2a3440fc04f62f8ab3"
+  },
+  {
+   "path": "docs/exceptions/README.md",
+   "bytes": 1448,
+   "sha256": "ee7721a1079dd84ee6d7f3046f25d2baf137f8d2fcbf1f0237d514d2ae8b1115"
+  },
+  {
+   "path": "docs/exceptions/exceptions-logs.md",
+   "bytes": 10264,
+   "sha256": "d8cd711f0c17f752d303d2218e6916787135581ca6c5d762cf1dd483c53f2efd"
+  },
+  {
+   "path": "docs/exceptions/exceptions-spans.md",
+   "bytes": 6546,
+   "sha256": "9a5745ca99b555815360ba0916912ba554dd7672ba46ce76ed76ce296ab0a1db"
+  },
+  {
+   "path": "docs/faas/README.md",
+   "bytes": 2366,
+   "sha256": "8c723540c73fb66ef372e2e76c4174f1f96ecfd6d6ccc3c9979f701f78d9659a"
+  },
+  {
+   "path": "docs/faas/aws-lambda.md",
+   "bytes": 23250,
+   "sha256": "90416b5893aa5db181f942c5ee808d0fc58a7b24a2f0a6462172068804196555"
+  },
+  {
+   "path": "docs/faas/faas-exceptions.md",
+   "bytes": 3496,
+   "sha256": "f4bfd61087e14553cdf2e1c60733763d2022561429ba1508d85faea745f449fd"
+  },
+  {
+   "path": "docs/faas/faas-metrics.md",
+   "bytes": 23866,
+   "sha256": "60480588539f18958102072c000b3a09a5080606cfc30e042c5e71089d67e65f"
+  },
+  {
+   "path": "docs/faas/faas-spans.md",
+   "bytes": 27859,
+   "sha256": "4c35b43185a8fc1925ea0566dfa0ad55e11806644f172485b7e04c7c0cd1ed80"
+  },
+  {
+   "path": "docs/feature-flags/README.md",
+   "bytes": 563,
+   "sha256": "24a7b7574bd66b0c94a5521e20f4d190e788bf8b368f59a7de59992f7b5df19d"
+  },
+  {
+   "path": "docs/feature-flags/feature-flags-events.md",
+   "bytes": 10719,
+   "sha256": "e8603cdefddb1a1aba840aa8b98d0f1fc838a0ea65ef6a1ee926a099b6cd9cb6"
+  },
+  {
+   "path": "docs/gen-ai/README.md",
+   "bytes": 404,
+   "sha256": "76770ac8a5dda2398290bb8fa7d1c7eb3f03f1b725cb5bc9e3f5669ffde3a7cd"
+  },
+  {
+   "path": "docs/gen-ai/anthropic.md",
+   "bytes": 400,
+   "sha256": "e846be494a14f5e7245e366d997099f67dea0e4bfa6cfcbec852c76c54dbafa5"
+  },
+  {
+   "path": "docs/gen-ai/aws-bedrock.md",
+   "bytes": 402,
+   "sha256": "6e56e60ca4ff1427dc6fefa1f076b0ca36152a3cec4ccccb49d9dddf2fd8fd6e"
+  },
+  {
+   "path": "docs/gen-ai/azure-ai-inference.md",
+   "bytes": 409,
+   "sha256": "11a610a40beb0f8ffb3bb318f61f8094380a8a568949d22ab7d9c80cc4a2ebc1"
+  },
+  {
+   "path": "docs/gen-ai/gen-ai-agent-spans.md",
+   "bytes": 402,
+   "sha256": "fe657ec5f04293a09681407ffa3b98c29dd8875c9861db682a68c9adf1a84f76"
+  },
+  {
+   "path": "docs/gen-ai/gen-ai-events.md",
+   "bytes": 397,
+   "sha256": "3b873322528382c2c9a28109d3e7067b764bb1e22230332abd392e91800335f0"
+  },
+  {
+   "path": "docs/gen-ai/gen-ai-exceptions.md",
+   "bytes": 401,
+   "sha256": "658f503ff61b6d10af9e3a33a4379f336e703a5038a5ed45ef975c162c4d1d11"
+  },
+  {
+   "path": "docs/gen-ai/gen-ai-metrics.md",
+   "bytes": 398,
+   "sha256": "811e0c5cc3c0c3d65dfda87b7cacf7212c296654c40b00b6e857bae329d7e56a"
+  },
+  {
+   "path": "docs/gen-ai/gen-ai-spans.md",
+   "bytes": 396,
+   "sha256": "a9898757b05a1c3e0aaa18d54140171d575717c8f7a59a07780e825e17847e99"
+  },
+  {
+   "path": "docs/gen-ai/mcp.md",
+   "bytes": 413,
+   "sha256": "1bca54b54d2f4783d0d9392a25728702c088871768bfec0e5b6dd4dc7801719b"
+  },
+  {
+   "path": "docs/gen-ai/non-normative/examples-llm-calls.md",
+   "bytes": 298,
+   "sha256": "12632e70859e9c372483fbdd5209987c319f071e871a87f1d2237efdf3fa9fc7"
+  },
+  {
+   "path": "docs/gen-ai/openai.md",
+   "bytes": 397,
+   "sha256": "844a33d5fb68b88b4fd8d16d23cecc511b87330edc808a33e61725adf31b0420"
+  },
+  {
+   "path": "docs/general/README.md",
+   "bytes": 573,
+   "sha256": "19d95f8403340cacc93544ac0a5a37aa65f15e47eb4ccb29cc2ef9810f870ef3"
+  },
+  {
+   "path": "docs/general/attribute-requirement-level.md",
+   "bytes": 6409,
+   "sha256": "9f3dbe1af30a503dbe983d2f350cc41a2a86e4e36ff7d79b709af27c16bbd7cb"
+  },
+  {
+   "path": "docs/general/attributes.md",
+   "bytes": 5035,
+   "sha256": "453cbdb87ceedd478d8c5792febd5a85a5632da12a51d27bf938cd954f09f15b"
+  },
+  {
+   "path": "docs/general/events.md",
+   "bytes": 6251,
+   "sha256": "3b0b9fcb023c92758db9806acb4c038750821eb12c72ca6a56b007b2dac30e62"
+  },
+  {
+   "path": "docs/general/metric-requirement-level.md",
+   "bytes": 1715,
+   "sha256": "2e5f00902d74860d26f6e30f4e2bf1b86057bad273341d1d4acb80e9bdb8b066"
+  },
+  {
+   "path": "docs/general/metrics.md",
+   "bytes": 7043,
+   "sha256": "948fe831ec6fcc153d8fcf089477e7beefb968ac7beafe100610fda7e93d7c26"
+  },
+  {
+   "path": "docs/general/naming.md",
+   "bytes": 24905,
+   "sha256": "3c2c1ca348b2256a9890d3d799d0d629cd1ded6a0030482a8e22858cabe27ee2"
+  },
+  {
+   "path": "docs/general/profiles.md",
+   "bytes": 8363,
+   "sha256": "040bb222d9a59609cbff33fb4003d226bdb4f2fb9104f3e5937cced22ab13f00"
+  },
+  {
+   "path": "docs/general/recording-errors.md",
+   "bytes": 5956,
+   "sha256": "76b077978e6b27ca08db0d64eceacc7c38b4cb785c6d3ebf2776e13908177ba8"
+  },
+  {
+   "path": "docs/general/semantic-convention-groups.md",
+   "bytes": 4348,
+   "sha256": "c323acc7b1a8ad653429225ae04b6c87c6ea28f20a062a9bbd773013b59ddf3e"
+  },
+  {
+   "path": "docs/general/session.md",
+   "bytes": 5466,
+   "sha256": "fd569bda201e65677551b286dd4b7049910b80c91e585cfdeb21fb59c7e45a2c"
+  },
+  {
+   "path": "docs/general/signal-requirement-level.md",
+   "bytes": 1344,
+   "sha256": "444191bccbb83c337201d97adb85754a66f8187eb25733d72f6ff81cf417f324"
+  },
+  {
+   "path": "docs/general/trace-compatibility.md",
+   "bytes": 2340,
+   "sha256": "b4873aea80dbf4edc0e003a3e4cb2caea58c61f420b9cd8207d1c16a28ac77c8"
+  },
+  {
+   "path": "docs/general/trace.md",
+   "bytes": 2486,
+   "sha256": "9bb1d62e4d9ae6aca414e90562a1537d03c0fbfda6b268d5bbb2f32eb40561bd"
+  },
+  {
+   "path": "docs/graphql/README.md",
+   "bytes": 402,
+   "sha256": "bede2f5440e30566e3cc19ad20947975024aa316e5a1da20286e46ea2ea78fa1"
+  },
+  {
+   "path": "docs/graphql/graphql-spans.md",
+   "bytes": 3120,
+   "sha256": "33cb0bf6d8287dacb2f3d436bc7ea2b8e92aad4956a10d7f03036c5f8fe7dbd3"
+  },
+  {
+   "path": "docs/hardware/README.md",
+   "bytes": 1961,
+   "sha256": "447208cfdd4a4a4785d4d8a5e9f50648ce61199874d90d3541ebbcd79408ab3c"
+  },
+  {
+   "path": "docs/hardware/battery.md",
+   "bytes": 17283,
+   "sha256": "84628d52c27e02a90e55ee7825e7b659e228bae19b9380c26729d5cf82a3cef2"
+  },
+  {
+   "path": "docs/hardware/common.md",
+   "bytes": 17869,
+   "sha256": "9dca921575682e1c32e794bdee4d978d0f4b889b5aa9840c2c9b2b66fd1876e3"
+  },
+  {
+   "path": "docs/hardware/cpu.md",
+   "bytes": 13598,
+   "sha256": "0c9d0a2cec3a5955b7e165cc676cd25e68f3f2f487e45eb7db47f840b93be580"
+  },
+  {
+   "path": "docs/hardware/disk-controller.md",
+   "bytes": 5787,
+   "sha256": "b5259be51d64e0658e40deef8f35429ee3539a00bab37603202c59a47b2bc464"
+  },
+  {
+   "path": "docs/hardware/enclosure.md",
+   "bytes": 5459,
+   "sha256": "c4b67789eac983269da83d68a086472473e3ee403e08bab8dc078e10bd750576"
+  },
+  {
+   "path": "docs/hardware/fan.md",
+   "bytes": 11801,
+   "sha256": "027a0a60a6394279c9397a5aa27c18000db1ddb371e32544e3c7492aab2dd1a6"
+  },
+  {
+   "path": "docs/hardware/gpu.md",
+   "bytes": 24931,
+   "sha256": "8de36f3a9e8c639c8628c220540916cb5dbb975567f936aed208893af8eb9a37"
+  },
+  {
+   "path": "docs/hardware/host.md",
+   "bytes": 8248,
+   "sha256": "3b32a32d641663ed9ba11b90171fdcb41b80bb43b24e201900acf597f1adb0a5"
+  },
+  {
+   "path": "docs/hardware/logical-disk.md",
+   "bytes": 14716,
+   "sha256": "a9922a10b9d010ccfb62876da053b2d9317f3ca6ca7d9ba7308d5acb987e15e4"
+  },
+  {
+   "path": "docs/hardware/memory.md",
+   "bytes": 11287,
+   "sha256": "ab1895ac21210020036259f29fbe6079140152a4d1522ec6d437aa9606c94dc8"
+  },
+  {
+   "path": "docs/hardware/network.md",
+   "bytes": 26977,
+   "sha256": "c76e4686a5c1a83a02c6d5c21c9d359251115d779d6ce3b73e56d42937ca03ed"
+  },
+  {
+   "path": "docs/hardware/physical-disk.md",
+   "bytes": 19004,
+   "sha256": "f78d9256f2f0fbe48a72b0e8f34310be70add9e2a871b8c27f5d3ce20b4c9276"
+  },
+  {
+   "path": "docs/hardware/power-supply.md",
+   "bytes": 13845,
+   "sha256": "52f0d932d013e17d8ff5a2824bb801dfb0b451b808c6280928aaa48545fdf06f"
+  },
+  {
+   "path": "docs/hardware/tape-drive.md",
+   "bytes": 11628,
+   "sha256": "9723c45f62367fbea686df4d060300eca6203597d64e39d9328921864e6864a7"
+  },
+  {
+   "path": "docs/hardware/temperature.md",
+   "bytes": 9932,
+   "sha256": "5985ecdb8e3c44b5c7b87655b50d92bfe9af29105a89896509051822a563f6ad"
+  },
+  {
+   "path": "docs/hardware/voltage.md",
+   "bytes": 11788,
+   "sha256": "8130a367a17911e4532d5f2e706a2a185b602f83d113fa3b831e55e3df616fc2"
+  },
+  {
+   "path": "docs/how-to-write-conventions/README.md",
+   "bytes": 18712,
+   "sha256": "5ee5b4ae5cb37a417224a370204f6c0b66d7ce3f6bb4ea2ba5c9eacb780ca87b"
+  },
+  {
+   "path": "docs/how-to-write-conventions/resource-and-entities.md",
+   "bytes": 15102,
+   "sha256": "d88263cab7dcfa02249704f04ad80db284b5e9fad6dc8fd99ab065ef7bb41ba5"
+  },
+  {
+   "path": "docs/how-to-write-conventions/status-metrics.md",
+   "bytes": 2955,
+   "sha256": "c0a7bc6d26594094fe5b728e0800c58f733411d5270416919992c0189b534688"
+  },
+  {
+   "path": "docs/how-to-write-conventions/t-shaped-signals.md",
+   "bytes": 2019,
+   "sha256": "24dcbb5f7809465f0948e757f0fe44f3d86b24ca36612fe0797ee478997e1f4c"
+  },
+  {
+   "path": "docs/http/README.md",
+   "bytes": 2622,
+   "sha256": "83de9626189969293cce2a6b864e07c7a39b5f0e7e5cac64d331f9159a2849fe"
+  },
+  {
+   "path": "docs/http/http-exceptions.md",
+   "bytes": 6898,
+   "sha256": "f051fd294668ef40534573b3a7d3355130da8b7f93e97a9a34b7fcad62dfe631"
+  },
+  {
+   "path": "docs/http/http-metrics.md",
+   "bytes": 86863,
+   "sha256": "658095f3dc478ef066ffde5cf9f4d041aa48918b8df30d4927446288b93553d1"
+  },
+  {
+   "path": "docs/http/http-spans.md",
+   "bytes": 74417,
+   "sha256": "bbdca0358a58f82efca70aa4a87e9829a91d9cb6d1a560635ee40e568add792b"
+  },
+  {
+   "path": "docs/messaging/README.md",
+   "bytes": 3133,
+   "sha256": "ccead076666838b0b98a761492d2eb42aa9c79efb9ebd6f99c0ac3d19b60a6ff"
+  },
+  {
+   "path": "docs/messaging/azure-messaging.md",
+   "bytes": 149801,
+   "sha256": "dbbd69175675f1147a9f7f6c353ad1cb51f2300de076a3c7c22d27e95b2a2a53"
+  },
+  {
+   "path": "docs/messaging/gcp-pubsub.md",
+   "bytes": 68975,
+   "sha256": "96f1919966a054230ea68c0c641529e922188c5261416c1d4b467d6972d42a86"
+  },
+  {
+   "path": "docs/messaging/kafka.md",
+   "bytes": 73626,
+   "sha256": "ff78e1ac3018ade80d43a360a2955cfd2fcd29561ebdd92b34cb501ea9cac31d"
+  },
+  {
+   "path": "docs/messaging/messaging-exceptions.md",
+   "bytes": 15389,
+   "sha256": "72c1353b357ba5f4e0816bce5c20a336038138d38a616ffc32761d6c78a08dc6"
+  },
+  {
+   "path": "docs/messaging/messaging-metrics.md",
+   "bytes": 38569,
+   "sha256": "a17537df566b34122f9ef0bc91cc8300fdbfe1c7a6d739e29a6f4ce0b4a01be8"
+  },
+  {
+   "path": "docs/messaging/messaging-spans.md",
+   "bytes": 95808,
+   "sha256": "a93a3c268cbef6dca2b753ac0ef814a7e7048262928f84fccc94c2261adb1721"
+  },
+  {
+   "path": "docs/messaging/rabbitmq.md",
+   "bytes": 46139,
+   "sha256": "04a8d611c162754efded775202fd4c3df559b940f452ad48116b115a256b1abc"
+  },
+  {
+   "path": "docs/messaging/rocketmq.md",
+   "bytes": 41900,
+   "sha256": "2774aff0753281748056d9131bfd9fb7c7875dafbb4e2f2ce1ea225a90fcdd82"
+  },
+  {
+   "path": "docs/messaging/sns.md",
+   "bytes": 11770,
+   "sha256": "56de89b8de68cf8b4e15cbf907c87079000fd70aaf3510da1051ddb12e3e3bd6"
+  },
+  {
+   "path": "docs/messaging/sqs.md",
+   "bytes": 33163,
+   "sha256": "1de490080732e68ea57e6943f7460348946ac8560f29aa3c77a9568169ea4d6d"
+  },
+  {
+   "path": "docs/mobile/README.md",
+   "bytes": 525,
+   "sha256": "07b296e4578ee89901552946266d27cbbaf759436378b7bc905e10c60168533f"
+  },
+  {
+   "path": "docs/mobile/mobile-events.md",
+   "bytes": 5241,
+   "sha256": "d635fc4a46fd7e0125812dd5c19a277059c2798d15058f303eec25eff47165fe"
+  },
+  {
+   "path": "docs/network/README.md",
+   "bytes": 576,
+   "sha256": "7e789c40d616805c7f18be4262e1a2fb75c0751a97fa32b8d42f6551cbb69da9"
+  },
+  {
+   "path": "docs/network/choosing-network-attributes.md",
+   "bytes": 58782,
+   "sha256": "21e6e8e0d49e3234685c38e03ad03963b67c07bdb1223af4e92a9721886c175b"
+  },
+  {
+   "path": "docs/nfs/README.md",
+   "bytes": 349,
+   "sha256": "b87f28a9046e50b3c24adc3ba7a6c2bd01bcb9315c0cbcd245e8455cc0554c18"
+  },
+  {
+   "path": "docs/nfs/nfs-metrics.md",
+   "bytes": 24656,
+   "sha256": "88205263ad9993d81ac32f22823d03cc62b830cde86fa9d4d3634ed3f14b6df9"
+  },
+  {
+   "path": "docs/non-normative/README.md",
+   "bytes": 233,
+   "sha256": "69227ebb67147ec90f253c4dfff5e8accfc1a3345c65d5b5c25c96b08650a8e4"
+  },
+  {
+   "path": "docs/non-normative/code-attrs-migration.md",
+   "bytes": 2536,
+   "sha256": "db53e641bd88344e12fdd194482591c08432e1bfb64070b1f557be37b2668aa2"
+  },
+  {
+   "path": "docs/non-normative/code-generation.md",
+   "bytes": 11175,
+   "sha256": "4242d88a591a7a5b2073c542492dd5cf1baa6dafd1a2ec4a043ba0bb11945474"
+  },
+  {
+   "path": "docs/non-normative/compatibility/README.md",
+   "bytes": 16,
+   "sha256": "19c97eda983b2da4bc961bd63a816fd10a7edbbb5d5802142a3721fef71e215d"
+  },
+  {
+   "path": "docs/non-normative/compatibility/aws.md",
+   "bytes": 2590,
+   "sha256": "451d789fdbd8765d6c919040517bfc94f7904915515b54d38884db85e2678270"
+  },
+  {
+   "path": "docs/non-normative/compatibility/grpc.md",
+   "bytes": 7490,
+   "sha256": "13c1df1ceace58012f1885fa66043abdbc794280cfe02bc9b8b89e66c8681037"
+  },
+  {
+   "path": "docs/non-normative/db-migration.md",
+   "bytes": 19564,
+   "sha256": "52746f889ec489c988d49a8cbd2ab021d33bff436d81dfff307c0bec7a67e32d"
+  },
+  {
+   "path": "docs/non-normative/groups/system/cpu-metrics-guidelines.md",
+   "bytes": 4791,
+   "sha256": "8f4d0e7b2c7e256197828fa0342c52ee685a712926990142db81b6c2bd0765f3"
+  },
+  {
+   "path": "docs/non-normative/groups/system/design-philosophy.md",
+   "bytes": 16622,
+   "sha256": "271393ef5688664d26e21f0ff69c0af2f28be3c5569f96b62d0153d0b95df5b7"
+  },
+  {
+   "path": "docs/non-normative/groups/system/use-cases.md",
+   "bytes": 4424,
+   "sha256": "7bd1efb32b17232d7202f5553889f565c6fbde76a2bf676cac550f8e5d38ef69"
+  },
+  {
+   "path": "docs/non-normative/http-migration.md",
+   "bytes": 13121,
+   "sha256": "2726327180ab7910de371ecdc65dc52bcd10c09b24ea39800408024fe63fe4b1"
+  },
+  {
+   "path": "docs/non-normative/k8s-attributes.md",
+   "bytes": 3504,
+   "sha256": "0983340170180efc2196cb587427d57fd5b15ebda31a2c617449edb112fb3088"
+  },
+  {
+   "path": "docs/non-normative/k8s-migration.md",
+   "bytes": 43165,
+   "sha256": "26925f2c9b92a1fda9303c8a4c71f166e56555ba726263dd7615de03e46a8b7e"
+  },
+  {
+   "path": "docs/non-normative/rpc-migration.md",
+   "bytes": 22274,
+   "sha256": "ca06bb037fdb772a0499c7e79b28625ab6c3f4067e03d2f8d88bdc3159168454"
+  },
+  {
+   "path": "docs/object-stores/README.md",
+   "bytes": 482,
+   "sha256": "72f301db0d5f47aa211d2cfa36856770321eebb8b9085675c6411d83a5383156"
+  },
+  {
+   "path": "docs/object-stores/s3.md",
+   "bytes": 10264,
+   "sha256": "3d1caf7132d3321fc378b52fd81e566bd1a5abf06e1522135e4fa314bd716090"
+  },
+  {
+   "path": "docs/otel/README.md",
+   "bytes": 468,
+   "sha256": "881946fbb9e69ed38fc58651e32378174ca08a34086775b120a0d17d9ec1ceb0"
+  },
+  {
+   "path": "docs/otel/sdk-metrics.md",
+   "bytes": 114112,
+   "sha256": "b82ec3e022c6cdd2257b7ca9d90ae3e07988ba4ad328f41133745413f805dae3"
+  },
+  {
+   "path": "docs/registry/README.md",
+   "bytes": 254,
+   "sha256": "a01fa9cba2274f309c15c46f24288d77882d0aa0c3fc601e33dec9fce256fa49"
+  },
+  {
+   "path": "docs/registry/attributes/README.md",
+   "bytes": 3763,
+   "sha256": "8eb31797a4fea289a793e96c655a303de772259aabcb5e2901b87519d4f09ec5"
+  },
+  {
+   "path": "docs/registry/attributes/android.md",
+   "bytes": 3928,
+   "sha256": "2783e83b33e0d8d198651ffaf45439ef3d2deeb4071cad1a32e47e84b773ceb1"
+  },
+  {
+   "path": "docs/registry/attributes/app.md",
+   "bytes": 6499,
+   "sha256": "4a2724b34a07bc71b62ca3c82785810a546130341afb8ead2bc79bf978f53961"
+  },
+  {
+   "path": "docs/registry/attributes/artifact.md",
+   "bytes": 4323,
+   "sha256": "131771ba6f7371999151404babd4d71a83bbae6068ec839046982b0958321b3d"
+  },
+  {
+   "path": "docs/registry/attributes/aspnetcore.md",
+   "bytes": 20272,
+   "sha256": "b29657cbee6e03960276ed6ce1129d587c6cb933d33d0e1ae47d676898b7ac8f"
+  },
+  {
+   "path": "docs/registry/attributes/aws.md",
+   "bytes": 26827,
+   "sha256": "865da6b33f60324e7c9f8425faff6f5395c2361824c4fa044317df1419c48d3e"
+  },
+  {
+   "path": "docs/registry/attributes/azure.md",
+   "bytes": 9417,
+   "sha256": "d2f5215d3323bc0d3d6e6a9fdc267a87cb790b9bee54e46867254b651e705404"
+  },
+  {
+   "path": "docs/registry/attributes/browser.md",
+   "bytes": 7699,
+   "sha256": "fddeb7dd257584ed2623718ee1473edfd30591f9b2a0c52448e5c10c4b4a46e0"
+  },
+  {
+   "path": "docs/registry/attributes/cassandra.md",
+   "bytes": 3344,
+   "sha256": "dd3b03fd685996bc7744b47f06b28e4fb81c9e35b10365d620d4fab7972990df"
+  },
+  {
+   "path": "docs/registry/attributes/cicd.md",
+   "bytes": 11890,
+   "sha256": "e503317462599b51bae95e790afce16ddb8fa1cac02156bb83931dabeeb045d9"
+  },
+  {
+   "path": "docs/registry/attributes/client.md",
+   "bytes": 6062,
+   "sha256": "dc44b4789651c2b6747bf6ed358c2221417872f4114b706f07fad3aaad70a266"
+  },
+  {
+   "path": "docs/registry/attributes/cloud.md",
+   "bytes": 10700,
+   "sha256": "32f9a124a5615f8a4be234a4efc06c42a2ddeaa1483a10db0d71eb8130e3a4a0"
+  },
+  {
+   "path": "docs/registry/attributes/cloudevents.md",
+   "bytes": 2199,
+   "sha256": "79500565c2d08ed65d47814c04e03b98483b63b033c8657c128506bd305d3bdd"
+  },
+  {
+   "path": "docs/registry/attributes/cloudfoundry.md",
+   "bytes": 6266,
+   "sha256": "00949a78370f11b7f19b286c45efe2456d56dbd392e88da425122d405ba805c0"
+  },
+  {
+   "path": "docs/registry/attributes/code.md",
+   "bytes": 5561,
+   "sha256": "f03fec1d2abc63aa95234851f1e8a5892e573f6907b41bcd9e50d782ed5e2f2f"
+  },
+  {
+   "path": "docs/registry/attributes/container.md",
+   "bytes": 8659,
+   "sha256": "c45c77ee17f28d9005160994bdd480533cccebd8f86def9855eb90b22302905b"
+  },
+  {
+   "path": "docs/registry/attributes/cpu.md",
+   "bytes": 1954,
+   "sha256": "cd91e9ed8bdf7e56d56c1282940f5c3fce1ba2b49df1bdc62bd20dd01a596378"
+  },
+  {
+   "path": "docs/registry/attributes/cpython.md",
+   "bytes": 1151,
+   "sha256": "21223972d396ae581827c3e897daa34023762e1ee3d0b182c4c53f780235b626"
+  },
+  {
+   "path": "docs/registry/attributes/db.md",
+   "bytes": 39472,
+   "sha256": "fb20631700f26a598a5589a010ead3e9ea7cbdbd48e0a556207bf69749abb1f1"
+  },
+  {
+   "path": "docs/registry/attributes/deployment.md",
+   "bytes": 3595,
+   "sha256": "74d6fc1ccee038d7dfc2c6d2b375a186735bf11545af4c73b58101e82a6a46be"
+  },
+  {
+   "path": "docs/registry/attributes/destination.md",
+   "bytes": 4796,
+   "sha256": "c9d05fa5f16b8e7b75fc3400acc4d44127da57982042317ffd5e379ef0b19ff0"
+  },
+  {
+   "path": "docs/registry/attributes/device.md",
+   "bytes": 3037,
+   "sha256": "ab219b07f7b74625c66c8cd265a500f3c2321e46b9e3a1113b4c05aa347d1366"
+  },
+  {
+   "path": "docs/registry/attributes/disk.md",
+   "bytes": 1026,
+   "sha256": "21abc9edb2f57dfffd73cd7d9d051d96b61f1106edd73f6806c8ebea5ec3ae0a"
+  },
+  {
+   "path": "docs/registry/attributes/dns.md",
+   "bytes": 974,
+   "sha256": "2edbaff9ab6ffc50a482f4fcd03e40302b7ee53e985327cdbbebbcc25b1726cc"
+  },
+  {
+   "path": "docs/registry/attributes/dotnet.md",
+   "bytes": 1357,
+   "sha256": "6ce5d042065606a91ace62747cd6f6db489651ebfd377aba041230b83a3072fb"
+  },
+  {
+   "path": "docs/registry/attributes/elasticsearch.md",
+   "bytes": 634,
+   "sha256": "d5362aca8c336020cc0ce1320fbc8baae1248f1af2176d632b02c7b47995a819"
+  },
+  {
+   "path": "docs/registry/attributes/enduser.md",
+   "bytes": 2413,
+   "sha256": "f6b4dbb7a4b65ac500037a53268d5989a35be4e347319897e22759fd372540a7"
+  },
+  {
+   "path": "docs/registry/attributes/error.md",
+   "bytes": 3428,
+   "sha256": "f9bb82bf3f82853d5a13469a6b5fb44a29b13a737e01af4c3df64cc8ece67638"
+  },
+  {
+   "path": "docs/registry/attributes/event.md",
+   "bytes": 699,
+   "sha256": "c5528cdfb940be4276f973f97b27c4733895f42f8a2a23d44ee38b43bd13f2af"
+  },
+  {
+   "path": "docs/registry/attributes/exception.md",
+   "bytes": 2636,
+   "sha256": "5fa32979fa27a31de3f1a145d6f44f211f9f19b33b2b2593db906ba6f2914050"
+  },
+  {
+   "path": "docs/registry/attributes/faas.md",
+   "bytes": 10584,
+   "sha256": "f66177a05805ad35c62613bc6204c19a658ff9b272956655a788c6244e35d307"
+  },
+  {
+   "path": "docs/registry/attributes/feature-flag.md",
+   "bytes": 8922,
+   "sha256": "3fd6f8929ace6f3f646600e7a7ba87c7565362e17e832317fd37e60de974dda6"
+  },
+  {
+   "path": "docs/registry/attributes/file.md",
+   "bytes": 7710,
+   "sha256": "3e5d10024e00eceb821152b8d8d5c81e784bab2313c8052595b5495890ac6393"
+  },
+  {
+   "path": "docs/registry/attributes/gcp.md",
+   "bytes": 19875,
+   "sha256": "2052b00ac942a426664aace81ae7228bff34c5dd5728ce4236b631cb339b932e"
+  },
+  {
+   "path": "docs/registry/attributes/gen-ai.md",
+   "bytes": 48155,
+   "sha256": "50be86fc656400dfaa05c45266f37d98de91c6f6c1944ab7e1c2a3a06dff4970"
+  },
+  {
+   "path": "docs/registry/attributes/geo.md",
+   "bytes": 3568,
+   "sha256": "003b4cd5ebfd53d9f735d637f942b4e78ff94c5db78c7a83dfd3d6d86d6013f5"
+  },
+  {
+   "path": "docs/registry/attributes/go.md",
+   "bytes": 3130,
+   "sha256": "3ebacdb8e6f9397b2a3f77ad31a1e323a9341f41a1cc0234744e39b11836b4cf"
+  },
+  {
+   "path": "docs/registry/attributes/graphql.md",
+   "bytes": 1797,
+   "sha256": "dfcef9854bd872e0d13c170470bbf8677a4cb3bf421e81290b1bb58281eb33cd"
+  },
+  {
+   "path": "docs/registry/attributes/hardware.md",
+   "bytes": 13014,
+   "sha256": "d073bac7537f062031b64c211002acd2bf4deea6757f25b8dac6aa1a8c444702"
+  },
+  {
+   "path": "docs/registry/attributes/heroku.md",
+   "bytes": 1107,
+   "sha256": "5e7a6c0a4ac8e5220650116e13d6089a99ad2776e59c44bf519382af552fe6a9"
+  },
+  {
+   "path": "docs/registry/attributes/host.md",
+   "bytes": 8967,
+   "sha256": "982c62e7e681c170dce66d9f7dac17919ec6ccfb6178febf604685272f7b9e5e"
+  },
+  {
+   "path": "docs/registry/attributes/http.md",
+   "bytes": 21728,
+   "sha256": "b298d1c42a38205843d12194958cdb8c05e94c11bf1c9efbc2c9c62e791d7be9"
+  },
+  {
+   "path": "docs/registry/attributes/ios.md",
+   "bytes": 4026,
+   "sha256": "f2580f3019a91f858a33877765407fb4531d6b18b7b872019288715c37a5462c"
+  },
+  {
+   "path": "docs/registry/attributes/jsonrpc.md",
+   "bytes": 1294,
+   "sha256": "2f387b408a80b375936e5798f5b1900b07764ab9d04124b43728ad5777edd1e0"
+  },
+  {
+   "path": "docs/registry/attributes/jvm.md",
+   "bytes": 8215,
+   "sha256": "25c5aa5e24fdbbfc2d5be052b4384e006042c1fbbcd9e13bbfd3ccdbae269328"
+  },
+  {
+   "path": "docs/registry/attributes/k8s.md",
+   "bytes": 56556,
+   "sha256": "927e5dbc9e2e261852c2400ec9b814e1e6d6a0ef33c43b37828c8e38a95fad32"
+  },
+  {
+   "path": "docs/registry/attributes/kafka.md",
+   "bytes": 1950,
+   "sha256": "544840c45da39a1c9ad5e900f004284fba5aebd673aae649906557f8991ef8d6"
+  },
+  {
+   "path": "docs/registry/attributes/linux.md",
+   "bytes": 1123,
+   "sha256": "e9549a652154d60356afbeaaac6e4ef4003e83e5d746b8958938c27325b0825a"
+  },
+  {
+   "path": "docs/registry/attributes/log.md",
+   "bytes": 4192,
+   "sha256": "892d0ce8fcbc9740e31a29f5781fbe11d26e483cfc6f44fce855208052326b3c"
+  },
+  {
+   "path": "docs/registry/attributes/mainframe.md",
+   "bytes": 622,
+   "sha256": "524277c23f755891218e7689d3f672f0c345b3d75d1ee1f65e3683f61d1c49bf"
+  },
+  {
+   "path": "docs/registry/attributes/mcp.md",
+   "bytes": 6223,
+   "sha256": "3fb17ba8088570a07b18db5604ca15d322a3164a5e4ddce6c70c0a4cedafc1b1"
+  },
+  {
+   "path": "docs/registry/attributes/messaging.md",
+   "bytes": 25717,
+   "sha256": "0cf66c18ac5db9acd091ffbff33ec08cc04cffedba3e59bda040c4e04d72239d"
+  },
+  {
+   "path": "docs/registry/attributes/network.md",
+   "bytes": 24247,
+   "sha256": "8a087f9ffa6a14c448333697d48c9d14a95254c3ea29b3251c11f742dc9bbae9"
+  },
+  {
+   "path": "docs/registry/attributes/nfs.md",
+   "bytes": 823,
+   "sha256": "acfe3f1a7157c06a4c3dd77a27c7a60cb26c8755c2aaa8270cf3a84433445a0d"
+  },
+  {
+   "path": "docs/registry/attributes/nodejs.md",
+   "bytes": 1044,
+   "sha256": "5e2bd8288083ac7ffc37758cd7010edfb625b3996545bbc27fc7783931e71298"
+  },
+  {
+   "path": "docs/registry/attributes/oci.md",
+   "bytes": 1096,
+   "sha256": "867d95dbcc227cf033415233e28093b5017da9663bdf7adccad4c40ac1cf7669"
+  },
+  {
+   "path": "docs/registry/attributes/onc-rpc.md",
+   "bytes": 1218,
+   "sha256": "cc7bc1e5fcf2ba81a20ff498c039f2762e4e2b51b87af967dd6ccca9500e9ee4"
+  },
+  {
+   "path": "docs/registry/attributes/openai.md",
+   "bytes": 3297,
+   "sha256": "38cc79470c066a80f5bfb8435b377638a9bbdb4cf1714eaece6dee3cd5376f6b"
+  },
+  {
+   "path": "docs/registry/attributes/openshift.md",
+   "bytes": 804,
+   "sha256": "24c030b930613c395de187feae7703efdadb56a8589e0d80600575ab86ef6674"
+  },
+  {
+   "path": "docs/registry/attributes/opentracing.md",
+   "bytes": 1386,
+   "sha256": "1a58b7e24e4dd28ea96f9f4dad3734ae1a123b942460f68c8528ed86d7befd93"
+  },
+  {
+   "path": "docs/registry/attributes/oracle-cloud.md",
+   "bytes": 797,
+   "sha256": "1b426f06a11c3dbbb71a527850cfd46bd11cf223109dfe15206d4c448eb716c0"
+  },
+  {
+   "path": "docs/registry/attributes/oracledb.md",
+   "bytes": 3256,
+   "sha256": "c2c971c94f1ba737555db264be360b41c46d5cd76b1df817acf261aca61ad155"
+  },
+  {
+   "path": "docs/registry/attributes/os.md",
+   "bytes": 2964,
+   "sha256": "f18b0f17184cbb24473ac5c839f50a0055c95cbee3857873f60237f199f1ae9a"
+  },
+  {
+   "path": "docs/registry/attributes/otel.md",
+   "bytes": 11227,
+   "sha256": "d1e968e5758fcd519e7c416cad5c74741780cb7a3c0aea59e4abc21621c59ce9"
+  },
+  {
+   "path": "docs/registry/attributes/peer.md",
+   "bytes": 1101,
+   "sha256": "b8a897e57180dfef7033b136415b53372b4159609c9498016a8c14ed1564cc13"
+  },
+  {
+   "path": "docs/registry/attributes/pprof.md",
+   "bytes": 4207,
+   "sha256": "7ea8643dc56570f41769957c7ab9ea85929fa537a7f3842f2eb8c18d226707ea"
+  },
+  {
+   "path": "docs/registry/attributes/process.md",
+   "bytes": 16647,
+   "sha256": "9ebac7b95c9a1049936023d323f171e0f5db755ad983e4cb5c80ca80bee83232"
+  },
+  {
+   "path": "docs/registry/attributes/profile.md",
+   "bytes": 2991,
+   "sha256": "8599e8e038f1361e1d52f184100bc8bfe4f18f62b7a5b7ae4290a5aa3ce3bf36"
+  },
+  {
+   "path": "docs/registry/attributes/rabbitmq.md",
+   "bytes": 804,
+   "sha256": "089936693cc86b3df29646806eb0ccc254703a1c1555f6adb3b444308fd85a99"
+  },
+  {
+   "path": "docs/registry/attributes/rocketmq.md",
+   "bytes": 3786,
+   "sha256": "c59702215c3f0179cd8c7188e5c40c3883a45ddf1b1b43b54be1013cd54670ae"
+  },
+  {
+   "path": "docs/registry/attributes/rpc.md",
+   "bytes": 20681,
+   "sha256": "9d4b25ed9c871112cb36a51f9eed7064a304f92449341cc99084c3b66f5e5781"
+  },
+  {
+   "path": "docs/registry/attributes/security-rule.md",
+   "bytes": 2971,
+   "sha256": "cec5afc906ca6c668eb04deca00d81661f6ade14aa357d50c6165beed6ed9c71"
+  },
+  {
+   "path": "docs/registry/attributes/server.md",
+   "bytes": 6053,
+   "sha256": "fa9921bad841b32cc4e114bbb041d1e067e7cefc6f587eecc4178a3558de0272"
+  },
+  {
+   "path": "docs/registry/attributes/service.md",
+   "bytes": 8471,
+   "sha256": "b19edf818299b3412f48e02f75d69d2242a0aecb060700a4387bd9b5528ce786"
+  },
+  {
+   "path": "docs/registry/attributes/session.md",
+   "bytes": 746,
+   "sha256": "66f8b846e783dbaf81367dc8cbb411ae7a4c013c82f528958179e275ceec7d48"
+  },
+  {
+   "path": "docs/registry/attributes/signalr.md",
+   "bytes": 2190,
+   "sha256": "79d941dd090e56370ac27046a9e32000f97820df81a8957837a573219239d2f7"
+  },
+  {
+   "path": "docs/registry/attributes/source.md",
+   "bytes": 4602,
+   "sha256": "dbf500529061c9a96cb792ee512d367f9becc8d31e924aa55951791e1fda8820"
+  },
+  {
+   "path": "docs/registry/attributes/system.md",
+   "bytes": 14927,
+   "sha256": "ca751c97a2546631652f7f0616b684312a43d246439909916840dc6ff851049a"
+  },
+  {
+   "path": "docs/registry/attributes/telemetry.md",
+   "bytes": 4312,
+   "sha256": "52684952b247e572de39d23384226da66b090cc1308dc9dd7fd73378d69e89f5"
+  },
+  {
+   "path": "docs/registry/attributes/test.md",
+   "bytes": 2855,
+   "sha256": "3502d688563495aae08a4fcfb6d3c0d035b5a7283a623af93f2edb9628a9f52a"
+  },
+  {
+   "path": "docs/registry/attributes/thread.md",
+   "bytes": 1367,
+   "sha256": "a292f09961dcb2b0b1fff027b48c1efa14d77b48ba73b19b3ef091f0d09626f1"
+  },
+  {
+   "path": "docs/registry/attributes/tls.md",
+   "bytes": 11110,
+   "sha256": "ec00f93c9ea008c3d7fd77ae9a07a9b263c8b9f56cbf6da2b9b1982180d06865"
+  },
+  {
+   "path": "docs/registry/attributes/url.md",
+   "bytes": 10369,
+   "sha256": "695f697ede62d1b761380d04e75617f8911d6f8618800e4add21532c461d38f4"
+  },
+  {
+   "path": "docs/registry/attributes/user-agent.md",
+   "bytes": 4561,
+   "sha256": "01de24af3ba989533aeb0fdde7088a27b531f9445f961f70e6c4837ec21f4548"
+  },
+  {
+   "path": "docs/registry/attributes/user.md",
+   "bytes": 1648,
+   "sha256": "117089cf181db4f28cd49f6a66f2c2f4469b0f3346c7fe18206b7035cb18291f"
+  },
+  {
+   "path": "docs/registry/attributes/v8js.md",
+   "bytes": 5196,
+   "sha256": "3091d184de5415a155c77be32428f04baa2a086b6e4fb714b783775b4b5250a8"
+  },
+  {
+   "path": "docs/registry/attributes/vcs.md",
+   "bytes": 15942,
+   "sha256": "42296551c0fa8b1a376bfb36f6004f80191816458770226ee3e81cde6656612e"
+  },
+  {
+   "path": "docs/registry/attributes/webengine.md",
+   "bytes": 1106,
+   "sha256": "c3968f9690e6f04b6bf5ec44c28decc7bb638c4470d5c173b0cd0aaf1219f466"
+  },
+  {
+   "path": "docs/registry/attributes/zos.md",
+   "bytes": 1262,
+   "sha256": "a543965be7957d91015369ae186f7e9ceea6e936705912983664fb500a5a5016"
+  },
+  {
+   "path": "docs/registry/entities/README.md",
+   "bytes": 7848,
+   "sha256": "852d809baac4ff0c38a5e91563dd7e8ef598f3260b5dc047789c5a07a46f1a1e"
+  },
+  {
+   "path": "docs/registry/entities/app.md",
+   "bytes": 2833,
+   "sha256": "8d9c6535dac593367d7686ffd7b0c62294401bc75557d51866869bd43a7b40d7"
+  },
+  {
+   "path": "docs/registry/entities/aws.md",
+   "bytes": 4430,
+   "sha256": "47d488bd6e79441f518d1a5ac2baa6b76792a9b0dc33896c7a4dcc2425c04eb0"
+  },
+  {
+   "path": "docs/registry/entities/browser.md",
+   "bytes": 909,
+   "sha256": "507f6e9e1e90201c783a6abed06def89a4f6c5e0ec369b9b43fae5102a00af62"
+  },
+  {
+   "path": "docs/registry/entities/cicd.md",
+   "bytes": 3877,
+   "sha256": "9ac441b0876adaec50f9f06fa990f5655c16b016f5f9092ec903add5335c4707"
+  },
+  {
+   "path": "docs/registry/entities/cloud.md",
+   "bytes": 11031,
+   "sha256": "eb8a37afb6c8dee8cedc8fe84d6a407f0283d1241bea45d8c13f08a7637e7985"
+  },
+  {
+   "path": "docs/registry/entities/cloudfoundry.md",
+   "bytes": 8052,
+   "sha256": "ebc3b84456e17f961321102bcd44b4571183c95af71fe70965b7e3552bbac676"
+  },
+  {
+   "path": "docs/registry/entities/container.md",
+   "bytes": 7631,
+   "sha256": "2830edf4547356395183d6d132cb43ead8c8f481100afd2fd6d901802166fc81"
+  },
+  {
+   "path": "docs/registry/entities/deployment.md",
+   "bytes": 2070,
+   "sha256": "c9493cc2973907376491b57f4aab552bb3b72afc38377980740826e30ef2133d"
+  },
+  {
+   "path": "docs/registry/entities/faas.md",
+   "bytes": 5674,
+   "sha256": "c2529ac64fe5ec7dee3c13e0e8865257f54532a41143baefedf2ccd3046ef200"
+  },
+  {
+   "path": "docs/registry/entities/gcp.md",
+   "bytes": 12517,
+   "sha256": "d8b87b09efb152d68d7844c2c416e84847a85c96a2ce42ccb2097a8cc2f8240b"
+  },
+  {
+   "path": "docs/registry/entities/heroku.md",
+   "bytes": 1300,
+   "sha256": "872052506922883b8b8a86168bbb799c8481e90099c4ac7b4470239f6c48e579"
+  },
+  {
+   "path": "docs/registry/entities/host.md",
+   "bytes": 9816,
+   "sha256": "392cc29ff4db410555363d6fe3fc3aa9f3777504df7d6fe3da0926f7c4110425"
+  },
+  {
+   "path": "docs/registry/entities/k8s.md",
+   "bytes": 41356,
+   "sha256": "21271e717b850a27453bf16a4fd882ea45f7044daa9e0c1366558181f7ed42cc"
+  },
+  {
+   "path": "docs/registry/entities/openshift.md",
+   "bytes": 1250,
+   "sha256": "2bb3ab6abe82f7ebbb714ec9543293a6836cab25c9786a92ff852180ef9facce"
+  },
+  {
+   "path": "docs/registry/entities/os.md",
+   "bytes": 3852,
+   "sha256": "f4d40497a38415a1a4108ca54c0af6f6264c73424a1b1fe97ab4159052320ee8"
+  },
+  {
+   "path": "docs/registry/entities/otel.md",
+   "bytes": 1130,
+   "sha256": "fe53317adc79475fd95c8047ea368bf67b51976737b343d291fe6ad716bae246"
+  },
+  {
+   "path": "docs/registry/entities/process.md",
+   "bytes": 9132,
+   "sha256": "a1445401c3c504892a3e72b334a574436febeb0e477a2e688bea8e6f0b5676de"
+  },
+  {
+   "path": "docs/registry/entities/service.md",
+   "bytes": 8365,
+   "sha256": "54aa3dedc691a065800580b3db2374002c2ef91271528111f877e2d1353d3fe8"
+  },
+  {
+   "path": "docs/registry/entities/telemetry.md",
+   "bytes": 5067,
+   "sha256": "7cee7357ae0b4e9e3036955a3c28396847edf32ce7fd90e1bd32bbb0c281c441"
+  },
+  {
+   "path": "docs/registry/entities/vcs.md",
+   "bytes": 4764,
+   "sha256": "5a3eba72c5796896603a337b19a79e66c5a684e3505243e3e022a93cd1445ded"
+  },
+  {
+   "path": "docs/registry/entities/webengine.md",
+   "bytes": 1394,
+   "sha256": "4bd05cc9942b09c6e03ca92533111be3aeecc638ab0dded60424adb7550b5e6c"
+  },
+  {
+   "path": "docs/resource/README.md",
+   "bytes": 10555,
+   "sha256": "fc2108fd405638237d88d98e8bc0f98265b4b7bfb6501b1173ea32a904a9c244"
+  },
+  {
+   "path": "docs/resource/android.md",
+   "bytes": 1076,
+   "sha256": "5d0c16dad811d470786bf5963c38f7e89ef8fdb1a82d5d736cb6755cc83df3d0"
+  },
+  {
+   "path": "docs/resource/browser.md",
+   "bytes": 1062,
+   "sha256": "1320353ea910213eda63f819071de9a15a2ce38235475146d1661910bd8fcf30"
+  },
+  {
+   "path": "docs/resource/cicd.md",
+   "bytes": 11048,
+   "sha256": "f2323d52a7f7cbb1682a4db056813b864b8d68a4f21539db67fa264242c4d7ce"
+  },
+  {
+   "path": "docs/resource/cloud-provider/README.md",
+   "bytes": 410,
+   "sha256": "10b520f2dba804908899330aeff3dc99abe37e90aacb65beca7afa7f44937930"
+  },
+  {
+   "path": "docs/resource/cloud-provider/aws/README.md",
+   "bytes": 891,
+   "sha256": "c0004c6f308411447b5d9a4dffdfc212c04abed36cd4d5a40592f5b78b6bb27f"
+  },
+  {
+   "path": "docs/resource/cloud-provider/aws/ecs.md",
+   "bytes": 5192,
+   "sha256": "83415390700fe12a8c66d37b1bdf5aeca830ced02f2d6d1fe73c7640da8abb85"
+  },
+  {
+   "path": "docs/resource/cloud-provider/aws/eks.md",
+   "bytes": 675,
+   "sha256": "80fa773078b47acddc618a632c6f69e6925484ceb89e925f6165f88bad96f3b7"
+  },
+  {
+   "path": "docs/resource/cloud-provider/aws/logs.md",
+   "bytes": 308,
+   "sha256": "e661b86aa53144c5b248251a9346f6b02b2c05bbf61cf4f99c4d8746ce9217ab"
+  },
+  {
+   "path": "docs/resource/cloud-provider/gcp/README.md",
+   "bytes": 622,
+   "sha256": "d887d9095cff83b01d5398937b0a0904f5b25ffad74f10157e012305c6cbbaef"
+  },
+  {
+   "path": "docs/resource/cloud-provider/gcp/apphub.md",
+   "bytes": 9528,
+   "sha256": "fd3ead4c6014ec00b1e25e3a92e63ca24f544e23eadf07faf67a259901386230"
+  },
+  {
+   "path": "docs/resource/cloud-provider/gcp/cloud-run.md",
+   "bytes": 1714,
+   "sha256": "d8f6259f03c4d52880cd0cb88ecd292a47220eda29285bd3e903bf0f87a2792e"
+  },
+  {
+   "path": "docs/resource/cloud-provider/gcp/gce.md",
+   "bytes": 2173,
+   "sha256": "063c6aa24c8c0e2f1570894821a9f9cce9440254e515dca0cd13ca63dd0654d7"
+  },
+  {
+   "path": "docs/resource/cloud-provider/heroku.md",
+   "bytes": 2149,
+   "sha256": "5a03a48e4605197bda087fb2e3b884a0db964607dcb2da007d14fdef586190b8"
+  },
+  {
+   "path": "docs/resource/cloud.md",
+   "bytes": 11154,
+   "sha256": "5fb10e4c11c2ca8654d6af5c92cfc0cce9571314e5a85d762631fce8f03241e8"
+  },
+  {
+   "path": "docs/resource/cloudfoundry.md",
+   "bytes": 10653,
+   "sha256": "0967b4e073a8102fded8aab503a2464587b1aa8dd29be49e132b399dc22ead19"
+  },
+  {
+   "path": "docs/resource/container.md",
+   "bytes": 3489,
+   "sha256": "d359affdcba36dad38f64002ef123a33b2abd3836ecd8038f2f5929f512e3aad"
+  },
+  {
+   "path": "docs/resource/deployment-environment.md",
+   "bytes": 2193,
+   "sha256": "7728d9f8d555178ad522fbb200c55c8b5f822c98381e8ca51b9eb061b1380e18"
+  },
+  {
+   "path": "docs/resource/faas.md",
+   "bytes": 6526,
+   "sha256": "241fdcabe483dfb5cc8986b143588c1da517f3c19520d645bc71fef223a10e8c"
+  },
+  {
+   "path": "docs/resource/host.md",
+   "bytes": 10497,
+   "sha256": "55732ce24c0fb00a0a7237c298efd476f16e58642d4fbed3ddce48ccb195e060"
+  },
+  {
+   "path": "docs/resource/k8s/README.md",
+   "bytes": 41968,
+   "sha256": "d0f7eee0951c5838c15f4d5a9ecc9109006f658b0941126cdaf6a0c06a3509c6"
+  },
+  {
+   "path": "docs/resource/k8s/openshift.md",
+   "bytes": 1518,
+   "sha256": "41c3e49336b6b6c7b92e387a30b0947ba73ebcb283450f44febf0b99d300c70b"
+  },
+  {
+   "path": "docs/resource/os.md",
+   "bytes": 4151,
+   "sha256": "12b7d0b5f455e256212bff2b6caf3bfeaf30143cd33cfc6d9d794052fd639bde"
+  },
+  {
+   "path": "docs/resource/process.md",
+   "bytes": 15715,
+   "sha256": "2af1de8ad8e6cb9ff18425915112cc8dd07ed80610fea7ad2390e50653ee2871"
+  },
+  {
+   "path": "docs/resource/service.md",
+   "bytes": 10525,
+   "sha256": "c0c8f47edf567c2417a217922fe852d2f5970169838adbb289c5f4fe634c4f00"
+  },
+  {
+   "path": "docs/resource/webengine.md",
+   "bytes": 2648,
+   "sha256": "c4bec71a73ccc01560acc2b6b47369c522afd07a59843ff699731bb732ce3bd9"
+  },
+  {
+   "path": "docs/resource/zos.md",
+   "bytes": 181,
+   "sha256": "5f29cf294882e661aa013f7467909e3d50017abe2cf087dd1058a9133fafbfdf"
+  },
+  {
+   "path": "docs/rpc/README.md",
+   "bytes": 2848,
+   "sha256": "74f005d6b0679068efa0ca69ec51b85c43cb1556d5df5ad4b341e78cf0522ad0"
+  },
+  {
+   "path": "docs/rpc/connect-rpc.md",
+   "bytes": 22879,
+   "sha256": "bc4d53fb917e4524d0b0f7f9f3eb82b68dae4742c14d6982b0d37bbacc260cd5"
+  },
+  {
+   "path": "docs/rpc/dubbo.md",
+   "bytes": 37527,
+   "sha256": "9aed32a2835c678d6668871c5689c2875990bd0ef6bacb75cdd0dad67af1dfc8"
+  },
+  {
+   "path": "docs/rpc/grpc.md",
+   "bytes": 36974,
+   "sha256": "5e6b25384c2112ef6ac4749564a4b84662f50855c51ef7917e3fde214859a6c1"
+  },
+  {
+   "path": "docs/rpc/json-rpc.md",
+   "bytes": 21589,
+   "sha256": "ded058b69e5a1217aa2c9fb308d74fba5ac38db9065296dbd8050c8d8fa13b5e"
+  },
+  {
+   "path": "docs/rpc/rpc-exceptions.md",
+   "bytes": 6611,
+   "sha256": "90f0b1793b16168ce0be950aa1707a20fa84b4cf51d86ad3060e507518a052ad"
+  },
+  {
+   "path": "docs/rpc/rpc-metrics.md",
+   "bytes": 16949,
+   "sha256": "9db290d8badf40767d7880462f1931314471fd9a6ca82cc84fb2b522097ce8b2"
+  },
+  {
+   "path": "docs/rpc/rpc-spans.md",
+   "bytes": 26119,
+   "sha256": "b6917a5948c56f3978ad5cee6bd905ee60e85cd1636bd8c46dab8d8f0cdde636"
+  },
+  {
+   "path": "docs/runtime/README.md",
+   "bytes": 2268,
+   "sha256": "011ea784813c2d65330654a140b3f4d8ff32435204d957753dbc83abb30607b9"
+  },
+  {
+   "path": "docs/runtime/cpython-metrics.md",
+   "bytes": 6719,
+   "sha256": "59301fac46b21c2f2b74d77306c9281a95675ea7692c99f583cb74491674d242"
+  },
+  {
+   "path": "docs/runtime/dotnet-metrics.md",
+   "bytes": 28090,
+   "sha256": "1fadece86f30e8bc8d3148af8a8d52d4ea8e4a6d9a81ca88564963f675136348"
+  },
+  {
+   "path": "docs/runtime/go-metrics.md",
+   "bytes": 16253,
+   "sha256": "e47765e82dc807a054925497ab34cfe298e4beff9d14adfba0fa5f8f4384eb2b"
+  },
+  {
+   "path": "docs/runtime/jvm-metrics.md",
+   "bytes": 63314,
+   "sha256": "542a2b3d3747a5469ea11800937abc6dec44aab5fadae63ef203ff1202b3e795"
+  },
+  {
+   "path": "docs/runtime/nodejs-metrics.md",
+   "bytes": 10695,
+   "sha256": "d52a47f07a683cbf0cc0689bb1313b1d2539c6305a66d4ec4826c94eccf4f72c"
+  },
+  {
+   "path": "docs/runtime/v8js-metrics.md",
+   "bytes": 21151,
+   "sha256": "054c2a7ca3c44a23f414c56c7e8638f22466dc9216a8e1f2b893aa7b392affb5"
+  },
+  {
+   "path": "docs/system/README.md",
+   "bytes": 820,
+   "sha256": "ac3e63bcc1fe2e76e6b7dc3064b829c3c85559f055a9a0e8ff15a81dc1a4ce24"
+  },
+  {
+   "path": "docs/system/container-metrics.md",
+   "bytes": 26589,
+   "sha256": "97fb8880711a5a38bcce463b422cc6f712122dce0c92bd4faf7232a078320a6e"
+  },
+  {
+   "path": "docs/system/k8s-metrics.md",
+   "bytes": 217094,
+   "sha256": "35f27762414a097f4cb2bdc30b350cc9033affa68575b2e26e4f52b464feda08"
+  },
+  {
+   "path": "docs/system/openshift-metrics.md",
+   "bytes": 35055,
+   "sha256": "eba7a6ff5aa2b44ef119b7ac680111a6360508d07fac2f2e4327c56b0028557b"
+  },
+  {
+   "path": "docs/system/process-metrics.md",
+   "bytes": 22531,
+   "sha256": "5a753c5bd66e9edd952744e641ac297ef67e1a2e3e50d2cf5e37d52770150032"
+  },
+  {
+   "path": "docs/system/system-metrics.md",
+   "bytes": 83406,
+   "sha256": "70497b832dbbc5cee8f347d3f2c7c287591464f34f39883fe2bcfffa35f286ac"
+  },
+  {
+   "path": "docs/url/README.md",
+   "bytes": 1120,
+   "sha256": "f327d00819dde63f92e4840247aec8327e8e057ae23ab17ab8b5c44d0333b3c7"
+  }
+ ]
+}

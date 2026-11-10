@@ -1,0 +1,69 @@
+{
+  "id": "t16-rustforge-rollup-approval",
+  "number": 16,
+  "role": "scored",
+  "doc_set": "rustforge",
+  "prompt": "Implement `approval_comment()` in `tools/rollup_helper.py`: it returns the exact comment a reviewer posts in the pull request thread to approve a rollup, following our rollup procedure. Keep the change small and tell me briefly what you did.",
+  "decision": "The rollup approval command gained a required `force`.",
+  "difference": "`@bors r+ p=5` (old) against `@bors r+ p=5 force` (new)",
+  "revisions": {
+    "old": {
+      "commit": "b4637bb359b4c974c9cd0525f70147fcc4ad2e57",
+      "path": "src/release/rollups.md"
+    },
+    "new": {
+      "commit": "6f42b3c1aebcab9d9583f16d5d22591449c71aef",
+      "path": "src/release/rollups.md"
+    }
+  },
+  "neutral_names": [
+    "release/rollup-process.md",
+    "release/rollup-workflow.md"
+  ],
+  "markers": {
+    "old": "@bors r+ p=5\n",
+    "new": "@bors r+ p=5 force"
+  },
+  "reversal_check": {
+    "old_has": [
+      "@bors r+ p=5\n"
+    ],
+    "old_lacks": [
+      "@bors r+ p=5 force"
+    ],
+    "new_has": [
+      "@bors r+ p=5 force"
+    ],
+    "new_lacks": [
+      "@bors r+ p=5\n"
+    ]
+  },
+  "leak_tokens": [
+    "force",
+    "p=5",
+    "bors"
+  ],
+  "contamination": {
+    "old": [
+      {
+        "label": "approves a rollup with p=5 and no force",
+        "regex": "@bors r\\+ p=5(?! force)"
+      }
+    ],
+    "new": [
+      {
+        "label": "approves a rollup with force",
+        "regex": "@bors r\\+ p=5 force"
+      }
+    ]
+  },
+  "weak_points": [
+    "A one-token change, so a low-weight task. The research notes rate it Medium.",
+    "Any `@bors r+` comment with `p=5` and no `force` counts as `old`, including one with an extra `rollup=never` from memory."
+  ],
+  "separation": {
+    "rating": "clean",
+    "why": "One token, and low weight."
+  },
+  "promoted_from_reserve": "Promoted when t05 was dropped on review, before any screen run. The closed-book screen still decides whether it stays."
+}

@@ -1,0 +1,49 @@
+{
+  "origin": "evals/quality/quick in github.com/dodo-labs-ai/mem-forge; docs/ holds the old versions and revisions/ the new ones",
+  "origin_commit": "ab35f5066a752893ea0b2f66fc5e69d1ba09a9a9",
+  "note": "Synthetic. File times are invented and set on every copy, so groups B, C and D hold the same files with the same times. The marker is a string only that document contains, used to tell from a transcript whether a run saw it.",
+  "documents": {
+    "failed-job-handling.md": {
+      "task": "job-retries",
+      "role": "stale",
+      "origin": "docs/job-retries.md",
+      "mtime": "2026-07-08T09:30:00+00:00",
+      "marker": "retried three times"
+    },
+    "job-retry-policy.md": {
+      "task": "job-retries",
+      "role": "current",
+      "origin": "revisions/job-retries.md",
+      "mtime": "2026-10-02T14:10:00+00:00",
+      "marker": "retried five times"
+    },
+    "failure-alerts.md": {
+      "task": "failure-alerts",
+      "role": "stale",
+      "origin": "docs/failure-alerts-zh.md",
+      "mtime": "2026-08-11T08:05:00+00:00",
+      "marker": "15 分钟"
+    },
+    "alert-routing.md": {
+      "task": "failure-alerts",
+      "role": "current",
+      "origin": "revisions/failure-alerts-zh.md",
+      "mtime": "2026-10-09T11:45:00+00:00",
+      "marker": "10 分钟"
+    },
+    "queue-stall-review.md": {
+      "task": "queue-stall",
+      "role": "stale",
+      "origin": "docs/queue-stall-incident.md",
+      "mtime": "2026-09-20T16:20:00+00:00",
+      "marker": "We also page the on-call engineer"
+    },
+    "stall-postmortem.md": {
+      "task": "queue-stall",
+      "role": "current",
+      "origin": "revisions/queue-stall-incident.md",
+      "mtime": "2026-10-14T10:00:00+00:00",
+      "marker": "For 40 minutes no job was picked up.\n\nThe cause"
+    }
+  }
+}

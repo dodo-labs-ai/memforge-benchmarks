@@ -1,0 +1,73 @@
+{
+ "id": "t06-govuk-check-env-var",
+ "number": 6,
+ "role": "dropped",
+ "doc_set": "govuk",
+ "prompt": "Add `scripts/check-app-env.sh APPNAME VARIABLE`, which lets an engineer confirm the value one of an app's environment variables has in production, following our guide on fixing apps on Kubernetes. Keep the change small and tell me briefly what you did.",
+ "decision": "The fix-app guide told readers to confirm env vars with `kubectl -n apps exec ... -- env`. It now warns against printing env values, because stdout reaches log storage.",
+ "difference": "a shell in the container through kubectl exec, with env or printenv (old), against no shell in the container and a read of the configuration by any route: the values file, helm get values, kubectl get or describe, or kubectl set env --list (new)",
+ "revisions": {
+  "old": {
+   "commit": "82cd9620f99d431fd82ffece79a564aead89e4cd",
+   "path": "source/kubernetes/fix-app/index.html.md"
+  },
+  "new": {
+   "commit": "f1ad617820fd5593217694a277f342ea6a47768f",
+   "path": "source/kubernetes/fix-app/index.html.md"
+  }
+ },
+ "neutral_names": [
+  "kubernetes/fix-app/workload-recovery.html.md",
+  "kubernetes/fix-app/workload-repair.html.md"
+ ],
+ "markers": {
+  "old": "To check you have set up your app's environment variables correctly",
+  "new": "you should avoid getting shell access to the container"
+ },
+ "reversal_check": {
+  "old_has": [
+   "exec deploy/<APPNAME> -c app -- env"
+  ],
+  "old_lacks": [
+   "you should avoid getting shell access to the container"
+  ],
+  "new_has": [
+   "you should avoid getting shell access to the container"
+  ],
+  "new_lacks": [
+   "exec deploy/<APPNAME> -c app -- env"
+  ]
+ },
+ "leak_tokens": [
+  "values-",
+  "app-config",
+  "printenv",
+  "exec",
+  "fulladmin",
+  "tempadmin"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "prints an app's environment through kubectl exec",
+    "regex": "exec [^\\n]*-- *(env|printenv)\\b"
+   }
+  ],
+  "new": [
+   {
+    "label": "warns against printing environment values",
+    "regex": "(avoid|not|never)[^.\\n]{0,80}(`env`|print[^.\\n]{0,40}(value|environment))"
+   }
+  ]
+ },
+ "weak_points": [
+  "Both revisions mention the values files. What changed is that the old one told the reader to check through kubectl exec and the new one warns against shell access and prescribes no read. So `new` is defined as no exec plus a configuration read by any route, not as one particular read.",
+  "`kubectl get deploy -o jsonpath` is a natural answer with no document, so the widened `new` is only meaningful if the closed-book screen keeps the task.",
+  "The task repository's scripts/app-logs.sh and README supply the namespace, `deploy/` and `-c app`, the parts of the old command, and say nothing about the chart repository. That leans toward kubectl in every group, so it applies evenly but raises the `old` baseline."
+ ],
+ "separation": {
+  "rating": "one way",
+  "why": "`old` is clean: only the old revision tells the reader to check through kubectl exec. `new` depends on the screen: it counts every route that avoids a shell, some of which need no document."
+ },
+ "dropped_because": "With only the new revision, three of three runs stayed old: it warns against a shell and names no alternative."
+}

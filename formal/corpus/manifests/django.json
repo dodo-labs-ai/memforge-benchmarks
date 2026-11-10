@@ -1,0 +1,3414 @@
+{
+ "set": "django",
+ "repo": "django/django",
+ "host": "github",
+ "commit": "1860f0a3f41e54f265e57de76d320ea0887d6b1c",
+ "glob": "docs/**/*.txt",
+ "exclude": [],
+ "licence": "BSD-3-Clause",
+ "archive_url": "https://codeload.github.com/django/django/tar.gz/1860f0a3f41e54f265e57de76d320ea0887d6b1c",
+ "file_count": 680,
+ "total_bytes": 6541190,
+ "files": [
+  {
+   "path": "docs/contents.txt",
+   "bytes": 419,
+   "sha256": "62a1585b3242bf4f105edbfe185b8466e5ceafe820bc8a8dbbc836dedb60e581"
+  },
+  {
+   "path": "docs/faq/admin.txt",
+   "bytes": 6428,
+   "sha256": "6df9def17c89a5715c98f00a3168387a8eb19716481ecaf0a0a422a961f93877"
+  },
+  {
+   "path": "docs/faq/contributing.txt",
+   "bytes": 5662,
+   "sha256": "1c7c7e8ac88a70e22cb9da971d3c6d38bd6d6d021abb50abca8e0f7c60a3ba12"
+  },
+  {
+   "path": "docs/faq/general.txt",
+   "bytes": 9777,
+   "sha256": "8bba3b77b392215487b1144f5c0ec80243e02903024e990d45a56c0daccfac20"
+  },
+  {
+   "path": "docs/faq/help.txt",
+   "bytes": 2836,
+   "sha256": "57544a3a2ab38ed0edd0b1f1d967b9a0dc8b6bb9d4377fd521f1f7c9a4b36645"
+  },
+  {
+   "path": "docs/faq/index.txt",
+   "bytes": 157,
+   "sha256": "8a4e8813d25a50e4ee91806311fa986e58b11c69bafc393c59fe7a304fe542ee"
+  },
+  {
+   "path": "docs/faq/install.txt",
+   "bytes": 4749,
+   "sha256": "0608a09f82b61b67eb84fd4a87abd40a75ee572348982484a37734d05fcd5907"
+  },
+  {
+   "path": "docs/faq/models.txt",
+   "bytes": 3221,
+   "sha256": "c9d82220ddc898d32dc88c74fcb60b658f985741fbde47bf24069db8b1226546"
+  },
+  {
+   "path": "docs/faq/troubleshooting.txt",
+   "bytes": 2002,
+   "sha256": "631cfc9c26c2250b9edfa50985eedb4721c75e8b421325d0d6dad91615714660"
+  },
+  {
+   "path": "docs/faq/usage.txt",
+   "bytes": 2974,
+   "sha256": "4a2be437fe8e8ca9b7b425316fb9d75e3c275424f7f72b624bb21fd49c07b144"
+  },
+  {
+   "path": "docs/glossary.txt",
+   "bytes": 2329,
+   "sha256": "5ab63bfcac79170b381749d9f44259d120460371766a0366ed19bcf318746641"
+  },
+  {
+   "path": "docs/howto/auth-remote-user.txt",
+   "bytes": 6573,
+   "sha256": "9f68d9e43dd0e282fbb9a5cb8a07c46bf71081a1c51ea0fa08026cb4ad6edd24"
+  },
+  {
+   "path": "docs/howto/csp.txt",
+   "bytes": 3953,
+   "sha256": "64d676ba6833d86d49b34e047c1b08569f1f35e257abc5f464c277fd1627e899"
+  },
+  {
+   "path": "docs/howto/csrf.txt",
+   "bytes": 12141,
+   "sha256": "72e995dcaa1ee511e54cbb6d42cdb0e236f8ca433c6a2f42c40d84afd6e4dc0d"
+  },
+  {
+   "path": "docs/howto/custom-file-storage.txt",
+   "bytes": 5646,
+   "sha256": "2663c1934ca9ce4d834878ba1e414682570ea51f893ee7e2ceafb8c46dca8afa"
+  },
+  {
+   "path": "docs/howto/custom-lookups.txt",
+   "bytes": 14659,
+   "sha256": "4fff3ccf779730458b65d0c81d19680d0817ec970db934deb1313004979de699"
+  },
+  {
+   "path": "docs/howto/custom-management-commands.txt",
+   "bytes": 15267,
+   "sha256": "f7a8e909dfd6853ce886b8ad5b5b32cb2c166b4bba023af5edd358fdacc89f96"
+  },
+  {
+   "path": "docs/howto/custom-model-fields.txt",
+   "bytes": 32762,
+   "sha256": "47f45d34f5c8bebe5a39739a6bf950f9ec01e569fc80605a85c5f9effc514d8c"
+  },
+  {
+   "path": "docs/howto/custom-shell.txt",
+   "bytes": 2790,
+   "sha256": "bc3c6f8734e1bd5ccef6d64595ebdbaceb6a264e7af37d6f5b4875db4a3634ee"
+  },
+  {
+   "path": "docs/howto/custom-template-backend.txt",
+   "bytes": 5982,
+   "sha256": "3b7f8a128343d62b026d9b2d6b67828288229e628a3dabf29d941e331dd3dea1"
+  },
+  {
+   "path": "docs/howto/custom-template-tags.txt",
+   "bytes": 51695,
+   "sha256": "91da51fedd063faa39c700762c987035c940651b311e0306cd4c7ddf5187d575"
+  },
+  {
+   "path": "docs/howto/delete-app.txt",
+   "bytes": 1057,
+   "sha256": "37f7ff3ddcb2850ce978f6361eff432de089d628563b453b99cfb5dcfb1383e3"
+  },
+  {
+   "path": "docs/howto/deployment/asgi/daphne.txt",
+   "bytes": 1504,
+   "sha256": "e5391476f232ff5b975f0eb321d814e88723d447abfd9535d2789ffc3b9da35c"
+  },
+  {
+   "path": "docs/howto/deployment/asgi/granian.txt",
+   "bytes": 1176,
+   "sha256": "244b3dab24edda987640f1bd5086d12508a60e3f9a69ac57560ca773f6ffd55d"
+  },
+  {
+   "path": "docs/howto/deployment/asgi/hypercorn.txt",
+   "bytes": 1143,
+   "sha256": "6b753a695b3b3e6d9ca17e0ccce6ec0a4354cd93791d8b6bee469b052cad9f51"
+  },
+  {
+   "path": "docs/howto/deployment/asgi/index.txt",
+   "bytes": 2693,
+   "sha256": "e03d81ed77bb482e7bf9c96173512d2cd78f2ffb5e7095cc4fdb57d74c6a3b70"
+  },
+  {
+   "path": "docs/howto/deployment/asgi/uvicorn.txt",
+   "bytes": 1791,
+   "sha256": "5b38e6074ad0281525c5c78e6db5d32c8b247446d8c3e4fe807800a58f799c35"
+  },
+  {
+   "path": "docs/howto/deployment/checklist.txt",
+   "bytes": 10078,
+   "sha256": "fe1b050f27a3210f28f593055688136cedc28e30165227321ce1c4601f646935"
+  },
+  {
+   "path": "docs/howto/deployment/index.txt",
+   "bytes": 1704,
+   "sha256": "145923d9a82b1d2ec116577d6704f24c0038a14f0e829ca75e59a28b9a6df55d"
+  },
+  {
+   "path": "docs/howto/deployment/wsgi/apache-auth.txt",
+   "bytes": 5267,
+   "sha256": "02b4a3def024ba224b6194fb558090c3e7caca9b1914f3ceb37237b8426417a6"
+  },
+  {
+   "path": "docs/howto/deployment/wsgi/granian.txt",
+   "bytes": 1130,
+   "sha256": "87d80e113639e2ff384a49b1e8cb8eb2d3a3abac4f336e344765af921b11fa57"
+  },
+  {
+   "path": "docs/howto/deployment/wsgi/gunicorn.txt",
+   "bytes": 1294,
+   "sha256": "ccb83cf5c7f7fd8eae485e9bd3346fa461586459e1fed5254aa0a44b319f3561"
+  },
+  {
+   "path": "docs/howto/deployment/wsgi/index.txt",
+   "bytes": 3168,
+   "sha256": "6dfb755a535a56007b2509702cf859ade8dcd95c164bb15272b4ad5cbbe025ac"
+  },
+  {
+   "path": "docs/howto/deployment/wsgi/modwsgi.txt",
+   "bytes": 8689,
+   "sha256": "012d951ec3b8b17f52ba72cf2209b3fa95baad6b6cb6457c9b24fee815c650db"
+  },
+  {
+   "path": "docs/howto/deployment/wsgi/uwsgi.txt",
+   "bytes": 4266,
+   "sha256": "013f6fdd205b209e3b4d76cbbb616961f8f9561dfbd64c5303de1bc692d9da30"
+  },
+  {
+   "path": "docs/howto/error-reporting.txt",
+   "bytes": 15095,
+   "sha256": "543131a13b9b32c918ddc64acf232629c4f531667abe904b059bf7c0c62acc39"
+  },
+  {
+   "path": "docs/howto/index.txt",
+   "bytes": 1272,
+   "sha256": "2aab3f5373c1631fe7022e81f378e0fbe52df7c2e94a26715f896289ba3151ca"
+  },
+  {
+   "path": "docs/howto/initial-data.txt",
+   "bytes": 3928,
+   "sha256": "07f82dad1d3afc2f25e63caa1b2ddadda8bf4cc87dfa18dc4c833d40dfcce3a5"
+  },
+  {
+   "path": "docs/howto/legacy-databases.txt",
+   "bytes": 2935,
+   "sha256": "187015005de7dc5cf90d876693da94b9d4cdd476f00d2d753bd8c5d24591f343"
+  },
+  {
+   "path": "docs/howto/logging.txt",
+   "bytes": 11079,
+   "sha256": "91c9b2a26670dd2645aadfa4861f440423ccec1b4bdff834e36460ffdbaf66d0"
+  },
+  {
+   "path": "docs/howto/mailers-migration.txt",
+   "bytes": 19374,
+   "sha256": "dda62b5962cb58434f434433c61a548c8c3beb71145ed881f0ee3c38418962ca"
+  },
+  {
+   "path": "docs/howto/outputting-csv.txt",
+   "bytes": 6380,
+   "sha256": "9929fb6a57c35ee616232f5ca9879ba0f2350b44dd6896c9a3621cfdd4684071"
+  },
+  {
+   "path": "docs/howto/outputting-pdf.txt",
+   "bytes": 4287,
+   "sha256": "277583950b24aa65967ff6447635da386b4ab38a4765e24728f593083d53c6a4"
+  },
+  {
+   "path": "docs/howto/overriding-templates.txt",
+   "bytes": 4866,
+   "sha256": "727b572f45bcd74ee9d8e5bc65c1b1bd46885e2d3da1df6419cfebb407a64084"
+  },
+  {
+   "path": "docs/howto/static-files/deployment.txt",
+   "bytes": 5430,
+   "sha256": "85cf81814fad88a4100dfcfbd72b38334582082fbe822fed9b9b3a62d0b76220"
+  },
+  {
+   "path": "docs/howto/static-files/index.txt",
+   "bytes": 7610,
+   "sha256": "1b49593529bab2c40a3c938962ddc478d04cab42cc9072c59409d0c29e4d1f3b"
+  },
+  {
+   "path": "docs/howto/upgrade-version.txt",
+   "bytes": 5795,
+   "sha256": "9ef12dafc2f0f0be4a59c59d025835aebdab1bd986c688cb03df42b0ac0a93c6"
+  },
+  {
+   "path": "docs/howto/windows.txt",
+   "bytes": 5565,
+   "sha256": "b759f073908fef42ffceff1aa9efe3fa88a1c82dfe3598e655902d88d727b0f6"
+  },
+  {
+   "path": "docs/howto/writing-migrations.txt",
+   "bytes": 15577,
+   "sha256": "33168ed1f1ad62f66a61348eb2eb8ee287475bbfa0b3728d8a95e2ccb32c97bd"
+  },
+  {
+   "path": "docs/index.txt",
+   "bytes": 11335,
+   "sha256": "104d1d59850b697aae3c0cffbcccbbc9ceb63aa47f1b7a7ae23b55361bdea309"
+  },
+  {
+   "path": "docs/internals/contributing/accessibility.txt",
+   "bytes": 6947,
+   "sha256": "48a0d88f3c66d45592b64bac3cebd1e82cdba103ac752543a8ba704dd9f5093d"
+  },
+  {
+   "path": "docs/internals/contributing/bugs-and-features.txt",
+   "bytes": 10015,
+   "sha256": "722fd0a435579d9b356929554d826d20905f06ffcbb2a3345aafb98e62e46855"
+  },
+  {
+   "path": "docs/internals/contributing/committing-code.txt",
+   "bytes": 12625,
+   "sha256": "78ddb65e5b4df19beb57956f5ed08d7c4d139259e6b3fc1b25413aabf735aa92"
+  },
+  {
+   "path": "docs/internals/contributing/index.txt",
+   "bytes": 4445,
+   "sha256": "af4029e48dfb866b5134ac7646f898d584cf6578d3c238bc5f4440e8bf0ef1bb"
+  },
+  {
+   "path": "docs/internals/contributing/localizing.txt",
+   "bytes": 3997,
+   "sha256": "b52f881cab4691e331617c142975bcc30bc447687067701eb2301c62c0ee31d1"
+  },
+  {
+   "path": "docs/internals/contributing/new-contributors.txt",
+   "bytes": 6994,
+   "sha256": "4dd62c3ed751c35a7ba2dfe916e8f07a2055565e2c211ff9470db09f69b5a102"
+  },
+  {
+   "path": "docs/internals/contributing/sprint-quickstart.txt",
+   "bytes": 7521,
+   "sha256": "fc7f0b7c2f16c881b3fdceae0d363abc002043e3355be2c14637808bf06ea142"
+  },
+  {
+   "path": "docs/internals/contributing/triaging-tickets.txt",
+   "bytes": 25196,
+   "sha256": "e83507b50b61a9d11871a02c7eeaa22a4a81b4c8b3e081476dad201d7680c1ac"
+  },
+  {
+   "path": "docs/internals/contributing/writing-code/coding-style.txt",
+   "bytes": 14575,
+   "sha256": "b65903b157848a1584287a87765911e66b8b5e2a8fe178f7c99e5d5d15a30d7e"
+  },
+  {
+   "path": "docs/internals/contributing/writing-code/index.txt",
+   "bytes": 1714,
+   "sha256": "7047b6a4d00411c2030d17b971949faee80bb26852f8c9f51581765836f23295"
+  },
+  {
+   "path": "docs/internals/contributing/writing-code/javascript.txt",
+   "bytes": 3843,
+   "sha256": "46c12fcb832d03a56bee5fa07fb2b8beeb6aa66e270c8f8f75f6e52807769c40"
+  },
+  {
+   "path": "docs/internals/contributing/writing-code/submitting-patches.txt",
+   "bytes": 22472,
+   "sha256": "2632387a393ca3e60f415bbf60eb5ca935d09973e1e31b4a9250280df0332a73"
+  },
+  {
+   "path": "docs/internals/contributing/writing-code/unit-tests.txt",
+   "bytes": 23089,
+   "sha256": "c937129ff346f708099d97bbf97280bd69118ae09819697cdcb72020bb9af215"
+  },
+  {
+   "path": "docs/internals/contributing/writing-code/working-with-git.txt",
+   "bytes": 11916,
+   "sha256": "e58c628a03604aaad5ab9f26548c600fab4bbd0b24c269f353c2729d72642169"
+  },
+  {
+   "path": "docs/internals/contributing/writing-documentation.txt",
+   "bytes": 30601,
+   "sha256": "8ee9d9a97b18e39c6f527764d823722deed3659140bd2537cfec304d3edb8730"
+  },
+  {
+   "path": "docs/internals/deprecation.txt",
+   "bytes": 59631,
+   "sha256": "bd1db7963e8b3b9af2e0f278860c79809847212611b7a9b1a8d1b9d4f91841e9"
+  },
+  {
+   "path": "docs/internals/git.txt",
+   "bytes": 9142,
+   "sha256": "e62c8f133114fce3155f1eb57516f2c52b7b21bfe75d3d6c94aceaa77cd55fd7"
+  },
+  {
+   "path": "docs/internals/howto-release-django.txt",
+   "bytes": 32879,
+   "sha256": "124cac955d0bbdd581da3014c82c7a951bd6a1a19de9616ebeeed38eaac6d8d4"
+  },
+  {
+   "path": "docs/internals/index.txt",
+   "bytes": 365,
+   "sha256": "1e6ed69632b2fd50413fcbd625fae1ec2f19bb19ebaa2a30d8486885b35eb5b5"
+  },
+  {
+   "path": "docs/internals/mailing-lists.txt",
+   "bytes": 3299,
+   "sha256": "68fbe68a1879d164a19f63b340aee3c2c354e36f0b7e4bd9e16189301c01bdf1"
+  },
+  {
+   "path": "docs/internals/organization.txt",
+   "bytes": 13249,
+   "sha256": "1553c927f60d3cbdba59fe15d48edf6b54e978167b5255257148da21edeea6d3"
+  },
+  {
+   "path": "docs/internals/release-process.txt",
+   "bytes": 16757,
+   "sha256": "8d825de9cb5bee4faa27555a5cd6a10ad25678ed38f6449c2256cbbf2b2fbd09"
+  },
+  {
+   "path": "docs/internals/security.txt",
+   "bytes": 25663,
+   "sha256": "e6f2726547cd6cd6084283ed2a427b2483d52122d7f47ba7b02a1f73113b4aac"
+  },
+  {
+   "path": "docs/intro/contributing.txt",
+   "bytes": 23424,
+   "sha256": "be0e0f69b921ab15e859282e02bfa993167b2dabd3d69e1e35141b312f8277d1"
+  },
+  {
+   "path": "docs/intro/index.txt",
+   "bytes": 1377,
+   "sha256": "3188898294b1e9e3df697c1bc50d2252ce69f94eef4837f45d55899547e150c4"
+  },
+  {
+   "path": "docs/intro/install.txt",
+   "bytes": 2808,
+   "sha256": "95b78fee7d0def45503b32f542cca268992101b8ed49aa538969780e80a982bb"
+  },
+  {
+   "path": "docs/intro/overview.txt",
+   "bytes": 12922,
+   "sha256": "493f81d63db5ae1486e12ad46e4399b6f801c08b04cce775c744885238b41e53"
+  },
+  {
+   "path": "docs/intro/reusable-apps.txt",
+   "bytes": 14416,
+   "sha256": "63752e592f24aaf6e61727c10916c1652d8ef31b7274ea16b406f836dc3b7629"
+  },
+  {
+   "path": "docs/intro/tutorial01.txt",
+   "bytes": 10844,
+   "sha256": "1cf1817e6211b7c0fa9e8044ee808fde1e8f16ca5f9d5ab5358510a5c9591b96"
+  },
+  {
+   "path": "docs/intro/tutorial02.txt",
+   "bytes": 23564,
+   "sha256": "bc23aa4ab05b19674a008f4b697615a113dfa40df6e70482cc047222eb3ca634"
+  },
+  {
+   "path": "docs/intro/tutorial03.txt",
+   "bytes": 18075,
+   "sha256": "0c88a77574140434bf817780838639c82736337389b873c240834a0ecdc67148"
+  },
+  {
+   "path": "docs/intro/tutorial04.txt",
+   "bytes": 14218,
+   "sha256": "885041dfa38070a3579a44e22cbe93c3f46cc577182380c5290182dfa380a90a"
+  },
+  {
+   "path": "docs/intro/tutorial05.txt",
+   "bytes": 28460,
+   "sha256": "3d86395457ece1d13f27c9d014d3e5420c1dc5871ba40ee474487b3e3480d7e1"
+  },
+  {
+   "path": "docs/intro/tutorial06.txt",
+   "bytes": 5508,
+   "sha256": "a380cb57f9952fbee31805133ffe5a9a306f5fdcd0bc72b970085758a352b0f2"
+  },
+  {
+   "path": "docs/intro/tutorial07.txt",
+   "bytes": 16289,
+   "sha256": "59fc923a469eec0a4748ea39270b4b6c71bdd4ede0cf4ebb5542dac523002981"
+  },
+  {
+   "path": "docs/intro/tutorial08.txt",
+   "bytes": 4707,
+   "sha256": "89d2ad0568899336401dcc7fa21ab1424e6fff6958cc55f9783a36ffa98428f5"
+  },
+  {
+   "path": "docs/intro/whatsnext.txt",
+   "bytes": 8875,
+   "sha256": "ecffcad0cd1b23a2653dc3462cb30c3df9e0ee76533e2af5e3e3548a7d447e7c"
+  },
+  {
+   "path": "docs/misc/api-stability.txt",
+   "bytes": 3063,
+   "sha256": "246b6d518b8a9e5e36c0833772a36b14c519b4b52c3f5b10e12ccc02c8039af3"
+  },
+  {
+   "path": "docs/misc/design-philosophies.txt",
+   "bytes": 10113,
+   "sha256": "0effcf850ac82c7a55389d4feef0947499a37334646043919acda8fedde5f56f"
+  },
+  {
+   "path": "docs/misc/distributions.txt",
+   "bytes": 1527,
+   "sha256": "771ef80a8bab71e4255a9f1b0f8fbac9f55ae8348801f3967f728d1326fdf9d2"
+  },
+  {
+   "path": "docs/misc/index.txt",
+   "bytes": 342,
+   "sha256": "48c83290ec0a5677819372b7eb4e1ac898e7eb5b3676daf6807c5bff04e7810e"
+  },
+  {
+   "path": "docs/ref/applications.txt",
+   "bytes": 21536,
+   "sha256": "8267965c77c4bc340a74ae80a4dcd52895608b0fe7694175cada518d03766bc1"
+  },
+  {
+   "path": "docs/ref/checks.txt",
+   "bytes": 51126,
+   "sha256": "5c5aa4e7f92dcb7c4901c8596b7f860e942ace2ac2f16fde05229d893ba2f4fd"
+  },
+  {
+   "path": "docs/ref/class-based-views/base.txt",
+   "bytes": 11118,
+   "sha256": "aeb9ac136ffc4e0a3e6ff125b6e48abb99195e8b60fe535bcf5375e116c203e2"
+  },
+  {
+   "path": "docs/ref/class-based-views/flattened-index.txt",
+   "bytes": 40845,
+   "sha256": "bd4e0842af6a7f4eaea61518a86ec8a1d64a0dd6ccabf19c9d156885194362fd"
+  },
+  {
+   "path": "docs/ref/class-based-views/generic-date-based.txt",
+   "bytes": 21221,
+   "sha256": "5411bc0532fbb1005831ba254933f2e4f7e83aca5f2ed437ec266c0213d4231d"
+  },
+  {
+   "path": "docs/ref/class-based-views/generic-display.txt",
+   "bytes": 6589,
+   "sha256": "6533b67d2f7b727abd04c28be2e9fb579c40f99015dd0a8701e9dc6cb8537c89"
+  },
+  {
+   "path": "docs/ref/class-based-views/generic-editing.txt",
+   "bytes": 11296,
+   "sha256": "95d241d336bd8fdb2f524018db18a2e8f37f5d542accf7dbcf45f7a4495cf44f"
+  },
+  {
+   "path": "docs/ref/class-based-views/index.txt",
+   "bytes": 2307,
+   "sha256": "6893893787ba8209a77888becab9809bb3559251b79ed7fe56c2e7640dcae8b4"
+  },
+  {
+   "path": "docs/ref/class-based-views/mixins-date-based.txt",
+   "bytes": 12188,
+   "sha256": "b8da1956156bce75e2f19f43734731d10e06b3e3d0124492c0a704f59515e640"
+  },
+  {
+   "path": "docs/ref/class-based-views/mixins-editing.txt",
+   "bytes": 7960,
+   "sha256": "778e85b410b124d54248381f0c3cbb824d30c1bb883c535106784751685e220e"
+  },
+  {
+   "path": "docs/ref/class-based-views/mixins-multiple-object.txt",
+   "bytes": 8530,
+   "sha256": "d42fb2e7432d083ca7e60b6e4c5c601bf6d029363b7ea9a169815c23969f0c65"
+  },
+  {
+   "path": "docs/ref/class-based-views/mixins-simple.txt",
+   "bytes": 3935,
+   "sha256": "157b04fd9db04a958a8a5d36d1b59207973361b35f91ded9ef6f28e23c344a61"
+  },
+  {
+   "path": "docs/ref/class-based-views/mixins-single-object.txt",
+   "bytes": 7467,
+   "sha256": "e5381385024bacef90c2ad1c9e9b19f106c454675ef295148c9f7f78b229d34b"
+  },
+  {
+   "path": "docs/ref/class-based-views/mixins.txt",
+   "bytes": 318,
+   "sha256": "b7a53e331d1a089ba02adb0944b7501a694c7e8f09f0575e2406d162e7036242"
+  },
+  {
+   "path": "docs/ref/clickjacking.txt",
+   "bytes": 4536,
+   "sha256": "d7444d668099cb6ae93dddb63c62ea7ad87e671d5ead435a263fffa42f60fa5c"
+  },
+  {
+   "path": "docs/ref/contrib/admin/actions.txt",
+   "bytes": 22343,
+   "sha256": "fcfa1385548d11d58150eaead0e9d98c79cae1097b10eb2f36cb0d52667c074f"
+  },
+  {
+   "path": "docs/ref/contrib/admin/admindocs.txt",
+   "bytes": 5403,
+   "sha256": "b2ad1d70e2ff9151a61b4c470c9e49e3764e32ae434482dea44693ccbb3dc9b2"
+  },
+  {
+   "path": "docs/ref/contrib/admin/filters.txt",
+   "bytes": 8164,
+   "sha256": "bda50e5d636bc596f8c3e11d2c8beac8557188355a1d36aec7d983b8cfcd4b70"
+  },
+  {
+   "path": "docs/ref/contrib/admin/index.txt",
+   "bytes": 140597,
+   "sha256": "398a4d6889026f7f9a5bacd777bca3e14da724e69fd9f991489f727540229825"
+  },
+  {
+   "path": "docs/ref/contrib/admin/javascript.txt",
+   "bytes": 2494,
+   "sha256": "a59eb9227bc6fee7cdbe99b051aca4c02c5642f51d2995d0b9d96d1f2454a1b2"
+  },
+  {
+   "path": "docs/ref/contrib/auth.txt",
+   "bytes": 30093,
+   "sha256": "21a487dd0984c4f59a97471c86d9b0f77e8ccf9b7b9f96faa1e442b779d9c17f"
+  },
+  {
+   "path": "docs/ref/contrib/contenttypes.txt",
+   "bytes": 25470,
+   "sha256": "42008c4cd86de3974cc6e6aacf0526a5a386ed0f61c135e10edee23578eb4a7c"
+  },
+  {
+   "path": "docs/ref/contrib/flatpages.txt",
+   "bytes": 14694,
+   "sha256": "45fff93ab03b8d30e2fedcd15ebf1640ec5975e6e3d0201a75a6a1195c647b1b"
+  },
+  {
+   "path": "docs/ref/contrib/gis/admin.txt",
+   "bytes": 593,
+   "sha256": "a092fd68a517a2bda693f0a05ff448bd1f4b88ad6d65ead5b1b00158c81c3dd9"
+  },
+  {
+   "path": "docs/ref/contrib/gis/commands.txt",
+   "bytes": 2986,
+   "sha256": "19f69d2d70e43e1b9b4797c3b9cef8a78158b8e9959cdf29c1ea226be4696ff5"
+  },
+  {
+   "path": "docs/ref/contrib/gis/db-api.txt",
+   "bytes": 22272,
+   "sha256": "1138baa818f16f2775b53c749eb323b6d67c49c88ab4072e3b68d7c1b669d471"
+  },
+  {
+   "path": "docs/ref/contrib/gis/deployment.txt",
+   "bytes": 767,
+   "sha256": "d9f9da567103d00911fae33191d7b7af7aad7a876e435e9afd5e826de1110bc6"
+  },
+  {
+   "path": "docs/ref/contrib/gis/feeds.txt",
+   "bytes": 2560,
+   "sha256": "075f56c4e6748862c29ae5e674165abe4f1e4427d581ba0096cdf9311b79f5be"
+  },
+  {
+   "path": "docs/ref/contrib/gis/forms-api.txt",
+   "bytes": 8455,
+   "sha256": "51f27eb7a745cc13470817be9c00a8a64bf4b4b02064d7f5097026dbf2833143"
+  },
+  {
+   "path": "docs/ref/contrib/gis/functions.txt",
+   "bytes": 23538,
+   "sha256": "ec943ae82f2a2358dc1a2d1afe3a1c4962f20568a25392005eb092bc9d7df2b3"
+  },
+  {
+   "path": "docs/ref/contrib/gis/gdal.txt",
+   "bytes": 72238,
+   "sha256": "894b8256f8057f6b95bcb0f31f81470a000a24df4daffefa6f0d7a2ebf00583e"
+  },
+  {
+   "path": "docs/ref/contrib/gis/geoip2.txt",
+   "bytes": 5937,
+   "sha256": "d6e62070d042158415c70d50a09340a778bf9b1da914e4f74846977f0d6a05a3"
+  },
+  {
+   "path": "docs/ref/contrib/gis/geoquerysets.txt",
+   "bytes": 30892,
+   "sha256": "233103129f7c5eea5b8caa7f974fb529b61a63931640f08e1167c2b766aa669e"
+  },
+  {
+   "path": "docs/ref/contrib/gis/geos.txt",
+   "bytes": 40746,
+   "sha256": "d1d5076a4a2e09f77c73b602c93e151e9c5d2d201179503e88860069994a7d0a"
+  },
+  {
+   "path": "docs/ref/contrib/gis/index.txt",
+   "bytes": 579,
+   "sha256": "7ec3069035cbb1dd5b396819b041d9889b800eb29bc34515269227889b1519df"
+  },
+  {
+   "path": "docs/ref/contrib/gis/install/geolibs.txt",
+   "bytes": 9341,
+   "sha256": "0f0e467b26946c6590b8ceed79b57f8c52bdf56a9e135ecf58623594dcad876a"
+  },
+  {
+   "path": "docs/ref/contrib/gis/install/index.txt",
+   "bytes": 14816,
+   "sha256": "abb570ffef334c655f4e3256446b5fa105ed3a38fcd06217bc141c74550e4d43"
+  },
+  {
+   "path": "docs/ref/contrib/gis/install/postgis.txt",
+   "bytes": 2937,
+   "sha256": "46ca30a2b918b4a9f0083a8ae7e1b450a406923a1a1619950b59fee84ff4d144"
+  },
+  {
+   "path": "docs/ref/contrib/gis/install/spatialite.txt",
+   "bytes": 3472,
+   "sha256": "34421908e46590efb8ee3272a1085237d4dc875321dedb740a924066ef954241"
+  },
+  {
+   "path": "docs/ref/contrib/gis/layermapping.txt",
+   "bytes": 10103,
+   "sha256": "8da2de154560091dd08ac78b35c0bc12cbca09ae6e2445688ca5783fbee2f2cd"
+  },
+  {
+   "path": "docs/ref/contrib/gis/measure.txt",
+   "bytes": 6679,
+   "sha256": "7f83f559e2b00b76584cefecc9a1eaea78c4818282cee75508a2a2d1e5b544b1"
+  },
+  {
+   "path": "docs/ref/contrib/gis/model-api.txt",
+   "bytes": 10319,
+   "sha256": "e80328a7e345566e3f7ad75dd759e743ad78d558b297a626a97fda557db3be65"
+  },
+  {
+   "path": "docs/ref/contrib/gis/ogrinspect.txt",
+   "bytes": 413,
+   "sha256": "43111b7edf5711aa8c0bc33af198f592184c5bd7328fa13961b14b1b9b6a9be6"
+  },
+  {
+   "path": "docs/ref/contrib/gis/serializers.txt",
+   "bytes": 2264,
+   "sha256": "83680c4abdf92ea59ae767857910c6d2572f653235026f4c894ec85170a5c2a4"
+  },
+  {
+   "path": "docs/ref/contrib/gis/sitemaps.txt",
+   "bytes": 418,
+   "sha256": "97d3a2b3ebfbe68a686bec6a96f06c972d884b77e77b9a0a14f790aa15ca646f"
+  },
+  {
+   "path": "docs/ref/contrib/gis/testing.txt",
+   "bytes": 3799,
+   "sha256": "b1792fe0c52ee513239e9770926d8fdd1f76ab3d391228538269c0acda1a8b3f"
+  },
+  {
+   "path": "docs/ref/contrib/gis/tutorial.txt",
+   "bytes": 27882,
+   "sha256": "650ccd7c40a046da3ceb8120bdfc3e86f9641c12e30ac0cd471779dc521f3c9c"
+  },
+  {
+   "path": "docs/ref/contrib/gis/utils.txt",
+   "bytes": 358,
+   "sha256": "87e96adbe171c95202c1dc12407c4adfaf9bbd29ef3fa2169deed7fc8181fb5b"
+  },
+  {
+   "path": "docs/ref/contrib/humanize.txt",
+   "bytes": 4582,
+   "sha256": "cc1141a11796d8cf5a3246d619abdbe1d6b306b9897d84cd6709c76c19a40dd2"
+  },
+  {
+   "path": "docs/ref/contrib/index.txt",
+   "bytes": 3330,
+   "sha256": "79d0fd410731fa6cd37d3c22d1a8db2d26ef57c5462579aea7d65069929142b3"
+  },
+  {
+   "path": "docs/ref/contrib/messages.txt",
+   "bytes": 17218,
+   "sha256": "108322968acff439796af75c3738861e1423e7967f1875cae3aa8657b94a44bf"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/aggregates.txt",
+   "bytes": 12614,
+   "sha256": "a0ad715158e559b70a99e0ee639c7093de1613ab7731ae199dea5c663f684294"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/constraints.txt",
+   "bytes": 7887,
+   "sha256": "17bc47593a542f6d0e685d0e94c532249b8fdc8fcd489bdf2141cb3e0bc2743c"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/expressions.txt",
+   "bytes": 1442,
+   "sha256": "993dcef26c68ac865ef4ed0d853d23f355d1087c07b02fb4250b0bb294513562"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/fields.txt",
+   "bytes": 30172,
+   "sha256": "6dabb1aa9b40a9a05d62c97a977732e5144607c9946b3f58275adcc49b490321"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/forms.txt",
+   "bytes": 7910,
+   "sha256": "9449d6d939a16b9378142fcdd8d533451ee6ce517c5e1b0de2ea8d3452bce2d2"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/functions.txt",
+   "bytes": 1537,
+   "sha256": "d648d1db2cb3ff661a84e471a79e373210cb814c817e13ecbf1b9a97cba0d33d"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/index.txt",
+   "bytes": 1441,
+   "sha256": "b19c4c669ad101ecd8c0e186224c136d4823d3413992b024b895c78bb4c32e32"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/indexes.txt",
+   "bytes": 6946,
+   "sha256": "5874cb3ebbcfae0c80ebc6ef777351dd6ab824526034515a17a5054d48e723c8"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/lookups.txt",
+   "bytes": 4153,
+   "sha256": "ad0126d90b30d810ccd6be431756f29ac89a40f788e24ca1c4b9b36f3fbe0225"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/operations.txt",
+   "bytes": 9305,
+   "sha256": "ea7d38fc02e7bd77cb3e56fca9c0ede6442e52a2884c48a276ae4539106c6cfd"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/search.txt",
+   "bytes": 18774,
+   "sha256": "7b19b5692e7b4ca1284e3fd39912e69b6c7d606e8490875128c9747507e0ed71"
+  },
+  {
+   "path": "docs/ref/contrib/postgres/validators.txt",
+   "bytes": 1113,
+   "sha256": "d2b682c7b5ec9952ef46ed34300905300fa1bbb8482a93c28d918c4ea5a413a5"
+  },
+  {
+   "path": "docs/ref/contrib/redirects.txt",
+   "bytes": 4556,
+   "sha256": "5ed210853cfef9556ab3b09855145fcab0e8dbd1795e26b3e006bff52c86ba0f"
+  },
+  {
+   "path": "docs/ref/contrib/sitemaps.txt",
+   "bytes": 20936,
+   "sha256": "bc141c57822befc51d10dfedfbca28ef7095430d039c7d8f6d2e01a7a8f69e64"
+  },
+  {
+   "path": "docs/ref/contrib/sites.txt",
+   "bytes": 20273,
+   "sha256": "10abe63b7ef66e0d4a35123ff89d9d91d86f43745863ddef2ce1227a87c62d37"
+  },
+  {
+   "path": "docs/ref/contrib/staticfiles.txt",
+   "bytes": 21499,
+   "sha256": "d908cf56f9481805c4bc09d5e7f587638bc8dc6fef277195eebacf97f6ad6999"
+  },
+  {
+   "path": "docs/ref/contrib/syndication.txt",
+   "bytes": 42614,
+   "sha256": "556ba882661c3449894ffb0d64f39225bbfee9ec4ba9572fb906b10144dd6ffe"
+  },
+  {
+   "path": "docs/ref/csp.txt",
+   "bytes": 14063,
+   "sha256": "57ea01050460bf793acf0145a733464a28b202d56b12130070e1ac09fdeb24cf"
+  },
+  {
+   "path": "docs/ref/csrf.txt",
+   "bytes": 10394,
+   "sha256": "e2b28fdf974ba9532f0586da4aecb00906b38fee235d7e1b651a596fdeefa944"
+  },
+  {
+   "path": "docs/ref/databases.txt",
+   "bytes": 48393,
+   "sha256": "cbc28768aa410929416e3bd20b0899a64779670c0ae2c92c36fc4f338aa231da"
+  },
+  {
+   "path": "docs/ref/django-admin.txt",
+   "bytes": 76721,
+   "sha256": "b82578e5a4b8e2e9693d0624b411794c51f7ab0f362fd21703f56b80b73d5b94"
+  },
+  {
+   "path": "docs/ref/exceptions.txt",
+   "bytes": 11058,
+   "sha256": "316f28b59caedf944828e53e0d7066b69df116e69477ea5b3c827476bcfb79c8"
+  },
+  {
+   "path": "docs/ref/files/file.txt",
+   "bytes": 5418,
+   "sha256": "89a567ac4225c78b44524511037c5198285c6d4a069ee23a4d44d79a2140dc18"
+  },
+  {
+   "path": "docs/ref/files/index.txt",
+   "bytes": 174,
+   "sha256": "b95fe5503d012698449e82536ecdb5808ea4a46d2ed3483d8c394634f1e8c652"
+  },
+  {
+   "path": "docs/ref/files/storage.txt",
+   "bytes": 10905,
+   "sha256": "621403ddac23c521724ce33a1f9a29ea8f1a9d10af31253edf7cfaa98bcccf0d"
+  },
+  {
+   "path": "docs/ref/files/uploads.txt",
+   "bytes": 8848,
+   "sha256": "c9d6705942f926369c01c4d1e72360579668822485d7c7d8fcd53eb5486676ed"
+  },
+  {
+   "path": "docs/ref/forms/api.txt",
+   "bytes": 66637,
+   "sha256": "3d9dea28394351d724169ba4dfe8e3ab70244f72115944278b768180d8a7568c"
+  },
+  {
+   "path": "docs/ref/forms/fields.txt",
+   "bytes": 59692,
+   "sha256": "a4e84c3e155d9ccd1491ad855f83b76ad33bbcf5ad2a798f3c9b53f80db466ff"
+  },
+  {
+   "path": "docs/ref/forms/formsets.txt",
+   "bytes": 662,
+   "sha256": "29988246b5d1a087fd2688d7e814ee8f7933b1095e5bc846f30d8f1161d2884b"
+  },
+  {
+   "path": "docs/ref/forms/index.txt",
+   "bytes": 231,
+   "sha256": "243cdf1b63c09686672bee55b4c215bc149311e9d829fb4d5e985084b38b4e22"
+  },
+  {
+   "path": "docs/ref/forms/models.txt",
+   "bytes": 9863,
+   "sha256": "0825d77cfa561c3e4cde6aa8ab0c1902655052d26c3934c20247d490a1819e50"
+  },
+  {
+   "path": "docs/ref/forms/renderers.txt",
+   "bytes": 8928,
+   "sha256": "d5b1a96c937ad070f9c32ea384874075be8e8ee9b8bd3a1b8a23261359aae3f1"
+  },
+  {
+   "path": "docs/ref/forms/validation.txt",
+   "bytes": 17304,
+   "sha256": "ca0cbc1f29fb3660353c0e7bc911b7d5d756de0e8abc6720800d1edc226fb8a4"
+  },
+  {
+   "path": "docs/ref/forms/widgets.txt",
+   "bytes": 39466,
+   "sha256": "f18f55211ac4cce2aad91318008856f09a975a311bb6f6b0d3141e053dfb33df"
+  },
+  {
+   "path": "docs/ref/index.txt",
+   "bytes": 501,
+   "sha256": "1917f4bedfb387aac7e4d1c6c3638c838738feda15b78df0de5ea5f4501ac447"
+  },
+  {
+   "path": "docs/ref/logging.txt",
+   "bytes": 15901,
+   "sha256": "019119a1512c5f6cc46cece715d0bcc3aafd1d44a25155d85bac4cd77d04b9dd"
+  },
+  {
+   "path": "docs/ref/middleware.txt",
+   "bytes": 28039,
+   "sha256": "a502374b7015c7f4a68db611629d8e11c1448be732d66da78483e0e2224a5c2a"
+  },
+  {
+   "path": "docs/ref/migration-operations.txt",
+   "bytes": 24691,
+   "sha256": "54d8ac384dbf5095b23c5724a4cc3d3dff8df50331626115f32857affd3bf7b9"
+  },
+  {
+   "path": "docs/ref/models/class.txt",
+   "bytes": 2918,
+   "sha256": "78e29eb446459fb340ae463c9917dcebebbc0c951c5bf0946e3ab7ce8483c028"
+  },
+  {
+   "path": "docs/ref/models/conditional-expressions.txt",
+   "bytes": 10801,
+   "sha256": "fb71e40866bc40c9650eedb892af97b6eace6543844d45d7b5fc1161a0120320"
+  },
+  {
+   "path": "docs/ref/models/constraints.txt",
+   "bytes": 11088,
+   "sha256": "ba787df9761c8bed0f1c7b078f0cde3aa4892a23f2ecc9058cd067ccc7911691"
+  },
+  {
+   "path": "docs/ref/models/database-functions.txt",
+   "bytes": 66356,
+   "sha256": "7a8aa4e1b0a4f3e180e54002f99b9af01c275fc020766092bfc384aa5a8ab15d"
+  },
+  {
+   "path": "docs/ref/models/expressions.txt",
+   "bytes": 54638,
+   "sha256": "062141febbb8d8d10263fe5237a94777ca96f42c8db630de19ff076f054b1d50"
+  },
+  {
+   "path": "docs/ref/models/fields.txt",
+   "bytes": 104284,
+   "sha256": "1a5886336a84331a389720ec12a38c47afde027002a393e1608197ea89064d34"
+  },
+  {
+   "path": "docs/ref/models/index.txt",
+   "bytes": 309,
+   "sha256": "8f9b74841b6071ca9411604dcc5be6a2ded0d960ab6b0365aca1a3c6b5247f32"
+  },
+  {
+   "path": "docs/ref/models/indexes.txt",
+   "bytes": 7757,
+   "sha256": "8e923bec9efacb468dba0938919d1616189564c3b5575d28dd1942206608eef7"
+  },
+  {
+   "path": "docs/ref/models/instances.txt",
+   "bytes": 41192,
+   "sha256": "5a62cfb7a09a2f37a261b232b6ad3e9abb9679913d8e8a0359fdc9f9bc78ce49"
+  },
+  {
+   "path": "docs/ref/models/lookups.txt",
+   "bytes": 9761,
+   "sha256": "c5c9015293147085f84472f36512e9299259b268b6be1b30e7b5d74fca382839"
+  },
+  {
+   "path": "docs/ref/models/meta.txt",
+   "bytes": 6261,
+   "sha256": "c3ffb7daca383ae71fc1e718e7945c543fb59a5501f5ead2661a5a4b2ffcf8e2"
+  },
+  {
+   "path": "docs/ref/models/options.txt",
+   "bytes": 18193,
+   "sha256": "b186aa1643ac39fd212a4a1c499f03e02fd1a714d2e02fc0046cc39bfd3af065"
+  },
+  {
+   "path": "docs/ref/models/querysets.txt",
+   "bytes": 161979,
+   "sha256": "327e4d7d5dd4ac4d23d5e5c39c478c7ac39c0ce68a1127870f86dce4087acde7"
+  },
+  {
+   "path": "docs/ref/models/relations.txt",
+   "bytes": 9622,
+   "sha256": "24ac625018069339ab1e91677df8102a0ae660314f7e19d7353c325c935adf42"
+  },
+  {
+   "path": "docs/ref/paginator.txt",
+   "bytes": 10565,
+   "sha256": "33782d6fd780a29e594849452bd66cbe5691642249b943c68d7329838b550270"
+  },
+  {
+   "path": "docs/ref/request-response.txt",
+   "bytes": 55528,
+   "sha256": "e475d9f66c60f40033142e00761fefcf2f95513d77d823b89b574aab8c2968e4"
+  },
+  {
+   "path": "docs/ref/schema-editor.txt",
+   "bytes": 7095,
+   "sha256": "955d749838821926dec02edf4e687c04c271dc305ecba7803133c6b3c2b25cdd"
+  },
+  {
+   "path": "docs/ref/settings.txt",
+   "bytes": 132891,
+   "sha256": "e094c514fda77dd29df410b96808640261e8c4ffd4b7b8f3066f7615ab1edb1e"
+  },
+  {
+   "path": "docs/ref/signals.txt",
+   "bytes": 23360,
+   "sha256": "6bc37fc7867120043b4e58ac9410f6d55618a75eb2d5516d73bdf62fa24a3ea8"
+  },
+  {
+   "path": "docs/ref/tasks.txt",
+   "bytes": 15018,
+   "sha256": "9be4b4c8683bca8e1ef44ba3747a023804d45ea82d8a283387360d8cca93c14e"
+  },
+  {
+   "path": "docs/ref/template-response.txt",
+   "bytes": 11227,
+   "sha256": "5585532f747a4760ec6de4431dd0714c41e9b828aa9db04d4da433d80ef805d6"
+  },
+  {
+   "path": "docs/ref/templates/api.txt",
+   "bytes": 42173,
+   "sha256": "20ba81ed96d9bf265843594702bfb1ba7b719c7d57781cd19582045939da81c7"
+  },
+  {
+   "path": "docs/ref/templates/builtins.txt",
+   "bytes": 94154,
+   "sha256": "6caf226cf55c405e3efe6da62df168c58906eeeb3c7c71a5aa5269d154b1f221"
+  },
+  {
+   "path": "docs/ref/templates/index.txt",
+   "bytes": 690,
+   "sha256": "bfad821f9f91acdbc023ae0749a9597949fc4752ceefef85c475bf5175059b19"
+  },
+  {
+   "path": "docs/ref/templates/language.txt",
+   "bytes": 31554,
+   "sha256": "681e464375ce940dcfa97d0c2cd10f5772d15b5533be3d7f1026bcd89089c36a"
+  },
+  {
+   "path": "docs/ref/unicode.txt",
+   "bytes": 15589,
+   "sha256": "b2faeee483eeb2ac41deb9a9b2841184367357ce3301d846f6df3a0742ed397a"
+  },
+  {
+   "path": "docs/ref/urlresolvers.txt",
+   "bytes": 9923,
+   "sha256": "a0e3aa6d2e4452e8b51c9268035d0b1da9849cd886c6bcc380bbb7c0f0db795a"
+  },
+  {
+   "path": "docs/ref/urls.txt",
+   "bytes": 8245,
+   "sha256": "a22588d38c678e18e13129653102d311454e19f5f4bcb4f87c59639befa96423"
+  },
+  {
+   "path": "docs/ref/utils.txt",
+   "bytes": 43932,
+   "sha256": "8aed111247f4b882e8c424789de350994347ddbeeba4c81fd79c30f9b683538a"
+  },
+  {
+   "path": "docs/ref/validators.txt",
+   "bytes": 15820,
+   "sha256": "c3ed47315f722a7bd89b55f9401e75bdc36f605750f42e6a9bb70fce8fee48a5"
+  },
+  {
+   "path": "docs/ref/views.txt",
+   "bytes": 6725,
+   "sha256": "695756c920a56341c4b6db822e547b72754a31cc32d65087f9c2cea2b9609e38"
+  },
+  {
+   "path": "docs/releases/0.95.txt",
+   "bytes": 5716,
+   "sha256": "be442d7a0d52da039db008e36e6ec47e27b47f2411577010de2488cf619126ed"
+  },
+  {
+   "path": "docs/releases/0.96.txt",
+   "bytes": 9585,
+   "sha256": "472d1d10e862b638f17d2b6be8b47346fabaf45546d37da48be5d0da1be48448"
+  },
+  {
+   "path": "docs/releases/1.0-porting-guide.txt",
+   "bytes": 26612,
+   "sha256": "240defec0384d74c2262a58f5df41e9574657bbf1ad5bd0c55433a23b1155786"
+  },
+  {
+   "path": "docs/releases/1.0.1.txt",
+   "bytes": 2745,
+   "sha256": "24c541b95581eb6cdfa64694920397bedc8a733c4ec13824e644cf7b46265346"
+  },
+  {
+   "path": "docs/releases/1.0.2.txt",
+   "bytes": 2147,
+   "sha256": "1d1286f3fa69cfa806d05ab2c5301a70790b7285d8f3b926879030c7f9347487"
+  },
+  {
+   "path": "docs/releases/1.0.txt",
+   "bytes": 10190,
+   "sha256": "a655f710c7ec5979ec3ee907575a83a43d833ca5ebe84e24ee3ee32ad09fbcf5"
+  },
+  {
+   "path": "docs/releases/1.1.2.txt",
+   "bytes": 2454,
+   "sha256": "cdd9313441b59cbf061e4b2c8cc898f9b157ef5868b949446896066613315c4e"
+  },
+  {
+   "path": "docs/releases/1.1.3.txt",
+   "bytes": 2283,
+   "sha256": "eabd5d9e1d03b188b351a6cc708094165dfda5e64db5bae04bda7d4578cd99b9"
+  },
+  {
+   "path": "docs/releases/1.1.4.txt",
+   "bytes": 2847,
+   "sha256": "4e4eab0788aa19de16b1d16b9370482529f3a3bfe574541952ec6c774482b108"
+  },
+  {
+   "path": "docs/releases/1.1.txt",
+   "bytes": 18505,
+   "sha256": "82337b7a843c234c59f088a48982052047cfa6dde490c423b709eefa51eb97d5"
+  },
+  {
+   "path": "docs/releases/1.10.1.txt",
+   "bytes": 3542,
+   "sha256": "a85e66b18af13da605b55eddc9f4ba14799afff17e3d5792fd019586a0cd26b8"
+  },
+  {
+   "path": "docs/releases/1.10.2.txt",
+   "bytes": 1074,
+   "sha256": "3ccca07f21a9f35cd5f5c0f8914493a0857a4b4ec907137de16fd15f31b12b80"
+  },
+  {
+   "path": "docs/releases/1.10.3.txt",
+   "bytes": 3109,
+   "sha256": "979e776eebd6c468da42f98f25e700fbb8c161fca9d26382eae2596629a11c4a"
+  },
+  {
+   "path": "docs/releases/1.10.4.txt",
+   "bytes": 1104,
+   "sha256": "792eda4a63035498b4adb2e65b45a838c910fd76c31f8e8b9429598176d36236"
+  },
+  {
+   "path": "docs/releases/1.10.5.txt",
+   "bytes": 642,
+   "sha256": "7dfe3f98c24e3319af017c5414066290a06a28ed11762946ac200fd9a84bbf2a"
+  },
+  {
+   "path": "docs/releases/1.10.6.txt",
+   "bytes": 794,
+   "sha256": "2ad6dc722a0361e0728f01c53c12ea567976f9bc740560105d739a9675a8ba38"
+  },
+  {
+   "path": "docs/releases/1.10.7.txt",
+   "bytes": 1607,
+   "sha256": "1fd96cd179b635cf886e8fa68a17a21f999bd3c5cf8d3b7175df818ae6a45fd2"
+  },
+  {
+   "path": "docs/releases/1.10.8.txt",
+   "bytes": 668,
+   "sha256": "5ff49ac3362a133dd34b0bf54b2f7821e35bdbb73ca9bde3e3f11d14cba3c494"
+  },
+  {
+   "path": "docs/releases/1.10.txt",
+   "bytes": 55815,
+   "sha256": "d491274bfc61d8d98b873d71eb3797687a54718dc912e2e564af5f572a9fa6cb"
+  },
+  {
+   "path": "docs/releases/1.11.1.txt",
+   "bytes": 4407,
+   "sha256": "ec377d09e478e5c70bdd42d9b05c4789befa299fb3a7b310ea7ccc0e3cdb1648"
+  },
+  {
+   "path": "docs/releases/1.11.10.txt",
+   "bytes": 1641,
+   "sha256": "77fba57a68663d160f65ea0771c76d35f14a35ec8bf7a93262bca1dddd6665ea"
+  },
+  {
+   "path": "docs/releases/1.11.11.txt",
+   "bytes": 1435,
+   "sha256": "405077b94479b514e88db67905f4c4f80b3269661f338c6f34c3d757b993597c"
+  },
+  {
+   "path": "docs/releases/1.11.12.txt",
+   "bytes": 555,
+   "sha256": "5c4bbeca5cdf429941fba273b51272f95267504e94b16b3d42480ea628f68866"
+  },
+  {
+   "path": "docs/releases/1.11.13.txt",
+   "bytes": 747,
+   "sha256": "f1643cdebfdaa027f07c2c93dc3e1e9a15adcf83b0db531e42abb7407ecc1c1e"
+  },
+  {
+   "path": "docs/releases/1.11.14.txt",
+   "bytes": 426,
+   "sha256": "ee0856f2a2dfbd7559d4c379f4ee31f1d2ef1e74018e4650ec6c1207f803bc01"
+  },
+  {
+   "path": "docs/releases/1.11.15.txt",
+   "bytes": 764,
+   "sha256": "429cab9dd0137e3fe9513ddcb68f47e1b35d322825eead71b066e409893c76a2"
+  },
+  {
+   "path": "docs/releases/1.11.16.txt",
+   "bytes": 288,
+   "sha256": "45910aed97596e97359ddca7bead20d4b2df3ef76f476c5d047862cb6d3d6019"
+  },
+  {
+   "path": "docs/releases/1.11.17.txt",
+   "bytes": 404,
+   "sha256": "aecc3808a737afe1fa3b4ce12a26071794452d1950f76670c87d35ce17b18569"
+  },
+  {
+   "path": "docs/releases/1.11.18.txt",
+   "bytes": 638,
+   "sha256": "33edd7e74c640439d9609ecc3b2a1de6e03cc632b05f0cd8002324599f9f3a4c"
+  },
+  {
+   "path": "docs/releases/1.11.19.txt",
+   "bytes": 722,
+   "sha256": "f763db444c4f4a4601f96913a91ffd4cc7e603d6261de474a4e0988319852281"
+  },
+  {
+   "path": "docs/releases/1.11.2.txt",
+   "bytes": 2440,
+   "sha256": "efe553bf24ffeea9971f851464c6e24a5e4288ef8cd602cb4cbe156247cae7f8"
+  },
+  {
+   "path": "docs/releases/1.11.20.txt",
+   "bytes": 240,
+   "sha256": "cdf4ebe50063f944798ee2b7a5b03504e1bd5b6f5042e0c2e4d48acc060133ec"
+  },
+  {
+   "path": "docs/releases/1.11.21.txt",
+   "bytes": 859,
+   "sha256": "4540798689423ce452cd4870b1ce417e682af9233e547554a3b6f15a1e440ecc"
+  },
+  {
+   "path": "docs/releases/1.11.22.txt",
+   "bytes": 1195,
+   "sha256": "51a7fd7949bdb96151ced57b1ab9c058e5e296465ca18db00552180586fe16c3"
+  },
+  {
+   "path": "docs/releases/1.11.23.txt",
+   "bytes": 2821,
+   "sha256": "55b874590e0f1e05f7462886d3015a964347e37d7047c71e4090e221a3baf1d0"
+  },
+  {
+   "path": "docs/releases/1.11.24.txt",
+   "bytes": 380,
+   "sha256": "85fae6f017fb981be5ac7b814c2301f29db6e3b9a39cb2518e28e8226156c4cf"
+  },
+  {
+   "path": "docs/releases/1.11.25.txt",
+   "bytes": 386,
+   "sha256": "fc75f1c8d693d64e6cb1db8e152bc2e48a8ecd09d6a896c0c4f680507037fc39"
+  },
+  {
+   "path": "docs/releases/1.11.26.txt",
+   "bytes": 430,
+   "sha256": "602747826b736a4a8a946e0aa9908dd1ea372bd4abb6815cd3f58cb43883be95"
+  },
+  {
+   "path": "docs/releases/1.11.27.txt",
+   "bytes": 1279,
+   "sha256": "5d6ac6a407bd27dfd37f76c0a6600e241e58ddf264ee4ab736c520e3b7fc8b1d"
+  },
+  {
+   "path": "docs/releases/1.11.28.txt",
+   "bytes": 442,
+   "sha256": "c9bd9fb08ff031bd7fb9ac82aefabf7a5abc220ffd0ef82b6a94090eb4829cd2"
+  },
+  {
+   "path": "docs/releases/1.11.29.txt",
+   "bytes": 485,
+   "sha256": "85f2dc4281a8f7d9d375e689d20059ab3a42bbad936e0acf43d21b1e03990c35"
+  },
+  {
+   "path": "docs/releases/1.11.3.txt",
+   "bytes": 2601,
+   "sha256": "49534bdba4ad838557fb3ff31d958ca8f81b02aa609a296d078301c604b198a7"
+  },
+  {
+   "path": "docs/releases/1.11.4.txt",
+   "bytes": 1585,
+   "sha256": "cb08c79aa2a67c4e8cb571cf39df0277a09b182b5726211fa8f508b53d3bdf43"
+  },
+  {
+   "path": "docs/releases/1.11.5.txt",
+   "bytes": 2466,
+   "sha256": "06b3d0ce67552a84f9b1a9292ef88ff71299460bff16aa5bcecf50f66387501d"
+  },
+  {
+   "path": "docs/releases/1.11.6.txt",
+   "bytes": 637,
+   "sha256": "221dbee6dc5b374f6ac68547e93adb54515ea977870977e4a99745c745c4123b"
+  },
+  {
+   "path": "docs/releases/1.11.7.txt",
+   "bytes": 562,
+   "sha256": "b44a08a5f7d3ed57dab4dd348d2e1fef26ba731bb7e222f6573eed90dfaa5517"
+  },
+  {
+   "path": "docs/releases/1.11.8.txt",
+   "bytes": 1308,
+   "sha256": "0541d2cd918f800ef33b6d543bed402af89b8c72432960b4d3e98570b8484cfc"
+  },
+  {
+   "path": "docs/releases/1.11.9.txt",
+   "bytes": 672,
+   "sha256": "7de1029b376f1f0e7cff4e998c98c629eadcc26c632e2b13a90ae6d375ce0853"
+  },
+  {
+   "path": "docs/releases/1.11.txt",
+   "bytes": 37378,
+   "sha256": "eed0fd9b1127a89c1e846172c902c83eeaa165b87c1ee7fe37479cdebfecb1e1"
+  },
+  {
+   "path": "docs/releases/1.2.1.txt",
+   "bytes": 324,
+   "sha256": "9e7d73e15c924c9c8e689c5fac784d1b4ed4be90cad13d461400765b8068fc7b"
+  },
+  {
+   "path": "docs/releases/1.2.2.txt",
+   "bytes": 1172,
+   "sha256": "e5570ef7281cd70c327c5e13e44369fc821655ffc5af3d66e3996562c19dcc84"
+  },
+  {
+   "path": "docs/releases/1.2.3.txt",
+   "bytes": 622,
+   "sha256": "f31412d5e230351f135c65cdc5eb273a6501a4e10363688ea3680478b058d7ab"
+  },
+  {
+   "path": "docs/releases/1.2.4.txt",
+   "bytes": 3786,
+   "sha256": "90b41b207982eb9c45ed4a4874312d8320e2788f6ba69f6ed3dee2e8d2541f93"
+  },
+  {
+   "path": "docs/releases/1.2.5.txt",
+   "bytes": 5635,
+   "sha256": "b6730f5a96bd9542f7993119ee1b5117bae6afcd7a6a430cbd6826c2dc5a9fa8"
+  },
+  {
+   "path": "docs/releases/1.2.6.txt",
+   "bytes": 531,
+   "sha256": "0d56fef10aa46f5296e02ab47aca2e25083da36c8473e75ee9cd46dd65e17b0c"
+  },
+  {
+   "path": "docs/releases/1.2.7.txt",
+   "bytes": 497,
+   "sha256": "7ae5e5ba1e271a7aed729953fee08c11060e9735ba7511335172b5609cb108cb"
+  },
+  {
+   "path": "docs/releases/1.2.txt",
+   "bytes": 46939,
+   "sha256": "ed2b35bdf64e1ae9ad4506ddde48d0a31c0861a1e9425cfab2361771c7dd81fe"
+  },
+  {
+   "path": "docs/releases/1.3.1.txt",
+   "bytes": 486,
+   "sha256": "869655a0db75f83bc91163bf612d47ccb557f481c72fa34eeaae15cb8b02664a"
+  },
+  {
+   "path": "docs/releases/1.3.2.txt",
+   "bytes": 457,
+   "sha256": "7bd7e8e22824fb34efe2c1ab7e2b984f7695f6f22a0a1a2e482a2deac088e4c9"
+  },
+  {
+   "path": "docs/releases/1.3.3.txt",
+   "bytes": 411,
+   "sha256": "36ee19e5b1a38d540cca49aed2a68a2cc2d2cdfd86cc7e3411f69867c281a13c"
+  },
+  {
+   "path": "docs/releases/1.3.4.txt",
+   "bytes": 1609,
+   "sha256": "ac24de88ce89a0698c69abd532178601cd0b2df625753d2bd1de5b0fcc3fb4e1"
+  },
+  {
+   "path": "docs/releases/1.3.5.txt",
+   "bytes": 2703,
+   "sha256": "36f4e48a62f03c9f2d3c311b021eb9839a197191868cfe3346e5f98286d38e1c"
+  },
+  {
+   "path": "docs/releases/1.3.6.txt",
+   "bytes": 3416,
+   "sha256": "6e79558d3ba970823263f5ae885e1c5f402539cce3afb8d4e6ac1bdc5ec5dccf"
+  },
+  {
+   "path": "docs/releases/1.3.7.txt",
+   "bytes": 482,
+   "sha256": "427817b69be1534b0822b317e615eafd19108e3ce1bca0c3d7ff6f3d2e8b9907"
+  },
+  {
+   "path": "docs/releases/1.3.txt",
+   "bytes": 37382,
+   "sha256": "3cd77f1a3e0ad50e5192bebe53d653e972c68b14e9fd878143528250e5a10cf0"
+  },
+  {
+   "path": "docs/releases/1.4.1.txt",
+   "bytes": 456,
+   "sha256": "4a55d5a7a5538893ad304ea37db7c44ec20fc2e62143cac4b7649117b7100516"
+  },
+  {
+   "path": "docs/releases/1.4.10.txt",
+   "bytes": 380,
+   "sha256": "ed16dc76e90b9d70d1ed3b44e50c9653f51ba584d1dc52a9840cd39b38050fed"
+  },
+  {
+   "path": "docs/releases/1.4.11.txt",
+   "bytes": 4828,
+   "sha256": "b9f2139e9d9ce3eabf36bd3ab8cb81c0d31328f289f4e1ea1965ef1a63cf0943"
+  },
+  {
+   "path": "docs/releases/1.4.12.txt",
+   "bytes": 295,
+   "sha256": "4b4411ce4cefeb9dae2c7ac30acc5ff229b382548e83b6d9e51aab228c3f2a76"
+  },
+  {
+   "path": "docs/releases/1.4.13.txt",
+   "bytes": 2274,
+   "sha256": "96d8dbae8b5ebf64332cd81de1a2353b90213e01df201ea304a216e5da05502b"
+  },
+  {
+   "path": "docs/releases/1.4.14.txt",
+   "bytes": 3193,
+   "sha256": "2e8daea1fd6bf10228001591851bef3ee4d6ceee49d44f909a74036a95ba5897"
+  },
+  {
+   "path": "docs/releases/1.4.15.txt",
+   "bytes": 276,
+   "sha256": "ca8b3c568cce65757a3fd6d683336b0f4c462ae91e9c67f3dcdf3ab0f56a6c66"
+  },
+  {
+   "path": "docs/releases/1.4.16.txt",
+   "bytes": 495,
+   "sha256": "f83b1af721bf8fe235899bd240743821129ae3c6bd93ec822f6839c03c10e8e6"
+  },
+  {
+   "path": "docs/releases/1.4.17.txt",
+   "bytes": 428,
+   "sha256": "dc47861abf80d1b905f35b93909addd4f3a9a7a895e1edabc60d5cb31eea8fe0"
+  },
+  {
+   "path": "docs/releases/1.4.18.txt",
+   "bytes": 3366,
+   "sha256": "4cfdacd0403a3cd70a21aa13f5eddd2477430c513ea13a0629620f8cc6f862b0"
+  },
+  {
+   "path": "docs/releases/1.4.19.txt",
+   "bytes": 517,
+   "sha256": "9481bd9d4ab4317c29c085b68c4456f19fed6c6a1cefe395b90242209eb07f92"
+  },
+  {
+   "path": "docs/releases/1.4.2.txt",
+   "bytes": 2602,
+   "sha256": "a795207585b2ce97cf6035e0c70c6e1175329a074568d10f1f71252600d9caca"
+  },
+  {
+   "path": "docs/releases/1.4.20.txt",
+   "bytes": 1231,
+   "sha256": "d1919dbf17d7fce1af05e0ee8bebdbed57991a8b36e3d8c521f5fd0b015dba01"
+  },
+  {
+   "path": "docs/releases/1.4.21.txt",
+   "bytes": 2731,
+   "sha256": "1f0f5b17e20a802ff3ece4d5345b895db3dce5ca1ea9f28b995d68aeb24505f8"
+  },
+  {
+   "path": "docs/releases/1.4.22.txt",
+   "bytes": 1398,
+   "sha256": "07b4969e66bf0fba38ca6aa2006ebb8994901bc244c03c1397b8561236b9a44e"
+  },
+  {
+   "path": "docs/releases/1.4.3.txt",
+   "bytes": 2703,
+   "sha256": "7ab4ad37f7bb2ea37efedfd480c4ebe768f59f85a52311864c042abbe2e9e0a6"
+  },
+  {
+   "path": "docs/releases/1.4.4.txt",
+   "bytes": 3803,
+   "sha256": "8c4d04df2a03285c488c255088f327c1bb193050dc8a91fc75388c15b7a69b85"
+  },
+  {
+   "path": "docs/releases/1.4.5.txt",
+   "bytes": 482,
+   "sha256": "9441b9e202a8afa948570c2fe2e0df2df86a8a17d1d2c032da102950a3ff5031"
+  },
+  {
+   "path": "docs/releases/1.4.6.txt",
+   "bytes": 1340,
+   "sha256": "5f58b17b2c24ede840ae0346bcdbdedd33ec3358ad885190259325cc72af9803"
+  },
+  {
+   "path": "docs/releases/1.4.7.txt",
+   "bytes": 869,
+   "sha256": "bf5f7792fad52e029fdf4fdf90f6c9db3cbd0eae1c7b92de87dad6dea925c737"
+  },
+  {
+   "path": "docs/releases/1.4.8.txt",
+   "bytes": 1491,
+   "sha256": "f70e17020f7831653c75173ee3a5bfacfd5b3139f34f98f1f15394bc4cdb482a"
+  },
+  {
+   "path": "docs/releases/1.4.9.txt",
+   "bytes": 704,
+   "sha256": "b7c26357956ac33bfd24598983b1416eb45eaab47d258a72c6367bb19d96d678"
+  },
+  {
+   "path": "docs/releases/1.4.txt",
+   "bytes": 57806,
+   "sha256": "4183ed81bbc496cd37d78dd45ae8c4b61a60b1cbfd7543aeced4004f42691299"
+  },
+  {
+   "path": "docs/releases/1.5.1.txt",
+   "bytes": 888,
+   "sha256": "4d3c9b448359969ea0162f376624c04446c930092e6bbb455af884585eb376f9"
+  },
+  {
+   "path": "docs/releases/1.5.10.txt",
+   "bytes": 275,
+   "sha256": "204b0d0a4034ba734ef9c647b767cff48f14dca9befe181cdf8a2edb7671fe88"
+  },
+  {
+   "path": "docs/releases/1.5.11.txt",
+   "bytes": 363,
+   "sha256": "bc4524465371de84f106a120b90e972ac3d8bfd8905704c7d4dc64057ca0a861"
+  },
+  {
+   "path": "docs/releases/1.5.12.txt",
+   "bytes": 309,
+   "sha256": "a6f59bc5d0ab2ede51792bf892fabb1cafee57c48cc9ac8d30cb57d630cf5d25"
+  },
+  {
+   "path": "docs/releases/1.5.2.txt",
+   "bytes": 3116,
+   "sha256": "238b89a3a0bc9c7a5e09570f7de638d0fe8af475ffecc74ad06878a22c5e8c00"
+  },
+  {
+   "path": "docs/releases/1.5.3.txt",
+   "bytes": 2485,
+   "sha256": "08b7a5c147d3ea18056e2e1e45229ae521b177c221d61e3596f0211dc3608c37"
+  },
+  {
+   "path": "docs/releases/1.5.4.txt",
+   "bytes": 1757,
+   "sha256": "c3eaf32ae59f0b2cb6031764b7e6a24d92abb43e0200d6ea0b5e290702b3046f"
+  },
+  {
+   "path": "docs/releases/1.5.5.txt",
+   "bytes": 1419,
+   "sha256": "8210a4e73f975fd9205b1b861a5645f6fa16f1839d40ab74c7e00e05a56a7b7c"
+  },
+  {
+   "path": "docs/releases/1.5.6.txt",
+   "bytes": 5035,
+   "sha256": "a5780af1cdfb69eb401ee24fa44a221e8d9ff417564fc5666ad335b9ccba661b"
+  },
+  {
+   "path": "docs/releases/1.5.7.txt",
+   "bytes": 290,
+   "sha256": "d1ad417e2fc3e2db09722e2001814bf539eb51015da00a7899e20f4bf731935c"
+  },
+  {
+   "path": "docs/releases/1.5.8.txt",
+   "bytes": 2269,
+   "sha256": "f7948964f9571ee22e277aa0cc72a794a571e864059cd66fbae94433b92eef40"
+  },
+  {
+   "path": "docs/releases/1.5.9.txt",
+   "bytes": 3188,
+   "sha256": "e6de743de5d0bccee53cc051aa50883227d0ff2593bd39fa77e3133b7895f63b"
+  },
+  {
+   "path": "docs/releases/1.5.txt",
+   "bytes": 36405,
+   "sha256": "17b1ca824ac8ad0571234ed0def8a7b73e83d8e9638e5c9b9d52d67dc9008129"
+  },
+  {
+   "path": "docs/releases/1.6.1.txt",
+   "bytes": 3168,
+   "sha256": "5f3d687da0518a59b2f9b8c5c8f138cb38e73bfcf8b0fc0380120349e83ca7f4"
+  },
+  {
+   "path": "docs/releases/1.6.10.txt",
+   "bytes": 3572,
+   "sha256": "0ea9d5adc70fdf6dfe62de1162055b85fea0e283f5d7dc015a546c8bfc3711f8"
+  },
+  {
+   "path": "docs/releases/1.6.11.txt",
+   "bytes": 2202,
+   "sha256": "1f3b5ac984a4db5e720e42988011a528f678a3488ffc04532c715c1eb9df0abf"
+  },
+  {
+   "path": "docs/releases/1.6.2.txt",
+   "bytes": 1787,
+   "sha256": "fa2ce5c81136d879dcff1d3b4b16e0590beebfbccf7766aa16dfe260b910f0cf"
+  },
+  {
+   "path": "docs/releases/1.6.3.txt",
+   "bytes": 7667,
+   "sha256": "19d0bcf867f974df0db36567af3512624f9ba16a8d9b16f0d6d0def481a646c5"
+  },
+  {
+   "path": "docs/releases/1.6.4.txt",
+   "bytes": 577,
+   "sha256": "c84801f47ac5ce3d14b2deba2e22d06f63b27f92fd55b2e0a3a4013d8a7a83c2"
+  },
+  {
+   "path": "docs/releases/1.6.5.txt",
+   "bytes": 2817,
+   "sha256": "4c34b6dd93e6328e154bdc2e6ce840d72c097c8dd71767b3a90f7bcde52ac238"
+  },
+  {
+   "path": "docs/releases/1.6.6.txt",
+   "bytes": 4393,
+   "sha256": "6e90f4c1297939c2bca04e388c379db2df2517673b790dd7bdc87c61274a47a8"
+  },
+  {
+   "path": "docs/releases/1.6.7.txt",
+   "bytes": 412,
+   "sha256": "5f3bb6b8f13994eaf3ecabab4fa1a0cefc2638d272bbec19f17a5db5d77797af"
+  },
+  {
+   "path": "docs/releases/1.6.8.txt",
+   "bytes": 357,
+   "sha256": "97898da06c7d9ab4119d073521f132845ca8a138b9b5cfe2db035b9b7a66a801"
+  },
+  {
+   "path": "docs/releases/1.6.9.txt",
+   "bytes": 423,
+   "sha256": "f8fa182f379bbc103e2247188d3993978a162165aeeb91c229b9c2f7a4441d0a"
+  },
+  {
+   "path": "docs/releases/1.6.txt",
+   "bytes": 54850,
+   "sha256": "8fb8ba85cecc3df56a46a966215d7d7c66d78ec6bbb726879872e67e1bce5162"
+  },
+  {
+   "path": "docs/releases/1.7.1.txt",
+   "bytes": 5592,
+   "sha256": "f4c177798b7611150c9566ae50af0abc9956abb1f02543488c06fbe133f7a386"
+  },
+  {
+   "path": "docs/releases/1.7.10.txt",
+   "bytes": 1233,
+   "sha256": "242b3f2c9d1430ed4b61eb6aad933ea5916449554bf3b670f1eee890a6abc267"
+  },
+  {
+   "path": "docs/releases/1.7.11.txt",
+   "bytes": 992,
+   "sha256": "4c22c2a173bc73af8fde4c1d38ef6db4326c408ceec3afc858b47672601b2b32"
+  },
+  {
+   "path": "docs/releases/1.7.2.txt",
+   "bytes": 7776,
+   "sha256": "c3301fbb5290e813e249ec085f3bb254df5cba7852c5b98d026dcd7ae6664491"
+  },
+  {
+   "path": "docs/releases/1.7.3.txt",
+   "bytes": 4371,
+   "sha256": "a7c62bc4dc82f1495e3ea25ebae56892ab25f7552be3dc9275f246ef8b7a4aa4"
+  },
+  {
+   "path": "docs/releases/1.7.4.txt",
+   "bytes": 856,
+   "sha256": "3d1dd91478302db3600ccbad2b2be10ef98e9635da63d85b5659d1b2ea6709f3"
+  },
+  {
+   "path": "docs/releases/1.7.5.txt",
+   "bytes": 945,
+   "sha256": "992bdc52d3eb2f9e0688fc0be3bfa483ec30fa06596c0a3ff05fb297ea6e74cf"
+  },
+  {
+   "path": "docs/releases/1.7.6.txt",
+   "bytes": 1171,
+   "sha256": "195f5378c7be6f9a416bd67c3c79fed9aeec90297ae94ec1e337b089b3ec08d9"
+  },
+  {
+   "path": "docs/releases/1.7.7.txt",
+   "bytes": 2622,
+   "sha256": "01ca337978bb2a90c0ab64cfe99a8f744cfcf221144256e0e2b3ea8e86e5c6be"
+  },
+  {
+   "path": "docs/releases/1.7.8.txt",
+   "bytes": 398,
+   "sha256": "3db3d6282c05a0307640a9904647eaf6876a94e94388d7fbab15c3dbc42ee88a"
+  },
+  {
+   "path": "docs/releases/1.7.9.txt",
+   "bytes": 3134,
+   "sha256": "26ddc06d976e384887f0eb5dbd90819632c98f1ab9629a464be4b287236fb116"
+  },
+  {
+   "path": "docs/releases/1.7.txt",
+   "bytes": 81976,
+   "sha256": "50fd00872b76d0361283d348c5137bf99ad014f079c7233704c9adef6fb445c1"
+  },
+  {
+   "path": "docs/releases/1.8.1.txt",
+   "bytes": 3627,
+   "sha256": "782d62e6f74881c5d122a5161760c75596951f5ac4e92360931793dfc94b2fa7"
+  },
+  {
+   "path": "docs/releases/1.8.10.txt",
+   "bytes": 3887,
+   "sha256": "88f6fd38ba7724d1b13183b4789ecdd1fb9d9c120badb1571ccd8364995ce8eb"
+  },
+  {
+   "path": "docs/releases/1.8.11.txt",
+   "bytes": 259,
+   "sha256": "7c4e7bd1ef5d98a05a92e2823d027a12b26b9bc668f08cf12de688ff523ec85a"
+  },
+  {
+   "path": "docs/releases/1.8.12.txt",
+   "bytes": 580,
+   "sha256": "b364aaaf4b0aaa76bfac43970436a89157baa248976dbe2a841cff67604b41e9"
+  },
+  {
+   "path": "docs/releases/1.8.13.txt",
+   "bytes": 394,
+   "sha256": "74c3560c734f58ec36f3fdf9655e7b15b4b2364fed5291aeb0d5535eed30731f"
+  },
+  {
+   "path": "docs/releases/1.8.14.txt",
+   "bytes": 769,
+   "sha256": "b2f6dba0e191fdd5266ae44ccc08c8c6d795ce0492774e80deb5d653bfb5e408"
+  },
+  {
+   "path": "docs/releases/1.8.15.txt",
+   "bytes": 679,
+   "sha256": "97c4f97083148bfc3ca5fad481d16d8f35c321319f774ac89febe728d53fef0b"
+  },
+  {
+   "path": "docs/releases/1.8.16.txt",
+   "bytes": 2077,
+   "sha256": "2c2dd585520c64ca7e5488b71c3e5d12796b29c732af83f22278ee250f7dcf0d"
+  },
+  {
+   "path": "docs/releases/1.8.17.txt",
+   "bytes": 360,
+   "sha256": "6803362df2e7d2f38c90b177ce8c60f9ff01efbafd74126c84befeb19174f529"
+  },
+  {
+   "path": "docs/releases/1.8.18.txt",
+   "bytes": 1364,
+   "sha256": "588c151c552fb20c644e17c44d88d63c507bd5e17aa99f17ed939ed44906e9a1"
+  },
+  {
+   "path": "docs/releases/1.8.19.txt",
+   "bytes": 1426,
+   "sha256": "24e2d2251f9e96c970fde11dd17c4d30ebbd6e7d66a4305f20344b5efaed3a23"
+  },
+  {
+   "path": "docs/releases/1.8.2.txt",
+   "bytes": 2658,
+   "sha256": "7ea3286710af74a45476fbbd9a511de9be825c332bb4ec0a1daf90ec62f1c25a"
+  },
+  {
+   "path": "docs/releases/1.8.3.txt",
+   "bytes": 6794,
+   "sha256": "bd0ba0c88f7b05a63fdc5842775aa0b7c66b518eb08b9870ef8fb2bcd951c825"
+  },
+  {
+   "path": "docs/releases/1.8.4.txt",
+   "bytes": 1999,
+   "sha256": "f7ab1f6413a27da1ac5cf75bcade039b3d281ba3477a8a68aa0423a754f9555a"
+  },
+  {
+   "path": "docs/releases/1.8.5.txt",
+   "bytes": 2191,
+   "sha256": "d3e7fd9012850d40eb3a27f62635658c250e29c79fa8597691a7bcb8d7b83dbf"
+  },
+  {
+   "path": "docs/releases/1.8.6.txt",
+   "bytes": 1919,
+   "sha256": "130aca3281791ab1c21c3cd66b3c010bd1b658179843276a3dce416ad0a07726"
+  },
+  {
+   "path": "docs/releases/1.8.7.txt",
+   "bytes": 2704,
+   "sha256": "50baae2f9c0a8e1b084ecea55b992002fcc6135bf21bfdf0c1e36c70e813ddc9"
+  },
+  {
+   "path": "docs/releases/1.8.8.txt",
+   "bytes": 2560,
+   "sha256": "a8ab103c845794f9c20eb6ea5bd9724f5be5c47aecf18f7478666df0ed20acf6"
+  },
+  {
+   "path": "docs/releases/1.8.9.txt",
+   "bytes": 1375,
+   "sha256": "a360fbd7c1c8660dd781063bdc4d350abe29bc33815c17ccb897f0557f2de265"
+  },
+  {
+   "path": "docs/releases/1.8.txt",
+   "bytes": 76694,
+   "sha256": "f0010c260fdfc5e157a449289e52402c2c558ca7ccc5589299e5c1e517c5850a"
+  },
+  {
+   "path": "docs/releases/1.9.1.txt",
+   "bytes": 3132,
+   "sha256": "4795440c3301b60b80ff817234a7760ce372d6f46319caa4a1fc1b7f6ff99135"
+  },
+  {
+   "path": "docs/releases/1.9.10.txt",
+   "bytes": 678,
+   "sha256": "d8a7976fd81cc1557336fb6e064aa4fc32cfa69d5c261da804fb9ae2c84f950d"
+  },
+  {
+   "path": "docs/releases/1.9.11.txt",
+   "bytes": 2077,
+   "sha256": "1fc54ab7f7298e28b761afe6cea059c681e325c2b43400950661731c7ff1d2f0"
+  },
+  {
+   "path": "docs/releases/1.9.12.txt",
+   "bytes": 360,
+   "sha256": "12e55a16959d774dcc751792ce266a3e08fdabe55c545898e1e2fda39c39b82b"
+  },
+  {
+   "path": "docs/releases/1.9.13.txt",
+   "bytes": 1585,
+   "sha256": "d6d9aa28dd7a2993eaecffaf93f40547ebfb605d43281210a7a22cd7b251611e"
+  },
+  {
+   "path": "docs/releases/1.9.2.txt",
+   "bytes": 4837,
+   "sha256": "c51b867f9d055470daba560ce4d102efefa7bf57ab8ad233e6f12254d3dca4a2"
+  },
+  {
+   "path": "docs/releases/1.9.3.txt",
+   "bytes": 4961,
+   "sha256": "717c1fac17299aaee4ac1e4f3c16065a72f78ee3a554c5596dc4e45502fc6d4a"
+  },
+  {
+   "path": "docs/releases/1.9.4.txt",
+   "bytes": 254,
+   "sha256": "fc1aaf107d46e399b3f9538af89e2b77ed10dc8d771c41250c0fcf5ad2632c1d"
+  },
+  {
+   "path": "docs/releases/1.9.5.txt",
+   "bytes": 2010,
+   "sha256": "ebb3d64cc4eb9ca1ac5db24fc7858ea6fa552a514931c8f901fbea95e17178d2"
+  },
+  {
+   "path": "docs/releases/1.9.6.txt",
+   "bytes": 1141,
+   "sha256": "ae214de728a974ef578c19e449b3d98724f43f46d09fb696fb107812c8ec5c44"
+  },
+  {
+   "path": "docs/releases/1.9.7.txt",
+   "bytes": 939,
+   "sha256": "480c13e2d5e4f93361a95aed3cea6a4f126c614f9c2ea114fdab1ebeab266045"
+  },
+  {
+   "path": "docs/releases/1.9.8.txt",
+   "bytes": 862,
+   "sha256": "dd137d8f8a7ddf094aff9cb8be718b41977e1f52589e28446ad56b395e448f0e"
+  },
+  {
+   "path": "docs/releases/1.9.9.txt",
+   "bytes": 321,
+   "sha256": "691ae48a1523d341b2f74b332b606f4097995465c7f6d5fcb5eaecafc16a0640"
+  },
+  {
+   "path": "docs/releases/1.9.txt",
+   "bytes": 62881,
+   "sha256": "a876ff59a4e83e408bfd684e1a0a1627fa9c26361bab5bb381879ee3a150c96c"
+  },
+  {
+   "path": "docs/releases/2.0.1.txt",
+   "bytes": 1520,
+   "sha256": "1cb82a8c113a251dd31662475ac2b7c7749702f911ca580d41edd0f83f0af6f8"
+  },
+  {
+   "path": "docs/releases/2.0.10.txt",
+   "bytes": 1224,
+   "sha256": "bc278fefd709e6eaf33a5bd9642a19478a46c502d9cfc50482856186ca8d4ff4"
+  },
+  {
+   "path": "docs/releases/2.0.11.txt",
+   "bytes": 717,
+   "sha256": "e28027911bb51c4c30205b7e9adec42ae434b15ffb128ec56b12e804484e139b"
+  },
+  {
+   "path": "docs/releases/2.0.12.txt",
+   "bytes": 234,
+   "sha256": "a291b4c7cb608cb4febff10917376ca9d931c4afb414fcc276d1ae28506ac3d3"
+  },
+  {
+   "path": "docs/releases/2.0.13.txt",
+   "bytes": 297,
+   "sha256": "56d76341825ddb51eae9e5ac3d455711e5f4617506cadb5886344edc422d8601"
+  },
+  {
+   "path": "docs/releases/2.0.2.txt",
+   "bytes": 2124,
+   "sha256": "43c92cf58aee5739d1da2bec73aa24f0ce9f3a05e40ea305172cc1e5207a465d"
+  },
+  {
+   "path": "docs/releases/2.0.3.txt",
+   "bytes": 2404,
+   "sha256": "3bdfd3c2d064da13b10a8d008b0e9cf583d68eefd984eb9bd91463966e9b9608"
+  },
+  {
+   "path": "docs/releases/2.0.4.txt",
+   "bytes": 1252,
+   "sha256": "4697a4eb3ad30b07acff0082ef0b125796ebe2be08519980cb932c04ee8cc20b"
+  },
+  {
+   "path": "docs/releases/2.0.5.txt",
+   "bytes": 854,
+   "sha256": "6c0a4c8a7e17edd57d5fb788a809ad2e910823633e20e472e98302d6f93d24a5"
+  },
+  {
+   "path": "docs/releases/2.0.6.txt",
+   "bytes": 749,
+   "sha256": "9605f1e9da1f09df761294791a552c7a1888733afd46ece75675d5c1cb75b9dd"
+  },
+  {
+   "path": "docs/releases/2.0.7.txt",
+   "bytes": 565,
+   "sha256": "4bbfd956fe4f9ce305de3eb0620027ef0b77e3769b2cfda180c67524c14cc082"
+  },
+  {
+   "path": "docs/releases/2.0.8.txt",
+   "bytes": 1071,
+   "sha256": "d1ed16caece1fd2799ce1e230e17233390cd78f8c275f9fd3578ea527e9f7df4"
+  },
+  {
+   "path": "docs/releases/2.0.9.txt",
+   "bytes": 278,
+   "sha256": "086a6cdc6a065b9bfdaf23e31f386aa976454eead9ba781ea2b64db6f78d5fad"
+  },
+  {
+   "path": "docs/releases/2.0.txt",
+   "bytes": 33542,
+   "sha256": "308fab33d519a773a6ef020e5d78c4275933ecd3012830bf199f7a2a0dab7c15"
+  },
+  {
+   "path": "docs/releases/2.1.1.txt",
+   "bytes": 1906,
+   "sha256": "a91bc9d7896c6a53560045df50b0fa38f6bea831e296b33d8834ee7a0ee160e6"
+  },
+  {
+   "path": "docs/releases/2.1.10.txt",
+   "bytes": 1189,
+   "sha256": "03178c641347ea23108ae3b6d0fb8a9f0ec1fac7c20aa9f27a4fed83de98a78f"
+  },
+  {
+   "path": "docs/releases/2.1.11.txt",
+   "bytes": 2816,
+   "sha256": "0f1416f2857196436b4bde22a41c996da70586bd43833eee188efb300bb0c1c1"
+  },
+  {
+   "path": "docs/releases/2.1.12.txt",
+   "bytes": 375,
+   "sha256": "1d7f5693261f20ed431ac8b1fd6bc7a0773ea6cb0cdbd87926cd2a03d93430a0"
+  },
+  {
+   "path": "docs/releases/2.1.13.txt",
+   "bytes": 381,
+   "sha256": "e9b0dc074326224ab32b3684f36deb5878aa795ad378a0ceccc07e0e7fafc252"
+  },
+  {
+   "path": "docs/releases/2.1.14.txt",
+   "bytes": 425,
+   "sha256": "74c715aa9dc3c97f41d3de89017f74fc3168f8fb6529ec35c61136f21d6f07c1"
+  },
+  {
+   "path": "docs/releases/2.1.15.txt",
+   "bytes": 2531,
+   "sha256": "ed209f7a57c2b8a38295627ec4902c266cee0416d5efedd86cfcfda103907e87"
+  },
+  {
+   "path": "docs/releases/2.1.2.txt",
+   "bytes": 1543,
+   "sha256": "57ae5aeaa3fed60f3ec9dde9a2a3982484d6fcfd246fb2b2d340ec2afe5ee0c1"
+  },
+  {
+   "path": "docs/releases/2.1.3.txt",
+   "bytes": 840,
+   "sha256": "30c0ef0ace1f7c4eee47884503b083f926ef418192605caa10a0480f5ef0d24e"
+  },
+  {
+   "path": "docs/releases/2.1.4.txt",
+   "bytes": 912,
+   "sha256": "4bf465d7f55103b2f84cb4a19e4cd7915d3cf81cd8bf67cec79cf9c422e372d9"
+  },
+  {
+   "path": "docs/releases/2.1.5.txt",
+   "bytes": 1457,
+   "sha256": "8474fb11367e40ab6340b291ac48611f952ee06626822fd241d127149d20e831"
+  },
+  {
+   "path": "docs/releases/2.1.6.txt",
+   "bytes": 928,
+   "sha256": "8f3fe0032d57f12593142a1250c7cddad3424de34291520b97a8154e1d24dbd7"
+  },
+  {
+   "path": "docs/releases/2.1.7.txt",
+   "bytes": 228,
+   "sha256": "61c9b02a8e15ef44919afdf7cd937d453cb42bc7f30461b73640cede28cb7855"
+  },
+  {
+   "path": "docs/releases/2.1.8.txt",
+   "bytes": 316,
+   "sha256": "a4dcdea10ddafe2cd3684d3dc4198623a47ce55a525a27a65ed4bf7c9bfe1a14"
+  },
+  {
+   "path": "docs/releases/2.1.9.txt",
+   "bytes": 1357,
+   "sha256": "e6ab53893fb2dfee9a1af6ff2fbfc87dfeef35db137a4edee72b2a179ec71dcc"
+  },
+  {
+   "path": "docs/releases/2.1.txt",
+   "bytes": 18325,
+   "sha256": "2e8e69e7ac3f14d7c95cff9be3323bd58d716e75155888ce7313ed9d0c4bd210"
+  },
+  {
+   "path": "docs/releases/2.2.1.txt",
+   "bytes": 3436,
+   "sha256": "e8ba057e3b6150d3efd89a2b2c93aa989afe65f185f3007513c1ada8e15b0f50"
+  },
+  {
+   "path": "docs/releases/2.2.10.txt",
+   "bytes": 436,
+   "sha256": "7965571e1500aba611c1319f4765ebb1f43305db0ddd2226b91c1930a348c5bd"
+  },
+  {
+   "path": "docs/releases/2.2.11.txt",
+   "bytes": 795,
+   "sha256": "cc975a3c61478e2b8f0a461966e5f237017182c501e9ec59a83ad7457c7df87b"
+  },
+  {
+   "path": "docs/releases/2.2.12.txt",
+   "bytes": 284,
+   "sha256": "4eac9c52f9a1cf96d0203cb9cb49bf101ca7ed8f791e7f9ae14dd4b2268876aa"
+  },
+  {
+   "path": "docs/releases/2.2.13.txt",
+   "bytes": 1282,
+   "sha256": "3a37bd714378d8d432307d1fb7987a95dca71e9924057fcc56370c91efb61aa0"
+  },
+  {
+   "path": "docs/releases/2.2.14.txt",
+   "bytes": 294,
+   "sha256": "fe0cd4c46ea6554eda216e24cdbba4b8dd782be0f04cc8cb1a8281d307571507"
+  },
+  {
+   "path": "docs/releases/2.2.15.txt",
+   "bytes": 417,
+   "sha256": "f363f7ab94a6c4f45a48f3d2e324fadbbf9f0cd461cb36d604e21ea745608890"
+  },
+  {
+   "path": "docs/releases/2.2.16.txt",
+   "bytes": 1519,
+   "sha256": "a413a3c8b01a5135dc0b7610cbacf255e3fa4743950011bda16accf2d242513f"
+  },
+  {
+   "path": "docs/releases/2.2.17.txt",
+   "bytes": 155,
+   "sha256": "a8a3a35dc7547e5e0c00c26b2841cd0ea49fc11ef66f4d59347f49f86b183d4a"
+  },
+  {
+   "path": "docs/releases/2.2.18.txt",
+   "bytes": 543,
+   "sha256": "438cd05b0b90688a6ffdd310c3b0d5a12bde10ffc626b8a7aff0059f9b39493c"
+  },
+  {
+   "path": "docs/releases/2.2.19.txt",
+   "bytes": 640,
+   "sha256": "a57512aaa5a7a2b75590b14a92c3e7d3dd5a0e4637346e9511ae43b234a4c72b"
+  },
+  {
+   "path": "docs/releases/2.2.2.txt",
+   "bytes": 2492,
+   "sha256": "790eb0b82402b651fd296fa3c8ededa26e65f1a9776681264776c995ec718ac5"
+  },
+  {
+   "path": "docs/releases/2.2.20.txt",
+   "bytes": 470,
+   "sha256": "36ccf5ca22ff45ab4b5c2d8e3d9a9f8bcf769a679bf11798f6dee19e0c3ef4e3"
+  },
+  {
+   "path": "docs/releases/2.2.21.txt",
+   "bytes": 505,
+   "sha256": "352a2aed01705955e040341780eafd0f528b9781ebcf1065d5dd6c596beee801"
+  },
+  {
+   "path": "docs/releases/2.2.22.txt",
+   "bytes": 978,
+   "sha256": "18c99a98401a3b5c42cf8a339adee83c50e03eec3b9c0e6e2b0109d2911ff52c"
+  },
+  {
+   "path": "docs/releases/2.2.23.txt",
+   "bytes": 388,
+   "sha256": "fd90ccd9df225f7f0c40d302954fdb15f45236ead8dbb925d404dd5d22506396"
+  },
+  {
+   "path": "docs/releases/2.2.24.txt",
+   "bytes": 1455,
+   "sha256": "0a00241a4c18452794572a8fd747c52e1be2b3f0bebd685720ba1898b00a21d8"
+  },
+  {
+   "path": "docs/releases/2.2.25.txt",
+   "bytes": 445,
+   "sha256": "61f2449c49b075ab40235931eb3284e2f20380118f746c07cab781141cb6c02b"
+  },
+  {
+   "path": "docs/releases/2.2.26.txt",
+   "bytes": 1969,
+   "sha256": "6172234f8bd4b63a1e8fc46218a046bb0c96949012b67f2bbe0d76918da2b596"
+  },
+  {
+   "path": "docs/releases/2.2.27.txt",
+   "bytes": 857,
+   "sha256": "d6aaca421966238f0c073b2249d02c47ea5fc9e88cc6bad55312f6756d261302"
+  },
+  {
+   "path": "docs/releases/2.2.28.txt",
+   "bytes": 988,
+   "sha256": "cb0d5fc63960e5bd801ede95a84e99796fea6cd60a470a8d027af6c6e8240a69"
+  },
+  {
+   "path": "docs/releases/2.2.3.txt",
+   "bytes": 1631,
+   "sha256": "37473f042555c09905f3bc34bb8bf568d4b7e5f8c32fb5e514a99f914f0c6cc9"
+  },
+  {
+   "path": "docs/releases/2.2.4.txt",
+   "bytes": 3639,
+   "sha256": "8d0a141b968def3092482f8b9e10272317488b006692ee1e17443115fb11484d"
+  },
+  {
+   "path": "docs/releases/2.2.5.txt",
+   "bytes": 760,
+   "sha256": "7b4042ad8143f2f9243aee3555c355aa7eb88750e5e832a36091eedff38d245b"
+  },
+  {
+   "path": "docs/releases/2.2.6.txt",
+   "bytes": 525,
+   "sha256": "c08cfbb1520b4a87870352f557b899c1c423f42e82e376a1bd60e2baa63e5e25"
+  },
+  {
+   "path": "docs/releases/2.2.7.txt",
+   "bytes": 903,
+   "sha256": "a5b0dd951296dd12a8cb8482aa70f0eaf2a2cf238b3f984edbe921b5a3e7c34d"
+  },
+  {
+   "path": "docs/releases/2.2.8.txt",
+   "bytes": 2952,
+   "sha256": "bdca314ca10de7800373db39bc12cf3cb327d83c2b33e29a033478f88975ad52"
+  },
+  {
+   "path": "docs/releases/2.2.9.txt",
+   "bytes": 1269,
+   "sha256": "3b3439323600e6fcdc44c258752b19ecdbb26954028e02539f49a9a1ee81aa9c"
+  },
+  {
+   "path": "docs/releases/2.2.txt",
+   "bytes": 20177,
+   "sha256": "528358e2000723776bd572aa0d09eaf820034b6a84555a03d31d54f14dac5755"
+  },
+  {
+   "path": "docs/releases/3.0.1.txt",
+   "bytes": 2026,
+   "sha256": "161b2b60d206a1fb002ba52dea1b7a7725c8cc4fc6275f8927c31d9146759c22"
+  },
+  {
+   "path": "docs/releases/3.0.10.txt",
+   "bytes": 1518,
+   "sha256": "dbcf3d16a6dfad772a08c39c24180840b10382871a094d580d72780996fe35fe"
+  },
+  {
+   "path": "docs/releases/3.0.11.txt",
+   "bytes": 331,
+   "sha256": "7f6862c1439790c64ec90dd1210539956089d3407336b5a2b8ffd29d87c3f216"
+  },
+  {
+   "path": "docs/releases/3.0.12.txt",
+   "bytes": 543,
+   "sha256": "c3abcb1109f937cfc83a750eb66c25a240925b6b03c1a8c5ced82bd5904dd93d"
+  },
+  {
+   "path": "docs/releases/3.0.13.txt",
+   "bytes": 640,
+   "sha256": "d267a42bf411931bbffb518f2df53e19ac8a5c1688b12cd2fc87beafffbe88cb"
+  },
+  {
+   "path": "docs/releases/3.0.14.txt",
+   "bytes": 470,
+   "sha256": "0d1b4a54dddc69f483a43e27ff588af5ad493cee9a32ae78d461058cc7b39a78"
+  },
+  {
+   "path": "docs/releases/3.0.2.txt",
+   "bytes": 804,
+   "sha256": "7ae24d5b7bb3ebee229ada9a4b20c07ee729ba9bc860f58c4868036f7c1caf00"
+  },
+  {
+   "path": "docs/releases/3.0.3.txt",
+   "bytes": 1946,
+   "sha256": "46daca022a41b5a4ed6ef29a45f264794a942bdd8a71127bf918a7274b8b7610"
+  },
+  {
+   "path": "docs/releases/3.0.4.txt",
+   "bytes": 1461,
+   "sha256": "decd0fa11186688701af0287fa72ca60df402b3373cdcea58bd847709b3aa2ed"
+  },
+  {
+   "path": "docs/releases/3.0.5.txt",
+   "bytes": 504,
+   "sha256": "82927fe91fb901819ba16b30cbc837a5c6a32066bfc385cea5474d067bfbf4e9"
+  },
+  {
+   "path": "docs/releases/3.0.6.txt",
+   "bytes": 352,
+   "sha256": "ff432fcebb1391f8ae67308838f941250adee9d0c438ab3daf916b33293b2139"
+  },
+  {
+   "path": "docs/releases/3.0.7.txt",
+   "bytes": 2053,
+   "sha256": "e979bed6638ee25e3ac46f755d0d89eb64bc99f6cb2faecddedc1dd14736cce0"
+  },
+  {
+   "path": "docs/releases/3.0.8.txt",
+   "bytes": 842,
+   "sha256": "deacddb02df7ecf121358f03facc2083cc67a182f59efc3848452b463c02008e"
+  },
+  {
+   "path": "docs/releases/3.0.9.txt",
+   "bytes": 416,
+   "sha256": "c404abb446475a990f615eb03efffad2511ebb3624ffceda1e60688860c35c30"
+  },
+  {
+   "path": "docs/releases/3.0.txt",
+   "bytes": 25898,
+   "sha256": "51f2374385c5b1706a2b726a97537217758ed5289b3d9d6855d0d44da03fe1fd"
+  },
+  {
+   "path": "docs/releases/3.1.1.txt",
+   "bytes": 3788,
+   "sha256": "b630fd854eead7ccd72592cbe60a37ee064def46494b0491307160c38a77db25"
+  },
+  {
+   "path": "docs/releases/3.1.10.txt",
+   "bytes": 977,
+   "sha256": "782dc222267da5e1ca3db381e1892b02a4c9bf588a89c9e806bff557343a7433"
+  },
+  {
+   "path": "docs/releases/3.1.11.txt",
+   "bytes": 386,
+   "sha256": "68a32ace0334fd9f270aa6be57fc29e0e37b3001b9de87ea619845960e9d3d56"
+  },
+  {
+   "path": "docs/releases/3.1.12.txt",
+   "bytes": 1455,
+   "sha256": "33d7ad7b32570d1952a8c2ff8958fbd12cee1dcbc0bae87bc2be1fc27d31a001"
+  },
+  {
+   "path": "docs/releases/3.1.13.txt",
+   "bytes": 838,
+   "sha256": "deb868fc3e6e734c9975b348579c08475124d79463eb691f061a58454e6befac"
+  },
+  {
+   "path": "docs/releases/3.1.14.txt",
+   "bytes": 445,
+   "sha256": "ff2f80ae58f6a1fa8430bbb76c9cffe7ed0824f3e56ae9efa31a48d66379114e"
+  },
+  {
+   "path": "docs/releases/3.1.2.txt",
+   "bytes": 1181,
+   "sha256": "92909497b40b5709c26cca645ca9dbbc7dfef7e6c96f19a78a0e0e42690b788f"
+  },
+  {
+   "path": "docs/releases/3.1.3.txt",
+   "bytes": 2496,
+   "sha256": "a4b691f5c542b9771861bac2c54c2c240906d341661e8423ef6fb069cf127ad3"
+  },
+  {
+   "path": "docs/releases/3.1.4.txt",
+   "bytes": 1166,
+   "sha256": "8e932cd13a35c902d3a6c56a4c764792244f401a85eba747f7d6bb6045158cad"
+  },
+  {
+   "path": "docs/releases/3.1.5.txt",
+   "bytes": 799,
+   "sha256": "460a71432068cb16d8e11288ddbbb92321a5ca80d02e260d8b1d68dfc995b145"
+  },
+  {
+   "path": "docs/releases/3.1.6.txt",
+   "bytes": 688,
+   "sha256": "d29e7b52349dca8e36f90923ba88dbd0af7743810b6635b8e7a7d3c28d684759"
+  },
+  {
+   "path": "docs/releases/3.1.7.txt",
+   "bytes": 825,
+   "sha256": "0e584c6ae3184ced9f4ef3d8b376f23da5f7d713b252f6e8777a68166d1bbe72"
+  },
+  {
+   "path": "docs/releases/3.1.8.txt",
+   "bytes": 684,
+   "sha256": "a3e7a2a593db482ab75f6255f31b42466aef01cbd07a7a5abc23b2c6dafa3a5a"
+  },
+  {
+   "path": "docs/releases/3.1.9.txt",
+   "bytes": 500,
+   "sha256": "a0bfed691458efa9867c640959a7bc2f1056091cfea3b9df4b1bf3d2eeec2da8"
+  },
+  {
+   "path": "docs/releases/3.1.txt",
+   "bytes": 33853,
+   "sha256": "594cce9c22ddaf62694c932fd1949d97f8312d6fd26d28c743f4fd272805cd67"
+  },
+  {
+   "path": "docs/releases/3.2.1.txt",
+   "bytes": 3577,
+   "sha256": "d995f6ba43c938c42dc13b0ffed5ac6958bad27a03ed2b8fbf5d7732f2afbfc7"
+  },
+  {
+   "path": "docs/releases/3.2.10.txt",
+   "bytes": 642,
+   "sha256": "c9740d60d90976e85859bd3dc21ca3c4a665c36d76da5351dcee3298e15d51ce"
+  },
+  {
+   "path": "docs/releases/3.2.11.txt",
+   "bytes": 1969,
+   "sha256": "b5909e5089b0be1d7f731c27ee64928a796d5ed640762e83ac77b916d3cc2644"
+  },
+  {
+   "path": "docs/releases/3.2.12.txt",
+   "bytes": 857,
+   "sha256": "e59e94d259ec911065dc68a6d533be74414cf28500fee2313460a1be6a7afc0e"
+  },
+  {
+   "path": "docs/releases/3.2.13.txt",
+   "bytes": 1232,
+   "sha256": "18c252bbbda2f19521a0e10b106f1f04d889475c89752c7dea2934d4aa352fe4"
+  },
+  {
+   "path": "docs/releases/3.2.14.txt",
+   "bytes": 693,
+   "sha256": "d8f59dcb1a63428d18bb1ade133d6b3b0f69dcd0ca6e9cf7dddc463ef9763aa8"
+  },
+  {
+   "path": "docs/releases/3.2.15.txt",
+   "bytes": 624,
+   "sha256": "b180d7028a11e0549c2edf5a1405a5eef41e095b373300cad65099956aa48495"
+  },
+  {
+   "path": "docs/releases/3.2.16.txt",
+   "bytes": 445,
+   "sha256": "20e7d25a3314c0e0a18d5d4d422dc926d529c9c6988e64ed42204bcae5b6b678"
+  },
+  {
+   "path": "docs/releases/3.2.17.txt",
+   "bytes": 649,
+   "sha256": "6b93b7a7e4c919baf886b4f2040a20f0a56db78767e71bc9c40d95b919f66f62"
+  },
+  {
+   "path": "docs/releases/3.2.18.txt",
+   "bytes": 603,
+   "sha256": "50de875e9a56a59be8ef8723e0067cecfed2b0445317be214980959967bd9285"
+  },
+  {
+   "path": "docs/releases/3.2.19.txt",
+   "bytes": 1058,
+   "sha256": "3e6f33ec1fa0338f040e7fb3ea948cfff8a446f53c338cdfdf450cf49fb45df7"
+  },
+  {
+   "path": "docs/releases/3.2.2.txt",
+   "bytes": 1210,
+   "sha256": "175b24d6912eda6673345e1b7d2715dd930e7a8d576720658284fad16d8483b9"
+  },
+  {
+   "path": "docs/releases/3.2.20.txt",
+   "bytes": 584,
+   "sha256": "132ac72602836d9aedae807cd76e597f0b4a8b83bc900f3add6a28a3d7af2195"
+  },
+  {
+   "path": "docs/releases/3.2.21.txt",
+   "bytes": 537,
+   "sha256": "d3df87e846b300e4806cf00c1048057b7d7347416b2cff9bb53887f467803c48"
+  },
+  {
+   "path": "docs/releases/3.2.22.txt",
+   "bytes": 1153,
+   "sha256": "93814fe00dfcce816c23bccedda77c762b7a92e829b6c4fc42ba7ad91b4387bc"
+  },
+  {
+   "path": "docs/releases/3.2.23.txt",
+   "bytes": 785,
+   "sha256": "c5699480cc4ba1187bab5163ba76ff6f06ab0ae17530f4fe68202f97a5b5a5ce"
+  },
+  {
+   "path": "docs/releases/3.2.24.txt",
+   "bytes": 451,
+   "sha256": "9ec1f52939e809a99f05bf238cab153ea273528770a0ea2a938ec4867d5e7576"
+  },
+  {
+   "path": "docs/releases/3.2.25.txt",
+   "bytes": 863,
+   "sha256": "8cadb84dc57bd77a037387fc0d082b1308204c382eba7402e28d4863e122e844"
+  },
+  {
+   "path": "docs/releases/3.2.3.txt",
+   "bytes": 588,
+   "sha256": "e829bba03c56f2e230b4bb480aa675b8ed53e22beb05d617b21a33e5860922a2"
+  },
+  {
+   "path": "docs/releases/3.2.4.txt",
+   "bytes": 2543,
+   "sha256": "28dfe92fa8708e8aa9bb97b0c92438167b8750e329fc994d0d3d0083f00b864b"
+  },
+  {
+   "path": "docs/releases/3.2.5.txt",
+   "bytes": 1591,
+   "sha256": "123aa6d72a63c191f0cfddf9af7358d1c5cc3e45a6a7dc1b64419649734e0b04"
+  },
+  {
+   "path": "docs/releases/3.2.6.txt",
+   "bytes": 524,
+   "sha256": "f3428f45bb4a8d3707ad19b7a120a763bc4e64f674f53646fd43251e2ec810e4"
+  },
+  {
+   "path": "docs/releases/3.2.7.txt",
+   "bytes": 286,
+   "sha256": "eae8fdedd3a663738672d6956d416f3de128c61d15a8928cee7588e94533a8f4"
+  },
+  {
+   "path": "docs/releases/3.2.8.txt",
+   "bytes": 468,
+   "sha256": "1917f5e2a3fc057e4e06309fc54e4bca18110a1bf7fd72c315d2280e58725e70"
+  },
+  {
+   "path": "docs/releases/3.2.9.txt",
+   "bytes": 332,
+   "sha256": "7c1b0b2344fe0ccb5b682419f182c993c41e542888b2ce11a03d5aedcab4f09b"
+  },
+  {
+   "path": "docs/releases/3.2.txt",
+   "bytes": 31651,
+   "sha256": "1c01e757cf60225694a8456c0c2f112859e627e62f2bbd67251bef3c3205f233"
+  },
+  {
+   "path": "docs/releases/4.0.1.txt",
+   "bytes": 2832,
+   "sha256": "aaa5c9a483f8a67eb52f0e7d6bbdba57230eb69317a57e0a1b4e5e087e726f17"
+  },
+  {
+   "path": "docs/releases/4.0.10.txt",
+   "bytes": 602,
+   "sha256": "fce46463fd83541aa9830661eeab824e2abf297cdfadf2100443adaba5b25ab1"
+  },
+  {
+   "path": "docs/releases/4.0.2.txt",
+   "bytes": 2405,
+   "sha256": "02f73707ae6d4eeb2b60c6c776d96cbda4f6bce3a10df40963f271692cb02b8b"
+  },
+  {
+   "path": "docs/releases/4.0.3.txt",
+   "bytes": 644,
+   "sha256": "62851582138b1899d0437747ec9a644b3e96efbb6b542fe58e7d9bb283bd7542"
+  },
+  {
+   "path": "docs/releases/4.0.4.txt",
+   "bytes": 1356,
+   "sha256": "d82903f15fd35c0151f6e4e93840ae9535a0ffaf58f5733efae9ebae10ceeeec"
+  },
+  {
+   "path": "docs/releases/4.0.5.txt",
+   "bytes": 546,
+   "sha256": "924778e36a7a92fa69018da145cea340277afd14256ac4072c76ba382638a0d5"
+  },
+  {
+   "path": "docs/releases/4.0.6.txt",
+   "bytes": 688,
+   "sha256": "d62967bd6ac6776a73adbe42365df87bf596883eb5989aa1ab5c0f19ff90d901"
+  },
+  {
+   "path": "docs/releases/4.0.7.txt",
+   "bytes": 619,
+   "sha256": "f7be31cd067b39b1e779f81b8d3e2f54f749c4732fbe98d72b13a7705a0f9ce0"
+  },
+  {
+   "path": "docs/releases/4.0.8.txt",
+   "bytes": 440,
+   "sha256": "b8528ce048991ac45b5f45d6e24f0093b62dc1e61a914ce1b3bbc1a01ca94a23"
+  },
+  {
+   "path": "docs/releases/4.0.9.txt",
+   "bytes": 644,
+   "sha256": "615c4f909c533b840851abec3d8f637ede61ebbe2bc340bd6b8645d0fa022f60"
+  },
+  {
+   "path": "docs/releases/4.0.txt",
+   "bytes": 29577,
+   "sha256": "75c28734cc7b3883e2e67ae98e15ee0c5dcd95b8b18ab4c90ea78608a3b0df57"
+  },
+  {
+   "path": "docs/releases/4.1.1.txt",
+   "bytes": 2496,
+   "sha256": "950c3a8e67f22a5e88b965aef347e3c934ee4c5c3eaeaa3a783af128e0388b19"
+  },
+  {
+   "path": "docs/releases/4.1.10.txt",
+   "bytes": 583,
+   "sha256": "623db0ead118317da5ddeee4f92843b9811ccf09101c5c7e4fe90d86b6e265c6"
+  },
+  {
+   "path": "docs/releases/4.1.11.txt",
+   "bytes": 537,
+   "sha256": "8dc632511e5045a091251734b60f0a4cebb310d75c04ee465bb4b8b442215418"
+  },
+  {
+   "path": "docs/releases/4.1.12.txt",
+   "bytes": 1153,
+   "sha256": "992c12cbc43b2484ffbedbb65ec003e86aaab3abf9ecc380c476801c75dab18c"
+  },
+  {
+   "path": "docs/releases/4.1.13.txt",
+   "bytes": 785,
+   "sha256": "f348770909675716d388a7f3ea5ce682534b9448913119992667815510995d0f"
+  },
+  {
+   "path": "docs/releases/4.1.2.txt",
+   "bytes": 2302,
+   "sha256": "bf091a7a7d789660b9627f0b0456b3a591c3c2871c4992b12ca14767b5c72da1"
+  },
+  {
+   "path": "docs/releases/4.1.3.txt",
+   "bytes": 420,
+   "sha256": "d60abad7385fff33d3492e4b5caa6d56637e8fab0e2a5774d4a133a4ec1b076b"
+  },
+  {
+   "path": "docs/releases/4.1.4.txt",
+   "bytes": 995,
+   "sha256": "5a133b386bbe4ea49ec490b1b7ee55a5e3abca66c1846054464de475107d49e5"
+  },
+  {
+   "path": "docs/releases/4.1.5.txt",
+   "bytes": 429,
+   "sha256": "fb2c22465ab73b3167111904b29b183433d6b751b7f6a24b34393f0e842c1774"
+  },
+  {
+   "path": "docs/releases/4.1.6.txt",
+   "bytes": 812,
+   "sha256": "bda80f7398337b2058217e10351a0487709c95fd770f82ce144fe61228c02069"
+  },
+  {
+   "path": "docs/releases/4.1.7.txt",
+   "bytes": 757,
+   "sha256": "9e6482f6e752619a050083424eda3496ec2585007cb39da90a16281f810f98cd"
+  },
+  {
+   "path": "docs/releases/4.1.8.txt",
+   "bytes": 296,
+   "sha256": "6dcebfe061f035a7910f5f478fc27a9d126fe30c9b872e3d0314ceca85e9c5fb"
+  },
+  {
+   "path": "docs/releases/4.1.9.txt",
+   "bytes": 1053,
+   "sha256": "5f4fe371057ef48872791791e35c213c0df3f368fcfee57b68ac709b9a53136f"
+  },
+  {
+   "path": "docs/releases/4.1.txt",
+   "bytes": 29533,
+   "sha256": "9740cd5b06b1247b4b98981baaf15dd7cf3013bd6abab0c428e2ef60300ab14c"
+  },
+  {
+   "path": "docs/releases/4.2.1.txt",
+   "bytes": 3346,
+   "sha256": "661f11b6ab3606d4b3767958dec58082494456eb7cc5377cb26c26e3f2311ec1"
+  },
+  {
+   "path": "docs/releases/4.2.10.txt",
+   "bytes": 450,
+   "sha256": "f1924615b67cd924a1ee3a95176e3ad082f12925af9ddf0c23201d06cd3329e9"
+  },
+  {
+   "path": "docs/releases/4.2.11.txt",
+   "bytes": 863,
+   "sha256": "74c4ddc0d6a8acbfab0b4b99b303198792cc80b49dc0a49839cbd44bcba21c50"
+  },
+  {
+   "path": "docs/releases/4.2.12.txt",
+   "bytes": 360,
+   "sha256": "60a4399c1a41f71d172f3a73e7d9acb66406380de4bbbb14590c1e5942115cb1"
+  },
+  {
+   "path": "docs/releases/4.2.13.txt",
+   "bytes": 149,
+   "sha256": "4894ea145fa7d42143203d1d0d8190b98d23862a11d507174a33a8cef5fc988a"
+  },
+  {
+   "path": "docs/releases/4.2.14.txt",
+   "bytes": 2299,
+   "sha256": "674d91ba65c2999c318183e5c263e080369133ba6ce53af33e05149cc9dac4d1"
+  },
+  {
+   "path": "docs/releases/4.2.15.txt",
+   "bytes": 1977,
+   "sha256": "1466bd6ab6d7847b6cc84da8c97e1abb0e225fc3f9a591c274b3919d2ca8538b"
+  },
+  {
+   "path": "docs/releases/4.2.16.txt",
+   "bytes": 1124,
+   "sha256": "359340ddb3fcbfa17d7147bbb1a4bc962d9a1222692d37fab0f7ed38ad23eb77"
+  },
+  {
+   "path": "docs/releases/4.2.17.txt",
+   "bytes": 1441,
+   "sha256": "d6bfbcf52caf13d246a06e2c78e1c62d7f08adcf7ad265e7979b7be46c38199a"
+  },
+  {
+   "path": "docs/releases/4.2.18.txt",
+   "bytes": 806,
+   "sha256": "cb03139e8301cab31d1a1289a0758fda6cfa232cee6fb82a4e7671d4e7dced73"
+  },
+  {
+   "path": "docs/releases/4.2.19.txt",
+   "bytes": 344,
+   "sha256": "8ee36454edad061f021dec16a553a261cc0f6fac339af59f9409615e6c025d5b"
+  },
+  {
+   "path": "docs/releases/4.2.2.txt",
+   "bytes": 1938,
+   "sha256": "460642cad09e32a88f67b23edda2d76f1352943a3d5433e45898bdfbaa417f56"
+  },
+  {
+   "path": "docs/releases/4.2.20.txt",
+   "bytes": 499,
+   "sha256": "1de5aa26b5c25dcfe4fd23785b12edb370fccdc6aaa038c9ac912d9972142a4b"
+  },
+  {
+   "path": "docs/releases/4.2.21.txt",
+   "bytes": 1524,
+   "sha256": "0a77731598a6c01eae9447861cd7e964472748556579c975fe5ea144f1e5b41c"
+  },
+  {
+   "path": "docs/releases/4.2.22.txt",
+   "bytes": 923,
+   "sha256": "5dd07f27cafeafab2b2525d554a08f51110940ccdb147ae449762563ea496488"
+  },
+  {
+   "path": "docs/releases/4.2.23.txt",
+   "bytes": 411,
+   "sha256": "aaa10fb3352548c16ff73f873110465831976afa836bd3c6a31ef0502c6188fd"
+  },
+  {
+   "path": "docs/releases/4.2.24.txt",
+   "bytes": 559,
+   "sha256": "d9a1c0b309ede72e856e9472e3a54dbcdfd2997ddb6fb9677703c535a3305760"
+  },
+  {
+   "path": "docs/releases/4.2.25.txt",
+   "bytes": 1240,
+   "sha256": "9cb8675c71d8c1ff25d87474b7c0347a434d3ee84ed393001dac5bd5ce5af040"
+  },
+  {
+   "path": "docs/releases/4.2.26.txt",
+   "bytes": 1290,
+   "sha256": "41c37bfd2c4d091d1b1c8757c61ca3a7e027e1636d13faef90015483ec268017"
+  },
+  {
+   "path": "docs/releases/4.2.27.txt",
+   "bytes": 1552,
+   "sha256": "19d45074fee60897d2d1e38df4d822af76a72d79ea5dd5047c3e90314c422c37"
+  },
+  {
+   "path": "docs/releases/4.2.28.txt",
+   "bytes": 3725,
+   "sha256": "9230840cd3bf26dc58020dd982c7ff747c13b00081080bb89d769c591f77ff18"
+  },
+  {
+   "path": "docs/releases/4.2.29.txt",
+   "bytes": 2312,
+   "sha256": "729fcd7d6c431667328d61d0c5c2f96e324ef7f3f3ad92cfc7f36674d04c509b"
+  },
+  {
+   "path": "docs/releases/4.2.3.txt",
+   "bytes": 968,
+   "sha256": "4e44f2b984ab63a9ee3b93447a4d5bcafbb01b51d146edc621318c79e19d5118"
+  },
+  {
+   "path": "docs/releases/4.2.30.txt",
+   "bytes": 3150,
+   "sha256": "8dddb00c2176383006eb9751a577bb744c0aa6f0b37c8e1ea5d343b6cf762b87"
+  },
+  {
+   "path": "docs/releases/4.2.4.txt",
+   "bytes": 618,
+   "sha256": "5ce4f2e6b70dd257e047611c24036b6c9e7463e41a98137136d25a87227c54bb"
+  },
+  {
+   "path": "docs/releases/4.2.5.txt",
+   "bytes": 1236,
+   "sha256": "587f5ffe245aeb2cf2c0e1e7a43517c0a462e8a7f3b3eb352d0d40b687d95611"
+  },
+  {
+   "path": "docs/releases/4.2.6.txt",
+   "bytes": 2147,
+   "sha256": "bc263e9453f8fb4989ea440875626343ed35547e0ff62d75a9e4df01af5bc3fb"
+  },
+  {
+   "path": "docs/releases/4.2.7.txt",
+   "bytes": 1184,
+   "sha256": "87474bb0b2384818db531bd44c2f718d8f01d4935e97bc8c7b225e649c687643"
+  },
+  {
+   "path": "docs/releases/4.2.8.txt",
+   "bytes": 1557,
+   "sha256": "9a1a2adc1be458e44d6b2f2a86fbe52a7f50406bfa54f9c10162e92aa0f72f1a"
+  },
+  {
+   "path": "docs/releases/4.2.9.txt",
+   "bytes": 301,
+   "sha256": "7ecf6b3e9b758757cd8f7723912937070dd0a877364aab3e15ad7f64506946fa"
+  },
+  {
+   "path": "docs/releases/4.2.txt",
+   "bytes": 22375,
+   "sha256": "e8095ae39f4980230bca89adea2838f24dabda8d660ba615bcc3289f0f599557"
+  },
+  {
+   "path": "docs/releases/5.0.1.txt",
+   "bytes": 1463,
+   "sha256": "43420377321c06eda35acafeb720a52b0ad15e4df6c83a0fa13e4a6a99994e69"
+  },
+  {
+   "path": "docs/releases/5.0.10.txt",
+   "bytes": 1440,
+   "sha256": "b8d3293bd5911f1e3ff8897a93a1b87b41e967d2575f168aeb7ce2ce42186b21"
+  },
+  {
+   "path": "docs/releases/5.0.11.txt",
+   "bytes": 806,
+   "sha256": "db4832c6d47646a1dea7407bdc26199dbc477d5f2ff1fdfa15c37fbb74e46b4c"
+  },
+  {
+   "path": "docs/releases/5.0.12.txt",
+   "bytes": 344,
+   "sha256": "659ab76e3474aec0da9a9f46cb64e83ebdda5d15f2748e68c722c705af5e99a3"
+  },
+  {
+   "path": "docs/releases/5.0.13.txt",
+   "bytes": 499,
+   "sha256": "56edda61614a1215a5c417b5772e59002ee800ae9e4f96fc85d3e98a44bf1577"
+  },
+  {
+   "path": "docs/releases/5.0.14.txt",
+   "bytes": 793,
+   "sha256": "4673b23653be884630c156e2f3b6c2b1ca45d4abb4d23955c1bd71be016e4770"
+  },
+  {
+   "path": "docs/releases/5.0.2.txt",
+   "bytes": 2045,
+   "sha256": "9a03a5b458b8a9592dc2387798a91c95f583cd2749d3b0b55fd70ae03ed655c7"
+  },
+  {
+   "path": "docs/releases/5.0.3.txt",
+   "bytes": 1798,
+   "sha256": "9ef8c1a9049c8f6a8741c6509b6b99bacb347d9c8ffb9c95d297f097a469d999"
+  },
+  {
+   "path": "docs/releases/5.0.4.txt",
+   "bytes": 1110,
+   "sha256": "627fd6deb1d8517fcd2e61687a3680615844aebdc7cc8aed9d7fcc9fe8e551bf"
+  },
+  {
+   "path": "docs/releases/5.0.5.txt",
+   "bytes": 1287,
+   "sha256": "8dd8756d482f6dea5f4b40c8e15562c3b48d298cb402dbd63de7343711c804cc"
+  },
+  {
+   "path": "docs/releases/5.0.6.txt",
+   "bytes": 144,
+   "sha256": "e34d1ac002fb9b63d4e3b07787c07c15b03ac0fcd759c1bca6db155fb9a5304a"
+  },
+  {
+   "path": "docs/releases/5.0.7.txt",
+   "bytes": 2560,
+   "sha256": "d4c4ea0b6d029f53cfbf26f30f56c00d6239f450635ba94bd7069d6f97566f74"
+  },
+  {
+   "path": "docs/releases/5.0.8.txt",
+   "bytes": 3031,
+   "sha256": "aa9acd9f6c4eec33d67e61ae4d9dd90b579093dc572b5754f0429ea5d88a0865"
+  },
+  {
+   "path": "docs/releases/5.0.9.txt",
+   "bytes": 1121,
+   "sha256": "3944ee6ce92a970ad0fc921b95c19734b1ec0c25dd0b461b2f9b44bfb0359810"
+  },
+  {
+   "path": "docs/releases/5.0.txt",
+   "bytes": 26986,
+   "sha256": "f78c0112c823f44f0e594ab5baeac3b515136311f84ff639b87a550cf78638a7"
+  },
+  {
+   "path": "docs/releases/5.1.1.txt",
+   "bytes": 2588,
+   "sha256": "3708b7b22422b5d0471abe710b879c7f4b8acb8e124b5d6e77853689359de7c3"
+  },
+  {
+   "path": "docs/releases/5.1.10.txt",
+   "bytes": 922,
+   "sha256": "068fcd9472ae523f385b441df69812499b08d4547d271cbcbf2df08c60699ccc"
+  },
+  {
+   "path": "docs/releases/5.1.11.txt",
+   "bytes": 411,
+   "sha256": "3cfc73a09bb567e15b12b3afb31bdf7a7b72f9b8f970d33e2480fcd57556d135"
+  },
+  {
+   "path": "docs/releases/5.1.12.txt",
+   "bytes": 559,
+   "sha256": "7d4c318030b6677f3f1e36c3958d2bc9d6d8cc70ab930a4975e57aa0aac4025e"
+  },
+  {
+   "path": "docs/releases/5.1.13.txt",
+   "bytes": 1240,
+   "sha256": "d7db5037569ebc949fffe88d05ae345d0e499d4c7c7b93c81b26e8e008c9167c"
+  },
+  {
+   "path": "docs/releases/5.1.14.txt",
+   "bytes": 1290,
+   "sha256": "9e44bbb9cdc59ce58f6753a79ce20f55d2f0fed7f0d8f13dd36e86a02b747e63"
+  },
+  {
+   "path": "docs/releases/5.1.15.txt",
+   "bytes": 1552,
+   "sha256": "8a5b8df357d24f0144439680b7ba109d3291dc74ca43e43f50bb516b17ef4bb4"
+  },
+  {
+   "path": "docs/releases/5.1.2.txt",
+   "bytes": 725,
+   "sha256": "53cc0f703fd4964ccc4d768a54c90f78eb92f5cc071a2317d2d55c45fcf0464c"
+  },
+  {
+   "path": "docs/releases/5.1.3.txt",
+   "bytes": 722,
+   "sha256": "3561f0470c37dc887c10ff1b4948208878b11f9d9e7e5dfc5322a39e49dca552"
+  },
+  {
+   "path": "docs/releases/5.1.4.txt",
+   "bytes": 1799,
+   "sha256": "3eafdc25bd780a3c939573fba95c2ac58fc957e9684de5119fe5fcf20f4a7aaa"
+  },
+  {
+   "path": "docs/releases/5.1.5.txt",
+   "bytes": 957,
+   "sha256": "2f2ea67b66644d1ac8c2413fa9e3cd10789bdcb8ff7895a88cae4a3cf869952a"
+  },
+  {
+   "path": "docs/releases/5.1.6.txt",
+   "bytes": 571,
+   "sha256": "27d938d775581eb73d1f86fd3b2acd300a5776672f9cd688ce56c0ab59118b89"
+  },
+  {
+   "path": "docs/releases/5.1.7.txt",
+   "bytes": 1328,
+   "sha256": "db543a435e53f5b71b7e5dbdf9d74b67a23a25807a63049accaa7dbb80d6a9f3"
+  },
+  {
+   "path": "docs/releases/5.1.8.txt",
+   "bytes": 1029,
+   "sha256": "d20180d814fa9e4b372ded1fbcbc9fab7c7637873429e24f189629197a3cfc82"
+  },
+  {
+   "path": "docs/releases/5.1.9.txt",
+   "bytes": 1516,
+   "sha256": "4455ea03268cbee2a9ca13de7696d8d6879a3432e29e97fae4e2e3f57414e559"
+  },
+  {
+   "path": "docs/releases/5.1.txt",
+   "bytes": 18631,
+   "sha256": "3a1b214427111cf28fe8258b361dea6a3fc945aecaffb34132f31c06aec0a79f"
+  },
+  {
+   "path": "docs/releases/5.2.1.txt",
+   "bytes": 3635,
+   "sha256": "1c6a5546a09485818c76c725d8520b2da344ac787acc6010f6d6a17c6a8a2cf9"
+  },
+  {
+   "path": "docs/releases/5.2.10.txt",
+   "bytes": 574,
+   "sha256": "0d389197aaa9c20d6355ee5bd41965f8da14501d29aad3ec80b0f5514f0fb7fa"
+  },
+  {
+   "path": "docs/releases/5.2.11.txt",
+   "bytes": 3725,
+   "sha256": "8c400daf3b0323c4822c28e5217c652d2967753d3110fb2ea36908efc2bf943f"
+  },
+  {
+   "path": "docs/releases/5.2.12.txt",
+   "bytes": 2512,
+   "sha256": "e047640b5d4c8edb87d0b1daea2c0df0e00e9e3a70e50d805f0e6bf004fcc46e"
+  },
+  {
+   "path": "docs/releases/5.2.13.txt",
+   "bytes": 3150,
+   "sha256": "bbf519c3b0bbf2a292bb1e9b613a51112e3f95cafbe39c1272e96026204d5b60"
+  },
+  {
+   "path": "docs/releases/5.2.14.txt",
+   "bytes": 1965,
+   "sha256": "20c90773765fb55a9533fc71baa079fee2bbf9ac32ea73b27669a4346b48c4b6"
+  },
+  {
+   "path": "docs/releases/5.2.15.txt",
+   "bytes": 3871,
+   "sha256": "33465a99d8adb687395ab7a0b818562c8da07afd6ba87e1fec7cd85574f0f369"
+  },
+  {
+   "path": "docs/releases/5.2.16.txt",
+   "bytes": 2283,
+   "sha256": "9c5850fae10384d784758d8691f0fab2ea1aa3d1ed1a618c219fafb63c652106"
+  },
+  {
+   "path": "docs/releases/5.2.17.txt",
+   "bytes": 4613,
+   "sha256": "42a45d8fec8eecc0e9b589f9987b622f7fa820fc1f8380d43b9342654a1744fb"
+  },
+  {
+   "path": "docs/releases/5.2.18.txt",
+   "bytes": 4450,
+   "sha256": "29ee8e9e1eff08927f615158d14a057b3c8d4ba3605361ce61df4186d506ce9a"
+  },
+  {
+   "path": "docs/releases/5.2.19.txt",
+   "bytes": 5338,
+   "sha256": "5373876e3fdfcecb484dcc9f7b1218d04fdbb06c63d68c7e864812f40ee03510"
+  },
+  {
+   "path": "docs/releases/5.2.2.txt",
+   "bytes": 2836,
+   "sha256": "224ff1c2478d6b7a159e74e3c304e399d41cbacdb5a50e8c58a4c766573c91fc"
+  },
+  {
+   "path": "docs/releases/5.2.3.txt",
+   "bytes": 806,
+   "sha256": "78598abe935370f31f59c9907b082c3a302a61fceed415cb104c7808a3e817cc"
+  },
+  {
+   "path": "docs/releases/5.2.4.txt",
+   "bytes": 804,
+   "sha256": "35a6126000b4a84139be546c55e9250b6505afb8f0b846aae93cb695fcf5edb0"
+  },
+  {
+   "path": "docs/releases/5.2.5.txt",
+   "bytes": 864,
+   "sha256": "559ed1d70b6e3d9d375dc9daeee5d3fe91def36bd10a73f51cc3ac8dbac0c2b0"
+  },
+  {
+   "path": "docs/releases/5.2.6.txt",
+   "bytes": 801,
+   "sha256": "5e3eb606b25e48ef9a0c4137f5c0f8e4790f9a249963b66143fbd6010cfe701f"
+  },
+  {
+   "path": "docs/releases/5.2.7.txt",
+   "bytes": 1529,
+   "sha256": "e076421892f094c4374890faa72502eaf5128a6a4f6436df33ecf873f06926fa"
+  },
+  {
+   "path": "docs/releases/5.2.8.txt",
+   "bytes": 1794,
+   "sha256": "3035e8b9bf593c89309663ad3299e84f4c0d416216d297014d830d2e5e6f460a"
+  },
+  {
+   "path": "docs/releases/5.2.9.txt",
+   "bytes": 2256,
+   "sha256": "7564156212de180b44ef8d6a4c0770a1e58fb78d295bc065352cedbe37ba46cb"
+  },
+  {
+   "path": "docs/releases/5.2.txt",
+   "bytes": 17839,
+   "sha256": "56a4c82a284e4c7a5b61247fe000e5e1ac1d97fcb1f26208aeb9424d73c74355"
+  },
+  {
+   "path": "docs/releases/6.0.1.txt",
+   "bytes": 2234,
+   "sha256": "7c7e806bf4d992f6a3fbb8b59c6106c9a5a9374a08186e982120e0ee57d6eb33"
+  },
+  {
+   "path": "docs/releases/6.0.10.txt",
+   "bytes": 5913,
+   "sha256": "fe4c31730ca1bf947268b6ae0c7d58c10134e359028f25dcf2cb54ead9c6153f"
+  },
+  {
+   "path": "docs/releases/6.0.2.txt",
+   "bytes": 4267,
+   "sha256": "0e8ca31315498e9ea4785149b837a6acb65159cc5980221b1b28162b043eaee4"
+  },
+  {
+   "path": "docs/releases/6.0.3.txt",
+   "bytes": 3032,
+   "sha256": "f30f6833a8d6d043f672e11ad2d1e01fa5380a585d15a12cc26d93143363d1db"
+  },
+  {
+   "path": "docs/releases/6.0.4.txt",
+   "bytes": 3908,
+   "sha256": "c216faca99d3a6db693cb2624da036e74e0fd71d339ea5fb4a0c244897e1a0eb"
+  },
+  {
+   "path": "docs/releases/6.0.5.txt",
+   "bytes": 2366,
+   "sha256": "2509531dec18a72007c3291f94f116bb706399cfab2c39e7bfb5230c59d1bd50"
+  },
+  {
+   "path": "docs/releases/6.0.6.txt",
+   "bytes": 4149,
+   "sha256": "6dfea6a36794b92877677b39fce9b20050c9a09bc684b45847a65828d6539b37"
+  },
+  {
+   "path": "docs/releases/6.0.7.txt",
+   "bytes": 2578,
+   "sha256": "7ce1a3e41d7de206c901c2db281f1e8e3e6934632416dfd8a8784b9b5f0bc20c"
+  },
+  {
+   "path": "docs/releases/6.0.8.txt",
+   "bytes": 4975,
+   "sha256": "416b7962b066dbe26e1a6227d012c1d2b4adba18b6bad7f34ef485374b541252"
+  },
+  {
+   "path": "docs/releases/6.0.9.txt",
+   "bytes": 4444,
+   "sha256": "a7e653aec5cc2606b0516fd3dd12a10a3ac54df51faaa3bc55638206317dc760"
+  },
+  {
+   "path": "docs/releases/6.0.txt",
+   "bytes": 25031,
+   "sha256": "0ea24de54cb358c868797c71e55f13b15cb3980d371425cc1e0b002fabe6e301"
+  },
+  {
+   "path": "docs/releases/6.1.1.txt",
+   "bytes": 2976,
+   "sha256": "b58cca3e7b08a877fd69fcefcf737c816feda01ec3400af1ff2f8a2ab53b51e6"
+  },
+  {
+   "path": "docs/releases/6.1.2.txt",
+   "bytes": 6444,
+   "sha256": "807e16cd3944b57bc1e522e640cabd01c499f1dcc5bee708cbea59f5845c0da9"
+  },
+  {
+   "path": "docs/releases/6.1.3.txt",
+   "bytes": 7412,
+   "sha256": "c75efcf5304122b48f10d15ad479d78f84801747829ac1ce745875494e443d62"
+  },
+  {
+   "path": "docs/releases/6.1.4.txt",
+   "bytes": 179,
+   "sha256": "86cc4c5608ba16ab871614a1218b9bbf3d1fe7e68960d72860af533540afe02e"
+  },
+  {
+   "path": "docs/releases/6.1.txt",
+   "bytes": 31702,
+   "sha256": "e5e5f23ae00fb0ee92f51bd50a86c27ee82c2854d4c136152c2f13bacffc8d29"
+  },
+  {
+   "path": "docs/releases/6.2.txt",
+   "bytes": 19004,
+   "sha256": "64b2f830440d15ebace4aff18443e755472d34ab4108786cad4c759f29986bd4"
+  },
+  {
+   "path": "docs/releases/index.txt",
+   "bytes": 6376,
+   "sha256": "bc3420c1ed8f88dbd0a241b23e31e5f28b34600febb91275ccf998879b5d03a0"
+  },
+  {
+   "path": "docs/releases/security.txt",
+   "bytes": 82398,
+   "sha256": "0f2d5ad7a54da90370b3584ca0c2602af80ce386c85c80a28ccb6eb9a296b1c6"
+  },
+  {
+   "path": "docs/requirements.txt",
+   "bytes": 102,
+   "sha256": "27e3210787591263642aad9febaaa6ae4de40a26a8c3c3346a9c60f7dcc6a5bd"
+  },
+  {
+   "path": "docs/topics/async.txt",
+   "bytes": 18587,
+   "sha256": "b63f71eb645040918e7e8cc099f6cc3dd5ca46a2206418b610025fc9b217c7c6"
+  },
+  {
+   "path": "docs/topics/auth/customizing.txt",
+   "bytes": 50503,
+   "sha256": "70b4586a2bf7529319fe82f6cc23ab28290b3290b6b5af237201ea3a6f1d450f"
+  },
+  {
+   "path": "docs/topics/auth/default.txt",
+   "bytes": 71639,
+   "sha256": "ca9454b4b5b54ef4ef59c54a4568f691e9b791cb1363b2495b1522ad4cffdbf7"
+  },
+  {
+   "path": "docs/topics/auth/index.txt",
+   "bytes": 3193,
+   "sha256": "baade2c36ef28a169c3bb6644dc1c6e6b254a9f7a4d71595b85cd745916a70e5"
+  },
+  {
+   "path": "docs/topics/auth/passwords.txt",
+   "bytes": 32898,
+   "sha256": "6298d81cc699ea6992b2c63d22beccb2fa514e1b6803b49c80ef11ea413672ec"
+  },
+  {
+   "path": "docs/topics/cache.txt",
+   "bytes": 59490,
+   "sha256": "61899c11eee34679e4d4a41cb0bcc980addd91249bcf3e38a79122d5d62f75ea"
+  },
+  {
+   "path": "docs/topics/checks.txt",
+   "bytes": 10325,
+   "sha256": "a3e960011ba8ffd5e7e9592b42fb86c86d516f6c9b802ca2d2dcc483fc5624c9"
+  },
+  {
+   "path": "docs/topics/class-based-views/generic-display.txt",
+   "bytes": 16340,
+   "sha256": "10dcf78bd1166b73c4c82b766b306d4542505b918c3e03395e6513cae13ae71c"
+  },
+  {
+   "path": "docs/topics/class-based-views/generic-editing.txt",
+   "bytes": 11375,
+   "sha256": "3aee631c206e66facec31f737664457ec434ae9e18e8df6aa63a8bd7f22f5e1c"
+  },
+  {
+   "path": "docs/topics/class-based-views/index.txt",
+   "bytes": 6532,
+   "sha256": "ab4599ba8ebd9285a03b68a9760da02b5cee3e618252a5c68aaa4006f4615579"
+  },
+  {
+   "path": "docs/topics/class-based-views/intro.txt",
+   "bytes": 13219,
+   "sha256": "181cde1698a9208b2a84f61d09daca4b1dccbd5677c0907780e4ef04540889c8"
+  },
+  {
+   "path": "docs/topics/class-based-views/mixins.txt",
+   "bytes": 30199,
+   "sha256": "4df49a7a1447c3e5a82a5513096a8df82f418764f899bfeae8586f95e9d6e5c5"
+  },
+  {
+   "path": "docs/topics/composite-primary-key.txt",
+   "bytes": 7931,
+   "sha256": "014317c9e654e89ff01abd185598b4506df2192ce065978cd0ae8203a4c05f30"
+  },
+  {
+   "path": "docs/topics/conditional-view-processing.txt",
+   "bytes": 10090,
+   "sha256": "dc04ed0152cd67693ac817cefa9f3b06bcffc14506f9d637d158b7dfe6a3849a"
+  },
+  {
+   "path": "docs/topics/db/aggregation.txt",
+   "bytes": 28610,
+   "sha256": "cde353287eaf48dc2a19fba38c7401169ca269fadbc2a7cd8804865d4ad68bc0"
+  },
+  {
+   "path": "docs/topics/db/examples/index.txt",
+   "bytes": 199,
+   "sha256": "ad84e0349bde94e627764db1f359ed3ad1f40c00f3499d5033aaff6e7d5b0af1"
+  },
+  {
+   "path": "docs/topics/db/examples/many_to_many.txt",
+   "bytes": 10883,
+   "sha256": "cac43618c13458a992087b4505a57e8178c7d2f0f2030cb117fff1895164b42a"
+  },
+  {
+   "path": "docs/topics/db/examples/many_to_one.txt",
+   "bytes": 8138,
+   "sha256": "daea81af0dd83bd36689a09ab140c9184f7e91ccddc09ba1218ea8edeeb38bd8"
+  },
+  {
+   "path": "docs/topics/db/examples/one_to_one.txt",
+   "bytes": 5649,
+   "sha256": "ed322f9a67f7faf5276d0843a08db7305fa3c463eabbbc1cd3da173be2bb5776"
+  },
+  {
+   "path": "docs/topics/db/fetch-modes.txt",
+   "bytes": 4393,
+   "sha256": "46936fa9d7ab3f0396154cfbc49f963eef17c5c2b55a8b1112047287722449af"
+  },
+  {
+   "path": "docs/topics/db/fixtures.txt",
+   "bytes": 6858,
+   "sha256": "721bccd34acb356d2ed02404b61a04f4750972e1cd53decda598218d6d76a2a1"
+  },
+  {
+   "path": "docs/topics/db/index.txt",
+   "bytes": 509,
+   "sha256": "1eef34aa3c354505744398ca74bf007dc2185b473aab735c4318549fa7c0e17e"
+  },
+  {
+   "path": "docs/topics/db/instrumentation.txt",
+   "bytes": 4363,
+   "sha256": "f92e858f2503df06c98b617e38d05d60856b8f8cfe9e23ccda4afbade96074f8"
+  },
+  {
+   "path": "docs/topics/db/managers.txt",
+   "bytes": 16372,
+   "sha256": "ec2eafe1606af112e9cee71637d29151f151e8d8f4a6d1534c68bdad5a5b259a"
+  },
+  {
+   "path": "docs/topics/db/models.txt",
+   "bytes": 62731,
+   "sha256": "615b336de60dc5cbfeccd504ad132579be90699c0c51f120ee9833906ff1b43e"
+  },
+  {
+   "path": "docs/topics/db/multi-db.txt",
+   "bytes": 31364,
+   "sha256": "65d37fae46a22ee40c72ed284888f9c7d675919b3d4f6bdc5f9265df52b61548"
+  },
+  {
+   "path": "docs/topics/db/optimization.txt",
+   "bytes": 19013,
+   "sha256": "27c33306df5db32a39ac10eb9ffa73528535f041362b04b55a5fd697cd378c20"
+  },
+  {
+   "path": "docs/topics/db/queries.txt",
+   "bytes": 78852,
+   "sha256": "9ddfe10fd86056bbf19635345be13691b182348bb1089da7b86f363d995cf15e"
+  },
+  {
+   "path": "docs/topics/db/search.txt",
+   "bytes": 5874,
+   "sha256": "9be10ffa83b1f3773db73c3b4667bfc3f9fe0afe135a1bccd3187b8f48ab4f86"
+  },
+  {
+   "path": "docs/topics/db/sql.txt",
+   "bytes": 15237,
+   "sha256": "01dc51b33f716b7cb0e9cd206ce7b4f8d78f0fdca0669aede064d6c80b1b35fa"
+  },
+  {
+   "path": "docs/topics/db/tablespaces.txt",
+   "bytes": 3072,
+   "sha256": "b385f0df9a22d1d31a961c8acbcd269b6ea40d6b2ac34add8eea01ded96cfbe8"
+  },
+  {
+   "path": "docs/topics/db/transactions.txt",
+   "bytes": 28481,
+   "sha256": "fce19bd320802338c10f437354a5c553cdcecede54063721e49a03f79d80c62a"
+  },
+  {
+   "path": "docs/topics/email.txt",
+   "bytes": 58285,
+   "sha256": "f4b4d98f60c7c096841b9d1acbf72efab6329d869e1abfe9a77096db6d6f4cbe"
+  },
+  {
+   "path": "docs/topics/files.txt",
+   "bytes": 9776,
+   "sha256": "740750a17d8ec728c5ad37ee5c1110d59468763fe366bb6e1cd4421dc82a54bb"
+  },
+  {
+   "path": "docs/topics/forms/formsets.txt",
+   "bytes": 40854,
+   "sha256": "e5f9f81ef0adc54c76a552b322b0e9b3e3c1c79accbb323fbdf18df51abc3b3e"
+  },
+  {
+   "path": "docs/topics/forms/index.txt",
+   "bytes": 33160,
+   "sha256": "64c1316a37750e9cdfbbc00b53f1769c7dff2c07cbb06395462423ad809df7fc"
+  },
+  {
+   "path": "docs/topics/forms/media.txt",
+   "bytes": 17970,
+   "sha256": "e38f07939ea8432fd0a27551296fa82ae60f096058b82defa24bf7e5af9a4a18"
+  },
+  {
+   "path": "docs/topics/forms/modelforms.txt",
+   "bytes": 51337,
+   "sha256": "a6454d7acb850e18f3366ea878e9248d5b660c0b293dff7c052467c40be6b79a"
+  },
+  {
+   "path": "docs/topics/http/decorators.txt",
+   "bytes": 4634,
+   "sha256": "cfb4b31dcf1cc2300213d719809534c7a96109e3c0f6cda24e0cd173eb866164"
+  },
+  {
+   "path": "docs/topics/http/file-uploads.txt",
+   "bytes": 13636,
+   "sha256": "c9abedcbcf005a8a62e58eb1461dc3e0acb8e09f8140f5e351060ceb8cbc781d"
+  },
+  {
+   "path": "docs/topics/http/generic-views.txt",
+   "bytes": 84,
+   "sha256": "c96ceb0e69c1bdf7d0b877e3c578b5ea12fe6f44b7679e056067764d58b9570c"
+  },
+  {
+   "path": "docs/topics/http/index.txt",
+   "bytes": 253,
+   "sha256": "5705a8e21fe29fa5fd3cdba21cd03228780702590df316313520cd3707cdcaf6"
+  },
+  {
+   "path": "docs/topics/http/middleware.txt",
+   "bytes": 20495,
+   "sha256": "e412378a1f20253d91d7d510de7530511a191c09240fdf8e6354d95df55bb1b8"
+  },
+  {
+   "path": "docs/topics/http/sessions.txt",
+   "bytes": 35426,
+   "sha256": "a0679e213e5fd7f2d7519d9cafc519d0e3729f4d8480d644d84a5a0d5bcff9c9"
+  },
+  {
+   "path": "docs/topics/http/shortcuts.txt",
+   "bytes": 11680,
+   "sha256": "e4d63ae75bff7794bef304c70502fc63734d59fc15cc557b652739ca1973929e"
+  },
+  {
+   "path": "docs/topics/http/urls.txt",
+   "bytes": 33353,
+   "sha256": "c8a70d51a406e67d5dc326e7256060b4b79ae305c49ee6ab53a64f6d647c796b"
+  },
+  {
+   "path": "docs/topics/http/views.txt",
+   "bytes": 8269,
+   "sha256": "609840b601be49db4a6593a7f02700e3befd03c119db3db2f8fdd3e8e971b4f7"
+  },
+  {
+   "path": "docs/topics/i18n/formatting.txt",
+   "bytes": 6372,
+   "sha256": "de49be5cf24b866db324e3bcbeb631cd09789e18a6e5a6fbed5b8f62f1fb3a77"
+  },
+  {
+   "path": "docs/topics/i18n/index.txt",
+   "bytes": 3432,
+   "sha256": "b4f3c33d2ce3810e04ad0456930f3c697358e7db45d4282c60e2bb25e0af868c"
+  },
+  {
+   "path": "docs/topics/i18n/timezones.txt",
+   "bytes": 25777,
+   "sha256": "d89e6ac4150e7aeb2222102ed9266ab88eb012a7a1562ca873f1175d743c4f70"
+  },
+  {
+   "path": "docs/topics/i18n/translation.txt",
+   "bytes": 80284,
+   "sha256": "faa55703b16b4e6068548e437496f2a6b2933bdc642cf405b04ce536a5fc2d43"
+  },
+  {
+   "path": "docs/topics/index.txt",
+   "bytes": 502,
+   "sha256": "b4931577836338aef5fd775a47ec52cd081eddd22ecf8982ecdfeaa12712a436"
+  },
+  {
+   "path": "docs/topics/install.txt",
+   "bytes": 10260,
+   "sha256": "5474b5dc314dd4ff9aedb498d72919937ebe2c546791430d1d33f05a6142a38c"
+  },
+  {
+   "path": "docs/topics/logging.txt",
+   "bytes": 16445,
+   "sha256": "725874b6a0ceed909ec35b302db688e952f7dea1cb10eb9166e06c1c65316202"
+  },
+  {
+   "path": "docs/topics/migrations.txt",
+   "bytes": 41128,
+   "sha256": "733d2206c11f516ca09b6a8f7a15cf1b9e2be337876a7793744cd215099e71b2"
+  },
+  {
+   "path": "docs/topics/pagination.txt",
+   "bytes": 4670,
+   "sha256": "b8c3c848917d25caf7a3a05f6a500de470834e4b3271959d8be9095881e8067c"
+  },
+  {
+   "path": "docs/topics/performance.txt",
+   "bytes": 17982,
+   "sha256": "1b66eccb32aa12a4f815216f4d11af714b86b58dda7264c3f617221a96caca8f"
+  },
+  {
+   "path": "docs/topics/security.txt",
+   "bytes": 19807,
+   "sha256": "f596ef31ded5aca7e9ef81a9fd62a1fc5964880e8b6f518e08834ec30d82e3be"
+  },
+  {
+   "path": "docs/topics/serialization.txt",
+   "bytes": 26969,
+   "sha256": "3da905d7a79c674822c54ddfd0fe856cc3041f89e7aa8ff3c0f0a3fae9a98866"
+  },
+  {
+   "path": "docs/topics/settings.txt",
+   "bytes": 10547,
+   "sha256": "674025f79e1a85983559534aa95e3fb164ad3b38be02872cbefc02171d8aaebc"
+  },
+  {
+   "path": "docs/topics/signals.txt",
+   "bytes": 13203,
+   "sha256": "e1386fc9dc55b7a26225c6fb1551d3928b9e73cb9710f5b9b20a1de3eedd9c85"
+  },
+  {
+   "path": "docs/topics/signing.txt",
+   "bytes": 9538,
+   "sha256": "ad28ada77794e265c67622352d9ec5a3de073d3ee82309e6a4b83ad35de56a38"
+  },
+  {
+   "path": "docs/topics/tasks.txt",
+   "bytes": 14201,
+   "sha256": "069487d29d4962875cd74bbb2890ac828f90abae25ec69afb28931f145a79951"
+  },
+  {
+   "path": "docs/topics/templates.txt",
+   "bytes": 25665,
+   "sha256": "115980014d13c2502302411cf3c86d5a066fa3d9b0997fb59b0cc606589761db"
+  },
+  {
+   "path": "docs/topics/testing/advanced.txt",
+   "bytes": 34525,
+   "sha256": "536d2fb8fdf03f08542f02b3e9db92db02593dd7dc14c9df31c7dead0cb24c7e"
+  },
+  {
+   "path": "docs/topics/testing/index.txt",
+   "bytes": 1805,
+   "sha256": "6a54c2b73525d8677584c83b025930bb57702468e484e48272a28dd7a6868997"
+  },
+  {
+   "path": "docs/topics/testing/overview.txt",
+   "bytes": 16211,
+   "sha256": "5d93d7bb7a79af85248b7a51bcaf18ee582813d1478205a88ad7f80b1f2a6fe3"
+  },
+  {
+   "path": "docs/topics/testing/tools.txt",
+   "bytes": 89192,
+   "sha256": "131f0dd3ea79d9952a974bc4de0548403523402fb07ad3b72dcf1b4a617fb6de"
+  }
+ ]
+}

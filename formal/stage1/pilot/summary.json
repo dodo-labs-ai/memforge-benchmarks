@@ -1,0 +1,210 @@
+{
+  "cells": {
+    "t01-govuk-db-admin-role/B/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        true
+      ],
+      "memory_calls": [
+        0
+      ],
+      "total_tokens": [
+        137185
+      ],
+      "duration_seconds": [
+        59.0
+      ]
+    },
+    "t01-govuk-db-admin-role/C1/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        true
+      ],
+      "memory_calls": [
+        0
+      ],
+      "total_tokens": [
+        153173
+      ],
+      "duration_seconds": [
+        59.0
+      ]
+    },
+    "t01-govuk-db-admin-role/C2/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        false
+      ],
+      "old_text_seen": [
+        true
+      ],
+      "memory_calls": [
+        0
+      ],
+      "total_tokens": [
+        125512
+      ],
+      "duration_seconds": [
+        43.3
+      ]
+    },
+    "t01-govuk-db-admin-role/D/large": {
+      "outcomes": [
+        "new"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        false
+      ],
+      "memory_calls": [
+        2
+      ],
+      "total_tokens": [
+        215117
+      ],
+      "duration_seconds": [
+        59.5
+      ]
+    },
+    "t01-govuk-db-admin-role/D/small": {
+      "outcomes": [
+        "new"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        false
+      ],
+      "memory_calls": [
+        3
+      ],
+      "total_tokens": [
+        213128
+      ],
+      "duration_seconds": [
+        54.8
+      ]
+    },
+    "t06-govuk-check-env-var/B/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        true
+      ],
+      "memory_calls": [
+        0
+      ],
+      "total_tokens": [
+        127199
+      ],
+      "duration_seconds": [
+        42.2
+      ]
+    },
+    "t06-govuk-check-env-var/C1/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        true
+      ],
+      "memory_calls": [
+        0
+      ],
+      "total_tokens": [
+        88229
+      ],
+      "duration_seconds": [
+        34.0
+      ]
+    },
+    "t06-govuk-check-env-var/C2/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        true
+      ],
+      "old_text_seen": [
+        true
+      ],
+      "memory_calls": [
+        0
+      ],
+      "total_tokens": [
+        134142
+      ],
+      "duration_seconds": [
+        46.6
+      ]
+    },
+    "t06-govuk-check-env-var/D/large": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        false
+      ],
+      "old_text_seen": [
+        false
+      ],
+      "memory_calls": [
+        2
+      ],
+      "total_tokens": [
+        134605
+      ],
+      "duration_seconds": [
+        50.7
+      ]
+    },
+    "t06-govuk-check-env-var/D/small": {
+      "outcomes": [
+        "old"
+      ],
+      "new_text_seen": [
+        false
+      ],
+      "old_text_seen": [
+        false
+      ],
+      "memory_calls": [
+        3
+      ],
+      "total_tokens": [
+        171391
+      ],
+      "duration_seconds": [
+        47.0
+      ]
+    }
+  },
+  "attempts": 10,
+  "tokens_of_all_attempts": 1499681,
+  "isolation_violations": [],
+  "other_hosts_flagged": [
+    "github.com:443"
+  ]
+}

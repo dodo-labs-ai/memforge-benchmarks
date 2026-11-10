@@ -1,0 +1,6 @@
+{"probe": "minimal shell probe", "input": 29617, "cached_input": 27392, "output": 67, "cap_count": 57076}
+{"probe": "plugin probe refused for approval", "input": 50856, "cached_input": 43392, "output": 170, "cap_count": 94418}
+{"probe": "plugin search probe", "input": 56042, "cached_input": 38400, "output": 3318, "cap_count": 97760}
+{"probe": "marketplace update probe", "input": 15364, "cached_input": 12800, "output": 5, "cap_count": 28169}
+{"probe": "plugin without marketplace checkout probe", "input": 78459, "cached_input": 59008, "output": 260, "cap_count": 137727}
+{"probe": "strict-config check of group D keys", "input": 15397, "cached_input": 12800, "output": 5, "cap_count": 28202}

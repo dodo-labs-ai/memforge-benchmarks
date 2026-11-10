@@ -1,0 +1,77 @@
+{
+ "id": "t12-grpc-max-ejection",
+ "number": 12,
+ "role": "dropped",
+ "doc_set": "grpc",
+ "prompt": "Implement `run_failure_percentage_ejection(addresses, config, randint)` in `outlier/detection.py`: one pass of the failure percentage algorithm of xDS outlier detection, as gRFC A50 specifies it. It marks addresses as ejected and returns the names of those it ejected in this pass. Keep the change small and tell me briefly what you did.",
+ "decision": "A50 said the percentage limit stopped ejection only once reached, and that at least one address is ejected regardless of the value. Now ejection never takes the ejected percentage above the limit, so 0 disables it.",
+ "difference": "with 10 addresses, a limit of 5 and three failing addresses: one ejected (old) against none (new). With a limit of 25 and five failing: three or two (old) against two (new).",
+ "revisions": {
+  "old": {
+   "commit": "89f34f2632b991776e206c97830ec3ac6f391988",
+   "path": "A50-xds-outlier-detection.md"
+  },
+  "new": {
+   "commit": "4125fbd155353d35386d8fbd6b23454f6ab0e345",
+   "path": "A50-xds-outlier-detection.md"
+  }
+ },
+ "neutral_names": [
+  "A50-xds-outlier-policy.md",
+  "A50-xds-outlier-rules.md"
+ ],
+ "markers": {
+  "old": "will eject at least one address regardless of the value",
+  "new": "If ejecting one more address would make the percentage of ejected addresses greater than"
+ },
+ "reversal_check": {
+  "old_has": [
+   "will eject at least one address regardless of the value",
+   "If the percentage of ejected addresses is greater than or equal to `max_ejection_percent`, stop."
+  ],
+  "old_lacks": [
+   "a value of 0 disables ejection",
+   "If ejecting one more address would make"
+  ],
+  "new_has": [
+   "a value of 0 disables ejection",
+   "If ejecting one more address would make the percentage of ejected addresses greater than `max_ejection_percent`, stop."
+  ],
+  "new_lacks": [
+   "will eject at least one address regardless of the value",
+   "If the percentage of ejected addresses is greater than or equal to"
+  ]
+ },
+ "leak_tokens": [
+  "at least one",
+  "never takes",
+  "disables ejection",
+  "principal",
+  "SubjectAlt",
+  "A41",
+  "one more address"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "states the old limit behaviour",
+    "regex": "eject at least one address regardless|percentage of ejected addresses is greater than or equal"
+   }
+  ],
+  "new": [
+   {
+    "label": "states the new limit behaviour",
+    "regex": "value of 0 disables ejection|ejecting one more address would make"
+   }
+  ]
+ },
+ "weak_points": [
+  "The research notes' two probes do not separate cleanly, so they are not used. With a limit of 0 the old algorithm text stops at once and ejects none, while the old proto comment says at least one. At exactly the threshold, the old algorithm text and both new texts say `greater than`; only the old proto comment said `greater than or equal`. The assertion decides on a small non-zero limit instead, where both old texts eject one and the new text ejects none.",
+  "A fresh implementation that computes `floor(n * percent / 100)` behaves like the new revision with no document, so `new` here can arise from a reasonable default. The closed-book screen is what shows whether it does."
+ ],
+ "separation": {
+  "rating": "clean on a replaced probe",
+  "why": "The research notes' two probes do not separate, so a small non-zero limit decides instead. `new` is also what a plain floor computation gives, so the closed-book screen matters here."
+ },
+ "dropped_because": "Two of three runs with no documents reached new in the stage 0 screen."
+}

@@ -1,0 +1,2900 @@
+{
+  "t01-govuk-db-admin-role": {
+    "number": 1,
+    "role": "scored",
+    "doc_set": "govuk",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 6648,
+      "new_bytes": 7030,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 5
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "the secret is read under no admin role this task knows"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "the secret is read under no admin role this task knows"
+        },
+        {
+          "fixture": "neither__both_roles",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "the code uses both roles"
+        },
+        {
+          "fixture": "neither__both_roles",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "the code uses both roles"
+        },
+        {
+          "fixture": "neither__no_secret",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "['scripts/db-admin-password.sh'] never reads the secret"
+        },
+        {
+          "fixture": "neither__no_secret",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "['scripts/db-admin-password.sh'] never reads the secret"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new__python",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new__python",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new__stderr_line_names_other_role",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new__stderr_line_names_other_role",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new__usage_heredoc_names_other_role",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "new__usage_heredoc_names_other_role",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "the secret is read as tempadmin"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the secret is read as fulladmin"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the secret is read as fulladmin"
+        },
+        {
+          "fixture": "old__comment_says_new",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the secret is read as fulladmin"
+        },
+        {
+          "fixture": "old__comment_says_new",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the secret is read as fulladmin"
+        },
+        {
+          "fixture": "old__prints_the_other_role",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the secret is read as fulladmin"
+        },
+        {
+          "fixture": "old__prints_the_other_role",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the secret is read as fulladmin"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t02-gitlab-api-new-field": {
+    "number": 2,
+    "role": "dropped",
+    "doc_set": "gitlab",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 38581,
+      "new_bytes": 39695,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 9
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Ruby changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Ruby changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "a plain expose on UserBasic"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "a plain expose on UserBasic"
+        },
+        {
+          "fixture": "neither__guard_no_param",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "UserBasic guards it with if: but no endpoint takes an optional parameter"
+        },
+        {
+          "fixture": "neither__guard_no_param",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "UserBasic guards it with if: but no endpoint takes an optional parameter"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: UserBasic guards it with if: and the endpoint takes an optional parameter"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: UserBasic guards it with if: and the endpoint takes an optional parameter"
+        },
+        {
+          "fixture": "new__declared_params_variable",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__declared_params_variable",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__if_blank_plain_first",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__if_blank_plain_first",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__if_new_entity_first",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__if_new_entity_first",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__multiline",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: UserBasic guards it with if: and the endpoint takes an optional parameter"
+        },
+        {
+          "fixture": "new__multiline",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: UserBasic guards it with if: and the endpoint takes an optional parameter"
+        },
+        {
+          "fixture": "new__new_route",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a new route with a new entity: {\"':id/contributors/job_titles'\": {'ContributorJobTitle'}}"
+        },
+        {
+          "fixture": "new__new_route",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a new route with a new entity: {\"':id/contributors/job_titles'\": {'ContributorJobTitle'}}"
+        },
+        {
+          "fixture": "new__param_picks_entity",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "new__param_picks_entity",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "opt-in field: an optional parameter picks among ['ContributorWithJobTitle', 'UserBasic'] on ':id/contributors'"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "a new entity serves the existing endpoint: ['Contributor']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "a new entity serves the existing endpoint: ['Contributor']"
+        },
+        {
+          "fixture": "old__param_never_read",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "a new entity serves the existing endpoint: ['ContributorWithJobTitle']"
+        },
+        {
+          "fixture": "old__param_never_read",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "a new entity serves the existing endpoint: ['ContributorWithJobTitle']"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Ruby changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Ruby changed"
+        }
+      ]
+    }
+  },
+  "t05-gitlab-vue-i18n": {
+    "number": 5,
+    "role": "dropped",
+    "doc_set": "gitlab",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 34956,
+      "new_bytes": 37914,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 7
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Vue component changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Vue component changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no i18n key and no translation call in the template"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no i18n key and no translation call in the template"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a translation call in the template and no i18n key"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a translation call in the template and no i18n key"
+        },
+        {
+          "fixture": "new__s_call_attr",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a translation call in the template and no i18n key"
+        },
+        {
+          "fixture": "new__s_call_attr",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a translation call in the template and no i18n key"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the label goes through an i18n key"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the label goes through an i18n key"
+        },
+        {
+          "fixture": "old__options_attr",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the label goes through an i18n key"
+        },
+        {
+          "fixture": "old__options_attr",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the label goes through an i18n key"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Vue component changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Vue component changed"
+        }
+      ]
+    }
+  },
+  "t06-govuk-check-env-var": {
+    "number": 6,
+    "role": "dropped",
+    "doc_set": "govuk",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 5755,
+      "new_bytes": 6263,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 8
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no kubectl exec and no configuration read"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no kubectl exec and no configuration read"
+        },
+        {
+          "fixture": "neither__only_mentions",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no kubectl exec and no configuration read"
+        },
+        {
+          "fixture": "neither__only_mentions",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no kubectl exec and no configuration read"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__comment_says_exec",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__comment_says_exec",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__die_mentions_exec",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__die_mentions_exec",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__kubectl_get_jsonpath",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['kubectl get']"
+        },
+        {
+          "fixture": "new__kubectl_get_jsonpath",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['kubectl get']"
+        },
+        {
+          "fixture": "new__kubectl_get_only",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['kubectl get']"
+        },
+        {
+          "fixture": "new__kubectl_get_only",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['kubectl get']"
+        },
+        {
+          "fixture": "new__prints_a_warning",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__prints_a_warning",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__set_env_list",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['kubectl set env --list']"
+        },
+        {
+          "fixture": "new__set_env_list",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['kubectl set env --list']"
+        },
+        {
+          "fixture": "new__usage_heredoc_mentions_exec",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__usage_heredoc_mentions_exec",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['the values file']"
+        },
+        {
+          "fixture": "new__usage_variable_mentions_exec",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['helm get']"
+        },
+        {
+          "fixture": "new__usage_variable_mentions_exec",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "no kubectl exec, and it reads the configuration through ['helm get']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec"
+        },
+        {
+          "fixture": "old__after_a_get",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec, as well as ['kubectl get']"
+        },
+        {
+          "fixture": "old__after_a_get",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec, as well as ['kubectl get']"
+        },
+        {
+          "fixture": "old__array_kubectl",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec"
+        },
+        {
+          "fixture": "old__array_kubectl",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec"
+        },
+        {
+          "fixture": "old__both",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec, as well as ['the values file']"
+        },
+        {
+          "fixture": "old__both",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec, as well as ['the values file']"
+        },
+        {
+          "fixture": "old__shell",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec"
+        },
+        {
+          "fixture": "old__shell",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "reads the variable through kubectl exec"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t08-django-deprecation-warning": {
+    "number": 8,
+    "role": "dropped",
+    "doc_set": "django",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 22201,
+      "new_bytes": 22229,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 9
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "ast",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "names no versioned warning class; warnings named: ['RemovedInNextVersionWarning']"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "names no versioned warning class; warnings named: ['RemovedInNextVersionWarning']"
+        },
+        {
+          "fixture": "neither__both",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "names both kinds: ['RemovedInDjango2029Warning', 'RemovedInDjango71Warning']"
+        },
+        {
+          "fixture": "neither__both",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "names both kinds: ['RemovedInDjango2029Warning', 'RemovedInDjango71Warning']"
+        },
+        {
+          "fixture": "neither__plain",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "names no versioned warning class; warnings named: ['DeprecationWarning']"
+        },
+        {
+          "fixture": "neither__plain",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "names no versioned warning class; warnings named: ['DeprecationWarning']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjango2029Warning']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjango2029Warning']"
+        },
+        {
+          "fixture": "new__not_a_year",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjango7100Warning']"
+        },
+        {
+          "fixture": "new__not_a_year",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjango7100Warning']"
+        },
+        {
+          "fixture": "new__other_year",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjango2028Warning']"
+        },
+        {
+          "fixture": "new__other_year",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjango2028Warning']"
+        },
+        {
+          "fixture": "new__placeholder",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjangoXXXXWarning']"
+        },
+        {
+          "fixture": "new__placeholder",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "names ['RemovedInDjangoXXXXWarning']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjango71Warning']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjango71Warning']"
+        },
+        {
+          "fixture": "old__comment_says_new",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjango71Warning']"
+        },
+        {
+          "fixture": "old__comment_says_new",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjango71Warning']"
+        },
+        {
+          "fixture": "old__other_number",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjango70Warning']"
+        },
+        {
+          "fixture": "old__other_number",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjango70Warning']"
+        },
+        {
+          "fixture": "old__placeholder",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjangoXXWarning']"
+        },
+        {
+          "fixture": "old__placeholder",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "names ['RemovedInDjangoXXWarning']"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        }
+      ]
+    }
+  },
+  "t09-django-browser-tests": {
+    "number": 9,
+    "role": "scored",
+    "doc_set": "django",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 22600,
+      "new_bytes": 23091,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 9
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "ast",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no browser tool among ['TestCase', 'django.test']"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no browser tool among ['TestCase', 'django.test']"
+        },
+        {
+          "fixture": "neither__both",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "uses both: ['playwright.sync_api', 'sync_playwright', 'selenium.webdriver.common.by']"
+        },
+        {
+          "fixture": "neither__both",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "uses both: ['playwright.sync_api', 'sync_playwright', 'selenium.webdriver.common.by']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "uses ['PlaywrightTestCase', 'playwright_tests']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "uses ['PlaywrightTestCase', 'playwright_tests']"
+        },
+        {
+          "fixture": "new__comment_says_selenium",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "uses ['PlaywrightTestCase', 'playwright_tests']"
+        },
+        {
+          "fixture": "new__comment_says_selenium",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "uses ['PlaywrightTestCase', 'playwright_tests']"
+        },
+        {
+          "fixture": "new__sync_api",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "uses ['playwright.sync_api', 'sync_playwright']"
+        },
+        {
+          "fixture": "new__sync_api",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "uses ['playwright.sync_api', 'sync_playwright']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "uses ['AdminSeleniumTestCase', 'selenium.webdriver.common.by']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "uses ['AdminSeleniumTestCase', 'selenium.webdriver.common.by']"
+        },
+        {
+          "fixture": "old__base_only",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "uses ['SeleniumTestCase', 'django.test.selenium']"
+        },
+        {
+          "fixture": "old__base_only",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "uses ['SeleniumTestCase', 'django.test.selenium']"
+        },
+        {
+          "fixture": "old__live_server",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "uses ['selenium.webdriver.firefox.webdriver']"
+        },
+        {
+          "fixture": "old__live_server",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "uses ['selenium.webdriver.firefox.webdriver']"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no Python changed"
+        }
+      ]
+    }
+  },
+  "t10-grpc-principal-name": {
+    "number": 10,
+    "role": "dropped",
+    "doc_set": "grpc",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 13111,
+      "new_bytes": 12914,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 9
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "dataclasses",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys",
+        "types"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined__stub_commented",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "the changed stub still raises NotImplementedError"
+        },
+        {
+          "fixture": "declined__stub_commented",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "the changed stub still raises NotImplementedError"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "wrong where both revisions agree: ['nothing matches', 'no certificate, other matcher']; answers {'uri fails, dns matches': True, 'uri fails, subject matches': True, 'dns fails, subject matches': True}"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "wrong where both revisions agree: ['nothing matches', 'no certificate, other matcher']; answers {'uri fails, dns matches': True, 'uri fails, subject matches': True, 'dns fails, subject matches': True}"
+        },
+        {
+          "fixture": "neither__mixed",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "mixed: {'uri fails, dns matches': True, 'uri fails, subject matches': False, 'dns fails, subject matches': False}"
+        },
+        {
+          "fixture": "neither__mixed",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "mixed: {'uri fails, dns matches': True, 'uri fails, subject matches': False, 'dns fails, subject matches': False}"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "any match counts: {'uri fails, dns matches': True, 'uri fails, subject matches': True, 'dns fails, subject matches': True}"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "any match counts: {'uri fails, dns matches': True, 'uri fails, subject matches': True, 'dns fails, subject matches': True}"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the fallback order: {'uri fails, dns matches': False, 'uri fails, subject matches': False, 'dns fails, subject matches': False}"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "the fallback order: {'uri fails, dns matches': False, 'uri fails, subject matches': False, 'dns fails, subject matches': False}"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t12-grpc-max-ejection": {
+    "number": 12,
+    "role": "dropped",
+    "doc_set": "grpc",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 25369,
+      "new_bytes": 25443,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 9
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "answers {'limit 5, three failing': 3, 'limit 25, five failing': 5, 'limit 0, three failing': 3}"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "answers {'limit 5, three failing': 3, 'limit 25, five failing': 5, 'limit 0, three failing': 3}"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "never above the limit: {'limit 5, three failing': 0, 'limit 25, five failing': 2, 'limit 0, three failing': 0}"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "never above the limit: {'limit 5, three failing': 0, 'limit 25, five failing': 2, 'limit 0, three failing': 0}"
+        },
+        {
+          "fixture": "new__floor",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "never above the limit: {'limit 5, three failing': 0, 'limit 25, five failing': 2, 'limit 0, three failing': 0}"
+        },
+        {
+          "fixture": "new__floor",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "never above the limit: {'limit 5, three failing': 0, 'limit 25, five failing': 2, 'limit 0, three failing': 0}"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ejects past a small limit: {'limit 5, three failing': 1, 'limit 25, five failing': 3, 'limit 0, three failing': 0}"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ejects past a small limit: {'limit 5, three failing': 1, 'limit 25, five failing': 3, 'limit 0, three failing': 0}"
+        },
+        {
+          "fixture": "old__at_least_one",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ejects past a small limit: {'limit 5, three failing': 1, 'limit 25, five failing': 2, 'limit 0, three failing': 1}"
+        },
+        {
+          "fixture": "old__at_least_one",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ejects past a small limit: {'limit 5, three failing': 1, 'limit 25, five failing': 2, 'limit 0, three failing': 1}"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t16-rustforge-rollup-approval": {
+    "number": 16,
+    "role": "scored",
+    "doc_set": "rustforge",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 6764,
+      "new_bytes": 6770,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 5
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@bors r+'"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@bors r+'"
+        },
+        {
+          "fixture": "neither__other_bot",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@rustbot approve'"
+        },
+        {
+          "fixture": "neither__other_bot",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@rustbot approve'"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '@bors r+ p=5 force'"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '@bors r+ p=5 force'"
+        },
+        {
+          "fixture": "new__order",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '@bors r+ force p=5'"
+        },
+        {
+          "fixture": "new__order",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '@bors r+ force p=5'"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "returned '@bors r+ p=5'"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "returned '@bors r+ p=5'"
+        },
+        {
+          "fixture": "old__rollup_never",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "returned '@bors r+ rollup=never p=5'"
+        },
+        {
+          "fixture": "old__rollup_never",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "returned '@bors r+ rollup=never p=5'"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t18-otel-peer-service": {
+    "number": 18,
+    "role": "scored",
+    "doc_set": "otel",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 8281,
+      "new_bytes": 8471,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 6
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "ast",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['peer.service']: legacy peer.service"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['peer.service']: legacy peer.service"
+        },
+        {
+          "fixture": "neither__dual",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['server.service.name', 'service.peer.name']: sets both keys"
+        },
+        {
+          "fixture": "neither__dual",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['server.service.name', 'service.peer.name']: sets both keys"
+        },
+        {
+          "fixture": "neither__wrong_side",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['client.service.name']"
+        },
+        {
+          "fixture": "neither__wrong_side",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['client.service.name']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['server.service.name', 'server.service.namespace']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['server.service.name', 'server.service.namespace']"
+        },
+        {
+          "fixture": "new__is_recording_fstring",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['server.service.name', 'server.service.namespace']"
+        },
+        {
+          "fixture": "new__is_recording_fstring",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['server.service.name', 'server.service.namespace']"
+        },
+        {
+          "fixture": "new__raises_after_setting",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "annotate_client_span raised ValueError, so read the source: keys ['server.service.name']"
+        },
+        {
+          "fixture": "new__raises_after_setting",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "annotate_client_span raised ValueError, so read the source: keys ['server.service.name']"
+        },
+        {
+          "fixture": "new__semconv_constant",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "annotate_client_span raised ModuleNotFoundError, so read the source: keys ['server.service.name']"
+        },
+        {
+          "fixture": "new__semconv_constant",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "annotate_client_span raised ModuleNotFoundError, so read the source: keys ['server.service.name']"
+        },
+        {
+          "fixture": "new__with_legacy",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['peer.service', 'server.service.name']"
+        },
+        {
+          "fixture": "new__with_legacy",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['peer.service', 'server.service.name']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['service.peer.name', 'service.peer.namespace']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['service.peer.name', 'service.peer.namespace']"
+        },
+        {
+          "fixture": "old__semconv_constant",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "annotate_client_span raised ModuleNotFoundError, so read the source: keys ['service.peer.name']"
+        },
+        {
+          "fixture": "old__semconv_constant",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "annotate_client_span raised ModuleNotFoundError, so read the source: keys ['service.peer.name']"
+        },
+        {
+          "fixture": "old__with_legacy",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['peer.service', 'service.peer.name']"
+        },
+        {
+          "fixture": "old__with_legacy",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "ran annotate_client_span: keys ['peer.service', 'service.peer.name']"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t20-rustforge-dev-desktop-access": {
+    "number": 20,
+    "role": "scored",
+    "doc_set": "rustforge",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 10004,
+      "new_bytes": 10190,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 5
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "issue to rust-lang/infra-team"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "issue to rust-lang/infra-team"
+        },
+        {
+          "fixture": "neither__mixed",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "email to rust-lang/team"
+        },
+        {
+          "fixture": "neither__mixed",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "email to rust-lang/team"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a pull request to rust-lang/team"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a pull request to rust-lang/team"
+        },
+        {
+          "fixture": "new__url",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a pull request to https://github.com/rust-lang/team/pulls"
+        },
+        {
+          "fixture": "new__url",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "a pull request to https://github.com/rust-lang/team/pulls"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "an email to infra@rust-lang.org"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "an email to infra@rust-lang.org"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t21-rustforge-stable-priority": {
+    "number": 21,
+    "role": "scored",
+    "doc_set": "rustforge",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 8307,
+      "new_bytes": 8307,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 5
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@bors r-'"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@bors r-'"
+        },
+        {
+          "fixture": "neither__other_bot",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@rustbot retry'"
+        },
+        {
+          "fixture": "neither__other_bot",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "returned '@rustbot retry'"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '@bors yield'"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '@bors yield'"
+        },
+        {
+          "fixture": "new__note",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '`@bors yield`\\nGiving way to the stable release.'"
+        },
+        {
+          "fixture": "new__note",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "returned '`@bors yield`\\nGiving way to the stable release.'"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "returned '@bors retry'"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "returned '@bors retry'"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t22-otel-rpc-status-code": {
+    "number": 22,
+    "role": "scored",
+    "doc_set": "otel",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 17047,
+      "new_bytes": 17237,
+      "banner_words_in_first_30_lines": {
+        "old": [
+          "deprecated"
+        ],
+        "new": [
+          "deprecated"
+        ]
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 4
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "keys ['rpc.grpc.status_code']"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "keys ['rpc.grpc.status_code']"
+        },
+        {
+          "fixture": "neither__both",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "keys ['rpc.response.status_code', 'rpc.status_code']: sets both keys"
+        },
+        {
+          "fixture": "neither__both",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "keys ['rpc.response.status_code', 'rpc.status_code']: sets both keys"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "keys ['rpc.status_code']"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "keys ['rpc.status_code']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "keys ['rpc.response.status_code']"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "keys ['rpc.response.status_code']"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t23-otel-exception-record": {
+    "number": 23,
+    "role": "dropped",
+    "doc_set": "otel",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 5451,
+      "new_bytes": 5985,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 6
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "span events [], 0 log records"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "span events [], 0 log records"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "span events [], 1 log records"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "span events [], 1 log records"
+        },
+        {
+          "fixture": "new__status",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "span events [], 1 log records"
+        },
+        {
+          "fixture": "new__status",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "span events [], 1 log records"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "span events ['record_exception'], 0 log records"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "span events ['record_exception'], 0 log records"
+        },
+        {
+          "fixture": "old__add_event",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "span events ['exception'], 0 log records"
+        },
+        {
+          "fixture": "old__add_event",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "span events ['exception'], 0 log records"
+        },
+        {
+          "fixture": "old__and_log",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "span events ['record_exception'], 1 log records"
+        },
+        {
+          "fixture": "old__and_log",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "span events ['record_exception'], 1 log records"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  },
+  "t24-django-release-key": {
+    "number": 24,
+    "role": "scored",
+    "doc_set": "django",
+    "reversal": {
+      "confirmed": true,
+      "problems": [],
+      "old_bytes": 31431,
+      "new_bytes": 31323,
+      "banner_words_in_first_30_lines": {
+        "old": [],
+        "new": []
+      }
+    },
+    "leak": {
+      "clean": true,
+      "hits": [],
+      "tokens_checked": 6
+    },
+    "assertion_imports": {
+      "standard_library_only": true,
+      "outside": [],
+      "imports": [
+        "__future__",
+        "assertlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    "fixtures": {
+      "missing_outcomes": [],
+      "all_ok": true,
+      "rows": [
+        {
+          "fixture": "declined",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "declined",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": false,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no keyserver and no GitHub key import"
+        },
+        {
+          "fixture": "neither",
+          "with_documents": true,
+          "expected": "neither",
+          "outcome": "neither",
+          "ok": true,
+          "detail": "no keyserver and no GitHub key import"
+        },
+        {
+          "fixture": "new",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "imports the key from GitHub"
+        },
+        {
+          "fixture": "new",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "imports the key from GitHub"
+        },
+        {
+          "fixture": "new__continued",
+          "with_documents": false,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "imports the key from GitHub"
+        },
+        {
+          "fixture": "new__continued",
+          "with_documents": true,
+          "expected": "new",
+          "outcome": "new",
+          "ok": true,
+          "detail": "imports the key from GitHub"
+        },
+        {
+          "fixture": "old",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "fetches the key from a keyserver"
+        },
+        {
+          "fixture": "old",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "fetches the key from a keyserver"
+        },
+        {
+          "fixture": "old__fallback",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "fetches the key from a keyserver"
+        },
+        {
+          "fixture": "old__fallback",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "fetches the key from a keyserver"
+        },
+        {
+          "fixture": "old__other_server",
+          "with_documents": false,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "fetches the key from a keyserver"
+        },
+        {
+          "fixture": "old__other_server",
+          "with_documents": true,
+          "expected": "old",
+          "outcome": "old",
+          "ok": true,
+          "detail": "fetches the key from a keyserver"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": false,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        },
+        {
+          "fixture": "untouched",
+          "with_documents": true,
+          "expected": "declined",
+          "outcome": "declined",
+          "ok": true,
+          "detail": "no code changed"
+        }
+      ]
+    }
+  }
+}

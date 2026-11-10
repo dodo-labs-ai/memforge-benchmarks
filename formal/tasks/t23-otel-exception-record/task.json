@@ -1,0 +1,70 @@
+{
+ "id": "t23-otel-exception-record",
+ "number": 23,
+ "role": "dropped",
+ "doc_set": "otel",
+ "prompt": "Implement `record_operation_error(span, logger, error)` in `telemetry/errors.py`: what instrumentation records about `error` when an instrumented operation ends with it, following our semantic conventions. `span` is an OpenTelemetry span and `logger` a standard library logger. Keep the change small and tell me briefly what you did.",
+ "decision": "The guidance allowed recording an exception as a span event or a log record. It now says to record it as a log record, and span events for exceptions are deprecated.",
+ "difference": "`span.record_exception` or a span event (old) against a log record and no span event (new). Setting the span's status or `error.type` does not change the outcome.",
+ "revisions": {
+  "old": {
+   "commit": "2e8f54721219ecb8d6409aa05d28dea37c59d2d4",
+   "path": "docs/general/recording-errors.md"
+  },
+  "new": {
+   "commit": "75cc19fd7e2c1e3cbf4118c9193d60ce861403c3",
+   "path": "docs/general/recording-errors.md"
+  }
+ },
+ "neutral_names": [
+  "general/failure-capture.md",
+  "general/failure-reporting.md"
+ ],
+ "markers": {
+  "old": "this exception as a [span event]",
+  "new": "instrumentation SHOULD record this exception as a [log record]"
+ },
+ "reversal_check": {
+  "old_has": [
+   "this exception as a [span event]"
+  ],
+  "old_lacks": [
+   "instrumentation SHOULD record this exception as a [log record]"
+  ],
+  "new_has": [
+   "instrumentation SHOULD record this exception as a [log record]"
+  ],
+  "new_lacks": [
+   "this exception as a [span event]"
+  ]
+ },
+ "leak_tokens": [
+  "record_exception",
+  "recordException",
+  "log record",
+  "span event"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "records an exception as a span event",
+    "regex": "exception as a \\[span event\\]"
+   }
+  ],
+  "new": [
+   {
+    "label": "records an exception as a log record",
+    "regex": "record this exception as a \\[log record\\]"
+   }
+  ]
+ },
+ "weak_points": [
+  "The old revision also allows a log record, so `old` is defined as using a span event at all, and a run that reads the old revision may still reach `new`.",
+  "The signature passes both a span and a logger, so it hints at neither route alone."
+ ],
+ "separation": {
+  "rating": "one way",
+  "why": "A span event comes only from the old guidance. A log record alone is allowed by both, so `new` is the stronger reading."
+ },
+ "dropped_because": "The check could not score any run: the runs import a package its environment lacks."
+}

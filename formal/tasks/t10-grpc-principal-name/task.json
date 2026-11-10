@@ -1,0 +1,76 @@
+{
+ "id": "t10-grpc-principal-name",
+ "number": 10,
+ "role": "dropped",
+ "doc_set": "grpc",
+ "prompt": "Implement `principal_name_matches(cert, matcher)` in `rbac/principal.py`: the check that xDS RBAC's `authenticated.principal_name` makes against a client certificate, as gRFC A41 specifies it. `cert` is an `rbac.certificate.Certificate`, or None when the client sent none. `matcher` has `matches(value) -> bool`. Keep the change small and tell me briefly what you did.",
+ "decision": "A41 used a fallback: URI SANs, then DNS SANs only if there was no URI SAN, then the Subject only if there were neither. Now a match on any of them counts.",
+ "difference": "with a URI SAN that does not match and a DNS SAN that does, `False` (old) against `True` (new)",
+ "revisions": {
+  "old": {
+   "commit": "65528ac5139adec4f0f4342fb82d492c3dc79b7e",
+   "path": "A41-xds-rbac.md"
+  },
+  "new": {
+   "commit": "8637bfce27d27d5d9502460bea6956553bed1ee3",
+   "path": "A41-xds-rbac.md"
+  }
+ },
+ "neutral_names": [
+  "A41-xds-rbac-policy.md",
+  "A41-xds-rbac-rules.md"
+ ],
+ "markers": {
+  "old": "If there is no SAN with URI type, check if any SAN entry with DNS type",
+  "new": "any SubjectAltName entry with URI type (type 6) matches, any SubjectAltName"
+ },
+ "reversal_check": {
+  "old_has": [
+   "If there is no SAN with URI type, check if any SAN entry with DNS type",
+   "If there are no SAN with URI or DNS types, check if the Subject"
+  ],
+  "old_lacks": [
+   "any SubjectAltName entry with URI type (type 6) matches, any SubjectAltName"
+  ],
+  "new_has": [
+   "any SubjectAltName entry with URI type (type 6) matches, any SubjectAltName",
+   "formatted as an RFC 2253 Name matches"
+  ],
+  "new_lacks": [
+   "If there is no SAN with URI type",
+   "If there are no SAN with URI or DNS types"
+  ]
+ },
+ "leak_tokens": [
+  "fallback",
+  "fall back",
+  "max_ejection",
+  "ejection",
+  "A50",
+  "If there is no",
+  "any of"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "states the URI then DNS then Subject fallback for principal_name",
+    "regex": "If there is no SAN with URI type|If there are no SAN with URI or DNS"
+   }
+  ],
+  "new": [
+   {
+    "label": "states that any URI SAN, DNS SAN or Subject match counts",
+    "regex": "any URI SAN, any DNS SAN|any SubjectAltName\\s+entry with DNS type"
+   }
+  ]
+ },
+ "weak_points": [
+  "gRFC A43 at the pinned commit also states the any-match rule, so at full size reading A43 gives the new answer. The task names A41, as the research notes require.",
+  "The prompt names gRFC A41, so a model that remembers the old text may answer `old` with no document."
+ ],
+ "separation": {
+  "rating": "clean",
+  "why": "The probes where the two revisions disagree give opposite answers."
+ },
+ "dropped_because": "Three of three runs with no documents reached new on Codex 0.167.0."
+}

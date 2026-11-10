@@ -1,0 +1,86 @@
+{
+  "id": "t05-gitlab-vue-i18n",
+  "number": 5,
+  "role": "dropped",
+  "doc_set": "gitlab",
+  "prompt": "Add `app/assets/javascripts/plan/components/archive_plan_button.vue`: a `GlButton` that emits `archive` when clicked, labelled \"Archive plan\", with the same text as its `aria-label`. The text must be translatable, in the `Plan` namespace, following our guidance on externalizing strings. This is a trimmed extract that cannot be run here. Keep the change small and tell me briefly what you did.",
+  "decision": "The externalization guide offered `$options.i18n` as the way to share a string in a Vue single-file component, with a label and aria-label as its example. It now says to put translation calls in the template, that two inline calls are fine, and to move a string only for a stated reason.",
+  "difference": "the text goes through `$options.i18n`, as the old revision's own example does for a label and aria-label (old), against translation calls in `<template>` with no `i18n` key (new)",
+  "revisions": {
+    "old": {
+      "commit": "fb1119825ee1a88681e4b28472199a191e25f24c",
+      "path": "doc/development/i18n/externalization.md"
+    },
+    "new": {
+      "commit": "72014a31166b4acc88b3364f532b54c479ec19dd",
+      "path": "doc/development/i18n/externalization.md"
+    }
+  },
+  "neutral_names": [
+    "i18n/externalizing_strings.md",
+    "i18n/string_externalization.md"
+  ],
+  "markers": {
+    "old": "you can define an `i18n` property in the component's `$options` object",
+    "new": "##### Vue single-file components"
+  },
+  "reversal_check": {
+    "old_has": [
+      "you can define an `i18n` property in the component's `$options` object",
+      "{{ $options.i18n.buttonLabel }}"
+    ],
+    "old_lacks": [
+      "##### Vue single-file components",
+      "put the translation call directly in the `<template>`"
+    ],
+    "new_has": [
+      "##### Vue single-file components",
+      "put the translation call directly in the `<template>`",
+      "// Bad. A single-use string moved away from where it is rendered."
+    ],
+    "new_lacks": [
+      "you can define an `i18n` property in the component's `$options` object"
+    ]
+  },
+  "leak_tokens": [
+    "$options",
+    "i18n:",
+    "feature-bounded",
+    "if:",
+    "optional :"
+  ],
+  "contamination": {
+    "old": [
+      {
+        "label": "shows `$options.i18n` in a Vue example",
+        "regex": "\\$options\\.i18n"
+      }
+    ],
+    "new": [
+      {
+        "label": "states that translation calls go in the template",
+        "regex": "[Pp]ut translation calls directly in the `<template>`|put the translation call directly in the `<template>`"
+      },
+      {
+        "label": "shows a translation call in a template",
+        "regex": "\\{\\{ s?__\\("
+      }
+    ],
+    "reviewed_not_stating": {
+      "old": {
+        "doc/development/fe_guide/style/vue.md": "shows the pattern as the bad example; it states the new rule"
+      }
+    }
+  },
+  "weak_points": [
+    "The old revision already says `Preferably, use inline translations over variables` and shows inline calls in its Vue files section. For a single-use string, the research notes' sketch, the old revision would itself lead to an inline call and the two revisions would not separate. So the task uses a string used twice, which is the old revision's own `$options.i18n` example.",
+    "Even so, a reader of the old revision can still write two inline calls, because it also says not to use DRY as the only driver, so `new` does not prove the new revision reached the agent.",
+    "A reader of the new revision can still extract the string, because it allows that when a string `must stay identical across several usages`, so `old` does not prove the agent missed the new revision.",
+    "`neither` covers a computed property or a module constant."
+  ],
+  "separation": {
+    "rating": "weak",
+    "why": "A change of emphasis more than a reversal: the old revision already prefers inline calls. Neither `new` nor `old` proves which revision the agent followed. This is the first task to replace if a reserve is needed."
+  },
+  "dropped_reason": "A change of emphasis, not a reversal. The old revision already prefers inline translations and the new revision allows `$options.i18n` for a string that must stay identical across several usages, which is the shape this prompt has. So a faithful reader of either revision can score either outcome, and `new` would not show that the new information arrived. Dropped before the closed-book screen, on review of the revisions, not on any run's result."
+}

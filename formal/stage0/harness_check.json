@@ -1,0 +1,248 @@
+{
+  "stand_in_for_the_model": "loopback only; no model call was made",
+  "reasoning_effort": {
+    "bundled_catalog_default_for_model": "medium",
+    "in_a_request_without_the_pin": "medium",
+    "in_a_request_with_the_pin": "medium",
+    "in_the_session_record_with_the_pin": "medium",
+    "pinned_value": "medium"
+  },
+  "timezone": {
+    "pinned": "UTC",
+    "told_to_the_model": "GMT",
+    "told_to_the_model_under_the_pilot_settings": "Asia/Shanghai"
+  },
+  "shell_under_formal_settings": {
+    "git": "/Library/Developer/CommandLineTools/usr/bin/git",
+    "git_version_line": "git version 2.50.1 (Apple Git-155)",
+    "python": "/opt/homebrew/opt/python@3.15/libexec/bin/python",
+    "python3": "/opt/homebrew/bin/python3",
+    "python_versions": [
+      "3.15.2",
+      "3.15.2"
+    ],
+    "python_and_python3_same_interpreter": true,
+    "tz": "UTC",
+    "here_documents_work": true,
+    "machine_java_home_visible": false,
+    "wall_time": "0.2",
+    "xcrun_noise_lines": 0,
+    "operation_not_permitted_lines": 0
+  },
+  "shell_under_pilot_settings": {
+    "git": null,
+    "git_version_line": null,
+    "python": "",
+    "python3": "/usr/bin/python3",
+    "python_versions": [],
+    "python_and_python3_same_interpreter": false,
+    "tz": "",
+    "here_documents_work": false,
+    "machine_java_home_visible": false,
+    "wall_time": "10.2",
+    "xcrun_noise_lines": 2,
+    "operation_not_permitted_lines": 2
+  },
+  "web_search_in_the_tools_offered": false,
+  "first_prompt": {
+    "names_the_developer_home": false,
+    "names_the_developer_account": false,
+    "names_memforge": false,
+    "holds_a_docs_index": false,
+    "offers_memory_tools": false
+  },
+  "background_plugin_sync": {
+    "traces_with_the_plugin_feature_on": [
+      "git-UMRNjp",
+      "plugins.sync.lock"
+    ],
+    "traces_with_it_off": [],
+    "first_prompt_unchanged_by_turning_it_off": true
+  },
+  "requests_reached": [
+    "POST /v1/responses"
+  ],
+  "agents_md_reaching_the_prompt_by_size_in_bytes": {
+    "30000": {
+      "lines_written": 751,
+      "lines_in_first_prompt": 751,
+      "last_line_written": "00750",
+      "last_line_in_first_prompt": "00750",
+      "reached_the_prompt_whole": true
+    },
+    "40000": {
+      "lines_written": 1001,
+      "lines_in_first_prompt": 840,
+      "last_line_written": "01000",
+      "last_line_in_first_prompt": "00839",
+      "reached_the_prompt_whole": false
+    }
+  },
+  "permission_profile": {
+    "refused": {
+      "developer_codex_config": true,
+      "developer_home": true,
+      "this_repository": true,
+      "fetched_documents": true,
+      "work_root": true,
+      "shared_tmp": true,
+      "var_tmp": true,
+      "outside_write": true,
+      "home_write": true
+    },
+    "allowed": {
+      "repo_write": true,
+      "tmp_write": true,
+      "git_status": true,
+      "python": true,
+      "python3": true,
+      "grep_repo": true
+    },
+    "network_blocked": {
+      "public_internet": true,
+      "loopback": true
+    }
+  },
+  "full_run_path_by_fixture": {
+    "new": {
+      "exit_code": 0,
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "statuses": [
+        "completed",
+        "completed",
+        "completed"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "xcrun_noise_lines": 0,
+      "violations": [],
+      "screen_result": "already_known",
+      "egress_polls": [
+        2,
+        2,
+        2
+      ],
+      "egress_other_hosts": [],
+      "audit": "replayed 3 diffs, 0 disagreements"
+    },
+    "old": {
+      "exit_code": 0,
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "statuses": [
+        "completed",
+        "completed",
+        "completed"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "xcrun_noise_lines": 0,
+      "violations": [],
+      "screen_result": "kept",
+      "egress_polls": [
+        2,
+        2,
+        2
+      ],
+      "egress_other_hosts": [],
+      "audit": "replayed 3 diffs, 0 disagreements"
+    },
+    "neither": {
+      "exit_code": 0,
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "statuses": [
+        "completed",
+        "completed",
+        "completed"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "xcrun_noise_lines": 0,
+      "violations": [],
+      "screen_result": "kept",
+      "egress_polls": [
+        2,
+        2,
+        2
+      ],
+      "egress_other_hosts": [],
+      "audit": "replayed 3 diffs, 0 disagreements"
+    },
+    "declined": {
+      "exit_code": 0,
+      "outcomes": [
+        "declined",
+        "declined",
+        "declined"
+      ],
+      "statuses": [
+        "completed",
+        "completed",
+        "completed"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "xcrun_noise_lines": 0,
+      "violations": [],
+      "screen_result": "inconclusive",
+      "egress_polls": [
+        2,
+        2,
+        2
+      ],
+      "egress_other_hosts": [],
+      "audit": "replayed 3 diffs, 0 disagreements"
+    }
+  },
+  "unfinished_runs": {
+    "workspace_untouched": {
+      "attempts": 6,
+      "statuses": [
+        "timeout"
+      ],
+      "outcomes": [
+        "failed"
+      ],
+      "workspace_outcomes": [
+        "declined"
+      ],
+      "failed": 3,
+      "new": 0,
+      "declined": 0,
+      "new_rate": null,
+      "screen_result": "incomplete"
+    },
+    "workspace_already_new": {
+      "attempts": 6,
+      "statuses": [
+        "timeout"
+      ],
+      "outcomes": [
+        "failed"
+      ],
+      "workspace_outcomes": [
+        "new"
+      ],
+      "failed": 3,
+      "new": 0,
+      "declined": 0,
+      "new_rate": null,
+      "screen_result": "incomplete"
+    }
+  }
+}

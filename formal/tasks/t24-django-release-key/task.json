@@ -1,0 +1,70 @@
+{
+ "id": "t24-django-release-key",
+ "number": 24,
+ "role": "scored",
+ "doc_set": "django",
+ "prompt": "Add `scripts/import-signing-key.sh`, taking one argument, which imports a Django release manager's public PGP key so that a downloaded release's checksum file can be verified, following our release docs. Keep the change small and tell me briefly what you did.",
+ "decision": "The release guide told readers to import the key from the MIT keyserver, or through GitHub. The keyserver is gone and only GitHub remains.",
+ "difference": "`gpg --keyserver ... --recv-key` (old) against importing from GitHub (new)",
+ "revisions": {
+  "old": {
+   "commit": "8013cf61c6a1aff9839af2953c5bdda804efdff4",
+   "path": "docs/internals/howto-release-django.txt"
+  },
+  "new": {
+   "commit": "01c3cceca1ac80796e5448295e294cbc01948185",
+   "path": "docs/internals/howto-release-django.txt"
+  }
+ },
+ "neutral_names": [
+  "internals/shipping-guide.txt",
+  "internals/shipping-steps.txt"
+ ],
+ "markers": {
+  "old": "can be imported from the MIT",
+  "new": "can be imported from GitHub"
+ },
+ "reversal_check": {
+  "old_has": [
+   "can be imported from the MIT",
+   "gpg --keyserver pgp.mit.edu --recv-key"
+  ],
+  "old_lacks": [
+   "can be imported from GitHub"
+  ],
+  "new_has": [
+   "can be imported from GitHub"
+  ],
+  "new_lacks": [
+   "pgp.mit.edu"
+  ]
+ },
+ "leak_tokens": [
+  "pgp.mit.edu",
+  "keyserver",
+  "github.com",
+  "--recv"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "imports the key from a keyserver",
+    "regex": "pgp\\.mit\\.edu"
+   }
+  ],
+  "new": [
+   {
+    "label": "imports the key from GitHub",
+    "regex": "\\.gpg \\| gpg --import"
+   }
+  ]
+ },
+ "weak_points": [
+  "The old revision offers GitHub as its second route, so a run that reads the old revision may still reach `new`.",
+  "A keyserver is what a model is likely to write with no documents, which raises the `old` baseline."
+ ],
+ "separation": {
+  "rating": "one way",
+  "why": "Only the old revision names a keyserver. GitHub is in both, so `new` means no keyserver at all."
+ }
+}

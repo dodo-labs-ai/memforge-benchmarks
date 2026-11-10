@@ -1,0 +1,67 @@
+{
+ "id": "t22-otel-rpc-status-code",
+ "number": 22,
+ "role": "scored",
+ "doc_set": "otel",
+ "prompt": "Implement `annotate_rpc_result(span, code)` in `telemetry/span_attributes.py`. A span for a finished RPC should record its status code, for example `NOT_FOUND`, using the attribute key our semantic conventions define. Keep the change small and tell me briefly what you did.",
+ "decision": "The attribute for an RPC's status code was renamed from `rpc.response.status_code` to `rpc.status_code`.",
+ "difference": "`rpc.response.status_code` (old) against `rpc.status_code` (new). System-specific keys such as `rpc.grpc.status_code` count as `neither`.",
+ "revisions": {
+  "old": {
+   "commit": "b69f9c0f607656c3d17589f7ecdc0be1daefefd6",
+   "path": "docs/registry/attributes/rpc.md"
+  },
+  "new": {
+   "commit": "705afdd4f746de6c1e0c92b8d9ead587805d82b9",
+   "path": "docs/registry/attributes/rpc.md"
+  }
+ },
+ "neutral_names": [
+  "registry/attributes/remote-call.md",
+  "registry/attributes/remote-procedure.md"
+ ],
+ "markers": {
+  "old": "**[4] `rpc.response.status_code`:**",
+  "new": "**[4] `rpc.status_code`:**"
+ },
+ "reversal_check": {
+  "old_has": [
+   "**[4] `rpc.response.status_code`:**"
+  ],
+  "old_lacks": [
+   "`rpc.status_code`"
+  ],
+  "new_has": [
+   "**[4] `rpc.status_code`:**"
+  ],
+  "new_lacks": [
+   "**[4] `rpc.response.status_code`:**"
+  ]
+ },
+ "leak_tokens": [
+  "rpc.status_code",
+  "rpc.response"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "names rpc.response.status_code",
+    "regex": "rpc\\.response\\.status_code"
+   }
+  ],
+  "new": [
+   {
+    "label": "names rpc.status_code",
+    "regex": "rpc\\.status_code"
+   }
+  ]
+ },
+ "weak_points": [
+  "The new revision lists the old key as Deprecated, so a run that opens both can tell which is newer without any time or relation signal.",
+  "At large size other RPC documents name the current key, as t18's do."
+ ],
+ "separation": {
+  "rating": "clean, but a weak test of staleness",
+  "why": "Each revision gives one key, and the new revision's own Deprecated row reveals the order."
+ }
+}

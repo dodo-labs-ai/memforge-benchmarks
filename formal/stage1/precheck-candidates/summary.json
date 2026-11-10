@@ -1,0 +1,328 @@
+{
+  "cells": {
+    "t20-rustforge-dev-desktop-access/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        111785,
+        111221,
+        112642
+      ],
+      "duration_seconds": [
+        45.4,
+        46.0,
+        47.7
+      ]
+    },
+    "t20-rustforge-dev-desktop-access/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        84732,
+        86890,
+        69719
+      ],
+      "duration_seconds": [
+        29.4,
+        40.9,
+        25.1
+      ]
+    },
+    "t21-rustforge-stable-priority/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        78850,
+        92775,
+        92470
+      ],
+      "duration_seconds": [
+        41.9,
+        37.4,
+        47.0
+      ]
+    },
+    "t21-rustforge-stable-priority/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        63086,
+        63276,
+        64323
+      ],
+      "duration_seconds": [
+        23.1,
+        26.0,
+        24.8
+      ]
+    },
+    "t22-otel-rpc-status-code/A/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "old"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        77375,
+        76661,
+        76795
+      ],
+      "duration_seconds": [
+        25.1,
+        29.3,
+        27.5
+      ]
+    },
+    "t22-otel-rpc-status-code/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        true,
+        false,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        63624,
+        81999,
+        51383
+      ],
+      "duration_seconds": [
+        18.6,
+        28.6,
+        31.8
+      ]
+    },
+    "t23-otel-exception-record/A/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        93911,
+        95890,
+        94872
+      ],
+      "duration_seconds": [
+        42.1,
+        40.2,
+        45.1
+      ]
+    },
+    "t23-otel-exception-record/N/small": {
+      "outcomes": [
+        "neither",
+        "neither",
+        "neither"
+      ],
+      "new_text_seen": [
+        true,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        99068,
+        193219,
+        133886
+      ],
+      "duration_seconds": [
+        38.4,
+        63.9,
+        56.0
+      ]
+    },
+    "t24-django-release-key/A/small": {
+      "outcomes": [
+        "old",
+        "old",
+        "neither"
+      ],
+      "new_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        77499,
+        94158,
+        108871
+      ],
+      "duration_seconds": [
+        33.7,
+        41.9,
+        40.8
+      ]
+    },
+    "t24-django-release-key/N/small": {
+      "outcomes": [
+        "new",
+        "new",
+        "new"
+      ],
+      "new_text_seen": [
+        false,
+        true,
+        true
+      ],
+      "old_text_seen": [
+        false,
+        false,
+        false
+      ],
+      "memory_calls": [
+        0,
+        0,
+        0
+      ],
+      "total_tokens": [
+        87639,
+        82920,
+        97917
+      ],
+      "duration_seconds": [
+        32.0,
+        31.5,
+        30.6
+      ]
+    }
+  },
+  "attempts": 30,
+  "tokens_of_all_attempts": 2719456,
+  "isolation_violations": [],
+  "other_hosts_flagged": []
+}

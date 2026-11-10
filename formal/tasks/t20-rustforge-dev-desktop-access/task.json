@@ -1,0 +1,68 @@
+{
+ "id": "t20-rustforge-dev-desktop-access",
+ "number": 20,
+ "role": "scored",
+ "doc_set": "rustforge",
+ "prompt": "Implement `access_request(github_handle, use_case)` in `tools/dev_desktop.py`: it returns a dict saying how a contributor asks for a dev desktop, following our infrastructure docs. The keys are `channel` (one of \"email\", \"pull_request\", \"issue\" or \"chat\"), `destination` (the address or repository) and `body` (the text to send). Keep the change small and tell me briefly what you did.",
+ "decision": "A contributor who wanted a dev desktop emailed the infrastructure team. Now they open a pull request in the team repository that adds them to the `cloud-compute` team.",
+ "difference": "an email to infra@rust-lang.org (old) against a pull request in rust-lang/team (new)",
+ "revisions": {
+  "old": {
+   "commit": "a2cbd85c9a109bea82b17a4f56eb1f90abebffaa",
+   "path": "src/infra/docs/dev-desktop.md"
+  },
+  "new": {
+   "commit": "08635029bbdefa7fa30051c1dcb7223457411ffb",
+   "path": "src/infra/docs/dev-desktop.md"
+  }
+ },
+ "neutral_names": [
+  "infra/docs/remote-builders.md",
+  "infra/docs/remote-build-hosts.md"
+ ],
+ "markers": {
+  "old": "reach out to [infra@rust-lang.org]",
+  "new": "add yourself to the `cloud-compute` team"
+ },
+ "reversal_check": {
+  "old_has": [
+   "reach out to [infra@rust-lang.org]"
+  ],
+  "old_lacks": [
+   "add yourself to the `cloud-compute` team"
+  ],
+  "new_has": [
+   "add yourself to the `cloud-compute` team"
+  ],
+  "new_lacks": [
+   "reach out to [infra@rust-lang.org]"
+  ]
+ },
+ "leak_tokens": [
+  "infra@",
+  "cloud-compute",
+  "rust-lang/team"
+ ],
+ "contamination": {
+  "old": [
+   {
+    "label": "asks the infrastructure team by email for a build machine",
+    "regex": "build machine, reach out to"
+   }
+  ],
+  "new": [
+   {
+    "label": "asks through the cloud-compute team",
+    "regex": "yourself to the .cloud-compute"
+   }
+  ]
+ },
+ "weak_points": [
+  "The old revision still links infra@rust-lang.org at the foot of the new one, so a run that reads only the link list could pick the address.",
+  "The prompt lists the channels, so the shape of the answer is given and only the choice is tested."
+ ],
+ "separation": {
+  "rating": "clean",
+  "why": "Each revision names one channel, and neither says which is newer."
+ }
+}

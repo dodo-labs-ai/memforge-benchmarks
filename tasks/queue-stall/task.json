@@ -1,0 +1,8 @@
+{
+  "id": "queue-stall",
+  "prompt": "Implement `install_stall_safeguards(app)` in kestrel/safeguards.py with the safeguards we agreed after the queue stall on 2026-09-12. Keep the change small and tell me briefly what you did.",
+  "stale_doc": "queue-stall-review.md",
+  "current_doc": "stall-postmortem.md",
+  "difference": "a startup check plus paging when no job has started for five minutes (old) against the startup check alone (new); the new document drops the paging sentence without saying it was withdrawn",
+  "fixture_target": "kestrel/safeguards.py"
+}

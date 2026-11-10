@@ -1,0 +1,71 @@
+{
+  "id": "t18-otel-peer-service",
+  "number": 18,
+  "role": "scored",
+  "doc_set": "otel",
+  "prompt": "Implement `annotate_client_span(span, service_name, service_namespace)` in `telemetry/span_attributes.py`. A client span that calls another service, for example `checkout` in the `Shop` namespace, should record which logical service it is calling, using the attribute keys our semantic conventions define. Keep the change small and tell me briefly what you did.",
+  "decision": "`service.peer.name` and `service.peer.namespace` were deprecated in favour of `server.service.*` on the client side and `client.service.*` on the server side.",
+  "difference": "`service.peer.name` (old) against `server.service.name` (new). Legacy `peer.service` beside either key does not change the outcome; alone it counts as `neither`.",
+  "revisions": {
+    "old": {
+      "commit": "53177914087f0a06811023a41a959dd50c04caf2",
+      "path": "docs/registry/attributes/service.md"
+    },
+    "new": {
+      "commit": "debfc1c62dcaf49eece43e3ee1d56a92b837a7e2",
+      "path": "docs/registry/attributes/service.md"
+    }
+  },
+  "neutral_names": [
+    "registry/attributes/service-identity.md",
+    "registry/attributes/service-metadata.md"
+  ],
+  "markers": {
+    "old": "`service.peer.name`</a> | ![Development]",
+    "new": "Use `server.service.name` on the client side"
+  },
+  "reversal_check": {
+    "old_has": [
+      "`service.peer.name`</a> | ![Development]"
+    ],
+    "old_lacks": [
+      "server.service.name"
+    ],
+    "new_has": [
+      "`service.peer.name`</a> | ![Deprecated]",
+      "Use `server.service.name` on the client side"
+    ],
+    "new_lacks": [
+      "`service.peer.name`</a> | ![Development]"
+    ]
+  },
+  "leak_tokens": [
+    "peer",
+    "server.service",
+    "client.service",
+    "shoppingcart"
+  ],
+  "contamination": {
+    "old": [
+      {
+        "label": "names service.peer.name or .namespace",
+        "regex": "service\\.peer\\.(name|namespace)"
+      }
+    ],
+    "new": [
+      {
+        "label": "names server.service.name or .namespace",
+        "regex": "server\\.service\\.(name|namespace)"
+      }
+    ]
+  },
+  "weak_points": [
+    "At the pinned commit no other document names `service.peer.*`, while four others name `server.service.*`, one of them saying that legacy `peer.service` is replaced by it. At full size that favours `new` for any agent that searches, whatever the staged pair says.",
+    "The prompt uses `checkout`, not the document's example value `shoppingcart`, so the example cannot be copied.",
+    "The new revision labels the old key Deprecated, so a run that opens both can tell which is newer without any time or relation signal, and peer.md in the small set gives the new key as well. Report this task as a weak test of staleness."
+  ],
+  "separation": {
+    "rating": "clean, but a weak test of staleness",
+    "why": "Each revision gives one key for the client side. The new revision's own Deprecated badge reveals the order, so a run that reads both does not need help to choose."
+  }
+}

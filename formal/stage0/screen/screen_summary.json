@@ -1,0 +1,309 @@
+{
+  "rule": "Two or more of three closed-book runs answering `new` drops the task. Two or more declining makes it inconclusive, for the user to decide. A run Codex did not finish is `failed` and out of the rates.",
+  "per_task": {
+    "t01-govuk-db-admin-role": {
+      "number": 1,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 0,
+      "new": 0,
+      "neither": 3,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "the secret is read under no admin role this task knows",
+        "['scripts/db-admin-password.sh'] never reads the secret",
+        "the secret is read under no admin role this task knows"
+      ],
+      "total_tokens": [
+        115411,
+        113112,
+        114377
+      ],
+      "duration_seconds": [
+        65.7,
+        58.8,
+        62.4
+      ]
+    },
+    "t02-gitlab-api-new-field": {
+      "number": 2,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 0,
+      "new": 0,
+      "neither": 3,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "a plain expose on UserBasic",
+        "a plain expose on UserBasic",
+        "a plain expose on UserBasic"
+      ],
+      "total_tokens": [
+        94701,
+        110356,
+        78929
+      ],
+      "duration_seconds": [
+        34.5,
+        40.4,
+        30.5
+      ]
+    },
+    "t06-govuk-check-env-var": {
+      "number": 6,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 3,
+      "new": 0,
+      "neither": 0,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 1.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "reads the variable through kubectl exec",
+        "reads the variable through kubectl exec",
+        "reads the variable through kubectl exec"
+      ],
+      "total_tokens": [
+        76944,
+        93458,
+        93146
+      ],
+      "duration_seconds": [
+        30.3,
+        31.8,
+        42.9
+      ]
+    },
+    "t08-django-deprecation-warning": {
+      "number": 8,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 2,
+      "new": 0,
+      "neither": 1,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.667,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "names ['RemovedInDjango70Warning']",
+        "names ['RemovedInDjango70Warning']",
+        "names no versioned warning class; warnings named: ['DeprecationWarning']"
+      ],
+      "total_tokens": [
+        144244,
+        113313,
+        149512
+      ],
+      "duration_seconds": [
+        64.1,
+        53.0,
+        72.6
+      ]
+    },
+    "t09-django-browser-tests": {
+      "number": 9,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 3,
+      "new": 0,
+      "neither": 0,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 1.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "uses ['AdminSeleniumTestCase']",
+        "uses ['AdminSeleniumTestCase', 'selenium.webdriver.common.by']",
+        "uses ['AdminSeleniumTestCase']"
+      ],
+      "total_tokens": [
+        131497,
+        113743,
+        146086
+      ],
+      "duration_seconds": [
+        68.6,
+        58.7,
+        74.4
+      ]
+    },
+    "t10-grpc-principal-name": {
+      "number": 10,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 0,
+      "new": 0,
+      "neither": 3,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "wrong where both revisions agree: ['no certificate, empty matcher']; answers {'uri fails, dns matches': False, 'uri fails, subject matches': False, 'dns fails, subject matches': False}",
+        "wrong where both revisions agree: ['no certificate, empty matcher']; answers {'uri fails, dns matches': False, 'uri fails, subject matches': False, 'dns fails, subject matches': False}",
+        "wrong where both revisions agree: ['no certificate, empty matcher']; answers {'uri fails, dns matches': False, 'uri fails, subject matches': False, 'dns fails, subject matches': False}"
+      ],
+      "total_tokens": [
+        95843,
+        63657,
+        96113
+      ],
+      "duration_seconds": [
+        42.9,
+        34.1,
+        43.8
+      ]
+    },
+    "t12-grpc-max-ejection": {
+      "number": 12,
+      "role": "reserve",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 1,
+      "new": 2,
+      "neither": 0,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.333,
+      "new_rate": 0.667,
+      "declined_rate": 0.0,
+      "screen_result": "already_known",
+      "complete": true,
+      "details": [
+        "never above the limit: {'limit 5, three failing': 0, 'limit 25, five failing': 2, 'limit 0, three failing': 0}",
+        "never above the limit: {'limit 5, three failing': 0, 'limit 25, five failing': 2, 'limit 0, three failing': 0}",
+        "ejects past a small limit: {'limit 5, three failing': 1, 'limit 25, five failing': 3, 'limit 0, three failing': 0}"
+      ],
+      "total_tokens": [
+        80157,
+        97955,
+        79327
+      ],
+      "duration_seconds": [
+        37.6,
+        49.9,
+        41.1
+      ]
+    },
+    "t16-rustforge-rollup-approval": {
+      "number": 16,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 0,
+      "new": 0,
+      "neither": 3,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "returned '@bors r+'",
+        "returned 'bors r+'",
+        "returned '@bors r+'"
+      ],
+      "total_tokens": [
+        78165,
+        78770,
+        61896
+      ],
+      "duration_seconds": [
+        30.0,
+        34.8,
+        73.3
+      ]
+    },
+    "t18-otel-peer-service": {
+      "number": 18,
+      "role": "scored",
+      "runs": 3,
+      "finished_runs": 3,
+      "old": 0,
+      "new": 0,
+      "neither": 3,
+      "declined": 0,
+      "failed": 0,
+      "old_rate_baseline": 0.0,
+      "new_rate": 0.0,
+      "declined_rate": 0.0,
+      "screen_result": "kept",
+      "complete": true,
+      "details": [
+        "ran annotate_client_span: keys ['service.name', 'service.namespace']",
+        "ran annotate_client_span: keys ['service.name', 'service.namespace']",
+        "ran annotate_client_span: keys ['service.name', 'service.namespace']"
+      ],
+      "total_tokens": [
+        77296,
+        76861,
+        77832
+      ],
+      "duration_seconds": [
+        40.9,
+        25.0,
+        27.0
+      ]
+    }
+  },
+  "attempts": 34,
+  "retries": 5,
+  "attempts_by_status": {
+    "completed": 27,
+    "error": 7
+  },
+  "tokens_counted_against_the_cap": 2951466,
+  "reasoning_efforts_seen": [
+    "medium"
+  ],
+  "time_zones_told_to_the_model": [
+    "GMT"
+  ],
+  "runs_with_xcrun_noise": 0,
+  "isolation_violations": 0,
+  "egress": {
+    "attempts_that_reached_the_endpoint_through_the_logging_proxy": 34,
+    "other_hosts_flagged": [],
+    "attempts_with_another_host": 0,
+    "sockets_around_the_proxy_flagged": [],
+    "attempts_with_a_socket_around_the_proxy": 0,
+    "proxy_errors": 0,
+    "limit": "The proxy sees what Codex sends to it. The poll looks for anything else every half second, so a direct connection that opens and closes between polls is not seen."
+  },
+  "outcome_by_group_is_not_a_finding": "These runs only decide which tasks stay."
+}

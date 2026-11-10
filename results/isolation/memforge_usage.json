@@ -1,0 +1,19 @@
+{
+  "usage": {
+    "gpt-6-luna": {
+      "calls": 27,
+      "prompt_tokens": 49754,
+      "completion_tokens": 3928,
+      "unreported_calls": 0,
+      "operations": {
+        "capability_check": 1,
+        "image_reading": 1,
+        "projection_fragment_memory_extraction": 6,
+        "candidate_admission": 6,
+        "entity_batch_validation": 3,
+        "cross_document_relation": 10
+      }
+    }
+  },
+  "total_tokens": 53682
+}

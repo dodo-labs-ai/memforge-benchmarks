@@ -1,0 +1,8 @@
+{
+  "id": "failure-alerts",
+  "prompt": "Implement `alert_channel()` and `ack_deadline_seconds()` in kestrel/alerts.py according to how we agreed to handle failure alerts. Keep the change small and tell me briefly what you did.",
+  "stale_doc": "failure-alerts.md",
+  "current_doc": "alert-routing.md",
+  "difference": "the on-call engineer acknowledges within 15 minutes (old) against within 10 minutes (new)",
+  "fixture_target": "kestrel/alerts.py"
+}

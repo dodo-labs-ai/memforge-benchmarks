@@ -1,0 +1,79 @@
+{
+  "id": "t01-govuk-db-admin-role",
+  "number": 1,
+  "role": "scored",
+  "doc_set": "govuk",
+  "prompt": "Add `scripts/db-admin-password.sh DATABASE_NAME`, which prints the `aws_db_admin` password of the named database in production, following our guide on creating a new database. Keep the change small and tell me briefly what you did.",
+  "decision": "This guide's step that reads the database admin secret moved from acting as `govuk-ENVIRONMENT-fulladmin` to acting as `govuk-ENVIRONMENT-tempadmin`.",
+  "difference": "the secret is fetched acting as govuk-ENVIRONMENT-fulladmin (old) against govuk-ENVIRONMENT-tempadmin (new)",
+  "revisions": {
+    "old": {
+      "commit": "82cd9620f99d431fd82ffece79a564aead89e4cd",
+      "path": "source/kubernetes/creating-a-new-database/index.html.md"
+    },
+    "new": {
+      "commit": "f1ad617820fd5593217694a277f342ea6a47768f",
+      "path": "source/kubernetes/creating-a-new-database/index.html.md"
+    }
+  },
+  "neutral_names": [
+    "kubernetes/creating-a-new-database/instance-bootstrap.html.md",
+    "kubernetes/creating-a-new-database/instance-setup.html.md"
+  ],
+  "markers": {
+    "old": "Acting as `govuk-ENVIRONMENT-fulladmin`",
+    "new": "Acting as `govuk-ENVIRONMENT-tempadmin`"
+  },
+  "reversal_check": {
+    "old_has": [
+      "Acting as `govuk-ENVIRONMENT-fulladmin`"
+    ],
+    "old_lacks": [
+      "tempadmin"
+    ],
+    "new_has": [
+      "Acting as `govuk-ENVIRONMENT-tempadmin`"
+    ],
+    "new_lacks": [
+      "fulladmin"
+    ]
+  },
+  "leak_tokens": [
+    "fulladmin",
+    "tempadmin",
+    "platformengineer"
+  ],
+  "contamination": {
+    "old": [
+      {
+        "label": "names the fulladmin role anywhere",
+        "regex": "fulladmin"
+      },
+      {
+        "label": "tells the reader to run or sign in as fulladmin",
+        "regex": "(gds(-cli)? aws [^ ]*fulladmin|(with|as|assume)[^.\\n]{0,40}`?fulladmin)"
+      }
+    ],
+    "new": [
+      {
+        "label": "names the tempadmin role",
+        "regex": "tempadmin"
+      }
+    ],
+    "reviewed_not_stating": {
+      "old": {
+        "source/manual/rules-for-getting-production-access.html.md": "describes the roles and says this access no longer grants fulladmin in production",
+        "source/kubernetes/cheatsheet.html.md": "describes what the role can do and says you should not normally need it",
+        "source/kubernetes/get-started/access-eks-cluster/index.html.md": "lists the roles and says to use this one only if the others are insufficient"
+      }
+    }
+  },
+  "weak_points": [
+    "A current page of the same guide, creating-a-new-database/create-readonly-credentials-for-your-rds-database.html.md, still logs in as fulladmin, reads a secret and uses aws_db_admin, and it is drawn into the small set. Ten runbooks at the pinned commit also still use fulladmin. So a run that follows a live document can score `old`, and the `old` rate must not be read as `misled`.",
+    "Upstream the commit that made this change is about kubectl exec guidance, so the role change was a side effect there, not a stated migration of every runbook."
+  ],
+  "separation": {
+    "rating": "one way",
+    "why": "`new` is clean: only the new revision names tempadmin in this guide, and at most three other documents name it. `old` is not: live documents outside the pair still name fulladmin."
+  }
+}

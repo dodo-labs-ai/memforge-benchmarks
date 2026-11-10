@@ -1,0 +1,201 @@
+{
+  "memforge_commit": "ab35f5066a752893ea0b2f66fc5e69d1ba09a9a9",
+  "python": "3.15.2",
+  "default_include": [
+    "*.md",
+    "**/*.md",
+    "*.markdown",
+    "**/*.markdown",
+    "*.txt",
+    "**/*.txt",
+    "*.json",
+    "**/*.json",
+    "*.html",
+    "**/*.html",
+    "*.htm",
+    "**/*.htm"
+  ],
+  "default_exclude": [
+    ".obsidian/**",
+    ".trash/**",
+    ".git/**",
+    "**/.git/**"
+  ],
+  "size_limit_line_in_source": true,
+  "probe": [
+    {
+      "file": "plain.md",
+      "result": "included",
+      "content_type": "text/markdown"
+    },
+    {
+      "file": "govuk-style.html.md",
+      "result": "included",
+      "content_type": "text/markdown"
+    },
+    {
+      "file": "nested/deep/page.html.md",
+      "result": "included",
+      "content_type": "text/markdown"
+    },
+    {
+      "file": "django-style.txt",
+      "result": "included",
+      "content_type": "text/plain"
+    },
+    {
+      "file": "doc.markdown",
+      "result": "included",
+      "content_type": "text/markdown"
+    },
+    {
+      "file": "component.mdx",
+      "result": "ignored",
+      "content_type": null
+    },
+    {
+      "file": "page.html.md.erb",
+      "result": "ignored",
+      "content_type": null
+    },
+    {
+      "file": "page.erb",
+      "result": "ignored",
+      "content_type": null
+    },
+    {
+      "file": "doc.rst",
+      "result": "ignored",
+      "content_type": null
+    },
+    {
+      "file": "UPPER.MD",
+      "result": "ignored",
+      "content_type": null
+    },
+    {
+      "file": "page.html",
+      "result": "included",
+      "content_type": "text/html"
+    },
+    {
+      "file": "exactly_the_limit.md",
+      "result": "included",
+      "content_type": "text/markdown"
+    },
+    {
+      "file": "one_byte_over.md",
+      "result": "too_large",
+      "content_type": null
+    },
+    {
+      "file": "not_utf8.md",
+      "result": "invalid_utf8",
+      "content_type": null
+    }
+  ],
+  "sets": {
+    "django": {
+      "counts": {
+        "included": 680,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      },
+      "blocks_the_whole_collection": false,
+      "content_types": {
+        "text/plain": 680
+      },
+      "title_from_a_heading": 0,
+      "title_is_the_path": 680,
+      "largest_file_bytes": 161979,
+      "total_bytes": 6541190
+    },
+    "gitlab": {
+      "counts": {
+        "included": 668,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      },
+      "blocks_the_whole_collection": false,
+      "content_types": {
+        "text/markdown": 668
+      },
+      "title_from_a_heading": 220,
+      "title_is_the_path": 448,
+      "largest_file_bytes": 128948,
+      "total_bytes": 8368421
+    },
+    "govuk": {
+      "counts": {
+        "included": 245,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      },
+      "blocks_the_whole_collection": false,
+      "content_types": {
+        "text/markdown": 245
+      },
+      "title_from_a_heading": 64,
+      "title_is_the_path": 181,
+      "largest_file_bytes": 32217,
+      "total_bytes": 1281079
+    },
+    "grpc": {
+      "counts": {
+        "included": 200,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      },
+      "blocks_the_whole_collection": false,
+      "content_types": {
+        "text/markdown": 200
+      },
+      "title_from_a_heading": 30,
+      "title_is_the_path": 170,
+      "largest_file_bytes": 67165,
+      "total_bytes": 2056198
+    },
+    "otel": {
+      "counts": {
+        "included": 305,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      },
+      "blocks_the_whole_collection": false,
+      "content_types": {
+        "text/markdown": 305
+      },
+      "title_from_a_heading": 305,
+      "title_is_the_path": 0,
+      "largest_file_bytes": 217094,
+      "total_bytes": 4066026
+    },
+    "rustforge": {
+      "counts": {
+        "included": 150,
+        "ignored": 0,
+        "too_large": 0,
+        "invalid_utf8": 0,
+        "unreadable": 0
+      },
+      "blocks_the_whole_collection": false,
+      "content_types": {
+        "text/markdown": 150
+      },
+      "title_from_a_heading": 147,
+      "title_is_the_path": 3,
+      "largest_file_bytes": 63492,
+      "total_bytes": 729960
+    }
+  }
+}
